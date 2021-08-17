@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "iconimage": "/assets/adfree-youtube-logo-sq.svg",
+    "companyname": "AdFree",
+    "siteUrl": "https://adfreeyt.com/",
+    "twitterUsername": "toddlambert",
+    "siteTitleDefault": "Go AdFree",
+    "siteTitle": "Go AdFree",
+    "titleTemplate": "%s",
+    "twitter": "yourtwittername",
+    "siteImage": "/default-og-image.jpg",
+    "siteDescription": "AdFree - No injected ads, or autoplay ads. Just the video you want without the interruptions",
+    "title": "Go AdFree",
+    "hrefLang": "en",
+    "image": "/assets/default-og-image.jpg",
+    "description": "AdFree - No injected ads, or autoplay ads. Just the video you want without the interruptions"
+  },
+  "ga": "UA-204514914-1"
+}
