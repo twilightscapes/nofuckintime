@@ -158,7 +158,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 export function Footer() {
-  // const { companyname } = useSiteMetadata()
+  const { companyname } = useSiteMetadata()
   return (
 <>
 
@@ -193,7 +193,7 @@ export function Footer() {
   
       <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>
         
-       Copyright &copy; {(new Date().getFullYear())} AdFree - is NOT affiliated with YouTube in any way. </div>
+       Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
        <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} />
       </nav>
    

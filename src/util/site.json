@@ -1,19 +1,19 @@
 {
   "meta": {
-    "iconimage": "/assets/adfree-youtube-logo-sq.svg",
-    "companyname": "AdFree",
-    "siteUrl": "https://adfreeyt.com/",
+    "iconimage": "/assets/nft-logo.svg",
+    "companyname": "No Fuckin' Time",
+    "siteUrl": "https://nofuckintime.com/",
     "twitterUsername": "toddlambert",
-    "siteTitleDefault": "Go AdFree",
-    "siteTitle": "Go AdFree",
+    "siteTitleDefault": "No Fuckin' Time",
+    "siteTitle": "No Fuckin' Time",
     "titleTemplate": "%s",
     "twitter": "yourtwittername",
     "siteImage": "/default-og-image.jpg",
-    "siteDescription": "AdFree - No injected ads, or autoplay ads. Just the video you want without the interruptions",
-    "title": "Go AdFree",
+    "siteDescription": "No Fuckin' Time - so no waiting, do it now",
+    "title": "No Fuckin' Time",
     "hrefLang": "en",
     "image": "/assets/default-og-image.jpg",
-    "description": "AdFree - No injected ads, or autoplay ads. Just the video you want without the interruptions"
+    "description": "No Fuckin' Time - so no waiting, do it now "
   },
   "ga": "UA-204514914-1"
 }
