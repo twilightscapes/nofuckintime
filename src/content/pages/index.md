@@ -1,24 +1,26 @@
 ---
 template: index-page
 slug: /
-title: AdFree
-tagline: Sometimes you just need a break from the ads, that's why there is AdFree
-youtuber: "iHxmNzMfDj4"
-underlayImage: /assets/transparent.png
+title: Night Photography
+tagline: Twilightscapes - Night Photography by Todd Lambert
 featuredImage: /assets/default-og-image.jpg
-secondaryImage: /assets/transparent.png
-svgImage: /assets/null.svg
-svgzindex: "0"
+secondaryImage: /assets/default-og-image.jpg
 cta:
-  ctaText: Contact
-  ctaLink: /contact
+  ctaText: "See the photos"
+  ctaLink: /photos/
+youtuber: "iHxmNzMfDj4"
+youtubestart: "0"
+youtubeend: "0"
+youtubemute: "1"
+youtubecontrols: "0"
+svgzindex: "0"
+underlayImage: /assets/default-og-image.jpg
+svgImage: /assets/null.svg
 ---
+Finding obscure locations and unusual subject matter, Todd has excelled at capturing long exposure photos of rarely seen moments of time.
 
+As a location scout and avid urban explorer, Todd learned to photograph what he sees and to bring the unique subject matter he finds to light. 
 
+> Finding yourself at 3am in a graveyard filming flowers; some may see that as weird, but for me, it's pure tranquility.
 
-
-Welcome to AdFree
-
-
-
-
+Let Todd's night photography and digital storytelling, prove to you that the night is indeed beautiful.

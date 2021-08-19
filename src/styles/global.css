@@ -736,8 +736,21 @@ p{margin-bottom: 1rem;}
 	
 @media (hover: hover) {
 /* #installer{display: none !important;} */
+.container2 {
+  overflow-y: scroll;
+  scroll-snap-type: none !important;
+}
+.container2 section {
+  scroll-snap-align: none;
 }
 
+.container2 section article{
+  margin:30vh 0;
+  min-height:1000px !important;
+}
+.container2 section img{height:100vh !important;}
+
+}/* end of exclude non-touch */
 
 
 footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff !important; position:relative; bottom:0 ; opacity: 1;}
@@ -758,6 +771,88 @@ footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justi
 .youtubelinker{
   opacity:1 !important;
 }
+
+
+
+
+body.bloglist .post-content{
+  border:0px solid red !important;
+  z-index: 0;
+  position:absolute;
+  bottom:0 !important;
+  width:100%;
+  /* height:100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  background:#111;
+  color:#fff !important;
+  backdrop-filter: blur(2px);
+  padding:10px 1rem 0 1rem;
+}
+
+body.homepage .post-content{
+  position:relative;
+  bottom:0;
+  z-index: 1;
+  color:#fff !important;
+  display: flex;
+  
+}
+
+body.homepage .post-content a{color:#fff !important;}
+body.homepage .post-content h2{
+  border:0px solid red;
+  width: 100% !important;
+  padding:0 1rem;
+}
+
+body.bloglist .post-content .featured-image{
+  position:absolute;
+  height:auto !important;
+  top:0;
+border:0px solid red !important;
+}
+
+body.bloglist section.child{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body.bloglist section.child article{
+
+  width: 32%;
+  padding-bottom: 18%; /* 32:18, i.e. 16:9 */
+  margin-bottom: 2%; /* (100-32*3)/2 */
+
+}
+
+
+/* body.homepage .post-content{
+  border:0px solid red !important;
+  z-index: 1;
+  position:absolute !important;
+  top:0 !important;
+  width:100%;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  background:#111;
+  color:#fff !important;
+  backdrop-filter: blur(2px);
+  padding:10px 1rem 0 1rem;
+} */
+
+/* .post-content .featured-image{
+  position:absolute;
+  height:100% !important;
+border:1px solid red !important;
+} */
+
+
+
+
 
 
 /* @media (max-width: 48em) {
@@ -791,7 +886,6 @@ body.carto .carta {display:block; height:100%;}
 
 body .carto:hover{
   /* background: rgba(0,0,0,0.2); transition: 1s background; */
-  border-color:inherit;
 }
 
 .navbar-item{display:block; padding:5px 0;}
@@ -980,6 +1074,7 @@ border: 0px solid red;
 
   }
 
+  .youtubeform{}
 
 
 
@@ -1116,8 +1211,8 @@ input[type=checkbox] ~ .sidebarIconToggle > .bug{
   filter: drop-shadow(0 0px 4px rgba(0, 0, 0, 1));
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .bug {
-display:none;
+input[type=checkbox]:checked ~ .sidebarIconToggle {
+display:none !important;
 }
 
 
@@ -1133,7 +1228,7 @@ input[type=checkbox] {
   position: fixed;
   z-index: 4;
   top: 65vh;
-  right: 50px;
+  right: 20px;
   /* height: 100px;
   width: 100px; */
   color: #999;
@@ -2388,14 +2483,33 @@ background-position:center 70px;
         padding:0 0 0 0;
       }
     
-    
+     .contentpanel{
+        display:block;
+        margin:0 auto;
+        padding:0 1rem;
+        text-decoration:none;
+        text-align:left;
+        text-shadow: 1px 2px 1px black;
+        font-weight:400;
+        color:#FFFFFF;
+        cursor:default;
+        background: rgba(0,0,0,0.50);
+        transition: all 0.15s;
+        font-size:100%;
+        opacity:0;
+        overflow-y:auto;
+        backdrop-filter: blur(10px);
+        width:100%;
+        height:100%;
+        animation:fade 1.7s forwards;
+        }
         .contentpanel .button{max-width:50%; margin:1rem auto}
       
     
         .contentpanel > *{opacity:0; animation:fade 3s forwards;}
     
         .headline{
-          padding:1em;
+        padding:1em;
         margin:0 auto;
         /* box-shadow: 0px 1px 6px 1px black; */
         text-shadow: 1px 0px 1px #999;
@@ -2543,7 +2657,7 @@ color:#fff;
 opacity:.8;
   }
   .container2 section:last-child:after{
-    content: " SCROLL UP FOR MORE ";
+    content: " CLICK BELOW FOR MORE ";
     display: block;
     position:absolute;
     bottom:0;

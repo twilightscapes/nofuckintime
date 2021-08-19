@@ -5,7 +5,7 @@ import React from 'react'
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { StaticImage } from "gatsby-plugin-image"
 
-
+import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
 
@@ -136,6 +136,9 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout className="blog-page1">
+<Helmet>
+  <body className="bloglist" />
+</Helmet>
         <Seo
           title={"AdFree Archive — Page " + currentPage + " of " + numPages}
           description={
@@ -412,11 +415,11 @@ class BlogIndex extends React.Component {
       className="wrapper1"
       style={{
         textAlign: "center",
-        padding:'5vh 4vw',
+        padding:'0 4vw',
         clear:'both'
       }}
     >
-<h1>AdFree Archive</h1>
+<h1 className="headline" style={{fontSize:'18px'}}>Twilightscape's Experiences - The World's First Multimedia 3D Blog</h1>
 
     
     
