@@ -221,8 +221,6 @@ const YouTube = frontmatter.youtuber
 
 
 
-
-
       <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
@@ -304,7 +302,9 @@ const YouTube = frontmatter.youtuber
             ""
           )}
 
-
+<div style={{width:'100vw', height:'30vh', top:'10vh',  margin:'0 auto', display:'flex', alignSelf:'center', justifyContent:'center', position:'fixed', zIndex:'2', objectFit:'contain', border:'0px solid blue'}}>
+      <StaticImage src="../../static/default-og-image.png" alt="AdFree Default Image" style={{height:'auto', maxHeight:'', border:'0px solid !important', objectFit:'contain',}} />
+</div>
 
 
       </div>

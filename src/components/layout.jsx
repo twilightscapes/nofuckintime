@@ -134,16 +134,16 @@ export function Layout({ children }) {
 
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
- <li className="carta" style={{border:'none', margin:'1rem 0'}}>
+ <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
-<span>Clicking Skip, Sucks</span>
+<span>NO FUCKIN' TIME</span>
 </Link>
  </li>
- <li className="carto" style={{border:'none', margin:'1rem 0'}}>
+ <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
-<span>Clicking Skip, Sucks</span>
+<span>NO FUCKIN' TIME</span>
 </Link>
  </li>
  
