@@ -14,7 +14,7 @@ const Consent = () => (
 <CookieConsent
 	debug={false}
 	location="none"
-	style={{ opacity:'1', padding:'2vh 3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'0', display:'flex', alignSelf:'center', width:'50vw', justifyContent:'center', color:'#fff', background:'#111'
+	style={{ opacity:'1', padding:'2vh 3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'0', display:'flex', alignSelf:'center', width:'50vw', justifyContent:'center', color:'#fff', background:''
    }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"
@@ -31,11 +31,11 @@ const Consent = () => (
     contentStyle={{margin:'0', padding:'0', border:'0px solid red'}}
 
     expires={364}
-    cookieName="AdFreeYT.com-site-pref-cookie"
+    cookieName="Twilightscapes.com-site-pref-cookie"
 >
 
 
-    <div style={{color:'inherit !important', padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}>
+    <div style={{color:'inherit !important', padding:'0 0 0 0', fontSize:'100%', textAlign:'center',}}>
      We use cookies to optimize our website.{" "}<br />
     <span style={{ fontSize: "75%", color:'inherit' }}>
    <Link className="donotsell" href="/privacy/" style={{textDecoration:'underline', color:'inherit !important'}}>Do Not Sell My Personal Information</Link>

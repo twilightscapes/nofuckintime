@@ -3,7 +3,7 @@ import styled from "styled-components"
 // import Newsletter from './PopNewsletter'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 // import Night319 from "../../static/assets/night316.svg"
 const CustomBox = styled.div`
 
@@ -39,7 +39,7 @@ const Intro2 = () => (
 
 <div className="" style={{zIndex:'-1', width:'', height:'', backgroundSize:'cover'}}>
   
-  {/* <StaticImage style={{backgroundSize:'cover', width:'100%'}} className="" src="../img/favorites/night316.jpg" alt="Colorado at night with Twilightscapes" /> */}
+  <StaticImage style={{backgroundSize:'cover', width:'100%'}} className="" src="../img/favorites/night316.jpg" alt="Colorado at night with Twilightscapes" />
 
 {/* <Night319 /> */}
 

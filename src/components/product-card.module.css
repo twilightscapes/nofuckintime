@@ -12,10 +12,9 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
 }
 
-.productImageStyle {
-  /* margin-bottom: var(--space-md); */
-  padding:inherit
-}
+/* .productImageStyle {
+  margin-bottom: var(--space-md);
+} */
 
 .productDetailsStyle {
   display: flex;

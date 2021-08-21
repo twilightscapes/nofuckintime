@@ -12,13 +12,12 @@ const Theme = () => {
           setColorMode(colorMode === "default" ? "dark" : "default")
         }}
         aria-label="Theme Color"
-        className="menutheme"
       >
         <div sx={themeStyles.modeIcons}>
           <div>{colorMode === "default" ? <FiMoon /> : <FiSun />}</div>
-          <div sx={themeStyles.modeText}>
-            {colorMode === "default" ? "Dark" : "Light"}
-          </div>
+          {/* <div sx={themeStyles.modeText}>
+            {colorMode === "default" ? "Dark (best)" : "Light"}
+          </div> */}
         </div>
       </button>
     </div>
@@ -36,24 +35,21 @@ const themeStyles = {
       mt: "-2px",
       p: "0 0 0 0",
       "&:hover": {
-        color: "",
-        background:'transparent'
+        color: "var(--primary-color)",
       },
     },
   },
   modeIcons: {
     display: "flex",
     alignItems: "center",
-    color: "inherit",
+    color: "#ccc",
     mt: "10px",
     "&:hover": {
-      color: "inherit",
-      background:'transparent'
+      color: "color:var(--primary-color)",
     },
   },
   modeText: {
     fontSize: "14px",
-    color: "inherit",
     display: ["block", "block", "block", "block"],
     p: " 0 10px",
     mt: "-5px",

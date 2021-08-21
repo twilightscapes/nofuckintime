@@ -2,11 +2,15 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
-
+import { FaHandPointDown } from "react-icons/fa"
+import ScrollAnimation from 'react-animate-on-scroll'
 // import Layout from "./layout"
 // import Seo from "./seo"
 import styled from "styled-components";
 const CustomBox = styled.div`
+
+
+
 
 
 .newsletter{position:relative;}
@@ -35,32 +39,30 @@ input::placeholder {
 `
 
 
-const NewsletterPage = () => (
+const LaunchPadPage = () => (
 
 
-<CustomBox style={{}}> 
-
-           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center', width:'100%'}}>
+<CustomBox style={{}}>
 <form
           className="news-form"
-          action="/signedup/"
-          name="ts-news"
+          action="/deconstructed-photography/planetary/"
+          name="ts-space"
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field">
 
-
+            <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center'}}>
 
               <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div>
 
-          <input type="hidden" name="form-name" value="news" />
+          <input type="hidden" name="form-name" value="ts-space" />
 
 <br />
 
             
-              <span className="txtshadow" style={{fontSize:'120%',}}><strong>Follow Me Into The Night</strong></span><br />
-              
-              <span className="txtshadow" style={{fontSize:'85%'}}>night photography newsletter - (it's free!)</span><br /><br />
+              <span style={{fontSize:'120%'}}><strong>Get your boarding pass</strong></span><br />
+              <br />
+              <span style={{fontSize:'105%'}}>NEXT DEPARTURE in 1 min</span><br /><br />
 
              <div className="signbox" style={{display:'flex',}}>
 
@@ -89,9 +91,9 @@ const NewsletterPage = () => (
               className="button"
               
               type="submit"
-              style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.5vw, 1.5rem)', whiteSpace:'nowrap'}}
+              style={{marginTop:'-8px'}}
             >
-              Follow Todd{" "}
+              BOARD NOW!{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>
@@ -101,17 +103,25 @@ const NewsletterPage = () => (
             </div>
 
 
-            <div style={{fontSize: '70%', padding: '0px 3%', margin:'30px 0 10px 0', textAlign: 'center', color:'#ccc'}}>
-            <Link to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy (NO SPAM!)</Link>
+            <div style={{fontSize: '150%', padding: '0px 3%', margin:'30px 0 10px 0', textAlign: 'center', color:'#ccc'}}>
+            {/* <Link to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy (NO SPAM!)</Link> */}
+
+            {/* PLEASE EXIT THROUGH GIFT SHOP */}
            
+
+            {/* <ScrollAnimation animateIn="bounce" duration={1}  initiallyVisible={true} animateOnce={false} animatePreScroll={true} >
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation> */}
+
+
             </div>
-<br /></form>
+<br />
 </div>
 
-        
+        </form>
         
 </CustomBox>
   
 )
 
-  export default NewsletterPage
+  export default LaunchPadPage

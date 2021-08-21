@@ -163,7 +163,7 @@ function AddSvg(){
       
       
       
-      //       light="../static/assets/transparent.png"
+      //       light="../assets/transparent.png"
       //     />
 
        <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} />
@@ -214,7 +214,7 @@ function AddSvg(){
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={"https://adfreeyt.com" + getSrc(frontmatter.featuredImage) }
+        image={"https://twilightscapes.com" + getSrc(frontmatter.featuredImage) }
         article={true}
       />
 
@@ -232,7 +232,7 @@ function AddSvg(){
 
 
 
-<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0',}}>
+<div style={{display:'block', width:'100vw', height:'90vh', overflow:'hidden', position:'absolute', top:'0',}}>
 {Image ? (
             <GatsbyImage
               image={Image}
@@ -314,9 +314,9 @@ function AddSvg(){
 
 
 
-{/* <br />
+<br />
 
-<GoBack /> */}
+<GoBack />
 
 
 

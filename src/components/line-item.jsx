@@ -4,7 +4,7 @@ import { StoreContext } from "../context/store-context"
 import { formatPrice } from "../utils/format-price"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getShopifyImage } from "gatsby-source-shopify"
-import DeleteIcon from "../../static/icons/delete"
+import DeleteIcon from "../../static/assets/delete"
 import { NumericInput } from "./numeric-input"
 import {
   title,
@@ -103,14 +103,14 @@ export function LineItem({ item }) {
       </td>
       <td className={priceColumn}>{price}</td>
       <td>
-        {/* <NumericInput
+        <NumericInput
           disabled={loading}
           value={quantity}
           aria-label="Quantity"
           onIncrement={doIncrement}
           onDecrement={doDecrement}
           onChange={(e) => handleQuantityChange(e.currentTarget.value)}
-        /> */}
+        />
       </td>
       <td className={totals}>{subtotal}</td>
     </tr>

@@ -2,7 +2,7 @@ import * as React from "react"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getShopifyImage } from "gatsby-source-shopify"
-// import { formatPrice } from "../utils/format-price"
+import { formatPrice } from "../utils/format-price"
 import {
   productCardStyle,
   // productHeadingStyle,
@@ -15,17 +15,17 @@ import {
 export function ProductCard({ product, eager }) {
   const {
     title,
-    // priceRangeV2,
+    priceRangeV2,
     slug,
     images: [firstImage],
     // vendor,
     storefrontImages,
   } = product
 
-  // const price = formatPrice(
-  //   priceRangeV2.minVariantPrice.currencyCode,
-  //   priceRangeV2.minVariantPrice.amount
-  // )
+  const price = formatPrice(
+    priceRangeV2.minVariantPrice.currencyCode,
+    priceRangeV2.minVariantPrice.amount
+  )
 
   let storefrontImageData = {}
   if (storefrontImages) {

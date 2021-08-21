@@ -11,7 +11,7 @@ youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/default-og-image.jpg
+featuredImage: /assets/stop-taking-photos.jpg
 svgImage: /assets/null.svg
 ---
 Thank you for visiting! 

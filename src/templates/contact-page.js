@@ -34,16 +34,16 @@ const Contact = ({ data }) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <div className=" fluff" style={{padding:'0 12%', margin:'0 auto', maxWidth:'800px',}}>
-        <br />
+      <div className="wrapper fluff">
+        <br /><br />
         <h1 style={{fontSize:'130%'}}>{frontmatter.title}</h1>
         <div
           className="description"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        
+        </div>
 
-
+        <div className="wrapper">
         <form
           className="contact-form"
           action="/thanks"
@@ -51,7 +51,6 @@ const Contact = ({ data }) => {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          style={{margin:'0 auto',}}
         >
           <input type="hidden" name="form-name" value="contact" />
           <p>
@@ -74,7 +73,7 @@ const Contact = ({ data }) => {
               <textarea name="message" placeholder="Your Message" required></textarea>
             </label>
           </p>
-          <p className="text-align-right" style={{marginRight:'125px', color:'#fff'}}>
+          <p className="text-align-right" style={{marginRight:'60px', color:'#fff'}}>
             <button
               className="button"
               
@@ -88,7 +87,6 @@ const Contact = ({ data }) => {
           </p>
         </form>
       </div>
-      <br /><br />
     </Layout>
   )
 }

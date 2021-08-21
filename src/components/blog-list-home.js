@@ -29,7 +29,7 @@ const PostMaker = ({ data }) => (
       </span>
     </h2> */}
     
-    <div className="container2" style={{display:'', justifySelf:'center', width:'100vw', maxWidth:'100%', maxHeight:'70vh', border:'0px solid #000 !important', margin:'0',transition:'background 0.3s ease-in'}}>
+<div>
 
         
 

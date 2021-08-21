@@ -3,10 +3,10 @@ import { CheckFilter } from "./check-filter"
 
 
 export function Filters({
-  // currencyCode,
-  // productTypes,
+  currencyCode,
+  productTypes,
   tags,
-  // vendors,
+  vendors,
   filters,
   setFilters,
 }) {
@@ -14,14 +14,14 @@ export function Filters({
     setFilters((filters) => ({ ...filters, [key]: value }))
   }
 
-  // const updateNumeric = (key, value) => {
-  //   if (
-  //     !isNaN(Number(value)) ||
-  //     (value.endsWith(".") && !isNaN(Number(value.substring(0, -1))))
-  //   ) {
-  //     updateFilter(key, value)
-  //   }
-  // }
+  const updateNumeric = (key, value) => {
+    if (
+      !isNaN(Number(value)) ||
+      (value.endsWith(".") && !isNaN(Number(value.substring(0, -1))))
+    ) {
+      updateFilter(key, value)
+    }
+  }
 
   return (
     <>

@@ -31,17 +31,17 @@ export default class Installer extends React.Component {
    render(){
        return(
            <div className="no-app">
-           <div style={{textAlign:'center', marginTop:'1rem', }}>
-           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>AdFree Web App</button> &nbsp; | &nbsp; FREE! NO APP STORE NEEDED
+           <div style={{textAlign:'center', marginTop:'1rem',}}>
+           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>Install the Web App</button> &nbsp; | &nbsp; Get 30% OFF! 
              
              
              </div>
 
 {this.state.isActive ? 
 <>
-  <div className="installwindow" style={{fontSize:'90%',  display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'100vw', textAlign:'center' }}>
+  <div className="installwindow" style={{fontSize:'90%',  display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'600px', textAlign:'center' }}>
   
-You can use AdFree anywhere, anytime <br /> Put a shortcut right next to your YouTube app 
+  One-Click Install - NO APP STORE NEEDED
 <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
       
 <button onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
@@ -49,8 +49,8 @@ You can use AdFree anywhere, anytime <br /> Put a shortcut right next to your Yo
 <p style={{maxWidth:'', textAlign:'center'}}>Simply click the "install" icon in your browser address bar
 </p>
 
-<div style={{border:'0px solid red', display:'block', width:'100px', height:'100px', position:'absolute', bottom:'0', right:'0', zIndex:'-1', overflow:'hidden', }}><StaticImage src="../../static/assets/installed-bg.png" alt=""  />
-</div>
+{/* <div style={{border:'0px solid red', display:'block', width:'100px', height:'100px', position:'absolute', bottom:'0', right:'0', zIndex:'-1', overflow:'hidden', }}><StaticImage src="../../static/assets/installed-bg.png" alt=""  />
+</div> */}
   <span style={{fontSize:'100%'}}>OR</span>
   <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', }}>
     

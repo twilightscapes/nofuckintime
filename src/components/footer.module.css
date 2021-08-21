@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-  color: #666;
+  color: #ccc;
   margin-top: var(--space-3xl);
 }
 
@@ -20,7 +20,7 @@
 }
 
 .copyright {
-  color: #666;
+  color: #ccc;
   font-size: var(--text-xs);
 }
 
@@ -50,10 +50,4 @@
 
 .links a {
   padding: var(--space-md);
-  color: #fff !important;
-}
-
-.links a:hover {
-  padding: var(--space-md);
-  color: #999 !important;
 }

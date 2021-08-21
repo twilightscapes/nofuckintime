@@ -16,7 +16,7 @@ import { Toast } from "./toast"
 // import Fullscreen from "../components/FullScreen"
 import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
-import SearchIcon from "../../static/icons/search"
+import SearchIcon from "../../static/assets/search"
 import Theme from "../components/theme"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Audio from '../assets/audio.mp3'
@@ -292,7 +292,6 @@ Contact Me<span>Ordering Questions?</span>
       {/* <Link to="/search" style={{display:'flex', verticalAlign:'center', marginTop:'12px', marginRight:'20px'}}>
     <span><SearchIcon /></span>
    </Link>
-
   <div style={{marginTop:'5px'}}><CartButton quantity={quantity} /></div> */}
      
 

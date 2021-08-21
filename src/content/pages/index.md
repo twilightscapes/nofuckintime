@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Night Photography
 tagline: Twilightscapes - Night Photography by Todd Lambert
-featuredImage: /assets/transparent.png
+featuredImage: /assets/nft-logo.png
 secondaryImage: /assets/transparent.png
 cta:
   ctaText: "See the photos"
@@ -14,8 +14,8 @@ youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
-underlayImage: /assets/transparent.png
-svgImage: /assets/null.svg
+underlayImage: 
+svgImage: 
 ---
 Finding obscure locations and unusual subject matter, Todd has excelled at capturing long exposure photos of rarely seen moments of time.
 
@@ -24,3 +24,7 @@ As a location scout and avid urban explorer, Todd learned to photograph what he 
 > Finding yourself at 3am in a graveyard filming flowers; some may see that as weird, but for me, it's pure tranquility.
 
 Let Todd's night photography and digital storytelling, prove to you that the night is indeed beautiful.
+
+
+
+<!-- iHxmNzMfDj4 -->

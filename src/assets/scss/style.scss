@@ -199,7 +199,7 @@
   .meta {
     margin: 0;
     // font-size: 12px;
-    color: #999;
+    color: rgba(0,0,0,0.5);
   }
   .post-content {
     margin-top: 16px;
@@ -274,7 +274,7 @@ article img {
   }
 }
 
- .blog-post-content blockquote, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4, .blog-post-content h5{
+.blog-post-content blockquote, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4, .blog-post-content h5{
   font-size: clamp(18px, calc(1rem + 2vw), 36px);
 
   // width: clamp(400px, 80vw, 1200px);
@@ -314,7 +314,7 @@ article img {
   // border:1px solid #ccc ;
   // font-size: 16px;
   // line-height: 1;
-
+  text-decoration: none;
   background: linear-gradient(180deg, rgb(34, 26, 32) 1%, #111 99%);
   align-self: center;
   padding: var(--space-sm) var(--space-xl);
@@ -342,7 +342,6 @@ article img {
     &:hover {
       // box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
       // background: #f2f2f2;
-      position:inherit;
     }
   }
   & + .button {
@@ -394,7 +393,7 @@ article img {
 .contact-form {
   margin-top: 36px;
   label {
-
+    color: #fff;
     text-shadow:2px 2px 10px var(--primary);
   }
   input,

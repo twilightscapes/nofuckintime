@@ -1,100 +1,73 @@
-import * as React from "react"
+import React from "react"
+import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 import { useLocation } from "@reach/router"
+import { useStaticQuery, graphql } from "gatsby"
 
-export function Seo({
-  title = "",
-  description = "",
-  pathname = "",
-  image = "",
-  children = null,
-}) {
-  const location = useLocation()
-  const {
-    site: { siteMetadata },
-  } = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          siteTitle
-          siteTitleDefault
-          siteUrl
-          hrefLang
-          siteDescription
-          siteImage
-          twitter
-        }
-      }
-    }
-  `)
+const SEO = ({ title, description, image, article }) => {
+  const { pathname } = useLocation()
+  const { site } = useStaticQuery(query)
 
   const {
-    siteTitle,
-    siteTitleDefault,
+    defaultTitle,
+    titleTemplate,
+    defaultDescription,
     siteUrl,
-    siteDescription,
-    siteImage,
-    hrefLang,
-    twitter,
-  } = siteMetadata
+    defaultImage,
+    twitterUsername,
+  } = site.siteMetadata
 
   const seo = {
-    title: title || siteTitleDefault,
-    description: description || siteDescription,
-    url: pathname ? `${siteUrl}${pathname}` : location.href,
-    image: `${image || siteImage}`,
-    // image = image[0] === "/" ? "https://twilightscapes.com" + image : image
+    title: title || defaultTitle,
+    description: description || defaultDescription,
+    image: `${siteUrl}${image || defaultImage}`,
+    url: `${siteUrl}${pathname}`,
   }
 
-
   return (
-    <Helmet
-      title={title}
-      defaultTitle={siteTitleDefault}
-      titleTemplate={`%s | ${siteTitle}`}
-    >
-      <html lang={hrefLang} />
+    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+      <html lang="en-US" />
+      <link rel="alternate" href={seo.url} hrefLang="en-us" />
+      <link rel="alternate" href={seo.url} hrefLang="en" />
+      <link rel="alternate" href={seo.url} hrefLang="x-default" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      <meta property="og:title" content={seo.title} />
-      <meta property="og:url" content={seo.url} />
-      <meta property="og:description" content={seo.description} />
-      <meta property="og:image" content={seo.image} />
-      <meta property="og:type" content="website" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=5"
+      />
+      {seo.url && <meta property="og:url" content={seo.url} />}
+
+      {(article ? true : null) && <meta property="og:type" content="article" />}
+
+      {seo.title && <meta property="og:title" content={seo.title} />}
+
+      {seo.description && (
+        <meta property="og:description" content={seo.description} />
+      )}
+
+      {seo.image && <meta property="og:image" content={seo.image} />}
+
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:url" content={seo.url} />
-      <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:creator" content={twitter} />
-      <meta name="twitter:image" content={seo.image} />
 
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon-16x16.png"
-      />
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/apple-touch-icon.png"
-      />
+      {twitterUsername && (
+        <meta name="twitter:creator" content={twitterUsername} />
+      )}
 
-<link rel="apple-touch-icon" sizes="180x180" href="/siteimages/apple-splashapple-icon-180.png" />
+      {seo.title && <meta name="twitter:title" content={seo.title} />}
+
+      {seo.description && (
+        <meta name="twitter:description" content={seo.description} />
+      )}
+
+      {seo.image && <meta name="twitter:image" content={seo.image} />}
+
+      <link rel="apple-touch-icon" sizes="180x180" href="/siteimages/apple-splashapple-icon-180.png" />
 <link rel="apple-touch-icon" sizes="167x167" href="/siteimages/apple-splashapple-icon-167.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="/siteimages/apple-splashapple-icon-152.png" />
 <link rel="apple-touch-icon" sizes="120x120" href="/siteimages/apple-splashapple-icon-120.png" />
 
-
+<meta name="apple-mobile-web-app-capable" content="yes" />
 
 <link rel="apple-touch-startup-image"
     href="/siteimages/apple-splash-2048-2732.png"
@@ -158,10 +131,37 @@ export function Seo({
     media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
 
 
-
-
-    
-      {children}
     </Helmet>
   )
 }
+
+export default SEO
+
+SEO.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  article: PropTypes.bool,
+}
+
+SEO.defaultProps = {
+  title: null,
+  description: null,
+  image: null,
+  article: false,
+}
+
+const query = graphql`
+  query SEO {
+    site {
+      siteMetadata {
+        defaultTitle: title
+        titleTemplate
+        defaultDescription: description
+        siteUrl: siteUrl
+        defaultImage: image
+        twitterUsername
+      }
+    }
+  }
+`
