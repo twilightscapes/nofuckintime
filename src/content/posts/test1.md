@@ -11,7 +11,7 @@ youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/stop-taking-photos.jpg
+featuredImage: /assets/transparent.png
 svgImage: /assets/MysteryScience3000.svg
 ---
 Sort of my tribute to the Great Mystery Science Theater 3000 show. 
