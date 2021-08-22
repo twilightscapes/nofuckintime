@@ -138,7 +138,7 @@ const HomePage = ({ data }) => {
 function AddSvg(){
   const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
   return (
-    <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
+    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="animation multimedia" >You need a new browser</object>
   )
 }
 
@@ -218,9 +218,9 @@ const YouTube = frontmatter.youtuber
   <body className="homepage" />
 </Helmet>
 <Seo
-          title={`Night Photo Galleries`}
-          description={`Twilightscapes night photography`}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          title={`No Fuckin Time`}
+          description={`There IS No Fuckin Time`}
+          image={'../default-og-image-blank.jpg'}
         />
       
       
@@ -252,7 +252,7 @@ const YouTube = frontmatter.youtuber
 <StaticImage src="../../static/assets/nft-logo.png" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0', border:'0px solid !important', objectFit:'contain', display:'flex', alignSelf:'center', width:'', marginTop:'2rem', filter: 'drop-shadow( 10px 0 20px rgba(245, 241, 241, 0.808))',}} />
 </div>
 
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
+        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'100vh', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
 
         {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
@@ -262,7 +262,7 @@ const YouTube = frontmatter.youtuber
 
 <section style={{ display:'',}}>
   <article>
-  <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
   {/* onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})} */}
 
@@ -444,7 +444,7 @@ const YouTube = frontmatter.youtuber
     padding:'0',
   }}
 >
-  Follow me
+  first text
 </h2>
 </ScrollAnimation>
 
@@ -461,7 +461,7 @@ const YouTube = frontmatter.youtuber
     padding:'0',
   }}
 >
-  into the
+ second text
 </h2>
 </ScrollAnimation>
 
@@ -480,7 +480,7 @@ const YouTube = frontmatter.youtuber
     padding:'0',
   }}
 >
-  Night
+  third text
 </h2>
 </ScrollAnimation>
 
@@ -518,11 +518,11 @@ const YouTube = frontmatter.youtuber
   {/* <div style={{display:'flex', justifyContent:'center', marginBottom:'20vh'}}>
   <Link
       className="button"
-      to="/experiences/"
+      to="/archive/"
       title="See More Galleries"
       style={{color:'#fff'}}
     >
-      See More Experiences?
+      See More?
       <span className="icon -right">
         <RiArrowRightSLine />
       </span>
@@ -535,9 +535,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-{/* <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation> */}
+
 
     </Layout>
     </CustomBox>

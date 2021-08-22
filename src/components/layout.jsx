@@ -86,7 +86,7 @@ export function Layout({ children }) {
 
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
-  <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
+  {/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle"> */}
 
   {/* <div className="cornertext" style={{textShadow:'2px', color:'#fff',}}>
   <IoMdFingerPrint style={{fontSize:'50px', }}/>
@@ -94,13 +94,13 @@ export function Layout({ children }) {
 </span>
     </div> */}
 
-<Bug className="bug" style={{fontSize:'20px', maxWidth:'80px', opacity:'.3' }}/>
+{/* <Bug className="bug" style={{fontSize:'20px', maxWidth:'80px', opacity:'.3' }}/> */}
 
 {/* <span>MENU</span> */}
     {/* <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div> */}
-  </label>
+    <div className="spinner diagonal part-2"></div>
+  </label> */}
 
 
   <label htmlFor="openSidebarMenu" className="backdrop1" ></label>
@@ -140,7 +140,7 @@ export function Layout({ children }) {
 <span>NO FUCKIN' TIME</span>
 </Link>
  </li>
- <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
+ {/* <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
 <span>NO FUCKIN' TIME</span>
@@ -152,7 +152,7 @@ export function Layout({ children }) {
  <Link className="navbar-item txtshadow" to="/contact/">
 Contact Me<span>I love feedback!</span>
 </Link>
-</li>
+</li> */}
 
 
  {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
@@ -214,12 +214,12 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      <li className="carto">
+      {/* <li className="carto">
               <Link className="navbar-item txtshadow" to="/photos/">
       
               View My Photos <span style={{color:'var(--primary-color)',}}>Buy  one to say thanks!</span>
               </Link>
-      </li> 
+      </li>  */}
 
 {/* <li className="carto">
               <Link className="navbar-item txtshadow" to="/archive/">
@@ -275,7 +275,7 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      <Toast show={loading || didJustAddToCart} >
+      {/* <Toast show={loading || didJustAddToCart} >
         {!didJustAddToCart ? (
           "Updating…"
         ) : (
@@ -284,7 +284,7 @@ Contact Me<span>Ordering Questions?</span>
             <div style={{fontSize:'30px', marginLeft:'10px'}}><ImArrowRight /></div>
           </>
         )}
-      </Toast>
+      </Toast> */}
  
 
 
@@ -311,7 +311,7 @@ Contact Me<span>Ordering Questions?</span>
       
       {/* <Consent /> */}
      {/* <Install /> */}
-      <Footer />
+      {/* <Footer /> */}
       
       </>
     </div>

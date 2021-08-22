@@ -1,21 +1,23 @@
 ---
 template: blog-post
-title: Test 1
-slug: /test1
+title: Mystery Science Theater 3021
+slug: /mystery-science-theater-3021
 date: 2021-08-13 10:43
-description: Thanks for visiting
-youtuber: "u0WCaoF9vSc"
-youtubestart: "0"
+description: A bit of a tribute to the great MST3000
+youtuber: "XjuLZwlDxh8"
+youtubestart: "2000"
 youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/stop-taking-photos.jpg
-svgImage: /assets/null.svg
+svgImage: /assets/MysteryScience3000.svg
 ---
-Thank you for visiting! 
+Sort of my tribute to the Great Mystery Science Theater 3000 show. 
+
+
 
  
 
-
+<!-- XjuLZwlDxh8 -->

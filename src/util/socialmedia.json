@@ -2,23 +2,23 @@
   "socialIcons": [
     {
       "icon": "facebook",
-      "url": "https://facebook.com/twilightscapes"
+      "url": "https://facebook.com/"
     },
     {
       "icon": "instagram",
-      "url": "https://www.instagram.com/twilightscapes/"
+      "url": "https://www.instagram.com//"
     },
     {
       "icon": "linkedin",
-      "url": "https://www.linkedin.com/in/toddlambert"
+      "url": "https://www.linkedin.com/in/"
     },
     {
       "icon": "youtube",
-      "url": "https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ"
+      "url": "https://www.youtube.com/channel/"
     },
     {
       "icon": "twitter",
-      "url": "https://twitter.com/toddlambert"
+      "url": "https://twitter.com/"
     }
   ]
 }

@@ -194,10 +194,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Clicking Skip Sucks - Go AdFree `,
-        short_name: `AdFree`,
+        name: `No Fuckin Time `,
+        short_name: `NFT`,
         start_url: `/?user_mode=app`,
-        description: `Clicking Skip, Sucks - Go AdFree`,
+        description: `No Fuckin Time`,
         background_color: `#222`,
         lang: `en`,
         theme_color: `#222`,
