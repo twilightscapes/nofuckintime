@@ -11,6 +11,7 @@ import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
 import ReactPlayer from 'react-player/lazy'
+import YouTube from "../components/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
@@ -169,7 +170,10 @@ function AddSvg(){
 <br /><div style={{display:'flex', justifyContent:'center', border:'0px solid blue', position:'relative', bottom:'0', zIndex:'6', }}><input />todd was here</div>
 
 
+<div style={{display:'flex', justifyContent:'center', border:'0px solid blue', position:'relative', bottom:'-50px', zIndex:'6', }}>
 
+I want this down here
+</div>
         {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
 
 </div>
@@ -386,7 +390,7 @@ function AddSvg(){
 export default Post
 
 export const pageQuery = graphql`
-  query BlogPostQuery($id: String!) {
+  query BlogPostQueryBlogPostQuery($id: String!) {
     site {
       siteMetadata {
         siteTitle

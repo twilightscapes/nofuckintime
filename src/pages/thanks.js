@@ -33,6 +33,12 @@ const Thanks = () => (
         Lets go back to Homepage
       </Link>
     </div>
+
+
+
+    <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src="https://youtu.be" frameBorder="0" playsInline />
+
+
     <div className="spacer33"></div> 
     {/* <div className="spacer66"></div>  */}
   </Layout>
