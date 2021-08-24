@@ -221,10 +221,10 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 </div>
 {/* <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}} /> */}
 
-    <div className="" style={{display:'flex', justifyContent:'center', width:'100%', height:'100%', margin:'0 auto',}}>
-    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', bottom:'-150px',transition:' all 0.85s', animation:'fade .8s forwards'}}>
+<div className="" style={{display:'flex', justifyContent:'center', width:'100%', margin:'0 auto', flexDirection:'column'}}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid #333', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'space-around', alignItems:'center'  }}>
 
-<p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center'}}>Paste YouTube Link Here:
+    <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'45%', paddingRight:'15px'}}>Paste YouTube Link Here:
 </p>
 <input
           id=""
@@ -236,7 +236,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           onChangeCapture={this.handleShow}
            
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
-          autoFocus
+          
           className="youtubelinker"
         />
 
@@ -251,29 +251,28 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
   : 
 
   
-<div className="" style={{display:'flex', justifyContent:'center', width:'100vw', margin:'0 auto',}}>
+<div className="" style={{display:'flex', justifyContent:'center', width:'100%', margin:'0 auto', flexDirection:'column'}}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid #333', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'space-around', alignItems:'center'  }}>
+
+    <p className="headline" style={{fontSize:'100%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'45%',paddingRight:'15px'}}>Paste YouTube Link Here:
+</p>
+<input
+      id=""
+      type="text"
+      name="youtubelink"
+      value={this.state.youtubelink}
+      onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+      onInput={this.handleInputChange}
+      onChangeCapture={this.handleShow}
+       
+      placeholder="example: https://youtu.be/cVsQLlk-T0s"
       
-      <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'15', position:'relative', bottom:'-150px',transition:' all 0.85s', animation:'fade .8s forwards'}}>
-  
-  <p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center'}}>Paste YouTube Link Here:
-  </p>
-  <input
-            id=""
-            type="text"
-            name="youtubelink"
-            value={this.state.youtubelink}
-            onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
-            onLoad={this.handleInputChange}
-            // onChangeCapture={this.handleShow}
-            // value="https://youtu.be/Ahas9vPsFW8"
-            placeholder="example: https://youtu.be/cVsQLlk-T0s"
-            autoFocus
-            className="youtubelinker"
-          />
-          
-  </form>
-      
-      </div>
+      className="youtubelinker"
+    />
+
+</form>
+
+</div>
   }
   
 
