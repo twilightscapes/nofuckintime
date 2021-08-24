@@ -1842,13 +1842,13 @@ border:1px solid #222;
 
 
 
-  .makeStyles-copyContainer:{
-    position: relative;
-    padding: 14px;
-    border: 1px solid grey;
-    color: #263238;
-    font-family: inherit !important;
-    background: #ff0000; 
+  .makeStyles-copyContainer{
+  position:relative;
+  padding:14px;
+  border:1px solid grey;
+  color:#263238;
+  font-family: inherit !important;
+  background: #ff0000; 
   }
   
   .makeStyles-copyContainer-5 {
