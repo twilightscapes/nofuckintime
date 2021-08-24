@@ -190,7 +190,7 @@ export function Footer() {
         {/* <Social /> */}
 
         <div className="social-icons" style={{textAlign:'center', justifyContent:'center', margin:'3rem 5px'}}>
-  <div className="socialtext" style={{fontSize:'14px'}}>I&apos;m<br />Social</div>
+  <div className="socialtext" style={{fontSize:'14px'}}>We&apos;re<br />Social</div>
         {sIcons}
         </div>
         </div>
