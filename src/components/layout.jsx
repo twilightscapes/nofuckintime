@@ -311,7 +311,7 @@ Contact Me<span>Ordering Questions?</span>
       
       {/* <Consent /> */}
      {/* <Install /> */}
-      {/* <Footer /> */}
+      <Footer />
       
       </>
     </div>

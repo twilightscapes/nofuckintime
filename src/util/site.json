@@ -1,19 +1,19 @@
 {
   "meta": {
     "iconimage": "/assets/nft-logo.png",
-    "companyname": "No Fuckin' Time",
-    "siteUrl": "https://nofuckintime.com/",
-    "twitterUsername": "nofuckintime1",
-    "siteTitleDefault": "No Fuckin' Time",
-    "siteTitle": "No Fuckin' Time",
+    "companyname": "VidSock",
+    "siteUrl": "https://vidsock.com/",
+    "twitterUsername": "vidsocks",
+    "siteTitleDefault": "VidSock",
+    "siteTitle": "VidSock",
     "titleTemplate": "%s",
-    "twitter": "yourtwittername",
+    "twitter": "vidsocks",
     "siteImage": "/default-og-image.jpg",
-    "siteDescription": "No Fuckin' Time - so no waiting, do it now",
-    "title": "No Fuckin' Time",
+    "siteDescription": "VidSock - no waiting, do it now",
+    "title": "VidSock",
     "hrefLang": "en",
     "image": "/assets/default-og-image.jpg",
-    "description": "No Fuckin' Time - so no waiting, do it now "
+    "description": "VidSock - no waiting, do it now "
   },
   "ga": "UA-204514914-1"
 }

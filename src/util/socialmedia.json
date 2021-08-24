@@ -2,23 +2,23 @@
   "socialIcons": [
     {
       "icon": "facebook",
-      "url": "https://facebook.com/"
+      "url": "https://facebook.com/vidsocks"
     },
     {
       "icon": "instagram",
-      "url": "https://www.instagram.com//"
+      "url": "https://www.instagram.com/vidsocks/"
     },
     {
-      "icon": "linkedin",
-      "url": "https://www.linkedin.com/in/"
+      "icon": "OpenSea",
+      "url": "https://opensea.io/twilightscapes/vidsocks"
     },
     {
       "icon": "youtube",
-      "url": "https://www.youtube.com/channel/"
+      "url": "https://www.youtube.com/channel/vidsocks"
     },
     {
       "icon": "twitter",
-      "url": "https://twitter.com/"
+      "url": "https://twitter.com/vidsocks"
     }
   ]
 }

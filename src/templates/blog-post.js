@@ -8,6 +8,7 @@ import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 // import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
+import NFTDetails from "../components/nft-details"
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
@@ -153,7 +154,7 @@ function AddSvg(){
           width="100%"
           height="100%"
      
- 
+          controls={false}
           autoplay={true}
           background={true}
           loop
@@ -161,23 +162,23 @@ function AddSvg(){
           playsinline
           muted={true}
           showPortrait
-        //   playIcon={
-        //     <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
               
       
       
       
-        // <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-        //   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-        //   <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
           
-        //   </div>
-        //   </button>}
+          </div>
+          </button>}
       
       
       
-        //     light="../assets/transparent.png"
+            light="../assets/transparent.png"
           />
 
 
@@ -192,6 +193,52 @@ function AddSvg(){
   }
 
 
+  function Iframer2() {
+    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    return (
+
+ <div>
+      <ReactPlayer
+          className='react-player'
+          url={iframeUrl}
+          width="100%"
+          height="100%"
+          playing
+          controls={true}
+          autoplay={true}
+          background={true}
+          loop
+          muted={false}
+          showPortrait
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+              
+      
+      
+      
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>View Original</span>
+          
+          </div>
+          </button>}
+      
+      
+      
+            light="../assets/transparent.png"
+          />
+
+
+
+
+
+        {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
+
+</div>
+
+    )
+  }
 
 
 
@@ -334,7 +381,11 @@ function AddSvg(){
             ""
           )}
 
-{/* <YouTube /> */}
+
+
+
+
+
 
       </div>
 
@@ -343,10 +394,8 @@ function AddSvg(){
 
 
 <br />
+<br />
 
-<br />
-<br />
-<GoBack />
 
 
 
@@ -361,20 +410,59 @@ function AddSvg(){
         </header>
 
 
+        <GoBack />
+ <br />
+<br />
 
 
 
-      
+<div className="home-posts1" style={{clear:'both', display:'flex', textAlign:'left', width:'100vw'}}>
+
+
+
+<div style={{padding:' 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', width:'55%', border:'0px solid yellow'}}>
+
+<h3 style={{padding:'2rem 1rem'}}>Artist's Notes:</h3>
+
+      <div
+        className="blog-post-content" style={{ padding:'0 2rem', fontSize:'1.1rem', textAlign:'left', width:'90%', color:'inherit !important'}}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />      
+     
+
+</div>
+
+
+
+<div style={{width:'40%', padding:'1rem'}}>
+
+        {YouTube ? (
+
+            <svg version="1.1" className="center-block"  width="100%" height="50vh"  >
+            <g>
+                <g transform="translate(0,0) scale(1)">
+                    <rect x="0" y="0" width="100%" height="100%"></rect>
+                    <foreignObject x="0" y="0" width="100%" height="100%">
+                    <Iframer2 />
+                    </foreignObject>
+                </g>
+            </g>
+        </svg>
+       
+       
+          ) : (
+            ""
+          )}
+
+</div>
+ </div>
+
+
+
+        
         
 
-        
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />      
-        
 
-        
       </article>
 
 
@@ -389,9 +477,28 @@ function AddSvg(){
 
 
 
-   <ShareSocial />
+   
+
+
+
+   <NFTDetails />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ShareSocial />
       <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
-      I always love to read your comments!
+      Find a good one? Post your link Below and then Share it Above. 
 <CommentBox />
      </div>
     
