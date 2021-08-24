@@ -18,6 +18,19 @@ Sort of my tribute to the Great Mystery Science Theater 3000 show.
 
 
 
+<svg version="1.1" class="center-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100vh"  style="border: 0px solid black;">
+    <g>
+        <g transform="translate(0,0) scale(1)">
+            <rect x="0" y="0" width="100%" height="100%"></rect>
+            <foreignObject x="0" y="0" width="100%" height="400">
+                <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="100%" src="https://www.youtube.com/embed/XjuLZwlDxh8" frameBorder="0" playsInline />
+            </foreignObject>
+        </g>
+    </g>
+</svg>
+
+
+
  
 
 <!-- XjuLZwlDxh8 -->
