@@ -28,12 +28,12 @@ const NFTDetails = () => (
 <CustomBox style={{}}>
 
 
-<Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'1000px',   overflow:'hidden', marginTop:'40px',}}>
-        <h2 style={{fontSize:'140%', textAlign:'center', margin:'1rem 0'}}>NFT Details</h2>
+<Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'',   overflow:'hidden', marginTop:'40px',}}>
+        <h2 style={{fontSize:'140%', textAlign:'center', margin:'1rem 0'}}>How VidSocks Work</h2>
     <TabList style={{width:'100%', border:'0px solid yellow',}}>
     <Tab><div className="iconmenu"><CgRatio /><span>Specs</span></div></Tab>
     <Tab><div className="iconmenu"><RiSecurePaymentLine/><span>Secure</span></div></Tab>
-    <Tab><div className="iconmenu"><HiOutlineScale/><span>Legal</span></div></Tab>
+    <Tab><div className="iconmenu"><HiOutlineScale/><span>Standards</span></div></Tab>
       {/* <Tab><div className="iconmenu"><FiCamera /><span>Tech</span></div></Tab> */}
       <Tab><div className="iconmenu"><CgInfo /><span>FAQ</span></div></Tab>
       
@@ -42,13 +42,12 @@ const NFTDetails = () => (
  
 
    <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
-           <strong style={{fontSize:'1.5rem'}}>Specs</strong><br /><br />
+           <strong style={{fontSize:'1.5rem'}}>VidSocks are the World's <strong>FIRST and ONLY</strong>, 100% dynamically user generated Art!</strong><br /><br />
            <p>
-           Edited and production output to Tiff file format<br /> <br />
-           Typical file size 30-50MB<br /> <br />
-           Average dimensions range from 4988×3325 to 5481x3653 or greater<br /> <br />
-           All Twilightscapes are shot using the latest state-of-the-art equipment and lenses.
-           <br /><br />Canon 5D series, Sony A7R series and Sony A7S series.
+           Each VidSock is uniquely created by the artist and then delivered to the world for the art to be altered and changed by its viewers thus making each VidSock truly dynamic.<br /> <br />
+           Depending on the Artist's vision, they can choose to modify your NFT long after it has been minted and delivered to you. The artist has the flexibility to alter, make adjustments, add new items, or even completely change your individual art. Only your VidSock will have these totally unique modifications. Plus, each VidSock can be changed on a weekly basis or on special dates or occasions or even years later! It's up to the Artist and their vision for their VidSock.<br /> <br />
+           Of course, you as the owner of the VidSock, always have the option to view both the new and the original versions at any time.<br /> <br />
+
            </p>
            
     </TabPanel>
@@ -56,45 +55,54 @@ const NFTDetails = () => (
 
 
     <TabPanel style={{padding:'0 1.5rem', width:'100%',}}>
-            <strong style={{fontSize:'1.5rem'}}>Secure and spam free</strong><br /><br />
-            <p>All transactions are secured using the latest 128-bit SSL encryption. <br />
+            <strong style={{fontSize:'1.5rem'}}>Individual VidSocks are just the beginning of the fun.</strong><br /><br />
+            <p>With each winning bid, you not only get to take home your new VidSock, but you will also get a full 90 days of complete access to our new VidSock Video Blog Platform™ (a $120 value - and currently invite only). The very same platform you're visiting right now, You will have your own VidSock Platform allowing you to easily create dynamic VidSocks of your own and share or sell them to the world.
             <br />
-            Full PCI Compliance - Payment Card Industry Data Security Standard (PCI DSS)<br /> <br />
-            I value your privacy and will always put your security first on all accounts. <br /> <br />
+            <br />
+             If you can blog, you can make stunning video and animated artwork based blogs. Then start selling them and prepare to take over the world! <br />
+            <br />
+            So, do you want to know more about the new VidSock Platform? Well, click the next tab and find out why the VidSock platform is right for you.<br /> <br />
             </p>
 
     </TabPanel>
 
 
     <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
-    <strong style={{fontSize:'1.5rem'}}>Legal</strong><br /><br />
+    <strong style={{fontSize:'1.5rem'}}>Built Right In All The Right Spots</strong><br /><br />
 
 
-<h4>There are two licensing options:</h4>
+    <strong style={{fontSize:'1.3rem'}}>The VidSock Platform was built for the specific needs of photographers and other creative artists because it was built by one.</strong>
 <ol style={{margin:'1rem 3rem'}}>
-<li style={{}}>Personal Use License which includes printing rights. All use and restrictions are limited to private use only.</li>
+<li style={{}}>A complete system including video blog with unlimited posts, and customizable home page, about and contact pages with integrated contact form.</li>
 <br />
-<li style={{}}>Unlimited Royalty-Free License which includes all rights of the personal use plus commercial use.</li>
+<li style={{}}>Built right in the right places. The site is built from the ground up to utelize modern technologies and yet do so in the correct way and one that Google likes. </li>
+<br />
+<li style={{}}>Top Scores out of the box - Accessibility, SEO, Best Practices, oh.. and its a full-blown Web App too!</li>
+<br />
+<li style={{}}>Automated backups with intant rollbacks to any version. Site is automatically load-balanced and served from a Global Edge Network so your site is lightning fast no matter where your visitors come from.</li>
+<br />
+<li style={{}}>Want just the stats? ok:<br />
+100GB/Month Bandwidth<br />
+100 Site Form submission per Month<br />
+Custom Domain names available
+</li>
+<br />
+<li style={{}}>Need more? The VidSock Platform also has complete E-Commerce integration with Shopify. Not only will you be able to sell your products right from your blog pages, but we utelize Shopify's Developer API which means it only costs $9 a month to run a full featured store. This saves you almost $20 off their normal base $28 monthly fee.</li>
+
+<li style={{}}>Seo? Social? It's in the bag. Our entire content management system(CMS) behind out plaltform is designed to make producing top-notch SEO-minded content that ranks incredibly well in Google page rankings. Also, every page and every post has custom graphics for default social image previews and custom page titles and descriptions on social media sites. Our sites kick butt. Don't believe us? Check out how we do with <a href="https://pagespeed.google.com" target="_blank" noreferrer nofollow>Google Page Speed</a>.</li> 
 </ol>
 
-<p style={{fontSize:'1.2rem', textAlign:'center', fontWeight:'bold'}}>That’s it.</p> 
 
-<blockquote className="frontquote" style={{width:'70%', margin:'0 auto'}}>
-<p>I believe art should be for everyone, not just snobby elite art collectors. It should be available to and priced for everyone. I just hope you enjoy the art.</p>
-<div style={{textAlign:'right', marginRight:'20%', marginTop:'10px'}}> – Todd
+
+<blockquote className="frontquote" style={{width:'70%', margin:'2rem auto'}}>
+<p>Beyond just the best industry-leading performance and visibility, each VidSock Platform has tons of great built-in features such as image zooming, tab panels, custom color options for both light and dark themes. The sites are also user installable PWA (Progressive Web Apps) which means your site can be installed on any device without any need for expensive and complex App Stores.  </p>
+
+<div style={{textAlign:'right', marginRight:'20%', marginTop:'20px'}}> – Todd
 </div></blockquote>
 
-           {/* <p>
-           Twilightscapes offers two types of license models: royalty-free ("RF") and rights-managed ("RM").</p>
-
-           <p>
-            Royalty-free means that the license fee is paid once and there is no need to pay additional royalties if the content is re-used. <br />Royalty-free content is licensed for worldwide, unlimited and perpetual use.</p>
-
-            <p>Rights-managed content is allowed to be printed in any format suited for private display. Rights-managed content cannot be distributed or used in public in any way that compromises Todd Lambert's abilities to resell the content.<br /><br />
-Rights-managed content is licensed for specific types of private use, and limits the use of the content to private use and display only.</p> */}
 
             <p style={{textAlign:'center', fontSize:'130%', margin:'2rem 0',}}>
-              <Link to="/legal/" style={{color:'inherit'}}>View License Agreement</Link>
+              {/* <Link to="/legal/" style={{color:'inherit'}}>View License Agreement</Link> */}
             
    
            <br />
