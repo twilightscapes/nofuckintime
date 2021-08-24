@@ -249,7 +249,7 @@ const YouTube = frontmatter.youtuber
 
 <div className="logopulse" style={{display:'flex', justifyContent:'center', marginTop:'0'}}>
 
-<StaticImage src="../../static/assets/nft-logo.png" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0', border:'0px solid !important', objectFit:'contain', display:'flex', alignSelf:'center', width:'', marginTop:'2rem', filter: 'drop-shadow( 10px 0 20px rgba(245, 241, 241, 0.808))',}} />
+{/* <StaticImage src="../../static/assets/nft-logo.png" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0', border:'0px solid !important', objectFit:'contain', display:'flex', alignSelf:'center', width:'', marginTop:'2rem', filter: 'drop-shadow( 10px 0 20px rgba(245, 241, 241, 0.808))',}} /> */}
 </div>
 
         <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'100vh', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>

@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Night Photography
 tagline: Twilightscapes - Night Photography by Todd Lambert
-featuredImage: /assets/nft-logo.png
+featuredImage: /assets/transparent.png
 secondaryImage: /assets/transparent.png
 cta:
   ctaText: "See the photos"

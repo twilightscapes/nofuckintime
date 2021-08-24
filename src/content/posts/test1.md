@@ -7,7 +7,7 @@ description: A bit of a tribute to the great MST3000
 youtuber: "XjuLZwlDxh8"
 youtubestart: "2000"
 youtubeend: "0"
-youtubemute: "1"
+youtubemute: "false"
 youtubecontrols: "0"
 svgzindex: "0"
 underlayImage: /assets/transparent.png

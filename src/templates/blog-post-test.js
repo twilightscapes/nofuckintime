@@ -10,30 +10,15 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
-import ReactPlayer from 'react-player/lazy'
 import YouTube from "../components/youtube"
+import ReactPlayer from 'react-player/lazy'
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
 import TimeAgo from 'react-timeago'
-const styles = {
-  "article blockquote": {
-    "background-color": "cardBg",
-  },
-  pagination: {
-    a: {
-      color: "inherit",
-      "&.is-active": {
-        color: "text",
-      },
-      "&:hover": {
-        color: "inherit",
-      },
-    },
-  },
-}
+
 
 
 
@@ -46,7 +31,7 @@ const Pagination = props => (
 
 
   
-  <div className="pagination -post" sx={styles.pagination}>
+  <div className="pagination -post">
     <ul>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
@@ -103,6 +88,7 @@ const Post = ({ data, pageContext }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
+    const Purl = frontmatter.youtubelink
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
   if (!Svg) {
@@ -119,76 +105,6 @@ function AddSvg(){
 }
 
 
-  const YouTube = frontmatter.youtuber
-
-  if (!YouTube) {
-
-  }
-  else{
-    
-    <Iframer />
-  }
-
-  function Iframer() {
-    const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
-    return (
-
- <div>
-      <ReactPlayer
-          className='react-player'
-          url={Url}
-          width="100%"
-          height="100%"
-     
- 
-          autoplay={true}
-          background={true}
-          loop
-          playing
-          playsinline
-          muted={true}
-          showPortrait
-          playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
-              
-      
-      
-      
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-      
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
-          
-          </div>
-          </button>}
-      
-      
-      
-            light="../assets/transparent.png"
-          />
-
-<br /><div style={{display:'flex', justifyContent:'center', border:'0px solid blue', position:'relative', bottom:'0', zIndex:'6', }}><input />todd was here</div>
-
-
-<div style={{display:'flex', justifyContent:'center', border:'0px solid blue', position:'relative', bottom:'-50px', zIndex:'6', }}>
-
-I want this down here
-</div>
-        {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
-
-</div>
-
-    )
-  }
-
-
-
-
-
-  // const OverlayImage = frontmatter.overlayImage
-  //   ? frontmatter.overlayImage.childImageSharp.gatsbyImageData
-  //   : ""
-
 
 
 
@@ -199,23 +115,7 @@ I want this down here
     next,
   }
 
-//   const Svg2 = frontmatter.overlayImage
- 
-//   if (!Svg2) {
-    
-//   }
-//   else{
-//     <AddSvg2 />
-//   }
-// function AddSvg2(){
-//   const svg2Url = "../assets/" + frontmatter.overlayImage.relativePath + ""
-//   return (
-//     <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'', height:'',  }} >You need a new browser</object>
-//   )
-// }
 
-
-  
   return (
     
     <Layout className="page">
@@ -229,21 +129,15 @@ I want this down here
       />
 
 
-  
-{/* <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}> */}
-
-
 
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
+<iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={frontmatter.youtubelink} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> 
+<YouTube />
 
 
-     
 
-
-
-<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0',}}>
-{Image ? (
+{/* {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
@@ -256,8 +150,8 @@ I want this down here
        
             <StaticImage src="../../static/default-og-image.jpg" alt="No Fuckin Time Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
-          )}
-</div>
+          )} */}
+
 
 
 
@@ -266,34 +160,15 @@ I want this down here
 
  
 
-  {Svg ? (
+  {/* {Svg ? (
             <AddSvg />
        
           ) : (
             ""
-          )}
-
-
-
-{/* {Svg2 ? (
-            <AddSvg2 />
-       
-          ) : (
-            ""
           )} */}
 
-  {/* {OverlayImage ? (
-            <GatsbyImage
-              image={OverlayImage}
-              alt={frontmatter.title + " - image"}
-              className="layer2"
-              style={{height:'100vh', zIndex:'1', postion:'absolute', bottom:'0', left:'0', objectFit:'contain' }}
-            />
-          ) : (
-            ""
-          )} */}
 
-{UnderlayImage ? (
+{/* {UnderlayImage ? (
             <GatsbyImage
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
@@ -304,18 +179,36 @@ I want this down here
             
           ) : (
             ""
-          )}
+          )} */}
 
 
-  
-{YouTube ? (
-            <Iframer />
-       
-          ) : (
-            ""
-          )}
+<ReactPlayer
+  className='react-player'
+      url={Purl}
+      width='100%'
+      height='100%'
+      shownfo={false}
+      controls={true}
+      // autoplay={true}
+      playing
+      fullscreen
+      color="white"
+      muted={false}
+      // playIcon={<button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
+        
 
 
+
+      //   <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+      //   <div style={{ textAlign:'center', fontSize:'30px'}}>
+      //      Ads Removed!</div>
+      // <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      // <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+      
+      // </div>
+      // </button>}
+      // light="../static/assets/transparent.png"
+    />
 
 
       </div>
@@ -342,12 +235,6 @@ I want this down here
           </section>
         </header>
 
-
-
-
-
-      
-        
 
         
         <div
@@ -390,7 +277,7 @@ I want this down here
 export default Post
 
 export const pageQuery = graphql`
-  query BlogPostQueryBlogPostQuery($id: String!) {
+  query BlogPostQuery($id: String!) {
     site {
       siteMetadata {
         siteTitle

@@ -2,6 +2,7 @@
 // import React from "react"
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
@@ -11,6 +12,7 @@ import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
 import ReactPlayer from 'react-player/lazy'
+import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
@@ -49,7 +51,7 @@ const Pagination = props => (
     <ul>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
-          <Link to={props.previous.frontmatter.slug} rel="prev">
+          <Link to= {props.previous.frontmatter.slug + "/"} rel="prev">
             <p
               style={{
                 color: "inherit",
@@ -68,7 +70,7 @@ const Pagination = props => (
       )}
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li>
-          <Link to={props.next.frontmatter.slug} rel="next">
+          <Link to={props.next.frontmatter.slug + "/"} rel="next">
             <p
               style={{
                 color: "inherit",
@@ -89,7 +91,14 @@ const Pagination = props => (
 
 
 
+
+
+
+
 const Post = ({ data, pageContext }) => {
+
+
+
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
@@ -111,31 +120,36 @@ const Post = ({ data, pageContext }) => {
     <AddSvg />
   }
 function AddSvg(){
-  const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
+  // const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
+
+  const svgUrl = frontmatter.svgImage.publicURL
+
+
+
   return (
-    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} >You need a new browser</object>
+    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
 
 
   const YouTube = frontmatter.youtuber
 
-  if (!YouTube) {
-
+  if (YouTube) {
+    <Iframer />
   }
   else{
+
     
-    <Iframer />
   }
 
   function Iframer() {
-    const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
  <div>
       <ReactPlayer
           className='react-player'
-          url={Url}
+          url={iframeUrl}
           width="100%"
           height="100%"
      
@@ -147,26 +161,26 @@ function AddSvg(){
           playsinline
           muted={true}
           showPortrait
-          playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+        //   playIcon={
+        //     <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
               
       
       
       
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+        // <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+        //   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+        //   <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
           
-          </div>
-          </button>}
+        //   </div>
+        //   </button>}
       
       
       
-            light="../assets/transparent.png"
+        //     light="../assets/transparent.png"
           />
 
-<br /><div style={{display:'flex', justifyContent:'center', border:'0px solid blue', position:'relative', bottom:'0', zIndex:'6', }}><input />todd was here</div>
+
 
 
 
@@ -215,12 +229,17 @@ function AddSvg(){
   return (
     
     <Layout className="page">
+
+<Helmet>
+  <body className="blogpost" />
+</Helmet>
+
       <Seo
         title={frontmatter.title}
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={"https://nofuckintime.com" + getSrc(frontmatter.featuredImage) }
+        image={"https://twilightscapes.com" + getSrc(frontmatter.featuredImage) }
         article={true}
       />
 
@@ -230,7 +249,7 @@ function AddSvg(){
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -238,19 +257,19 @@ function AddSvg(){
 
 
 
-<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0',}}>
+<div style={{display:'block', width:'100vw', height:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:''}}>
 {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
             />
             
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="No Fuckin Time Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 </div>
@@ -303,6 +322,10 @@ function AddSvg(){
           )}
 
 
+<div style={{position:'absolute', top:'0', zIndex:'1'}}>
+<YouTubed />
+</div>
+
   
 {YouTube ? (
             <Iframer />
@@ -311,8 +334,7 @@ function AddSvg(){
             ""
           )}
 
-
-
+{/* <YouTube /> */}
 
       </div>
 
@@ -361,9 +383,15 @@ function AddSvg(){
       {(previous || next) && <Pagination {...props} />}
       </div>
 
+
+
+   
+
+
+
    <ShareSocial />
       <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
-        Got something to say?
+      I always love to read your comments!
 <CommentBox />
      </div>
     
@@ -386,7 +414,7 @@ function AddSvg(){
 export default Post
 
 export const pageQuery = graphql`
-  query BlogPostQuery($id: String!) {
+  query BlogPostQueryBlogPostQuery($id: String!) {
     site {
       siteMetadata {
         siteTitle
@@ -419,7 +447,7 @@ export const pageQuery = graphql`
           }
         }
         svgImage{
-          relativePath
+          publicURL
         }
 
         underlayImage {

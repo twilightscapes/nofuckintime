@@ -36,7 +36,7 @@ const Thanks = () => (
 
 
 
-    <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src="https://youtu.be" frameBorder="0" playsInline />
+    <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src="https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ" frameBorder="0" playsInline />
 
 
     <div className="spacer33"></div> 
