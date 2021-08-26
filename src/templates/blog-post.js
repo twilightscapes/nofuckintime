@@ -616,7 +616,7 @@ Add your favorites in the comments below!
 
 
 {ShareThis ? (
-<div style={{width:'40%', padding:'0', margin:'0 auto'}}>
+<div style={{width:'100%', padding:'0', margin:'0 auto'}}>
   
                     <ShareSocial />
     
@@ -650,6 +650,10 @@ Add your favorites in the comments below!
             ""
           )}
       
+
+      <div style={{position:'relative', bottom:'', left:'0', right:'0', maxWidth:'100vw', margin:'2rem 0', zIndex:'1', display:'flex', justifyContent:'center'}}>
+  <StaticImage className="homepage-bg" src="../../static/assets/nft-logo.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
+</div>
 
    
    <br />

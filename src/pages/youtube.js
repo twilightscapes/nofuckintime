@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
 // import ShareSocial from '../components/share' 
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 // import { Helmet } from "react-helmet"
 // import { Seo } from "../components/seo"
 import { FaRegPlusSquare } from 'react-icons/fa';
@@ -218,15 +218,15 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     </form> */}
 
 
-<div style={{position:'relative', bottom:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'1', display:'flex', justifyContent:'center'}}>
-  {/* <StaticImage className="homepage-bg" src="../../static/assets/nft-logo.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} /> */}
-</div>
+{/* <div style={{position:'relative', bottom:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'1', display:'flex', justifyContent:'center'}}>
+  <StaticImage className="homepage-bg" src="../../static/assets/nft-logo.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
+</div> */}
 {/* <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}} /> */}
 
-<div className="" style={{display:'flex', justifyContent:'space-around', width:'100%', margin:'5px auto', flexDirection:'row'}}>
+<div className="" style={{display:'flex', justifyContent:'center', width:'100%', margin:'5px auto', flexDirection:'row', maxWidth:'1000px'}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid #333', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'center', alignItems:'center'  }}>
 
-    <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'48%', paddingRight:'15px'}}>Paste YouTube Link:
+    <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'250px', marginRight:'15px'}}>Paste YouTube Link:
 </p>
 <input
           id=""
@@ -258,9 +258,9 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
   
 <div className="" style={{display:'flex', justifyContent:'space-around', width:'100%', margin:'0 auto', flexDirection:'row'}}>
-    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid #333', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'5px auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'space-between', alignItems:'center'  }}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'1px solid red', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'5px auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'space-between', alignItems:'center'  }}>
 
-    <p className="headline" style={{fontSize:'100%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'45%',paddingRight:'15px'}}>Paste YouTube Link:
+    <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'250px', marginRight:'15px'}}>Paste YouTube Link:
 </p>
 <input
       id=""
