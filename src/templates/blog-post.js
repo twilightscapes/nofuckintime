@@ -219,7 +219,7 @@ Add your favorites in the comments below!
     return (
 
  <div>
-      {/* <ReactPlayer
+      <ReactPlayer
           className='react-player'
           url={iframeUrl}
           width="100%"
@@ -231,32 +231,32 @@ Add your favorites in the comments below!
           loop
           playing
           playsinline
-          muted="{YouTubeMute}"
+          muted={true}
           showPortrait
-          playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
+        //   playIcon={
+        //     <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
               
       
       
       
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+        // <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+        //   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+        //   <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
           
-          </div>
-          </button>}
+        //   </div>
+        //   </button>}
       
       
       
-            light="../assets/transparent.png"
-          /> */}
+        //     light="../assets/transparent.png"
+          />
 
 
 
 
 
-        <iframe title="VidSock" id="youtube3" className="blog-video" width="100%" height="400" src={iframeUrl} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} />
+        {/* <iframe title="VidSock" id="youtube3" className="blog-video" width="100%" height="400" src={iframeUrl} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
 
 </div>
 
