@@ -139,7 +139,7 @@ function AddSvg(){
 const IsNft = frontmatter.isnftforsale
 const ShowOriginal = frontmatter.youtubeshoworiginal
 const ShareThis = frontmatter.shareable
-const Comment = frontmatter.comments
+const Comments = frontmatter.comments
 
 const YouTubeStart = frontmatter.youtubestart
 const YouTubeEnd = frontmatter.youtubeend
@@ -204,13 +204,15 @@ Add your favorites in the comments below!
 
   const YouTube = frontmatter.youtuber
 
-  if (YouTube) {
-    <Iframer />
-  }
-  else{
-
+//   if (YouTubeMute) {
+//     <Iframer2 />
+//   }
+//   else{
+// <Iframer />
     
-  }
+//   }
+
+
 
   function Iframer() {
     const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
@@ -263,32 +265,34 @@ Add your favorites in the comments below!
 
 
   function Iframer2() {
-    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=0&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
- <div style={{width:'', height:'100%', border:'1px solid #666', borderRadius:'12px', overflow:'hidden', position:'relative !important'}}>
-      <ReactPlayer
-          className='react-player1'
+<div>
+<ReactPlayer
+          className='react-player'
           url={iframeUrl2}
           width="100%"
           height="100%"
-          playing
+     
           controls={true}
           autoplay={true}
           background={true}
           loop
+          playing
+          playsinline
           muted={false}
           showPortrait
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'transparent', color:'inherit', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
               
       
       
       
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', border:'0px solid green'}}>
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
           <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'3rem'}}>View Original</span>
+          <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0', textAlign:'center'}}>Click To Play</span>
           
           </div>
           </button>}
@@ -297,14 +301,13 @@ Add your favorites in the comments below!
       
             light="../assets/transparent.png"
           />
-
-
-
-
-
-        {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={iframeUrl} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
-
 </div>
+
+
+
+
+
+
 
     )
   }
@@ -445,7 +448,7 @@ Add your favorites in the comments below!
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'1',
+              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', bottom:'-2px', zIndex:'1',
              objectFit:'contain', border:'0px solid red !important'}}
             />
             
@@ -465,12 +468,12 @@ Add your favorites in the comments below!
 
 
 
-  
-{YouTube ? (
-            <Iframer />
+
+{ !YouTubeMute ? (
+            <Iframer2 />
        
           ) : (
-            ""
+            <Iframer />
           )}
 
 
@@ -520,7 +523,7 @@ Add your favorites in the comments below!
 
 
 
-<div className="home-posts1" style={{clear:'both', display:'flex', textAlign:'left', width:'100vw'}}>
+<div className="home-posts1" style={{clear:'both', display:'flex',  justifyContent:'space-between', textAlign:'left', width:'90vw'}}>
 
 
 
@@ -550,7 +553,7 @@ Add your favorites in the comments below!
 
 
         {ShowOriginal ? (
-<div style={{width:'40%', padding:'0'}}>
+<div style={{minWidth:'30%', padding:'0', height:'', padding:'0', position:'relative',}}>
   
                     <Iframer2 />
     
@@ -636,7 +639,7 @@ Add your favorites in the comments below!
           )}
 
 
-{Comment ? (
+{Comments ? (
 <div style={{width:'80%', padding:'0', margin:'0 auto'}}>
   
 <CommentBox />

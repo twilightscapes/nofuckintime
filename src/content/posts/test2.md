@@ -18,7 +18,7 @@ isnftforsale: "1"
 svgzindex: "0"
 comments: "1"
 shareable: "1"
-underlayImage: /assets/transparent.png
+underlayImage: 
 featuredImage: /assets/murica-promo.png
 svgImage: /assets/murica.svg
 ---
