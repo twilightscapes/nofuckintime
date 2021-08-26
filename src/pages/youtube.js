@@ -21,6 +21,7 @@ import { ImPlay } from "react-icons/im"
 // import PhotoMenu from "../components/animated-photos-menu"
 // import CommentBox from "../components/commentbox"
 import ReactPlayer from 'react-player/lazy'
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 // import ReactPlayer from '../components/react-player'
 const CustomBox = styled.div`
 @media (max-width: 48em) {
@@ -51,7 +52,9 @@ const CustomBox = styled.div`
           
           state = {
             youtubelink: "",
-            isActive:false
+            isActive: false,
+            value: '',
+            copied: false,
           }
 
           
@@ -147,7 +150,7 @@ const CustomBox = styled.div`
 
 
 
-<div className='player-wrapper' style={{position:'relative', width:'100vw', height:'100%', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
+<div className='player-wrapper' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
 
 {/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={18000} duration="5" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
 right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', textAlign:'center', display:'flex', borderRadius:'12px', justifyContent:'center'}}>
@@ -215,7 +218,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     </form> */}
 
 
-<div style={{position:'fixed', top:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'1', display:'flex', justifyContent:'center'}}>
+<div style={{position:'relative', bottom:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'1', display:'flex', justifyContent:'center'}}>
   {/* <StaticImage className="homepage-bg" src="../../static/assets/nft-logo.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} /> */}
 </div>
 {/* <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}} /> */}
@@ -230,7 +233,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           type="text"
           name="youtubelink"
           value={this.state.youtubelink}
-          onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+          // onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
           onInput={this.handleInputChange}
           onChangeCapture={this.handleShow}
            
@@ -239,10 +242,14 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           className="youtubelinker"
         />
 
+
+
+
 </form>
     
     </div>
     
+
 
 
 
@@ -253,14 +260,14 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 <div className="" style={{display:'flex', justifyContent:'space-around', width:'100%', margin:'0 auto', flexDirection:'row'}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid #333', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'5px auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'space-between', alignItems:'center'  }}>
 
-    <p className="headline" style={{fontSize:'100%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'45%',paddingRight:'15px'}}>Paste YouTube Link Here:
+    <p className="headline" style={{fontSize:'100%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'45%',paddingRight:'15px'}}>Paste YouTube Link:
 </p>
 <input
       id=""
       type="text"
       name="youtubelink"
       value={this.state.youtubelink}
-      onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+      // onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
       onInput={this.handleInputChange}
       onChangeCapture={this.handleShow}
        
@@ -279,9 +286,6 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-
-
-<div className="mobilespace" style={{ border:'0px solid red'}}></div>
 
 
 {/* </div> */}

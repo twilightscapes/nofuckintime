@@ -5,6 +5,9 @@ slug: /thin-blue-line-of-hate
 date: 2021-08-14 10:43
 description: Thanks for visiting
 youtuber: "9nl00N6I5Ak"
+youtubersuggestion1: "https://youtu.be/8yFVBuGcOe8"
+youtubersuggestion2: "https://youtu.be/8yFVBuGcOe8-2"
+youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"

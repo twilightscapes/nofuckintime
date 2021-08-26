@@ -12,6 +12,7 @@ import NFTDetails from "../components/nft-details"
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
@@ -131,6 +132,57 @@ function AddSvg(){
     <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
+
+
+const Suggestion1 = frontmatter.youtubersuggestion1
+const Suggestion2 = frontmatter.youtubersuggestion2
+const Suggestion3 = frontmatter.youtubersuggestion3
+
+if (Suggestion1) {
+  <ShowSuggestion />
+}
+else{
+
+  
+}
+
+function ShowSuggestion() {
+
+  return (
+<div>
+<div style={{width:'100%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center'}}><span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This art is interactive!</span> 
+<br />
+
+The artist recommends these alternatives:
+<br /><br />
+
+<CopyToClipboard text={Suggestion1}>
+  <button>{Suggestion1} </button>
+</CopyToClipboard><br />
+
+
+  <CopyToClipboard text={Suggestion2}>
+  <button>{Suggestion2} </button>
+</CopyToClipboard>
+
+<CopyToClipboard text={Suggestion3}>
+  <button>{Suggestion3} </button>
+</CopyToClipboard>
+
+
+
+<br />
+<br />
+Add your favorites in the comments below!
+
+</div>
+
+<span style={{fontSize:'150%'}}></span>
+<div className="mobilespace" style={{ border:'0px solid red'}}></div>
+</div>
+  )
+}
+
 
 
   const YouTube = frontmatter.youtuber
@@ -272,6 +324,22 @@ function AddSvg(){
 // }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
   
   return (
     
@@ -369,9 +437,16 @@ function AddSvg(){
           )}
 
 
-<div style={{position:'absolute', top:'0', zIndex:'1'}}>
-<YouTubed />
-</div>
+{Suggestion1 ? (
+            <div style={{position:'absolute', top:'0', zIndex:'1'}}>
+            <YouTubed />
+            </div>
+       
+          ) : (
+            ""
+          )}
+
+
 
   
 {YouTube ? (
@@ -399,6 +474,14 @@ function AddSvg(){
 
 
 
+{Suggestion1 ? (
+            <ShowSuggestion />
+       
+          ) : (
+            ""
+          )}
+
+
 
       <article className="blog-post">
         <header>
@@ -410,9 +493,13 @@ function AddSvg(){
         </header>
 
 
+
+
+
+
         <GoBack />
  <br />
-<br />
+
 
 
 
@@ -496,10 +583,17 @@ function AddSvg(){
 
 
 <ShareSocial />
-      <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
-      Find a good one? Post your link Below and then Share it Above. 
-<CommentBox />
-     </div>
+{Suggestion1 ? (
+            <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
+            Find a good one? Post your link Below and then Share it Above. 
+      <CommentBox />
+           </div>
+       
+          ) : (
+            <CommentBox />
+          )}
+
+      
     
    
    <br />
@@ -542,6 +636,9 @@ export const pageQuery = graphql`
         title
         description
         youtuber
+        youtubersuggestion1
+        youtubersuggestion2
+        youtubersuggestion3
         youtubestart
         youtubeend
         youtubemute
