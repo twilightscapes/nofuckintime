@@ -163,7 +163,7 @@ function AddSvg(){
           muted={true}
           showPortrait
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
               
       
       
@@ -197,9 +197,9 @@ function AddSvg(){
     const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
- <div>
+ <div style={{width:'', height:'100%', border:'1px solid #666', borderRadius:'12px', overflow:'hidden', position:'relative !important'}}>
       <ReactPlayer
-          className='react-player'
+          className='react-player1'
           url={iframeUrl}
           width="100%"
           height="100%"
@@ -211,15 +211,15 @@ function AddSvg(){
           muted={false}
           showPortrait
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'transparent', color:'inherit', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
               
       
       
       
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', border:'0px solid green'}}>
           <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>View Original</span>
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'3rem'}}>View Original</span>
           
           </div>
           </button>}
@@ -233,7 +233,7 @@ function AddSvg(){
 
 
 
-        {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
+        {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={iframeUrl} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
 
 </div>
 
@@ -434,20 +434,13 @@ function AddSvg(){
 
 
 
-<div style={{width:'40%', padding:'1rem'}}>
+<div style={{width:'40%', padding:'0'}}>
 
         {YouTube ? (
 
-            <svg version="1.1" className="center-block"  width="100%" height="50vh"  >
-            <g>
-                <g transform="translate(0,0) scale(1)">
-                    <rect x="0" y="0" width="100%" height="100%"></rect>
-                    <foreignObject x="0" y="0" width="100%" height="100%">
+  
                     <Iframer2 />
-                    </foreignObject>
-                </g>
-            </g>
-        </svg>
+    
        
        
           ) : (
@@ -485,7 +478,13 @@ function AddSvg(){
 
 
 
-
+   <div className='player-wrapper1' style={{position:'relative', top:'', zIndex:'0', minHeight:'', height:'99vh', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+<iframe src='https://opensea.io/Twilightscapes?embed=true&tab=created'
+        width='100%'
+        height='100%'
+        frameborder='0'
+        allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
+</div>
 
 
 
