@@ -5,14 +5,19 @@ slug: /mystery-science-theater-3021
 date: 2021-08-13 10:43
 description: A bit of a tribute to the great MST3000
 youtuber: "XjuLZwlDxh8"
-youtubersuggestion1: "https://youtu.be/XjuLZwlDxh8"
-youtubersuggestion2: "https://youtu.be/8yFVBuGcOe8-2"
+youtubeshoworiginal: ""
+youtubersuggestion1: ""
+youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
-youtubestart: "2000"
-youtubeend: "0"
-youtubemute: "false"
+youtubestart: "5000"
+youtubeend: "10000"
+youtubemute: "1"
 youtubecontrols: "0"
+youtubeautostart: "1"
+isnftforsale: ""
 svgzindex: "0"
+comments: ""
+shareable: ""
 underlayImage: /assets/transparent.png
 featuredImage: /assets/transparent.png
 svgImage: /assets/MysteryScience3000.svg
@@ -30,7 +35,7 @@ Enjoy the show!
 
 
 
-// import InfoMenu from '../../../components/infomenu'
+
  
 
 <!-- XjuLZwlDxh8 -->

@@ -12,6 +12,8 @@ import NFTDetails from "../components/nft-details"
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
+
+import { IoArrowRedoSharp } from "react-icons/io5"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import YouTubed from "../pages/youtube"
@@ -134,6 +136,16 @@ function AddSvg(){
 }
 
 
+const IsNft = frontmatter.isnftforsale
+const ShowOriginal = frontmatter.youtubeshoworiginal
+const ShareThis = frontmatter.shareable
+const Comment = frontmatter.comments
+
+const YouTubeStart = frontmatter.youtubestart
+const YouTubeEnd = frontmatter.youtubeend
+const YouTubeMute = frontmatter.youtubemute
+const youtubeautostart = frontmatter.youtubeautostart
+
 const Suggestion1 = frontmatter.youtubersuggestion1
 const Suggestion2 = frontmatter.youtubersuggestion2
 const Suggestion3 = frontmatter.youtubersuggestion3
@@ -150,7 +162,12 @@ function ShowSuggestion() {
 
   return (
 <div>
-<div style={{width:'100%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center'}}><span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This art is interactive!</span> 
+  
+<div style={{width:'100%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
+<IoArrowRedoSharp style={{position:'absolute', top:'0', left:'0', fontSize:'60px', transform: 'rotate(-45deg)', }} />
+  
+  
+  <span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This art is interactive!</span> 
 <br />
 
 The artist recommends these alternatives:
@@ -196,11 +213,11 @@ Add your favorites in the comments below!
   }
 
   function Iframer() {
-    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
  <div>
-      <ReactPlayer
+      {/* <ReactPlayer
           className='react-player'
           url={iframeUrl}
           width="100%"
@@ -212,7 +229,7 @@ Add your favorites in the comments below!
           loop
           playing
           playsinline
-          muted={true}
+          muted="{YouTubeMute}"
           showPortrait
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
@@ -231,13 +248,13 @@ Add your favorites in the comments below!
       
       
             light="../assets/transparent.png"
-          />
+          /> */}
 
 
 
 
 
-        {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
+        <iframe title="VidSock" id="youtube3" className="blog-video" width="100%" height="400" src={iframeUrl} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} />
 
 </div>
 
@@ -246,13 +263,13 @@ Add your favorites in the comments below!
 
 
   function Iframer2() {
-    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
  <div style={{width:'', height:'100%', border:'1px solid #666', borderRadius:'12px', overflow:'hidden', position:'relative !important'}}>
       <ReactPlayer
           className='react-player1'
-          url={iframeUrl}
+          url={iframeUrl2}
           width="100%"
           height="100%"
           playing
@@ -507,9 +524,16 @@ Add your favorites in the comments below!
 
 
 
-<div style={{padding:' 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', width:'55%', border:'0px solid yellow'}}>
+<div style={{padding:' 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', border:'0px solid yellow'}}>
 
-<h3 style={{padding:'2rem 1rem'}}>Artist's Notes:</h3>
+{IsNft ? (
+            <h3 style={{padding:'2rem 1rem'}}>Artist's Notes:</h3>
+       
+          ) : (
+            ""
+          )}
+
+
 
       <div
         className="blog-post-content" style={{ padding:'0 2rem', fontSize:'1.1rem', textAlign:'left', width:'90%', color:'inherit !important'}}
@@ -521,20 +545,22 @@ Add your favorites in the comments below!
 
 
 
+
+
+
+
+        {ShowOriginal ? (
 <div style={{width:'40%', padding:'0'}}>
-
-        {YouTube ? (
-
   
                     <Iframer2 />
     
-       
+       </div>
        
           ) : (
             ""
           )}
 
-</div>
+
  </div>
 
 
@@ -558,20 +584,27 @@ Add your favorites in the comments below!
 
 
    
-
-
-
-   <NFTDetails />
-
-
-
-   <div className='player-wrapper1' style={{position:'relative', top:'', zIndex:'0', minHeight:'', height:'99vh', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+      {IsNft ? (
+        <div>
+            <NFTDetails />
+       <div className='player-wrapper1' style={{position:'relative', top:'', zIndex:'0', minHeight:'', height:'99vh', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 <iframe src='https://opensea.io/Twilightscapes?embed=true&tab=created'
         width='100%'
         height='100%'
         frameborder='0'
         allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
 </div>
+</div>
+          ) : (
+            ""
+          )}
+
+
+   
+
+
+
+   
 
 
 
@@ -579,22 +612,42 @@ Add your favorites in the comments below!
 
 
 
+{ShareThis ? (
+<div style={{width:'40%', padding:'0', margin:'0 auto'}}>
+  
+                    <ShareSocial />
+    
+       </div>
+       
+          ) : (
+            ""
+          )}
 
 
 
-<ShareSocial />
 {Suggestion1 ? (
             <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
             Find a good one? Post your link Below and then Share it Above. 
-      <CommentBox />
+      
            </div>
        
           ) : (
-            <CommentBox />
+            ""
           )}
 
-      
+
+{Comment ? (
+<div style={{width:'80%', padding:'0', margin:'0 auto'}}>
+  
+<CommentBox />
     
+       </div>
+       
+          ) : (
+            ""
+          )}
+      
+
    
    <br />
    <GoBack />
@@ -636,6 +689,7 @@ export const pageQuery = graphql`
         title
         description
         youtuber
+        youtubeshoworiginal
         youtubersuggestion1
         youtubersuggestion2
         youtubersuggestion3
@@ -643,6 +697,10 @@ export const pageQuery = graphql`
         youtubeend
         youtubemute
         youtubecontrols
+        youtubeautostart
+        comments
+        shareable
+        isnftforsale
         svgzindex
         featuredImage {
           childImageSharp {
