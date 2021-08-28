@@ -202,15 +202,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `No Fuckin Time `,
+        name: `VidSock `,
         short_name: `NFT`,
         start_url: `/?user_mode=app`,
-        description: `No Fuckin Time`,
+        description: `VidSocks`,
         background_color: `#222`,
         lang: `en`,
         theme_color: `#222`,
         display: `standalone`,
- icon: `src/img/adfree-youtube-logo-bug.svg`, // This path is relative to the root of the site.
+ icon: `static/vidsock-logo.svg`, // This path is relative to the root of the site.
  icon_options: {
   purpose: `any maskable`,
 },

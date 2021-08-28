@@ -102,7 +102,7 @@ Simply click the "install" icon on the right-side of your browser address bar</d
     
     <div style={{textAlign:'left', display:'flex', alignContent:'center', marginBottom:'1rem',}}>
    <IoShareOutline style={{fontSize:'200%', marginLeft:'0', marginRight:'2%', float:'',}} />
-    1) Press the 'Share' button  FUCK
+    1) Press the 'Share' button 
   </div>
   
    <div style={{textAlign:'left', display:'flex', alignContent:'center',}}>

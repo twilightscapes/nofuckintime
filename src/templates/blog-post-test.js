@@ -148,7 +148,7 @@ function AddSvg(){
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="No Fuckin Time Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )} */}
 
