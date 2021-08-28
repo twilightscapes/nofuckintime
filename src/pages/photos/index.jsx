@@ -60,9 +60,9 @@ export default function GalleryPage({ data }) {
 </Helmet>
 
 <Seo
-          title={`Twilightscapes Photo Galleries`}
-          description={`Twilightscapes night photography`}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          title={`VidSocks`}
+          description={`VidSocks`}
+          image={'https://vidsocks.com/default-og-image-blank.jpg'}
         />
 
 

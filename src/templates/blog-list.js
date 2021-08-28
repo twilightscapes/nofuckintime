@@ -144,9 +144,9 @@ class BlogIndex extends React.Component {
   <body className="bloglist" />
 </Helmet>
         <Seo
-          title={"Twilightscapes Archive — Page " + currentPage + " of " + numPages}
+          title={"VidSocks Archive — Page " + currentPage + " of " + numPages}
           description={
-            "Twilightscapes Archive page " + currentPage + " of " + numPages
+            "VidSocks Archive page " + currentPage + " of " + numPages
           }
         />
         
@@ -423,7 +423,7 @@ class BlogIndex extends React.Component {
         clear:'both'
       }}
     >
-<h1 className="headline" style={{fontSize:'18px'}}>Twilightscape's Experiences - The World's First Multimedia 3D Blog</h1>
+<h1 className="headline" style={{fontSize:'18px'}}>VidSock - The World's First Multimedia 3D Blog for creating, hosting and marketing the next generation of NFTs.</h1>
 
 {/* onFocus={disableBodyScroll()} */}
 <Pagination {...props} />

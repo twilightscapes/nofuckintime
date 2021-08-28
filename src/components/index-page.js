@@ -87,9 +87,9 @@ const HomePage = ({ data }) => {
   <body className="homepage" />
 </Helmet>
 <Seo
-          title={`Killer Night Photo Galleries`}
-          description={`Twilightscapes night photography`}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          title={`VidSocks - NFT platform for developing, hosting and marketing NFTs`}
+          description={`TVidSocks are an NFT platform for developing, hosting and marketing NFTs`}
+          image={'https://vidsock.com/default-og-image-blank.jpg'}
         />
       
       <div className="home-banner flexbutt" style={{position:'relative', height:'auto', overflow:'hidden'}}>

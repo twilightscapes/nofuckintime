@@ -32,7 +32,7 @@ const PostCard = ({ data }) => (
 
       </Link>
     ) : (
-      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{position:'relative', zIndex:''}} /></Link>
+      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
 
 

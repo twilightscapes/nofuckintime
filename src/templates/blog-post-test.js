@@ -124,7 +124,7 @@ function AddSvg(){
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={"https://nofuckintime.com" + getSrc(frontmatter.featuredImage) }
+        image={"https://vidsock.com" + getSrc(frontmatter.featuredImage) }
         article={true}
       />
 

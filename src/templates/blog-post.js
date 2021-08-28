@@ -377,7 +377,7 @@ allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={"https://twilightscapes.com" + getSrc(frontmatter.featuredImage) }
+        image={"https://vidsock.com" + getSrc(frontmatter.featuredImage) }
         article={true}
       />
 
@@ -407,7 +407,7 @@ allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 </div>
@@ -682,7 +682,7 @@ allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
       
 
       <div style={{position:'relative', bottom:'', left:'0', right:'0', maxWidth:'100vw', margin:'2rem 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-  <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+  <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="VidSock" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div>
 
    

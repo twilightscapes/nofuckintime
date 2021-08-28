@@ -9,8 +9,8 @@ youtubeshoworiginal: "1"
 youtubersuggestion1: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
-youtubestart: "5000"
-youtubeend: "10000"
+youtubestart: ""
+youtubeend: ""
 youtubemute: "1"
 youtubecontrols: "0"
 youtubeautostart: "1"
@@ -22,7 +22,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/default-image.jpg
 svgImage: /assets/MysteryScience3000.svg
 nftlink: ""
-nftdrop: "2021-08-28T15:02:03"
+nftdrop: ""
 ---
 Seeing as this is my frist post !1!, woot, woot!
 
