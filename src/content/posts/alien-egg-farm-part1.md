@@ -19,7 +19,7 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: 
+featuredImage: /assets/Experiences-Header-3.jpg
 svgImage: /assets/nebula.svg
 nftlink: ""
 nftdrop: ""

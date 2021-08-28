@@ -2870,7 +2870,7 @@ background-position:center 70px;
   }
 }
 
-  /* .container2 section:first-child:after{
+  .container2 section:first-child:after{
 content: " SCROLL DOWN FOR MORE ";
 display: block;
 position:absolute;
@@ -2882,7 +2882,7 @@ font-size: 20px;
 color:#fff;
 opacity:.8;
   }
-  .container2 section:last-child:after{
+  /* .container2 section:last-child:after{
     content: " CLICK BELOW FOR MORE ";
     display: block;
     position:absolute;

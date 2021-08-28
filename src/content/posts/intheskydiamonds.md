@@ -20,7 +20,7 @@ comments: "1"
 shareable: "1"
 underlayImage: /assets/swd-foreground.png
 svgImage: /assets/campfire.svg
-featuredImage: /assets/default-image.jpg
+featuredImage: /assets/Experiences-Header-5.jpg
 nftlink: ""
 nftdrop: ""
 ---

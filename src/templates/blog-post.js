@@ -352,7 +352,7 @@ const Completionist = () => <iframe src={NftLink}
 width='100%'
 height='100%'
 frameborder='0'
-allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
+allowfullscreen style={{position:'relative', top:'0'}}></iframe>
 
 
 
@@ -611,8 +611,7 @@ allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
 
 
        { NftDrop ? (
-            <div style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'1px solid', width:'', textAlign:'center', padding:'0 2rem', borderRadius:'12px', flexDirection:'column' }}>
-  DROPS IN:<br />
+            <div style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'1px solid', width:'100vw', height:'100%', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
   <Countdown date={NftDrop} >
 <Completionist />
   </Countdown>
