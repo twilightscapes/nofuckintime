@@ -12,8 +12,8 @@ import NFTDetails from "../components/nft-details"
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
-
-import { IoArrowRedoSharp } from "react-icons/io5"
+import Countdown from 'react-countdown'
+import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import YouTubed from "../pages/youtube"
@@ -23,22 +23,14 @@ import ShareSocial from '../components/share'
 import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
 import TimeAgo from 'react-timeago'
-const styles = {
-  "article blockquote": {
-    "background-color": "cardBg",
-  },
-  pagination: {
-    a: {
-      color: "inherit",
-      "&.is-active": {
-        color: "text",
-      },
-      "&:hover": {
-        color: "inherit",
-      },
-    },
-  },
+import styled from "styled-components"
+const CustomBox = styled.div`
+
+@media (max-width: 48rem) {
+  .home-posts{flex-direction:column !important; width:90% !important; margin:0 auto !important;}
 }
+
+`
 
 
 
@@ -51,7 +43,7 @@ const Pagination = props => (
 
 
   
-  <div className="pagination -post" sx={styles.pagination}>
+  <div className="pagination -post">
     <ul>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
@@ -115,6 +107,10 @@ const Post = ({ data, pageContext }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
+
+    const NftLink = frontmatter.nftlink
+    const NftDrop = frontmatter.nftdrop
+
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
   if (!Svg) {
@@ -165,6 +161,7 @@ function ShowSuggestion() {
   
 <div style={{width:'100%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
 <IoArrowRedoSharp style={{position:'absolute', top:'0', left:'0', fontSize:'60px', transform: 'rotate(-45deg)', }} />
+<IoArrowUndoSharp style={{position:'absolute', top:'0', right:'0', fontSize:'60px', transform: 'rotate(45deg)', }} />
   
   
   <span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This art is interactive!</span> 
@@ -219,7 +216,7 @@ Add your favorites in the comments below!
     return (
 
  <div>
-      <ReactPlayer
+      {/* <ReactPlayer
           className='react-player'
           url={iframeUrl}
           width="100%"
@@ -233,26 +230,28 @@ Add your favorites in the comments below!
           playsinline
           muted={true}
           showPortrait
-        //   playIcon={
-        //     <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
               
       
       
       
-        // <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-        //   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-        //   <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
           
-        //   </div>
-        //   </button>}
+          </div>
+          </button>}
       
       
       
-        //     light="../assets/transparent.png"
-          />
+            light="../assets/transparent.png"
+          /> */}
 
 
+
+<iframe title="VidSock" id="youtube2" className="blog-video" width="100%" height="400" src={iframeUrl} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} />
 
 
 
@@ -274,7 +273,7 @@ Add your favorites in the comments below!
           url={iframeUrl2}
           width="100%"
           height="100%"
-     
+          style={{zIndex:'0'}}
           controls={true}
           autoplay={true}
           background={true}
@@ -284,7 +283,7 @@ Add your favorites in the comments below!
           muted={false}
           showPortrait
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
               
       
       
@@ -349,7 +348,11 @@ Add your favorites in the comments below!
 
 
 
-
+const Completionist = () => <iframe src={NftLink}
+width='100%'
+height='100%'
+frameborder='0'
+allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
 
 
 
@@ -364,7 +367,7 @@ Add your favorites in the comments below!
   return (
     
     <Layout className="page">
-
+<CustomBox style={{}}>
 <Helmet>
   <body className="blogpost" />
 </Helmet>
@@ -425,6 +428,12 @@ Add your favorites in the comments below!
 
 
 
+
+
+
+
+
+
 {/* {Svg2 ? (
             <AddSvg2 />
        
@@ -457,14 +466,7 @@ Add your favorites in the comments below!
           )}
 
 
-{Suggestion1 ? (
-            <div style={{position:'absolute', top:'0', zIndex:'1'}}>
-            <YouTubed />
-            </div>
-       
-          ) : (
-            ""
-          )}
+
 
 
 
@@ -477,7 +479,14 @@ Add your favorites in the comments below!
           )}
 
 
-
+{Suggestion1 ? (
+            <div style={{position:'absolute', top:'0', zIndex:'0'}}>
+            <YouTubed />
+            </div>
+       
+          ) : (
+            ""
+          )}
 
 
 
@@ -517,17 +526,17 @@ Add your favorites in the comments below!
 
 
 
-        <GoBack />
+        <span className="mobile"><GoBack /></span>
  <br />
 
 
 
 
-<div className="home-posts1" style={{clear:'both', display:'flex',  justifyContent:'space-between', textAlign:'left', width:'90vw'}}>
+<div className="home-posts" style={{clear:'both', display:'flex',  justifyContent:'space-between', textAlign:'left', width:'90vw'}}>
 
 
 
-<div style={{padding:' 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', border:'0px solid yellow'}}>
+<div style={{padding:'0 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', border:'0px solid yellow'}}>
 
 {IsNft ? (
             <h3 style={{padding:'2rem 1rem'}}>Artist's Notes:</h3>
@@ -553,10 +562,11 @@ Add your favorites in the comments below!
 
 
         {ShowOriginal ? (
-<div style={{minWidth:'30%', padding:'0', height:'', padding:'0', position:'relative',}}>
+<div style={{minWidth:'30%', padding:'0', height:'', padding:'0', position:'relative', textAlign:'center'}}>
+  
   
                     <Iframer2 />
-    
+                    Click to view original video
        </div>
        
           ) : (
@@ -582,28 +592,48 @@ Add your favorites in the comments below!
 
 
 
-   
 
 
+{/* <Countdown
+    // date={Date.now() + 10000}
+    date='2022-10-03T04:02:03'
+    intervalDelay={0}
+    precision={3}
+    renderer={props => <div>{props.total}</div>}
+  /> */}
 
-   
+
       {IsNft ? (
+        
         <div>
             <NFTDetails />
-       <div className='player-wrapper1' style={{position:'relative', top:'', zIndex:'0', minHeight:'', height:'99vh', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
-<iframe src='https://opensea.io/Twilightscapes?embed=true&tab=created'
-        width='100%'
-        height='100%'
-        frameborder='0'
-        allowfullscreen style={{position:'absolute', top:'0'}}></iframe>
+       <div className='player-wrapper1' style={{position:'relative', top:'', zIndex:'0', minHeight:'', height:'99vh', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', justifyContent:'center', borderTop:'1px solid #000', borderBottom:'1px solid #000', padding:'0 rem'}}>
+
+
+       { NftDrop ? (
+            <div style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'1px solid', width:'', textAlign:'center', padding:'0 2rem', borderRadius:'12px', flexDirection:'column' }}>
+  DROPS IN:<br />
+  <Countdown date={NftDrop} >
+<Completionist />
+  </Countdown>
+</div>
+
+
+       
+          ) : (
+""
+       
+          )}
+
 </div>
 </div>
+
           ) : (
             ""
           )}
 
 
-   
+
 
 
 
@@ -626,7 +656,7 @@ Add your favorites in the comments below!
             ""
           )}
 
-
+<br />
 
 {Suggestion1 ? (
             <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
@@ -651,8 +681,8 @@ Add your favorites in the comments below!
           )}
       
 
-      <div style={{position:'relative', bottom:'', left:'0', right:'0', maxWidth:'100vw', margin:'2rem 0', zIndex:'1', display:'flex', justifyContent:'center'}}>
-  <StaticImage className="homepage-bg" src="../../static/assets/nft-logo.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
+      <div style={{position:'relative', bottom:'', left:'0', right:'0', maxWidth:'100vw', margin:'2rem 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+  <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div>
 
    
@@ -660,7 +690,7 @@ Add your favorites in the comments below!
    <GoBack />
    <br />
    <br />
-
+   </CustomBox>
     </Layout>
 
 
@@ -708,7 +738,9 @@ export const pageQuery = graphql`
         comments
         shareable
         isnftforsale
+        nftdrop
         svgzindex
+        nftlink
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)

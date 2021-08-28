@@ -8,7 +8,7 @@ import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
-import Bug from "../../static/assets/adfree-youtube-logo-bug.svg"
+import Bug from "../../static/assets/vidsock-logo.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 // import { FiShare } from 'react-icons/fi';
@@ -24,7 +24,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import { IoMdFingerPrint } from 'react-icons/io'
 import "../assets/scss/style.scss"
 // import Consent from './Consent'
-// import Install from './install-discount'
+import Install from './install-discount'
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
@@ -86,7 +86,7 @@ export function Layout({ children }) {
 
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
-  {/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle"> */}
+  <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 
   {/* <div className="cornertext" style={{textShadow:'2px', color:'#fff',}}>
   <IoMdFingerPrint style={{fontSize:'50px', }}/>
@@ -94,13 +94,13 @@ export function Layout({ children }) {
 </span>
     </div> */}
 
-{/* <Bug className="bug" style={{fontSize:'20px', maxWidth:'80px', opacity:'.3' }}/> */}
+<Bug className="bug" style={{fontSize:'20px', maxWidth:'80px', opacity:'.3' }}/>
 
-{/* <span>MENU</span> */}
-    {/* <div className="spinner diagonal part-1"></div>
+{/* <span>MENU</span>
+    <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div>
-  </label> */}
+    <div className="spinner diagonal part-2"></div> */}
+  </label>
 
 
   <label htmlFor="openSidebarMenu" className="backdrop1" ></label>
@@ -136,19 +136,19 @@ export function Layout({ children }) {
 
  <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
-<img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
-<span>NO FUCKIN' TIME</span>
+<img src={iconimage} alt="VidSock Logo" width="100%" height="100%" />
+{/* <span>NO FUCKIN' TIME</span> */}
 </Link>
  </li>
- {/* <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
+ <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
-<span>NO FUCKIN' TIME</span>
+{/* <span>NO FUCKIN' TIME</span> */}
 </Link>
  </li>
  
 
- <li className="carto" style={{textAlign:'center'}}>
+ {/* <li className="carto" style={{textAlign:'center'}}>
  <Link className="navbar-item txtshadow" to="/contact/">
 Contact Me<span>I love feedback!</span>
 </Link>
@@ -245,12 +245,12 @@ Contact Me<span>Ordering Questions?</span>
 
       <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-between', verticalAlign:'center', padding:'0 20px',  }}>
   
-      <Theme  style={{padding:'0'}} />
-   <Link className="sherlock" to="/search" style={{marginRight:'0', marginTop:'5px'}}>
+      {/* <Theme  style={{padding:'0'}} /> */}
+   {/* <Link className="sherlock" to="/search" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
-   </Link>
+   </Link> */}
    
-  <div className="carto"><CartButton quantity={quantity} /></div>
+  {/* <div className="carto"><CartButton quantity={quantity} /></div> */}
 
 
         </li>
@@ -309,8 +309,8 @@ Contact Me<span>Ordering Questions?</span>
       <SkipNavContent className="intro">{children}</SkipNavContent>
       
       
-      {/* <Consent /> */}
-     {/* <Install /> */}
+
+
       <Footer />
       
       </>

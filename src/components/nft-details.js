@@ -1,6 +1,6 @@
 
 import * as React from "react"
-import styled from "styled-components";
+import styled from "styled-components"
 import { Link } from 'gatsby'
 import { CgInfo, CgRatio  } from "react-icons/cg"
 // import { FaLock } from 'react-icons/fa';

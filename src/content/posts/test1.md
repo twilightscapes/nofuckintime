@@ -19,8 +19,10 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/transparent.png
+featuredImage: /assets/default-image.jpg
 svgImage: /assets/MysteryScience3000.svg
+nftlink: ""
+nftdrop: "2021-08-28T15:02:03"
 ---
 Seeing as this is my frist post !1!, woot, woot!
 

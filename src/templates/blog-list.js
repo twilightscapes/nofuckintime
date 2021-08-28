@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from 'react'
+// import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 // import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { StaticImage } from "gatsby-plugin-image"
@@ -15,8 +16,23 @@ import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 
 
+// import { Slide } from 'react-slideshow-image'
+import 'react-slideshow-image/dist/styles.css'
 
 
+// import Gall1 from '../components/gallery1'
+
+// const properties = {
+//   duration: 4000,
+//   transitionDuration: 500,
+//   infinite: true,
+//   indicators: false,
+//   easing: 'easeIn',
+//   arrows: true,
+
+//   prevArrow: <div style={{width: "40px", marginRight: "10px", zIndex:'1', cursor:'pointer', dropShadow:'(30px 10px 4px #4444dd)', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z"/></svg></div>,
+//   nextArrow: <div style={{width: "40px", marginLeft: "10px", zIndex:'0', cursor:'pointer', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M512 256L270 42.6v138.2H0v150.6h270v138z"/></svg></div>
+// };
 
 
 
@@ -50,9 +66,10 @@ export const blogListQuery = graphql`
             date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
+            nftdrop
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -77,7 +94,7 @@ const Pagination = props => (
       {Array.from({ length: props.numPages }, (_, i) => (
         <li key={`pagination-number${i + 1}`}>
           <Link
-            to={`${props.blogSlug}${i === 0 ? "" : i + 1}`}
+            to={`${props.blogSlug}${i === 0 ? "" : i + 1 + "/"}`}
             className={props.currentPage === i + 1 ? "is-active num" : "num"}
           >
             {i + 1}
@@ -86,7 +103,7 @@ const Pagination = props => (
       ))}
       {!props.isLast && (
         <li>
-          <Link to={props.nextPage} rel="next">
+          <Link to={props.nextPage + "/"} rel="next">
             Next{" "}
             <span className="icon -right">
               <RiArrowRightLine />
@@ -101,7 +118,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/archive/"
+    const blogSlug = "/experiences/"
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
@@ -127,15 +144,275 @@ class BlogIndex extends React.Component {
   <body className="bloglist" />
 </Helmet>
         <Seo
-          title={"NFT Archive — Page " + currentPage + " of " + numPages}
+          title={"Twilightscapes Archive — Page " + currentPage + " of " + numPages}
           description={
-            "NFT Archive page " + currentPage + " of " + numPages
+            "Twilightscapes Archive page " + currentPage + " of " + numPages
           }
         />
         
+        <div
+      className="wrapper1"
+      style={{
+        textAlign: "center",
+      }}
+    >
+{/* <h1 style={{padding:'10px', margin:'0'}}>Articles</h1> */}
 
+    </div>
 
         
+
+
+{/* <Gall1 /> */}
+
+<br />
+{/* <div style={{ maxHeight:'30%'}}>
+<Slide {...properties} style={{zIndex:'-1'}}>
+<article
+    className="post-card1 each-slide"
+    sx={{
+      // bg: "cardBg",
+      position: 'relative',
+      border:'0px solid blue'
+    }}
+  >
+
+<Link
+      className=""
+      to="/favorites/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Popular Favorites"
+    >
+    
+    <div >
+      <StaticImage src="../img/homepage.jpg" alt="Popular Favorites" />
+    </div>
+    
+
+  <div style={{position:'absolute', top:'30%', right:'10vw', border:'0px solid green', fontSize:'8vw'}}>Popular Favorites</div>
+
+  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <Link
+            to="/favorites/"
+            className="button box-shadow"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+       View the Gallery
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link>
+</div>
+        
+
+</Link>
+</article>
+
+
+
+
+<article
+    className="post-card1 each-slide"
+    sx={{
+      // bg: "cardBg",
+      position: 'relative',
+    }}
+  >
+
+<Link
+      className=""
+      to="/cars/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Relics of Rust"
+    >
+    
+    <div >
+    <StaticImage src="../img/cars/night400.jpg" alt="Abandoned car in Paris TX" />
+    </div>
+    
+
+  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Relics of Rust</div>
+
+
+  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <Link
+            to="/cars/"
+            className="button box-shadow"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+       View the Gallery
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link>
+</div>
+
+
+</Link>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article
+    className="post-card1 each-slide"
+    sx={{
+      // bg: "cardBg",
+      position: 'relative',
+    }}
+  >
+
+<Link
+      className=""
+      to="/ghosttowns/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Ghost Towns"
+    >
+    
+    <div >
+    <StaticImage src="../img/ghosttowns/night305.jpg" alt="Todd photographs ghost towns" />
+    </div>
+    
+
+  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Ghost Towns</div>
+
+
+  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
+    <Link
+            to="/ghosttowns/"
+            className="button box-shadow"
+            sx={{
+              variant: "variants.button",
+            }}
+          >
+       View the Gallery
+            <span className="icon -right">
+              <RiArrowRightSLine />
+            </span>
+          </Link>
+</div>
+
+
+</Link>
+</article>
+
+
+
+
+
+
+
+
+
+
+</Slide>
+</div>
+
+<br />
+
+
+
+
+
+
+<div className="grids col-1 sm-2 lg-3" style={{display:'none'}}>
+      
+    <article
+    className="post-card"
+    sx={{
+      bg: "cardBg",
+      position:'relative'
+    }}
+  >
+     <Link
+      className=""
+      to="/favorites/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Popular Favorites"
+    >
+      
+      <div >
+      <StaticImage src="../img/homepage.jpg" alt="Popular Favorites" />
+        </div><div className="post-content"><h2 className="title">Popular Favorites</h2><p className="meta">If you're new here, start here!</p></div>
+        
+       <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+</Link>
+    </article>
+
+    <article
+    className="post-card"
+    sx={{
+      bg: "cardBg",
+      position:'relative'
+    }}
+  >
+    <Link
+      className=""
+      to="/cars/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Relics of Rust"
+    >
+<div >
+      <StaticImage src="../img/cars/night400.jpg" alt="Abandoned car in paris TX" />
+        </div><div className="post-content"><h2 className="title">Relics of Rust</h2><p className="meta">Todd's favorite subject matter</p></div>
+        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+</Link>
+    </article>
+
+
+   
+
+
+    <article
+    className="post-card"
+    sx={{
+      bg: "cardBg",
+      position:'relative'
+    }}
+  >
+    <Link
+      className=""
+      to="/ghosttowns/"
+      sx={{
+        variant: "variants.button",
+      }}
+      title="Ghost Towns"
+    >
+     <div >
+
+      <StaticImage src="../img/ghosttowns/night305.jpg" alt="Ghosttowns" />
+        </div><div className="post-content"><h2 className="title">Ghost Towns</h2><p className="meta">The real Old West comes alive at night</p></div>
+        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
+        </Link>
+    </article>
+
+
+
+    
+    </div> */}
 
 
     <div
@@ -146,13 +423,27 @@ class BlogIndex extends React.Component {
         clear:'both'
       }}
     >
-<h1 className="headline" style={{fontSize:'18px'}}>No Fuckin Time</h1>
+<h1 className="headline" style={{fontSize:'18px'}}>Twilightscape's Experiences - The World's First Multimedia 3D Blog</h1>
 
-    
-    
- <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}>
+{/* onFocus={disableBodyScroll()} */}
+<Pagination {...props} />
+ {/* <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}> */}
+ <div id="contentscroll" name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'100%', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
+
+ <section style={{height:'auto'}}>
+  <Link to="/#experiences" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+  <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newest Experiences 
+    </article></Link>
+    </section>
+
+ <section style={{height:'auto'}}>
+  <article style={{height:'auto'}}>
+
  {posts}
- </div>
+
+</article>
+</section>
+</div>
         <Pagination {...props} />
 
 
@@ -161,7 +452,7 @@ class BlogIndex extends React.Component {
 </div>
 
 
-{/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Promt text here</h3>
+{/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a suggestion for an article?</h3>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />

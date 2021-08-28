@@ -3,6 +3,9 @@ import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import TimeAgo from 'react-timeago'
+import Countdown from 'react-countdown'
+
+
 const PostCard = ({ data }) => (
 
 
@@ -35,14 +38,38 @@ const PostCard = ({ data }) => (
 
 <div className="post-content" >
 
+
+
+{ !data.frontmatter.nftdrop ? (
+            
+""
+
+       
+          ) : (
+
+            <div className="" style={{display:'flex', alignSelf:'center',  position:'absolute', bottom:'120px', width:'100vw', margin:'0 auto'}}>
+
+            <div style={{display:'flex', justifyContent:'center', maxWidth:'600px',  margin:'0 auto', backdropFilter:'blur(10px)', color:'#fff', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px',border:'1px solid #111', textShadow:'1px 2px 0px #000'}}>
+            DROPS IN &nbsp;<Countdown date={data.frontmatter.nftdrop}></Countdown>
+            </div>
+          
+            </div>
+       
+          )}
+
+
+
+
 <h2 className="title">
   <Link 
     to={data.frontmatter.slug}
   >
     {data.frontmatter.title}
+    
   </Link>
 </h2>
-<p style={{minWidth:'20vw', position:'relative', textAlign:'center',}}>
+
+<p style={{minWidth:'20vw', position:'relative', textAlign:'center', border:'0px solid red'}}>
   <TimeAgo date={data.frontmatter.date}/>
 </p>
 </div>

@@ -685,7 +685,7 @@ height:0;
 
 .flexcheek {width:50%}
 
-.mobile{display: none;}
+.mobile{display: none; border:0px solid red !important;}
 @media (max-width: 48rem) {
   .flexbutt{flex-direction: column !important;}
 .flexcheek{width:100% !important;}
@@ -860,9 +860,9 @@ border:1px solid red !important;
 } */
 
 .home-banner{padding: 0 !important;}
-.home-posts, .home-posts a{color:var(--primary) !important;}
+/* .home-posts, .home-posts a{color:var(--primary) !important;}
 
-.home-posts a:hover{color:var(--primary-color) !important;}
+.home-posts a:hover{color:var(--primary-color) !important;} */
 
 
 

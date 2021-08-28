@@ -1,29 +1,27 @@
 ---
 template: index-page
 slug: /
-title: Night Photography
-tagline: Twilightscapes - Night Photography by Todd Lambert
+title: Welcome to VidSock!
+tagline: VidSocks are the first NFT based video art platform
 featuredImage: /assets/transparent.png
-secondaryImage: /assets/transparent.png
+secondaryImage: /assets/swd-foreground.png
 cta:
-  ctaText: "See the photos"
-  ctaLink: /photos/
-youtuber: ""
+  ctaText: "See the VidSocks"
+  ctaLink: /nfts/
+youtuber: "iHxmNzMfDj4"
 youtubestart: "0"
-youtubeend: "0"
+youtubeend: "33"
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
-underlayImage: 
-svgImage: 
+underlayImage: /assets/swd-foreground.png
+svgImage: /assets/campfire.svg
 ---
-Finding obscure locations and unusual subject matter, Todd has excelled at capturing long exposure photos of rarely seen moments of time.
+Each VidSock is uniquely created by the artist and then delivered to the world for their art to be altered and changed by its viewers thus making each VidSock truly dynamic.
 
-As a location scout and avid urban explorer, Todd learned to photograph what he sees and to bring the unique subject matter he finds to light. 
+Also, depending on the Artist's vision, they can choose to modify your NFT long after it has been minted and delivered to you. The artist has the flexibility to alter, add new items, or even completely change your individual art. Only your VidSock will have these totally unique modifications. Plus, each VidSock can be changed on a weekly basis or on special dates or occasions or even years later! It's up to the Artist and their vision for their VidSock.
 
-> Finding yourself at 3am in a graveyard filming flowers; some may see that as weird, but for me, it's pure tranquility.
-
-Let Todd's night photography and digital storytelling, prove to you that the night is indeed beautiful.
+Of course, you as the owner of the VidSock, always have the option to view both the new and the original versions at any time.
 
 
 

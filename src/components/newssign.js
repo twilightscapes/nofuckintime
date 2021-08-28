@@ -58,9 +58,9 @@ const NewsletterPage = () => (
 <br />
 
             
-              <span className="txtshadow" style={{fontSize:'120%',}}><strong>Follow Me Into The Night</strong></span><br />
+              <span className="txtshadow" style={{fontSize:'120%',}}><strong>VidSock NFT Author Platform - INVITE ONLY</strong></span><br />
               
-              <span className="txtshadow" style={{fontSize:'85%'}}>night photography newsletter - (it's free!)</span><br /><br />
+              <span className="txtshadow" style={{fontSize:'85%'}}>Current NFT owners will be the only accounts created during initial launch phase<br /><br />Second Phase will open to invite only<br />Reserve Your Spot Below:</span><br /><br />
 
              <div className="signbox" style={{display:'flex',}}>
 
@@ -91,7 +91,7 @@ const NewsletterPage = () => (
               type="submit"
               style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.5vw, 1.5rem)', whiteSpace:'nowrap'}}
             >
-              Follow Todd{" "}
+              Save My Spot{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>
