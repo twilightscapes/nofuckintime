@@ -261,12 +261,13 @@ const YouTube = frontmatter.youtuber
 </div>
 
 
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
+        
 
         {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
         
 
+        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto 0 auto', marginTop:'0',}}>
 
 <section style={{ display:'',}}>
 
@@ -367,7 +368,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section id="homeintro1" style={{top:'0', paddingTop:'2rem', height:'', position:'relative', top:'0'}}>
+<section id="homeintro1" style={{display:'', top:'0', paddingTop:'2rem', height:'', position:'relative', top:'0'}}>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px', position:'relative', top:'0', height:'auto'}}>
       <div className="flexcheek " style={{padding:'0 2rem', color:'#fff', textShadow:'1px 2px 0 #000', position:'relative', top:'0'}}>
@@ -438,7 +439,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', display:'block', height:'1000px', overflow:'', top:'0'}}>
+ <div className="flexcheek" style={{position:'relative', display:'block', height:'', overflow:'', top:'0'}}>
  
  
 
@@ -538,7 +539,6 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 </div>
 </article>
 </section>
-
 
 
 <a name="experiences" id="experiences"></a>
