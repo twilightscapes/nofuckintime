@@ -160,9 +160,9 @@ const YouTube = frontmatter.youtuber
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;playsinline=1&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
-      <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
+      <iframe title="VidSock YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
 
-      // {/* <ReactPlayer
+      //  <ReactPlayer
       //     className='react-player'
       //     url={Url}
       //     width="100%"
@@ -174,7 +174,7 @@ const YouTube = frontmatter.youtuber
       //     loop
       //     playing
       //     playsinline
-      //     muted={true}
+      //     // muted={true}
       //     showPortrait
       //     playIcon={
       //       <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
@@ -193,7 +193,7 @@ const YouTube = frontmatter.youtuber
       
       
       //       light="../assets/transparent.png"
-      //     /> */}
+      //     />
 
    
 
@@ -306,12 +306,6 @@ const YouTube = frontmatter.youtuber
 
  
 
-  {Svg ? (
-            <AddSvg />
-       
-          ) : (
-            ""
-          )}
 
 
 
@@ -333,12 +327,26 @@ const YouTube = frontmatter.youtuber
             ""
           )} */}
 
+
+
+
+  
+{YouTube ? (
+            <Iframer />
+       
+          ) : (
+            ""
+          )}
+
+
+
+
 {UnderlayImage ? (
             <GatsbyImage
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', bottom:'-2px', zIndex:'1',
+              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', bottom:'-2px', zIndex:'0',
              objectFit:'contain', border:'0px solid red !important'}}
             />
             
@@ -347,9 +355,8 @@ const YouTube = frontmatter.youtuber
           )}
 
 
-  
-{YouTube ? (
-            <Iframer />
+{Svg ? (
+            <AddSvg />
        
           ) : (
             ""

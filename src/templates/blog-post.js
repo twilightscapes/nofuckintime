@@ -127,7 +127,7 @@ function AddSvg(){
 
 
   return (
-    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="animated content" title="animated content" >You need a new browser</object>
+    <object id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100vw', height:'auto',  }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
 
@@ -221,7 +221,7 @@ Add your favorites in the comments below!
           url={iframeUrl}
           width="100%"
           height="100%"
-     
+          style={{zIndex:'0'}}
           controls={false}
           autoplay={true}
           background={true}
@@ -283,7 +283,7 @@ Add your favorites in the comments below!
           muted={false}
           showPortrait
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
               
       
       
@@ -419,12 +419,7 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
 
  
 
-  {Svg ? (
-            <AddSvg />
-       
-          ) : (
-            ""
-          )}
+
 
 
 
@@ -452,18 +447,7 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
             ""
           )} */}
 
-{UnderlayImage ? (
-            <GatsbyImage
-              image={UnderlayImage}
-              alt={frontmatter.title + " - image"}
-              className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', bottom:'-2px', zIndex:'1',
-             objectFit:'contain', border:'0px solid red !important'}}
-            />
-            
-          ) : (
-            ""
-          )}
+
 
 
 
@@ -488,6 +472,28 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
             ""
           )}
 
+
+
+
+{UnderlayImage ? (
+            <GatsbyImage
+              image={UnderlayImage}
+              alt={frontmatter.title + " - image"}
+              className="mcboaty"
+              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', bottom:'-2px', zIndex:'0',
+             objectFit:'contain', border:'0px solid red !important'}}
+            />
+            
+          ) : (
+            ""
+          )}
+
+{Svg ? (
+            <AddSvg />
+       
+          ) : (
+            ""
+          )}
 
 
 
@@ -562,12 +568,12 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
 
 
         {ShowOriginal ? (
-<div style={{minWidth:'30%', padding:'0', height:'', padding:'0', position:'relative', textAlign:'center'}}>
-  
+          <div style={{minWidth:'30%', textAlign:'center', display:'flex', flexDirection:'column'}}>Click to view original video
+<div style={{minWidth:'100%', padding:'0', height:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue'}}>
   
                     <Iframer2 />
-                    Click to view original video
-       </div>
+
+       </div></div>
        
           ) : (
             ""
