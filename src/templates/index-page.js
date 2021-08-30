@@ -545,11 +545,11 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 <div id="scooch">
         <BlogListHome data={posts} />
 
-        <section style={{height:'auto'}}>
-  <Link to="/experiences/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+        {/* <section style={{height:'auto'}}>
+  <Link to="/archive/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
     View More VidSocks <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
-    </section>
+    </section> */}
 
    </div>
 

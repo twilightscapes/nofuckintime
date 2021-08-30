@@ -1484,6 +1484,23 @@ blockquote:after {
   width:100%;
 
 }
+
+
+.countdown{border:0px solid pink; position:relative}
+.countdown:before{
+  content: " DROPS IN: ";
+  font-size: 1em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  text-align: right;
+  position:absolute;
+  right:0;
+  top:-2rem;
+  width:100%;
+}
+
+
 blockquote p {
   display: inline;
 }
