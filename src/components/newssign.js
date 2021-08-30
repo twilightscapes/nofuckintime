@@ -58,7 +58,7 @@ const NewsletterPage = () => (
 <br />
 
             
-              <span className="txtshadow" style={{fontSize:'120%',}}><strong>VidSock NFT Author Platform - INVITE ONLY</strong></span><br />
+              <span className="txtshadow" style={{fontSize:'120%',}}><strong>The VidSocks NFT Platform is INVITE ONLY</strong></span><br />
               
               <span className="txtshadow" style={{fontSize:'85%'}}>Current NFT owners will be the only accounts created during initial launch phase<br /><br />Second Phase will open to invite only<br />Reserve Your Spot Below:</span><br /><br />
 
