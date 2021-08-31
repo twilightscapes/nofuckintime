@@ -75,7 +75,7 @@ export function Layout({ children }) {
 
 {/* <Fullscreen /> */}
 
-<header name="pagetop" >
+<header name="pagetop" style={{display:'none'}}>
 
 {/* <Link to="/"><img id="logo" className="twlogo1" src={twLogo} alt="Twilightscapes Logo" style={{margin:'16px 0 40px 4vw', minWidth:'100px', maxWidth:'100px', height:'auto', padding:'0', border:'0px solid red', position:'fixed', zIndex:'2'}} /></Link> */}
 
@@ -94,7 +94,7 @@ export function Layout({ children }) {
 </span>
     </div> */}
 
-<Bug className="bug" style={{fontSize:'20px', maxWidth:'80px', opacity:'.3' }}/>
+{/* <Bug className="bug" style={{fontSize:'20px', maxWidth:'80px', opacity:'.3' }}/> */}
 
 {/* <span>MENU</span>
     <div className="spinner diagonal part-1"></div>
