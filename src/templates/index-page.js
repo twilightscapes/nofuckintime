@@ -5,6 +5,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { RiArrowRightSLine } from "react-icons/ri"
+import { RiSendPlane2Line } from "react-icons/ri"
 // import Intro from '../components/Intro'
 // import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
@@ -16,7 +17,7 @@ import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
 // import Trumpy from '../../static/assets/trump-family-board.svg'
-import Countdown from 'react-countdown'
+
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -56,7 +57,6 @@ export const pageQuery = graphql`
         youtubemute
         youtubecontrols
         svgzindex
-        nftdrop
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
@@ -99,7 +99,6 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
-            nftdrop
             featuredImage {
               childImageSharp {
                 gatsbyImageData(layout: FULL_WIDTH)
@@ -128,9 +127,10 @@ const HomePage = ({ data }) => {
     const UnderlayImage = frontmatter.underlayImage
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
-    const NftDrop = frontmatter.nftdrop
+
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
+  const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
   if (!Svg) {
     
   }
@@ -157,53 +157,62 @@ const YouTube = frontmatter.youtuber
   }
 
   function Iframer() {
-    const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;playsinline=1&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playlist=" + frontmatter.youtuber + ""
+    const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
-      <iframe title="VidSock YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
+      // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
+<div>
+      <ReactPlayer
+        id="mobilePlayer"
+          className='react-player'
+          url={Url}
+          width="100%"
+          height="100%"
+          autoplay={true}
+          background={true}
+          loop
+          playing
+          playsinline
+          muted={true}
+          showPortrait
+          playIcon={
+<>
 
-      //  <ReactPlayer
-      //     className='react-player'
-      //     url={Url}
-      //     width="100%"
-      //     height="100%"
-     
-      //     controls={false}
-      //     autoplay={true}
-      //     background={true}
-      //     loop
-      //     playing
-      //     playsinline
-      //     // muted={true}
-      //     showPortrait
-      //     playIcon={
-      //       <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0',}}>
-              
+
+
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+
+
+
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-      
-      
-      //   <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-      //     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-      
-      //     <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+  
+          </div>
+
+            
+          </button>
           
-      //     </div>
-      //     </button>}
-      
-      
-      
-      //       light="../assets/transparent.png"
-      //     />
+          </>
+          }
+            light="../assets/transparent.png"
+          >
+    
+    
+  
 
-   
+          </ReactPlayer>
 
-      
+          <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'fixed', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', zIndex:'1', width:'100vw', height:'auto', border:'0px solid red'  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
+
+
+      </div>
 
     )
   }
 
   
-  const Completionist = () => <span>You are good to go!</span>
 
 
   return (
@@ -213,9 +222,9 @@ const YouTube = frontmatter.youtuber
   <body className="homepage" />
 </Helmet>
 <Seo
-          title={`VidSocks - next generation NFT creation hosting and markting platform`}
-          description={`VidSocks is a NFT platform for creating, hosting and marketing of the next generation of interactive and dynamic NFTs `}
-          image={'https://vidsock.com/default-og-image-blank.jpg'}
+          title={`Night Photo Galleries`}
+          description={`Twilightscapes night photography`}
+          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
         />
       
       
@@ -242,43 +251,24 @@ const YouTube = frontmatter.youtuber
         
 
 
-<div style={{display:'none', position:'relative', top:'0', zIndex:'5', fontSize:'240%', textAlign:'center'}}>
-  
-  {/* <Countdown date={Date.now() + 5000}> */}
-  Drops in <Countdown date='2021-08-28T15:02:03'>
-  
-      <Completionist />
-    </Countdown>
-
-    {/* <Countdown
-    // date={Date.now() + 10000}
-    date='2022-10-03T04:02:03'
-    intervalDelay={0}
-    precision={3}
-    renderer={props => <div>{props.total}</div>}
-  /> */}
-
-</div>
 
 
-        
+
+
+        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
 
         {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
-        
 
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto 0 auto', marginTop:'0',}}>
+
 
 <section style={{ display:'',}}>
-
   <article>
-  <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
   {/* onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})} */}
 
-  {/* <div style={{position:'fixed', bottom:'', left:'0', right:'0', maxWidth:'100vw', margin:'2rem 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-  <StaticImage className="homepage-bg" src="../../static/assets/nft-logo.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div> */}
+     
 
 
 
@@ -288,13 +278,13 @@ const YouTube = frontmatter.youtuber
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
             />
             
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100%', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 </div>
@@ -306,6 +296,12 @@ const YouTube = frontmatter.youtuber
 
  
 
+  {/* {Svg ? (
+            <AddSvg />
+       
+          ) : (
+            ""
+          )} */}
 
 
 
@@ -327,26 +323,12 @@ const YouTube = frontmatter.youtuber
             ""
           )} */}
 
-
-
-
-  
-{YouTube ? (
-            <Iframer />
-       
-          ) : (
-            ""
-          )}
-
-
-
-
 {UnderlayImage ? (
             <GatsbyImage
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', bottom:'-2px', zIndex:'0',
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'1',
              objectFit:'contain', border:'0px solid red !important'}}
             />
             
@@ -355,8 +337,9 @@ const YouTube = frontmatter.youtuber
           )}
 
 
-{Svg ? (
-            <AddSvg />
+  
+{YouTube ? (
+            <Iframer />
        
           ) : (
             ""
@@ -375,10 +358,10 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section id="homeintro1" style={{display:'', top:'0', paddingTop:'2rem', height:'', position:'relative', top:'0'}}>
+<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'100vh'}}>
 <article>
-<div className="flexbutt" style={{display:'flex', gap:'30px', position:'relative', top:'0', height:'auto'}}>
-      <div className="flexcheek " style={{padding:'0 2rem', color:'#fff', textShadow:'1px 2px 0 #000', position:'relative', top:'0'}}>
+<div className="flexbutt" style={{display:'flex', gap:'30px'}}>
+      <div className="flexcheek " style={{padding:'0 2rem',}}>
 
 
           <h1 className="title1 neonText1">{frontmatter.title}</h1>
@@ -399,9 +382,7 @@ const YouTube = frontmatter.youtuber
   <br /><br />
           <Link
             // to={frontmatter.cta.ctaLink}
-            // href="#scootch"
-            to="#experiences"
-            title="See the VidSocks™"
+            to="#nfts"
             className="actionJackson txtshadow"
             style={{
               cursor:'pointer',
@@ -411,13 +392,13 @@ const YouTube = frontmatter.youtuber
             }}
           >
             {frontmatter.cta.ctaText}
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
+       
+              &nbsp;<RiSendPlane2Line />
+
           </Link>
 
-{/* 
-<AnchorLink 
+
+{/* <AnchorLink 
 className="actionJackson txtshadow"
 style={{
   cursor:'pointer',
@@ -446,30 +427,30 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', display:'block', height:'', overflow:'', top:'0'}}>
+ <div className="flexcheek" style={{position:'relative', height:'100vh', overflow:''}}>
  
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'100vh', overflow:'', position:'relative', top:'0', display:'block'}}>
+ <div style={{margin:'0 0', zIndex:'', borderRadius:'12px', height:'80%', overflow:'hidden', position:'relative'}}>
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
-           {SecondaryImage ? (
+           {/* {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'100vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'-1'}}
+              style={{border:'0px solid red', width:'100%', height:'90vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
-          )}
+          )} */}
 {/* </div> */}
 
 
 
-{/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'0', border:'0px solid yellow', zIndex:'0'}}> */}
+{/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'0'}}> */}
 <h2
   className="neonText normal txtshadow-header hit-the-floor"
   style={{
@@ -485,7 +466,8 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
     padding:'0',
   }}
 >
-  Only Available <br /> Through NFT
+Only Available
+
 </h2>
 {/* </ScrollAnimation> */}
 
@@ -507,26 +489,27 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 </ScrollAnimation> */}
 
 
-{/* <ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'0'}}>
+{/* <ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'0'}}> */}
 <h2
-  className="letter narrow txtshadow mobile-txt"
+  className="neonText narrow txtshadow mobile-txt"
   style={{
-   fontSize:'80px',
-   color: 'white',
+    color: '#fff',
+    fontSize: '60px',
    position: 'relative',
-   fontWeight:'bold',
-//            top: '230px',
-    textAlign: 'right',
-    textTransform: 'uppercase', 
+//            top: '100px',
+//            right: '1%',
+//            backgroundColor: '#ff0000',
+    textAlign: 'center', 
+    float: 'none',
     margin:'0',
     padding:'0',
   }}
 >
-  Night
+Through NFT
 </h2>
-</ScrollAnimation> */}
+{/* </ScrollAnimation> */}
 
-{/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={150} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'1', textAlign:'center', display:'block', borderRadius:'12px'}}> */}
+{/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'0', textAlign:'center', display:'block', borderRadius:'12px'}}> */}
   <Newsignup />
 {/* </ScrollAnimation> */}
 
@@ -548,15 +531,16 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 </section>
 
 
-<a name="experiences" id="experiences"></a>
+
+<a name="nfts" id="nfts"></a>
 <div id="scooch">
         <BlogListHome data={posts} />
 
-        {/* <section style={{height:'auto'}}>
-  <Link to="/archive/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
-    View More VidSocks <RiArrowRightSLine style={{fontSize:'50px'}} />
-    </article></Link>
-    </section> */}
+        <section style={{height:'auto'}}>
+  {/* <Link to="/experiences/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+    View Older Experiences <RiArrowRightSLine style={{fontSize:'50px'}} />
+    </article></Link> */}
+    </section>
 
    </div>
 
