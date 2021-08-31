@@ -358,7 +358,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'' }}>
+<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'', display:'none' }}>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek " style={{padding:'0 2rem',}}>
