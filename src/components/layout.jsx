@@ -311,7 +311,7 @@ Contact Me<span>Ordering Questions?</span>
       
 
 
-      <Footer />
+      {/* <Footer /> */}
       
       </>
     </div>
