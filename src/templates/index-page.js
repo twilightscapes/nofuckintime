@@ -180,11 +180,11 @@ const YouTube = frontmatter.youtuber
 
 
 
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
 
 
 
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', display:'flex', flexDirection:'column', alignSelf:'center'}}>
           <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
           <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
@@ -255,7 +255,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
+        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000', margin:'0 auto', marginTop:'0',}}>
 
         {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
@@ -278,13 +278,13 @@ const YouTube = frontmatter.youtuber
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red'}}
             />
             
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid', objectFit:'contain',}} />
   
           )}
 </div>
@@ -329,7 +329,7 @@ const YouTube = frontmatter.youtuber
               alt={frontmatter.title + " - image"}
               className="mcboaty"
               style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'1',
-             objectFit:'contain', border:'0px solid red !important'}}
+             objectFit:'contain', border:'0px solid red'}}
             />
             
           ) : (
@@ -358,13 +358,13 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'100vh'}}>
+<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'' }}>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek " style={{padding:'0 2rem',}}>
 
 
-          <h1 className="title1 neonText1">{frontmatter.title}</h1>
+          <h1 className="title1 neonText1" style={{color:'#fff'}}>{frontmatter.title}</h1>
           <p
             className="tagline1"
             sx={{
@@ -375,7 +375,7 @@ const YouTube = frontmatter.youtuber
           </p>
 
           <div
-            className="description"
+            style={{color:'#fff',}}
             dangerouslySetInnerHTML={{ __html: html }}
           />
   
@@ -427,7 +427,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'100vh', overflow:''}}>
+ <div className="flexcheek" style={{position:'relative', height:'100%', overflow:''}}>
  
  
 
@@ -441,7 +441,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'90vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'90vh',  borderRadius:'12px', position:'absolute', backgroundSize:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
