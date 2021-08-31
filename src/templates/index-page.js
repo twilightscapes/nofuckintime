@@ -255,14 +255,14 @@ const YouTube = frontmatter.youtuber
 
 
 
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000', margin:'0 auto', marginTop:'0',}}>
+        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000', margin:'0 auto', marginTop:'0', }}>
 
         {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
 
 
 
-<section style={{ display:'none',}}>
+<section style={{ display:'block', maxWidth:'100vw', overflow:'hidden'}}>
   <article>
   <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
