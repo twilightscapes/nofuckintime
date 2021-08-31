@@ -358,7 +358,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'', display:'none' }}>
+<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'', display:'' }}>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek " style={{padding:'0 2rem',}}>
@@ -455,7 +455,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
   className="neonText normal txtshadow-header hit-the-floor"
   style={{
     color: '#fff',
-    fontSize: '60px',
+    fontSize: '3rem',
    position: 'relative',
 //            top: '100px',
 //            right: '1%',
@@ -494,7 +494,7 @@ Only Available
   className="neonText narrow txtshadow mobile-txt"
   style={{
     color: '#fff',
-    fontSize: '60px',
+    fontSize: '3rem',
    position: 'relative',
 //            top: '100px',
 //            right: '1%',
@@ -509,9 +509,9 @@ Through NFT
 </h2>
 {/* </ScrollAnimation> */}
 
-{/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'0', textAlign:'center', display:'block', borderRadius:'12px'}}> */}
+
   <Newsignup />
-{/* </ScrollAnimation> */}
+
 
 
 </div>
