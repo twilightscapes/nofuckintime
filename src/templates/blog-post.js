@@ -109,7 +109,11 @@ const Post = ({ data, pageContext }) => {
 
 
     const NftLink = frontmatter.nftlink
+    const NftRedeem = frontmatter.nftredeem
     const NftDrop = frontmatter.nftdrop
+
+
+
 
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
@@ -611,8 +615,21 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
 
       {IsNft ? (
         
+
+        
+
+
+
         <div>
             <NFTDetails />
+<br />
+            { NftRedeem ? (
+      
+      <a href={NftRedeem} style={{fontSize:'150%', display:'flex', alignSelf:'center', justifySelf:'center', width:'70vw', maxWidth:'400px',  margin:'0 auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666'}}>REDEEM UNLOCKABLE CONTENT</a>
+      ) : (
+        ""
+      )}
+<br />
        <div className='player-wrapper1' style={{position:'relative', top:'', zIndex:'0', minHeight:'', height:'99vh', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', justifyContent:'center', borderTop:'1px solid #000', borderBottom:'1px solid #000', padding:'0 rem'}}>
 
 
@@ -628,6 +645,7 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
           ) : (
 ""
        
+
           )}
 
 </div>
@@ -650,8 +668,14 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
 
 
 
+
+
+
+
 {ShareThis ? (
 <div style={{width:'100%', padding:'0', margin:'0 auto'}}>
+
+
   
                     <ShareSocial />
     
@@ -746,6 +770,7 @@ export const pageQuery = graphql`
         nftdrop
         svgzindex
         nftlink
+        nftredeem
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)

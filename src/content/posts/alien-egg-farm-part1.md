@@ -23,6 +23,7 @@ featuredImage: /assets/Experiences-Header-3.jpg
 svgImage: /assets/nebula.svg
 nftlink: ""
 nftdrop: ""
+nftredeem: ""
 ---
 ## Alien Egg Farm
 

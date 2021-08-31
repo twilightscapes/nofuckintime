@@ -23,6 +23,7 @@ featuredImage: /assets/Experiences-Header-7.jpg
 svgImage: /assets/MysteryScience3000.svg
 nftlink: ""
 nftdrop: ""
+nftredeem: ""
 ---
 Seeing as this is my frist post !1!, woot, woot!
 

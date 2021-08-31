@@ -23,6 +23,7 @@ featuredImage: /assets/Experiences-Header-4.jpg
 svgImage: /assets/crude-addiction.svg
 nftlink: "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/14583650834310525071617320783641503123203461641321595508191183186230620717057"
 nftdrop: "2021-08-28T15:02:03"
+nftredeem: "https://checkout.securestore.shop/58829176992/checkouts/6a13aa3e2a95600b07597109e72b74b0?channel=buy_button"
 ---
 Watching shadows can be a fun pastime on a full-moon night such as this. As the moon reached it's peak int he sky, I noticed the shadows were making for a great foreground element other than ther car. 
 
@@ -31,4 +32,6 @@ Upon shooting over the course of a couple of hours I returned with a bunch of co
 So, it seemed appropriate to take it to the next level and add some animation to illustrate better what I saw from that night. 
 
 I hope you like it.
+
+<div id='product-component-1630364426437'></div>
 
