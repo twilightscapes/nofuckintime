@@ -176,12 +176,16 @@ const YouTube = frontmatter.youtuber
           muted={true}
           showPortrait
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+          {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
+
+          <div style={{position:'relative', maxWidth:'50vw', margin:' 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+  <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="VidSock" style={{ maxWidth:'28vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'3rem'}}>Click To Play</span>
   
           </div>
           </button>}
@@ -384,7 +388,7 @@ const YouTube = frontmatter.youtuber
             className="actionJackson txtshadow"
             style={{
               cursor:'pointer',
-              width:'70%',
+              width:'90%',
               margin:'0 auto'
 
             }}
@@ -397,7 +401,7 @@ const YouTube = frontmatter.youtuber
             
           </Link>
 
-          <div style={{display:'flex', flexDirection:'', width:'60%', justifySelf:'',  justifyContent:'space-between', margin:'0 auto', fontSize:'3rem', opacity:'.6'}}>
+          <div style={{display:'flex', flexDirection:'', width:'90%', justifySelf:'',  justifyContent:'space-between', margin:'0 auto', fontSize:'3rem', opacity:'.6'}}>
             <GoArrowDown />  <GoArrowDown /> <GoArrowDown />
             </div>
 
@@ -431,7 +435,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'100vh', overflow:''}}>
+ <div className="flexcheek" style={{position:'relative', height:'100%', overflow:''}}>
  
  
 
@@ -455,7 +459,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 {/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} > */}
-<div style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'0'}}>
+<div style={{position:'relative', top:'0px', paddingRight:'', border:'0px solid yellow', zIndex:'0'}}>
   <h2
   className="neonText normal txtshadow-header hit-the-floor"
   style={{
@@ -465,7 +469,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 //            top: '100px',
 //            right: '1%',
 //            backgroundColor: '#ff0000',
-    textAlign: 'right', 
+    textAlign: 'center', 
     float: 'none',
     margin:'1rem 0 0 0',
     padding:'0',
