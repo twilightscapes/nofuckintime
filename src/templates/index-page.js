@@ -11,8 +11,8 @@ import { GoArrowDown } from "react-icons/go"
 // import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
-// import ReactPlayer from 'react-player/lazy'
-// import { ImPlay } from "react-icons/im"
+import ReactPlayer from 'react-player/lazy'
+import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -159,10 +159,10 @@ const YouTube = frontmatter.youtuber
   function Iframer() {
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
-
-      // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} />
  <>
-      {/* <ReactPlayer
+       {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} /> */}
+
+      <ReactPlayer
         id="mobilePlayer"
           className='react-player'
           url={Url}
@@ -186,7 +186,7 @@ const YouTube = frontmatter.youtuber
           </div>
           </button>}
             light="../assets/transparent.png"
-          /> */}
+          />
 
           {/* <ReactPlayer
         id="deskPlayer"
@@ -260,7 +260,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section style={{ display:'none',}}>
+<section style={{ display:'',}}>
   <article>
   <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
@@ -356,8 +356,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'100vh'}}>
-<article>
+
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek " style={{padding:'0 2rem',color:'#fff', textShadow:'3px 3px 0 #000'}}>
 
@@ -513,9 +512,11 @@ Through NFT
 </h2>
 </ScrollAnimation> */}
 
-<ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'0', textAlign:'center', display:'block', borderRadius:'12px'}}>
+{/* <ScrollAnimation className="signup" animateIn="" delay={550} initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'relative', justifyContent:'center', width:'', zIndex:'0', textAlign:'center', display:'block', borderRadius:'12px'}}> */}
+<div style={{position:'relative', justifyContent:'center', width:'', zIndex:'0', textAlign:'center', display:'block', borderRadius:'12px'}}>
   <Newsignup />
-</ScrollAnimation>
+  </div>
+{/* </ScrollAnimation> */}
 
 
 </div>
@@ -531,8 +532,7 @@ Through NFT
 
       </div> 
 </div>
-</article>
-</section>
+
 
 
 
