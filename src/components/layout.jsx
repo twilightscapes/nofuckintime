@@ -306,7 +306,9 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      <SkipNavContent className="intro">{children}</SkipNavContent>
+      {/* <SkipNavContent className="intro"> */}
+        {children}
+      {/* </SkipNavContent> */}
       
       
 
