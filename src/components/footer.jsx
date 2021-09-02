@@ -184,7 +184,7 @@ export function Footer() {
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'2rem', textDecoration:'none'}}>Contact Us - We &nbsp;<FaHeart />&nbsp;feedback!</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'2rem', textDecoration:'none'}}>Contact Us - We &nbsp;<FaHeart />&nbsp;   Feedback!</Link>
 
  <div >
         {/* <Social /> */}
@@ -206,6 +206,7 @@ export function Footer() {
         
         Copyright &copy; {(new Date().getFullYear())} VidSock(s)<br />is NOT affiliated with YouTube in any way. </div>
         <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} />
+        <br /><br />
       </nav>
    
     </footer>
