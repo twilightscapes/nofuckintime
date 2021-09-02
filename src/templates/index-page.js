@@ -436,7 +436,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'80%', overflow:'hidden', position:'relative'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'80%', overflow:'', position:'relative'}}>
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
@@ -454,8 +454,9 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-<ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'0'}}>
-<h2
+{/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} > */}
+<div style={{position:'relative', top:'0px', paddingRight:'10%', border:'0px solid yellow', zIndex:'0'}}>
+  <h2
   className="neonText normal txtshadow-header hit-the-floor"
   style={{
     color: '#fff',
@@ -473,7 +474,8 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 Only Available<br />
 Through NFT
 </h2>
-</ScrollAnimation>
+</div>
+{/* </ScrollAnimation> */}
 
 
 {/* <ScrollAnimation animateIn="bounceInRight" delay={400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red', zIndex:'0'}}>
