@@ -19,19 +19,19 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/Experiences-Header-7.jpg
+featuredImage: /assets/TheyLive-Header.jpg
 svgImage: /assets/TheyLive.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
 ---
-Seeing as this is my frist post !1!, woot, woot!
+Only the BEST MOVIE EVER! My tribute to the cult classic, They Live by one of my favorite Directors: John Carpenter. 
 
-Sorry, I've always wanted to do that, lol. This VidSock was completely chosen as First Post because this fantastic television show was in a lot of ways the pioneering inspiration that made this site possible. 
+Because I have come here to chew bubblegum and kick ass...
 
-So, this is sort of my own tribute to the Great Mystery Science Theater 3000 tv show.
+And I'm all out of bubble gum.
 
-Enjoy the show!
+
 
 
 
