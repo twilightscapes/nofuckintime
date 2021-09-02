@@ -523,11 +523,11 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
 
 
 
-<div className="home-posts" style={{clear:'both', display:'flex',  justifyContent:'space-between', textAlign:'left', width:'90vw'}}>
+<div className="home-posts" style={{clear:'both', display:'flex',  justifyContent:'space-between', textAlign:'left', width:'100vw', height:'', maxHeight:''}}>
 
 
 
-<div style={{padding:'0 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', border:'0px solid yellow'}}>
+<div style={{padding:'0 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', minWidth:'60%', border:'0px solid yellow'}}>
 
 {IsNft ? (
             <h3 style={{padding:'2rem 1rem'}}>Artist's Notes:</h3>
@@ -543,18 +543,10 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
         dangerouslySetInnerHTML={{ __html: html }}
       />      
      
-
-</div>
-
-
-
-
-
-
-
-        {ShowOriginal ? (
-          <div style={{minWidth:'30%', textAlign:'center', display:'flex', flexDirection:'column'}}>Click to view original video
-<div style={{minWidth:'100%', padding:'0', height:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue'}}>
+     <br /><br />
+ {ShowOriginal ? (
+          <div style={{minWidth:'100%', textAlign:'center', display:'flex', flexDirection:'column'}}>Click to view original video
+<div style={{maxWidth:'50vw', padding:'0', width:'100%', height:'240px', maxHeight:'30vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto'}}>
   
                     <Iframer2 />
 
@@ -563,10 +555,58 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
           ) : (
             ""
           )}
+</div>
+
+
+
+
+{IsNft ? (
+        
+
+        
+
+
+
+        <div style={{width:'100%', position:'relative', right:'0'}}>
+            {/* <NFTDetails /> */}
+<br />
+            { NftRedeem ? (
+      
+      <a href={NftRedeem} style={{fontSize:'150%', display:'flex', alignSelf:'center', justifySelf:'center', width:'70vw', maxWidth:'400px',  margin:'0 auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666'}}>REDEEM UNLOCKABLE CONTENT</a>
+      ) : (
+        ""
+      )}
+<br />
+       <div className='player-wrapper1' style={{position:'relative', top:'', right:'0', zIndex:'0', minHeight:'', height:'100%', width:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', justifyContent:'center',  padding:'0 rem'}}>
+
+
+       { NftDrop ? (
+            <div style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'100vh', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
+  <Countdown daysInHours date={NftDrop} >
+<Completionist />
+  </Countdown>
+</div>
+
+
+       
+          ) : (
+""
+       
+
+          )}
+
+</div>
+</div>
+
+          ) : (
+            ""
+          )}
+
+
+       
 
 
  </div>
-
 
 
         
@@ -594,47 +634,7 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
   /> */}
 
 
-      {IsNft ? (
-        
-
-        
-
-
-
-        <div>
-            {/* <NFTDetails /> */}
-<br />
-            { NftRedeem ? (
       
-      <a href={NftRedeem} style={{fontSize:'150%', display:'flex', alignSelf:'center', justifySelf:'center', width:'70vw', maxWidth:'400px',  margin:'0 auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666'}}>REDEEM UNLOCKABLE CONTENT</a>
-      ) : (
-        ""
-      )}
-<br />
-       <div className='player-wrapper1' style={{position:'relative', top:'', zIndex:'0', minHeight:'', height:'99vh', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', justifyContent:'center', borderTop:'1px solid #000', borderBottom:'1px solid #000', padding:'0 rem'}}>
-
-
-       { NftDrop ? (
-            <div style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'1px solid', width:'100vw', height:'100%', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
-  <Countdown daysInHours overtime date={NftDrop} >
-<Completionist />
-  </Countdown>
-</div>
-
-
-       
-          ) : (
-""
-       
-
-          )}
-
-</div>
-</div>
-
-          ) : (
-            ""
-          )}
 
 
 
