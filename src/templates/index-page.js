@@ -187,7 +187,7 @@ const YouTube = frontmatter.youtuber
   <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="VidSock" style={{ maxWidth:'28vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div>
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'3rem'}}>Click To Play</span>
+          <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
   
           </div>
           </button>}
@@ -445,7 +445,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'80%', overflow:'', position:'relative'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'', overflow:'', position:'relative'}}>
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
