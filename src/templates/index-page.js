@@ -229,9 +229,9 @@ const YouTube = frontmatter.youtuber
   <body className="homepage" />
 </Helmet>
 <Seo
-          title={`Night Photo Galleries`}
-          description={`Twilightscapes night photography`}
-          image={'https://twilightscapes.com/default-og-image-blank.jpg'}
+          title={`VidSock - Video Multimedia NFT Platform`}
+          description={`Create, display and market your NFTs with VidSock`}
+          image={'https://vidsock.com/default-og-image.jpg'}
         />
       
       
