@@ -2760,10 +2760,10 @@ background-position:center 70px;
     
 
 
-          @media (max-width: 48rem) {
+          /* @media (max-width: 48rem) {
             .container2 {margin-top:0 !important;}
             .container2{max-width:96% !important;}
-            }
+            } */
 
             /* @media (min-width: 48rem) {
               #scooch:hover {
@@ -2785,10 +2785,7 @@ background-position:center 70px;
                   /* transform: scale(1); */
                   transition: all .8s ease-in-out;
                 }
-                #scooch:hover {
-                  /* transform: scale(.96); */
-                  /* margin-top:-10vh; */
-                }
+
 
                 .container2:hover, .container2:active { 
                   /* height: 10% !important;  */
@@ -2799,9 +2796,7 @@ background-position:center 70px;
                   overflow-y: scroll;
                   /* scroll-snap-type: none !important; */
                 }
-                .container2 section {
-                  /* scroll-snap-align: none; */
-                }
+    
                 
                 .container2 section article{
                   margin: 0;

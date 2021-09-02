@@ -257,7 +257,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-        <div name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
+        <div name="container2" className="container2" style={{display:'',}}>
 
         {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
