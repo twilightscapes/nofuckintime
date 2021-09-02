@@ -88,8 +88,8 @@ const HomePage = ({ data }) => {
 </Helmet>
 <Seo
           title={`VidSocks - NFT platform for developing, hosting and marketing NFTs`}
-          description={`TVidSocks are an NFT platform for developing, hosting and marketing NFTs`}
-          image={'https://vidsock.com/default-og-image-blank.jpg'}
+          description={`VidSocks are an NFT platform for developing, hosting and marketing NFTs`}
+          image={'https://vidsock.com/default-og-image.jpg'}
         />
       
       <div className="home-banner flexbutt" style={{position:'relative', height:'auto', overflow:'hidden'}}>

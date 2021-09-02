@@ -62,7 +62,7 @@ export default function GalleryPage({ data }) {
 <Seo
           title={`VidSocks`}
           description={`VidSocks`}
-          image={'https://vidsocks.com/default-og-image-blank.jpg'}
+          image={'https://vidsocks.com/default-og-image.jpg'}
         />
 
 

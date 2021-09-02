@@ -529,7 +529,7 @@ Through NFT
   </div>
 {/* </ScrollAnimation> */}
 
-<div style={{fontSize:'120%', textAlign:'center', margin:'1rem'}}><Link to="">Read More About The VidSock Platform Here</Link></div>
+<div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link to="/about/">Learn More About The VidSock Platform Here</Link></div>
 </div>
 
       
