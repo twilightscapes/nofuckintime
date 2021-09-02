@@ -8,7 +8,7 @@ import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 // import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
-import NFTDetails from "../components/nft-details"
+// import NFTDetails from "../components/nft-details"
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
@@ -602,7 +602,7 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
 
 
         <div>
-            <NFTDetails />
+            {/* <NFTDetails /> */}
 <br />
             { NftRedeem ? (
       
@@ -616,7 +616,7 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
 
        { NftDrop ? (
             <div style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'1px solid', width:'100vw', height:'100%', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
-  <Countdown date={NftDrop} >
+  <Countdown daysInHours overtime date={NftDrop} >
 <Completionist />
   </Countdown>
 </div>

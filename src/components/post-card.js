@@ -42,25 +42,25 @@ const PostCard = ({ data }) => (
 
 
 
-{ !data.frontmatter.nftdrop ? (
+{ data.frontmatter.nftdrop ? (
             
-""
+<div className="" style={{display:'flex', alignSelf:'center',  position:'absolute', bottom:'120px', width:'100vw', margin:'0 auto'}}>
+
+<div style={{display:'flex', justifyContent:'center', maxWidth:'600px',  margin:'0 auto', backdropFilter:'blur(10px)', color:'#fff', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px',border:'1px solid #111', textShadow:'1px 2px 0px #000'}}>
+<Countdown daysInHours date={data.frontmatter.nftdrop}>
+{/* <Countdown
+date={Date.now() + 20000} className="countdown"> */}
+
+<Completionist />
+</Countdown>
+</div>
+
+</div>
 
        
           ) : (
 
-            <div className="" style={{display:'flex', alignSelf:'center',  position:'absolute', bottom:'120px', width:'100vw', margin:'0 auto'}}>
-
-            <div style={{display:'flex', justifyContent:'center', maxWidth:'600px',  margin:'0 auto', backdropFilter:'blur(10px)', color:'#fff', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px',border:'1px solid #111', textShadow:'1px 2px 0px #000'}}>
-            <Countdown date={data.frontmatter.nftdrop}>
-            {/* <Countdown
-    date={Date.now() + 20000} className="countdown"> */}
-
-            <Completionist />
-            </Countdown>
-            </div>
-          
-            </div>
+            ""
        
           )}
 

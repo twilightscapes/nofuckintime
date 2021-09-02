@@ -18,7 +18,7 @@ const CustomBox = styled.div`
 
    border-radius:12px;
    filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
-   background:rgba(0,0,0,0.08) !important;
+//    background:rgba(0,0,0,0.08) !important;
 }
 
 `
@@ -28,8 +28,8 @@ const NFTDetails = () => (
 <CustomBox style={{}}>
 
 
-<Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'',   overflow:'hidden', marginTop:'40px',}}>
-        <h2 style={{fontSize:'140%', textAlign:'center', margin:'1rem 0'}}>How VidSocks Work</h2>
+<Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'',   overflow:'hidden', marginTop:'0',}}>
+        {/* <h2 style={{fontSize:'140%', textAlign:'center', margin:'1rem 0'}}>How VidSocks Work</h2> */}
     <TabList style={{width:'100%', border:'0px solid yellow',}}>
     <Tab><div className="iconmenu"><CgRatio /><span>Specs</span></div></Tab>
     <Tab><div className="iconmenu"><RiSecurePaymentLine/><span>Secure</span></div></Tab>

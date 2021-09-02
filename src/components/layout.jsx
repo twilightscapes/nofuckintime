@@ -47,10 +47,10 @@ export function Layout({ children }) {
 
       <ModalRoutingContext.Consumer>
     {({ modal, closeTo }) => (
-      <div style={{overflow:'hidden'}}>
+      <div style={{overflow:''}}>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'60px', right:'5vw', padding:'10px', fontSize:'40px', background:'#111 !important', filter:'none', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
+          <div style={{position:'fixed', top:'40px', right:'5vw', padding:'10px', fontSize:'40px', background:'#111 !important', filter:'none', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
           <Link state={{noScroll: true }} to={closeTo}>
             <AiOutlineClose />
           </Link>

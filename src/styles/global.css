@@ -938,14 +938,14 @@ color:#fff !important;
   } */
 
 
-.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after{
+.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .back{
 display: none !important;
 
 }
 
 .ReactModalPortal div.toppad{border:0px solid blue !important; display: none !important;}
 
-.ReactModalPortal {margin:0 3% !important; width:80% !important; z-index: 2;}
+.ReactModalPortal {margin:0 19% !important; width:80% !important; z-index: 2;}
 
 .ReactModal__Overlay{background-color:transparent !important;   background: rgba(0,0,0,0.90);
   backdrop-filter: blur(22px);}
@@ -1708,6 +1708,12 @@ transform: scale(1);
 
 
 
+.ReactModal__Content .infomenu, .ReactModal__Content .iconmenu {
+  color:#fff !important;
+  text-shadow: 2px 2px 0 #000;
+}
+
+
 
 
 .react-tabs__tab{
@@ -1715,7 +1721,7 @@ transform: scale(1);
 	margin-bottom: 10px;
 	padding: 12px 5px;
 	border: 0px solid #ccc;
-	color: #666;
+	color: #fff;
 	font-size: 12px; 
 	font-weight: 600;
 	text-transform: uppercase;
@@ -1725,11 +1731,11 @@ transform: scale(1);
   border-radius:0;
 }
 .react-tabs__tab:hover {
-	color: #333;
+	/* color: #333; */
 }
 
 .react-tabs__tab-list {
-  border-bottom: 1px solid #aaa;
+  /* border-bottom: 1px solid #aaa; */
   margin: 0 0;
   padding: 0;
   clear:both;
@@ -1737,7 +1743,7 @@ transform: scale(1);
   justify-content:center;
   }
 
-  .react-tabs__tab--selected, .react-tabs__tab{background:transparent !important; border: none !important;}
+  .react-tabs__tab--selected, .react-tabs__tab{background:transparent !important; border: none !important; color:inherit !important;}
 
 
 
@@ -1777,16 +1783,17 @@ background:#000;
   justify-content:center;
   padding:15px;
   border-radius:12px;
-  background:#333;
-  color:#999;
+  /* background:#333; */
+  /* color:#fff; */
   position:relative;
   font-size:40px;
-  overflow:hidden;
+  text-shadow:2px 2px 0 #000;
+
 }
 
-.react-tabs__tab--selected{background:transparent; overflow:hidden;}
+.react-tabs__tab--selected{background:transparent;}
 
-.iconmenu span{display:block; position:absolute; top:0; font-size:12px; background:none; overflow:hidden;}
+.iconmenu span{display:block; position:absolute; top:0; font-size:12px; background:none; }
 
 
 

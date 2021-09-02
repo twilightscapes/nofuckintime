@@ -100,6 +100,8 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
+            nftdrop
+            nftlink
             featuredImage {
               childImageSharp {
                 gatsbyImageData(layout: FULL_WIDTH)
@@ -529,7 +531,7 @@ Through NFT
   </div>
 {/* </ScrollAnimation> */}
 
-<div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link to="/about/">Learn More About The VidSock Platform Here</Link></div>
+<div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div>
 </div>
 
       

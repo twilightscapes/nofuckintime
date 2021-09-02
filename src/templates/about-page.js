@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import GoBack from "../components/goBack"
-
+import NFTDetails from "../components/nft-details"
 export const pageQuery = graphql`
   query AboutQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -26,20 +26,21 @@ const AboutPage = ({ data }) => {
       <Seo title={frontmatter.title} description={excerpt} />
 
 
-      <div className="container" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
+      {/* <div className="container" style={{padding:'2rem 8%', maxWidth:'1024px'}}> */}
 
 
       <div className="mobile"><GoBack /></div>
 
 
-      <section className="article-header" style={{textAlign:'left', margin:'0 4%', height:'auto'}}>
+      {/* <section className="article-header" style={{textAlign:'left', margin:'0 4%', height:'auto'}}>
             <h1>{frontmatter.title}</h1>
-            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+            <time sx={{color: "muted"}}>{frontmatter.date}</time>
           </section>
 
-        <article dangerouslySetInnerHTML={{ __html: html }} />
+        <article dangerouslySetInnerHTML={{ __html: html }} /> */}
+        <NFTDetails />
 
-      </div>
+      {/* </div> */}
 
 
 
