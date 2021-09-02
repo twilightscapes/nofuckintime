@@ -195,7 +195,7 @@ const YouTube = frontmatter.youtuber
           />
 
 
-<object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', left:'0', right:'0', top:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'100%',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
+<object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', left:'0', right:'0', top:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'100%',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
 
           {/* <ReactPlayer
         id="deskPlayer"
@@ -262,7 +262,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-        <div name="container2" className="container2" style={{display:'',}}>
+        <div name="container2" className="container2" style={{height:'90vh',}}>
 
         {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
 
