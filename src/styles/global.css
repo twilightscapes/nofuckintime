@@ -1488,16 +1488,16 @@ blockquote:after {
 
 
 .countdown{border:0px solid pink; position:relative}
-.countdown:before{
+.countdown span:before{
   content: " DROPS IN: ";
-  font-size: 1em;
+  font-size: 2rem;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
-  text-align: right;
+  text-align: center;
   position:absolute;
   right:0;
-  top:-2rem;
+  top:-1.5rem;
   width:100%;
 }
 

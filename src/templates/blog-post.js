@@ -353,11 +353,18 @@ Add your favorites in the comments below!
 
 
 
-const Completionist = () => <iframe src={NftLink}
+const Completionist = () => <div style={{height:'80%'}}>
+  { NftRedeem ? (
+      
+      <a href={NftRedeem} style={{fontSize:'1.4rem', display:'flex', alignSelf:'center', justifySelf:'center', width:'70vw', maxWidth:'400px',  margin:'10px auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666',}}>REDEEM UNLOCKABLE CONTENT</a>
+      ) : (
+        ""
+      )}
+  <iframe src={NftLink}
 width='100%'
 height='100%'
 frameborder='0'
-allowfullscreen style={{position:'relative', top:'0'}}></iframe>
+allowfullscreen style={{position:'relative', top:'0'}}></iframe></div>
 
 
   
@@ -570,18 +577,15 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe>
         <div style={{width:'100%', position:'relative', right:'0'}}>
             {/* <NFTDetails /> */}
 <br />
-            { NftRedeem ? (
-      
-      <a href={NftRedeem} style={{fontSize:'150%', display:'flex', alignSelf:'center', justifySelf:'center', width:'70vw', maxWidth:'400px',  margin:'0 auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666'}}>REDEEM UNLOCKABLE CONTENT</a>
-      ) : (
-        ""
-      )}
+            
 <br />
        <div className='player-wrapper1' style={{position:'relative', top:'', right:'0', zIndex:'0', minHeight:'', height:'100%', width:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', justifyContent:'center',  padding:'0 rem'}}>
 
 
        { NftDrop ? (
-            <div style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'100vh', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
+
+         
+            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'100vh', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
   <Countdown daysInHours date={NftDrop} >
 <Completionist />
   </Countdown>
