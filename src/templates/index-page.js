@@ -5,6 +5,8 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { RiArrowRightSLine } from "react-icons/ri"
+import { GoArrowDown } from "react-icons/go"
+
 // import Intro from '../components/Intro'
 // import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
@@ -357,7 +359,7 @@ const YouTube = frontmatter.youtuber
 <section id="homeintro" style={{top:'0', paddingTop:'2rem', height:'100vh'}}>
 <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek " style={{padding:'0 2rem',}}>
+      <div className="flexcheek " style={{padding:'0 2rem',color:'#fff', textShadow:'3px 3px 0 #000'}}>
 
 
           <h1 className="title1 neonText1">{frontmatter.title}</h1>
@@ -371,6 +373,7 @@ const YouTube = frontmatter.youtuber
           </p>
 
           <div
+          style={{color:'#fff', textShadow:'1px 1px 0 #333'}}
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
           />
@@ -391,7 +394,13 @@ const YouTube = frontmatter.youtuber
             <span className="icon -right">
               <RiArrowRightSLine />
             </span>
+
+            
           </Link>
+
+          <div style={{display:'flex', flexDirection:'', width:'60%', justifySelf:'',  justifyContent:'space-between', margin:'0 auto', fontSize:'3rem', opacity:'.6'}}>
+            <GoArrowDown />  <GoArrowDown /> <GoArrowDown />
+            </div>
 
 
 {/* <AnchorLink 
@@ -451,14 +460,14 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
   className="neonText normal txtshadow-header hit-the-floor"
   style={{
     color: '#fff',
-    fontSize: '60px',
+    fontSize: '3rem',
    position: 'relative',
 //            top: '100px',
 //            right: '1%',
 //            backgroundColor: '#ff0000',
     textAlign: 'right', 
     float: 'none',
-    margin:'0',
+    margin:'1rem 0 0 0',
     padding:'0',
   }}
 >
@@ -527,15 +536,15 @@ Through NFT
 
 
 
-<a name="experiences" id="experiences"></a>
+<a name="nfts" id="nfts"></a>
 <div id="scooch">
         <BlogListHome data={posts} />
 
-        <section style={{height:'auto'}}>
+        {/* <section style={{height:'auto'}}>
   <Link to="/experiences/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
     View Older Experiences <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
-    </section>
+    </section> */}
 
    </div>
 

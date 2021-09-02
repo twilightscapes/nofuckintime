@@ -7,7 +7,7 @@ featuredImage: /assets/transparent.png
 secondaryImage: /assets/swd-foreground.png
 cta:
   ctaText: "See the VidSocks"
-  ctaLink: /nfts/
+  ctaLink: /#nfts
 youtuber: "iHxmNzMfDj4"
 youtubestart: "0"
 youtubeend: "33"

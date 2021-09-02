@@ -1217,14 +1217,14 @@ body.homepage .mobilespace{
 .sidebarMenuInner {
   transition: all .8s ease-in-out;
       background-color: #111;
-        background: linear-gradient(
-          45deg,
-           rgba(49, 10, 156, 0.411),
-            rgba(62, 12, 179, 0.507),
-             rgb(1, 178, 184),
-              #111) !important;
-        background-size: 300% 300%;
-        animation: gradient 12s ease infinite;
+                  /* background: linear-gradient(
+                    45deg,
+                     rgb(69, 19, 73),
+                      rgb(0, 162, 184),
+                       #000,
+                        rgb(99, 6, 107));
+                  background-size: 300% 100%;
+        animation: gradient 12s ease infinite; */
     }
 
 
@@ -2816,13 +2816,13 @@ background-position:center 70px;
                 
                 footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff !important; position:relative; bottom:0 ; z-index: 2; opacity: 1;
                   background: linear-gradient(
-                    45deg,
+                    0deg,
                      #111,
                       #222,
                        #000,
                         #111);
                   background-size: 300% 300%;
-                  animation: gradient 12s ease infinite;
+                  /* animation: gradient 12s ease infinite; */
                 }
 
                 @keyframes gradient {
@@ -2847,8 +2847,8 @@ background-position:center 70px;
                       rgb(0, 162, 184),
                        #000,
                         rgb(99, 6, 107));
-                  background-size: 300% 400%;
-                  animation: gradient 14s ease-in-out infinite;
+                  background-size: 300% 100%;
+                  /* animation: gradient 14s ease-in-out infinite; */
               }
 
 
