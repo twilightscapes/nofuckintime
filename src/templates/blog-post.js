@@ -556,18 +556,18 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 {IsNft ? (
 
-        <div style={{minWidth:'50%', width:'100%', maxWidth:'600px', maxHeight:'', position:'relative', right:'0', border:'0px solid red', margin:'0 auto'}}>
+        <div style={{minWidth:'50%', width:'100%', maxWidth:'', maxHeight:'', position:'relative', right:'0', border:'0px solid red', margin:'0 auto'}}>
             {/* <NFTDetails /> */}
 <br />
             
 <br />
-       <div className='player-wrapper1' style={{position:'relative', top:'', right:'0', zIndex:'0', minHeight:'', height:'', width:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', justifyContent:'center',  padding:'0 rem'}}>
+
        
 
        { NftDrop ? (
 
          
-            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'100vh', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
+            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
   <Countdown daysInHours date={NftDrop} >
 <Completionist />
   </Countdown>
@@ -588,7 +588,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
           )}
 
 </div>
-</div>
+
 
           ) : (
             ""
