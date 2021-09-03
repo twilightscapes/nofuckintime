@@ -497,7 +497,7 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe></div>
 
 <br />
 <br />
-<GoBack />
+{/* <GoBack /> */}
 
 
 
