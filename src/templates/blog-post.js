@@ -543,7 +543,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
       <div
-        className="blog-post-content" style={{ padding:'0 2rem', fontSize:'1.1rem', textAlign:'left', width:'90%', color:'inherit !important'}}
+        className="blog-post-content" style={{ padding:'0 2rem', fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'800px', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
       />      
      
@@ -556,7 +556,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 {IsNft ? (
 
-        <div style={{minWidth:'50%', width:'100%', maxWidth:'', maxHeight:'', position:'relative', right:'0', border:'0px solid red', margin:'0 auto'}}>
+        <div style={{minWidth:'50%', width:'100%', maxWidth:'1000px', maxHeight:'', position:'relative', right:'0', border:'0px solid red', margin:'0 auto'}}>
             {/* <NFTDetails /> */}
 <br />
             
@@ -600,9 +600,11 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
  </div>
 
+
+<br />
  {ShowOriginal ? (
-          <div style={{minWidth:'100%', marginTop:'2rem', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', }}>Click to view original video
-<div style={{maxWidth:'50vw', padding:'0', width:'100%', height:'440px', maxHeight:'30vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto'}}>
+          <div style={{width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', }}>Click to view original video
+<div style={{maxWidth:'90vw', padding:'0', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto'}}>
   
                     <Iframer2 />
 
