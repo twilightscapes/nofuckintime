@@ -162,7 +162,7 @@ function ShowSuggestion() {
   return (
 <div>
   
-<div style={{width:'100%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
+<div style={{width:'90%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
 <IoArrowRedoSharp style={{position:'absolute', top:'0', left:'0', fontSize:'60px', transform: 'rotate(-45deg)', }} />
 <IoArrowUndoSharp style={{position:'absolute', top:'0', right:'0', fontSize:'60px', transform: 'rotate(45deg)', }} />
   
@@ -353,18 +353,14 @@ Add your favorites in the comments below!
 
 
 
-const Completionist = () => <div style={{height:'80%'}}>
+const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:'100vw', }}>
   { NftRedeem ? (
       
-      <a href={NftRedeem} style={{fontSize:'1.4rem', display:'flex', alignSelf:'center', justifySelf:'center', width:'70vw', maxWidth:'400px',  margin:'10px auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666',}}>REDEEM UNLOCKABLE CONTENT</a>
+      <a href={NftRedeem} style={{fontSize:'1.4rem', display:'flex', alignSelf:'center', justifySelf:'center', width:'', maxWidth:'400px',  margin:'10px auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666',}}>REDEEM UNLOCKABLE CONTENT</a>
       ) : (
         ""
       )}
-  <iframe src={NftLink}
-width='100%'
-height='100%'
-frameborder='0'
-allowfullscreen style={{position:'relative', top:'0'}}></iframe></div>
+  <nft-card style={{}} contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183187330132344833"> </nft-card></div>
 
 
   
@@ -374,6 +370,7 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe></div>
 <CustomBox style={{}}>
 <Helmet>
   <body className="blogpost" />
+  <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
 </Helmet>
 
       <Seo
@@ -530,11 +527,11 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe></div>
 
 
 
-<div className="home-posts" style={{clear:'both', display:'flex',  justifyContent:'space-between', textAlign:'left', width:'100vw', height:'', maxHeight:''}}>
+<div className="home-posts" style={{clear:'both', display:'',  justifyContent:'space-around', textAlign:'left', width:'90vw', margin:'0 auto', height:'', maxHeight:'', border:'0px solid blue'}}>
 
 
 
-<div style={{padding:'0 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', minWidth:'60%', border:'0px solid yellow'}}>
+<div style={{padding:'0 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
 
 {IsNft ? (
             <h3 style={{padding:'2rem 1rem'}}>Artist's Notes:</h3>
@@ -551,36 +548,21 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe></div>
       />      
      
      <br /><br />
- {ShowOriginal ? (
-          <div style={{minWidth:'100%', textAlign:'center', display:'flex', flexDirection:'column'}}>Click to view original video
-<div style={{maxWidth:'50vw', padding:'0', width:'100%', height:'240px', maxHeight:'30vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto'}}>
-  
-                    <Iframer2 />
-
-       </div></div>
-       
-          ) : (
-            ""
-          )}
+ 
 </div>
 
 
 
 
 {IsNft ? (
-        
 
-        
-
-
-
-        <div style={{width:'100%', position:'relative', right:'0'}}>
+        <div style={{minWidth:'50%', width:'100%', maxWidth:'100vw', maxHeight:'300px', position:'relative', right:'0', border:'0px solid red'}}>
             {/* <NFTDetails /> */}
 <br />
             
 <br />
-       <div className='player-wrapper1' style={{position:'relative', top:'', right:'0', zIndex:'0', minHeight:'', height:'100%', width:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', justifyContent:'center',  padding:'0 rem'}}>
-
+       <div className='player-wrapper1' style={{position:'relative', top:'', right:'0', zIndex:'0', minHeight:'', height:'', width:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', justifyContent:'center',  padding:'0 rem'}}>
+       
 
        { NftDrop ? (
 
@@ -589,6 +571,12 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe></div>
   <Countdown daysInHours date={NftDrop} >
 <Completionist />
   </Countdown>
+
+
+
+  
+
+
 </div>
 
 
@@ -612,7 +600,17 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe></div>
 
  </div>
 
+ {ShowOriginal ? (
+          <div style={{minWidth:'100%', marginTop:'2rem', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', }}>Click to view original video
+<div style={{maxWidth:'50vw', padding:'0', width:'100%', height:'440px', maxHeight:'30vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto'}}>
+  
+                    <Iframer2 />
 
+       </div></div>
+       
+          ) : (
+            ""
+          )}
         
         
 
@@ -650,6 +648,7 @@ allowfullscreen style={{position:'relative', top:'0'}}></iframe></div>
 
 
 
+       
 
 
 
