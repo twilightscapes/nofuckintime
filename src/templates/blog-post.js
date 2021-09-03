@@ -531,7 +531,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-<div style={{padding:'0 0', borderTop:'0px solid', margin:'3rem 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+<div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
 
 {IsNft ? (
             <h3 style={{padding:'2rem 1rem'}}>Artist's Notes:</h3>
@@ -556,7 +556,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 {IsNft ? (
 
-        <div style={{minWidth:'50%', width:'100%', maxWidth:'100vw', maxHeight:'300px', position:'relative', right:'0', border:'0px solid red'}}>
+        <div style={{minWidth:'50%', width:'100%', maxWidth:'600px', maxHeight:'', position:'relative', right:'0', border:'0px solid red', margin:'0 auto'}}>
             {/* <NFTDetails /> */}
 <br />
             
