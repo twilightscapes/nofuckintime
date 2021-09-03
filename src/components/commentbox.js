@@ -5,7 +5,7 @@ import commentbox from 'commentbox.io';
 
 const ComBox = ()=>{
   useEffect(() =>{
-    commentbox('5708736052068352-proj', {
+    commentbox('5732401321869312-proj', {
       backgroundColor: null,  // default transparent
       textColor: "#222",  // default black
        subtextColor: "#222",  // default grey
