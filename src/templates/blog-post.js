@@ -180,15 +180,15 @@ Click to Copy:<br />
 
   <CopyToClipboard text={Suggestion2}>
   <button>{Suggestion2} </button>
-</CopyToClipboard>
+</CopyToClipboard><br />
 
 <CopyToClipboard text={Suggestion3}>
   <button>{Suggestion3} </button>
-</CopyToClipboard>
+</CopyToClipboard><br />
 
 
 
-<br />
+
 <br />
 Add your favorites in the comments below!
 
@@ -476,7 +476,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'1',
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'0', zIndex:'1',
              objectFit:'contain', border:'0px solid red !important'}}
             />
             
