@@ -35,7 +35,8 @@ Enjoy the show!
 
 
 
-
+<h2 class="neonText" style="text-align: center;">BUY THE NFT!</h2>
+<nft-card style="border:none;border-radius:12px" contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183190628667228161"> </nft-card>
 
 
 

@@ -83,6 +83,19 @@ display: none !important;
     /* Player ratio: 100 / (1280 / 720) */
   }
   
+  .NFTiframer-wrapper{
+    height:100vh;
+  }
+
+  @media (max-width: 48rem) {
+    .NFTiframer-wrapper{
+      max-width:100vw !important;
+      height:60vh !important;
+    }
+    
+  }
+
+
 
   @media (min-width: 1200px) {
     /* .player-wrapper {padding-top: 45.25%} */

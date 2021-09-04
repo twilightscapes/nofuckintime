@@ -21,7 +21,7 @@ shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/TheyLive-Header.jpg
 svgImage: /assets/TheyLive.svg
-nftlink: "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/14583650834310525071617320783641503123203461641321595508191183186230620717057"
+nftlink: ""
 nftdrop: "2021-09-02T14:00:00"
 nftredeem: "https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button"
 ---

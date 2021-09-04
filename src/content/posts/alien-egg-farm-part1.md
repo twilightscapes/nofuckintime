@@ -14,7 +14,7 @@ youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 youtubeautostart: "1"
-isnftforsale: ""
+isnftforsale: "1"
 svgzindex: "0"
 comments: "1"
 shareable: "1"
@@ -22,7 +22,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-3.jpg
 svgImage: /assets/nebula.svg
 nftlink: ""
-nftdrop: "2021-09-11T15:02:00"
+nftdrop: "2021-09-03T15:02:00"
 nftredeem: ""
 ---
 ## Alien Egg Farm

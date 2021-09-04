@@ -172,7 +172,7 @@ function ShowSuggestion() {
 
 The artist recommends these alternatives:
 <br /><br />
-
+Click to Copy:<br />
 <CopyToClipboard text={Suggestion1}>
   <button>{Suggestion1} </button>
 </CopyToClipboard><br />
@@ -389,7 +389,11 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+
+{YouTube ? (
+
+
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', flexDirection:'column', justifyContent:'flex-start' }}>
 
 
 
@@ -397,22 +401,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-<div style={{display:'block', width:'100vw', height:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:''}}>
-{Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
-            />
-            
-          ) : (
 
-       
-            <StaticImage src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
-  
-          )}
-</div>
 
 
 
@@ -485,8 +474,51 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
             ""
           )}
 
+
+
+
+
+
       </div>
 
+
+      ) : (
+            ""
+          )}
+
+      
+
+
+
+
+
+
+      {YouTube ? (
+            ""
+       
+          ) : (
+      <section style={{ width:'100vw', height:'', position:'relative', top:'', zIndex:'',  border:'0px solid red',}}> 
+
+{Image ? (
+            <GatsbyImage
+              image={Image}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image1 layer1"
+              style={{ width:'100vw', position:'', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
+            />
+            
+          ) : (
+
+       
+            <StaticImage src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+  
+          )}
+          
+
+          </section> 
+
+
+          )}
 
 
 
@@ -554,12 +586,30 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-
 {IsNft ? (
 
         <div style={{minWidth:'50%', width:'100%', maxWidth:'1000px', maxHeight:'', position:'relative', right:'0', border:'0px solid red', margin:'0 auto'}}>
             {/* <NFTDetails /> */}
             
+
+  
+
+
+
+{NftLink ? (
+ <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
+
+ <iframe title="VidSock" id="youtube2" className="blog-video1" width="100%" height="400" src={NftLink} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'40vh', borderRadius:'12px'  }} />
+ </div>
+       
+          ) : (
+            ""
+          )}
+
+
+
+
+
 
 
        
@@ -601,9 +651,11 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
  </div>
 
 
+
+
 <br />
  {ShowOriginal ? (
-          <div style={{width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
+          <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
 <div style={{maxWidth:'90vw', padding:'0', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
                     <Iframer2 />
