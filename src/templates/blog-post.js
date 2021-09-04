@@ -390,7 +390,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-{YouTube ? (
+
 
 
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', flexDirection:'column', justifyContent:'flex-start' }}>
@@ -439,6 +439,35 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
+{YouTube ? (
+            ""
+       
+          ) : (
+      <div> 
+
+{Image ? (
+            <GatsbyImage
+              image={Image}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image1 layer1"
+              style={{ width:'100vw', position:'absolute', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
+            />
+            
+          ) : (
+
+       
+            <StaticImage src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+  
+          )}
+          
+
+          </div> 
+
+
+          )}
+
+
+
 
 
 
@@ -482,9 +511,6 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
       </div>
 
 
-      ) : (
-            ""
-          )}
 
       
 
@@ -493,32 +519,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-      {YouTube ? (
-            ""
-       
-          ) : (
-      <section style={{ width:'100vw', height:'', position:'relative', top:'', zIndex:'',  border:'0px solid red',}}> 
-
-{Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{ width:'100vw', position:'', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
-            />
-            
-          ) : (
-
-       
-            <StaticImage src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
-  
-          )}
-          
-
-          </section> 
-
-
-          )}
+      
 
 
 
