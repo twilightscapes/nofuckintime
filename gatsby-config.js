@@ -178,10 +178,8 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `VidSock CMS`,
-        htmlFavicon: `src/img/adfree-youtube-logo-bug.svg`,
-        includeRobots: false,
-        site_url: 'https://vidsock.com/',
-        logo_url: 'https://vidsock.com/assets/vidsock-logo.svg'
+        htmlFavicon: `src/img/vidsock-logo.svg`,
+        includeRobots: false
       },
     },
 
