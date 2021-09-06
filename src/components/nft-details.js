@@ -31,11 +31,11 @@ const NFTDetails = () => (
 <Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'',   overflow:'hidden', marginTop:'0',}}>
         {/* <h2 style={{fontSize:'140%', textAlign:'center', margin:'1rem 0'}}>How VidSocks Work</h2> */}
     <TabList style={{width:'100%', border:'0px solid yellow',}}>
-    <Tab><div className="iconmenu"><CgRatio /><span>Specs</span></div></Tab>
-    <Tab><div className="iconmenu"><RiSecurePaymentLine/><span>Secure</span></div></Tab>
-    <Tab><div className="iconmenu"><HiOutlineScale/><span>Standards</span></div></Tab>
+    <Tab><div className="iconmenu"><span>Specs</span></div></Tab>
+    <Tab><div className="iconmenu"><span>Secure</span></div></Tab>
+    <Tab><div className="iconmenu"><span>Standards</span></div></Tab>
       {/* <Tab><div className="iconmenu"><FiCamera /><span>Tech</span></div></Tab> */}
-      <Tab><div className="iconmenu"><CgInfo /><span>FAQ</span></div></Tab>
+      {/* <Tab><div className="iconmenu"><CgInfo /><span>FAQ</span></div></Tab> */}
       
       
     </TabList>
@@ -129,7 +129,7 @@ Custom Domain names available
 
 
 
-    <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
+    {/* <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
             <strong style={{fontSize:'1.5rem'}}>FAQ</strong><br /><br />
 
             <p style={{fontWeight:'bold', marginBottom:'0'}}>So, what do I get?</p>
@@ -172,13 +172,13 @@ Custom Domain names available
 
             
 
-            {/* <p style={{fontWeight:'bold'}}></p>
-            <p style={{}}></p> */}
+            <p style={{fontWeight:'bold'}}></p>
+            <p style={{}}></p>
 
 
 
 
-    </TabPanel>
+    </TabPanel> */}
 
 
    

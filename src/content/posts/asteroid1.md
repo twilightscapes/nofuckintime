@@ -10,7 +10,7 @@ youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
-underlayImage: /assets/arches-foreground.png
+underlayImage: /assets/arches-fg.png
 featuredImage: /assets/Experiences-Header-2.jpg
 svgImage: /assets/null.svg
 ---
