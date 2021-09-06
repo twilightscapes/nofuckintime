@@ -1796,17 +1796,19 @@ background:#000;
   justify-content:center;
   padding:15px;
   border-radius:12px;
-  /* background:#333; */
+  gap:300px;
+  background:#333;
   /* color:#fff; */
   position:relative;
   font-size:40px;
   text-shadow:2px 2px 0 #000;
-
+  text-align: center;
+  width:30vw;
 }
 
 .react-tabs__tab--selected{background:transparent;}
 
-.iconmenu span{display:block; position:absolute; top:0; font-size:12px; background:none; }
+.iconmenu span{display:block; width:100%; top:0; font-size:12px; background:none; text-align: center; line-height: 120%; }
 
 
 

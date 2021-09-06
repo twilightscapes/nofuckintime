@@ -31,9 +31,9 @@ const NFTDetails = () => (
 <Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'',   overflow:'hidden', marginTop:'0',}}>
         {/* <h2 style={{fontSize:'140%', textAlign:'center', margin:'1rem 0'}}>How VidSocks Work</h2> */}
     <TabList style={{width:'100%', border:'0px solid yellow',}}>
-    <Tab><div className="iconmenu"><span>Specs</span></div></Tab>
-    <Tab><div className="iconmenu"><span>Secure</span></div></Tab>
-    <Tab><div className="iconmenu"><span>Standards</span></div></Tab>
+    <Tab><div className="iconmenu"><span>About VidSocks</span></div></Tab>
+    <Tab><div className="iconmenu"><span>The Platform</span></div></Tab>
+    {/* <Tab><div className="iconmenu"><span>Standards</span></div></Tab> */}
       {/* <Tab><div className="iconmenu"><FiCamera /><span>Tech</span></div></Tab> */}
       {/* <Tab><div className="iconmenu"><CgInfo /><span>FAQ</span></div></Tab> */}
       
@@ -45,7 +45,8 @@ const NFTDetails = () => (
            <strong style={{fontSize:'1.5rem'}}>VidSocks are the World's <strong>FIRST and ONLY</strong>, 100% dynamically user generated Art!</strong><br /><br />
            <p>
            Each VidSock is uniquely created by the artist and then delivered to the world for the art to be altered and changed by its viewers thus making each VidSock truly dynamic.<br /> <br />
-           Depending on the Artist's vision, they can choose to modify your NFT long after it has been minted and delivered to you. The artist has the flexibility to alter, make adjustments, add new items, or even completely change your individual art. Only your VidSock will have these totally unique modifications. Plus, each VidSock can be changed on a weekly basis or on special dates or occasions or even years later! It's up to the Artist and their vision for their VidSock.<br /> <br />
+           Depending on the Artist's vision, they can choose to modify your NFT long after it has been minted and delivered to you. The artist can alter, add new items, or even completely change your individual art. Only your VidSock will have these totally unique modifications.
+           <br /> <br />
            Of course, you as the owner of the VidSock, always have the option to view both the new and the original versions at any time.<br /> <br />
 
            </p>
@@ -56,18 +57,18 @@ const NFTDetails = () => (
 
     <TabPanel style={{padding:'0 1.5rem', width:'100%',}}>
             <strong style={{fontSize:'1.5rem'}}>Individual VidSocks are just the beginning of the fun.</strong><br /><br />
-            <p>With each winning bid, you not only get to take home your new VidSock, but you will also get a full 90 days of complete access to our new VidSock Video Blog Platform™ (a $120 value - and currently invite only). The very same platform you're visiting right now, You will have your own VidSock Platform allowing you to easily create dynamic VidSocks of your own and share or sell them to the world.
+            <p>With each winning bid, you not only get to take home your new VidSock, but you will also get complete access to our new VidSock Video Blog Platform™. The very same platform you're visiting right now, You will have your own VidSock Platform allowing you to easily create dynamic VidSocks of your own and share or sell them to the world.
             <br />
             <br />
              If you can blog, you can make stunning video and animated artwork based blogs. Then start selling them and prepare to take over the world! <br />
             <br />
-            So, do you want to know more about the new VidSock Platform? Well, click the next tab and find out why the VidSock platform is right for you.<br /> <br />
+            {/* So, do you want to know more about the new VidSock Platform? Well, click the next tab and find out why the VidSock platform is right for you.<br /> <br /> */}
             </p>
 
     </TabPanel>
 
 
-    <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
+    {/* <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
     <strong style={{fontSize:'1.5rem'}}>Built Right In All The Right Spots</strong><br /><br />
 
 
@@ -101,18 +102,12 @@ Custom Domain names available
 </div></blockquote>
 
 
-            <p style={{textAlign:'center', fontSize:'130%', margin:'2rem 0',}}>
-              {/* <Link to="/legal/" style={{color:'inherit'}}>View License Agreement</Link> */}
-            
-   
-           <br />
 
-            </p>
 
 
 
            
-    </TabPanel>
+    </TabPanel> */}
 
 
 
