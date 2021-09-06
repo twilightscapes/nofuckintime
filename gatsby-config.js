@@ -178,7 +178,7 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `VidSock CMS`,
-        htmlFavicon: `/assets/vidsock-logo.svg`,
+        htmlFavicon: `src/img/vidsock-logo.svg`,
         includeRobots: false
       },
     },
