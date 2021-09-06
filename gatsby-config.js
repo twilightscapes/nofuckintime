@@ -177,9 +177,11 @@ module.exports = {
         modulePath: ``, // default: undefined
         enableIdentityWidget: true,
         publicPath: `admin`,
-        htmlTitle: `AdFree CMS`,
+        htmlTitle: `VidSock CMS`,
         htmlFavicon: `src/img/adfree-youtube-logo-bug.svg`,
         includeRobots: false,
+        site_url: 'https://vidsock.com/',
+        logo_url: 'https://vidsock.com/assets/vidsock-logo.svg'
       },
     },
 
@@ -218,7 +220,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `VidSock `,
+        name: `VidSock`,
         short_name: `NFT`,
         start_url: `/?user_mode=app`,
         description: `VidSocks`,
