@@ -22,7 +22,7 @@ underlayImage:
 featuredImage: /assets/Experiences-Header-5.jpg
 svgImage: /assets/OffTheGrid.svg
 nftlink: ""
-nftdrop: "2021-09-02T14:00:00"
+nftdrop: "2021-09-12T14:00:00"
 nftredeem: "https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button"
 ---
 This was one of my favorite shots from when I was in Dallas. I was lucky enough to get rooftop access to a 36-stpry building right smack dab in the middle of between uptown and downtown districts. 

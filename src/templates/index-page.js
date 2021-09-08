@@ -273,7 +273,7 @@ const YouTube = frontmatter.youtuber
 
 <section style={{ display:'',}}>
   <article>
-  <div className='player-wrapper' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
   {/* onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})} */}
 

@@ -22,7 +22,7 @@ underlayImage:
 featuredImage: /assets/Experiences-Header-1.jpg
 svgImage: 
 nftlink: "https://foundation.app/@twilightscapes/boatswain-s-blunder-51680"
-nftdrop: "2021-09-02T14:00:00"
+nftdrop: ""
 nftredeem: ""
 ---
 Confinement, a bode of misery with blue majesty abound.

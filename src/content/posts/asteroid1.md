@@ -5,14 +5,25 @@ slug: /asteroid-series-riding-the-belt
 date: 2021-08-16 10:43
 description: Life on a rock hurtling through the Cosmos.
 youtuber: "8HqvE0rgLQY"
+youtubeshoworiginal: "1"
+youtubersuggestion1: 
+youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
+youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
+youtubeautostart: "1"
+isnftforsale: "1"
 svgzindex: "0"
+comments: "1"
+shareable: "1"
 underlayImage: /assets/arches-fg.png
 featuredImage: /assets/Experiences-Header-2.jpg
 svgImage: /assets/null.svg
+nftlink: ""
+nftdrop: "2021-09-12T14:00:00"
+nftredeem:
 ---
 Have you ever wanted to ride an asteroid through space? Ever wondered what it would be like to have your personal rock to ride through the Cosmos? 
 

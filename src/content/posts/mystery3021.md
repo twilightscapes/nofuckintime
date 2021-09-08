@@ -22,7 +22,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-7.jpg
 svgImage: /assets/MysteryScience3000.svg
 nftlink: ""
-nftdrop: ""
+nftdrop: "2021-09-12T14:00:00"
 nftredeem: ""
 ---
 Seeing as this is my frist post !1!, woot, woot!

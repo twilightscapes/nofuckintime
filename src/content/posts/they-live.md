@@ -22,7 +22,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/TheyLive-Header.jpg
 svgImage: /assets/TheyLive.svg
 nftlink: ""
-nftdrop: "2021-09-02T14:00:00"
+nftdrop: "2021-09-12T14:00:00"
 nftredeem: "https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button"
 ---
 Only the BEST MOVIE EVER! My tribute to the cult classic, They Live by one of my favorite Directors: John Carpenter. 

@@ -22,7 +22,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-3.jpg
 svgImage: /assets/nebula.svg
 nftlink: ""
-nftdrop: "2021-09-03T15:02:00"
+nftdrop: "2021-09-12T14:00:00"
 nftredeem: ""
 ---
 ## Alien Egg Farm
