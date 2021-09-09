@@ -6,7 +6,7 @@ date: 2021-08-31 10:43
 description: One of my favorites from John Carpenter
 youtuber: "iOZcb9Otojk"
 youtubeshoworiginal: "1"
-youtubersuggestion1: "https://youtu.be/7vz43MYaCA0"
+youtubersuggestion1: 
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"

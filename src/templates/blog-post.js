@@ -203,42 +203,29 @@ Add your favorites in the comments below!
 }
 
 
-
+const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
+const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
+const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const YouTube = frontmatter.youtuber
 
   if (!YouTube) {
 
   }
-  else{
-    
-    <Iframer />
+  else if (YoutuberSuggestion1) {
+    <IframeSuggestions />
+  }
+  else {
+    <Iframer />  
   }
 
 
 
-  function Iframer() {
-    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
-
-    const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
-    const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
-    const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
-
-
+  function IframeSuggestions() {
     
-    function go () {
-      var elements = document.getElementsByTagName("object");
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].beginElement();
-      }
-    }
-
-
-
     return (
 
- <div>
-
-if (YoutuberSuggestion1) {
+      <div>
               <ReactPlayer
               className='react-player'
               // url={iframeUrl}
@@ -266,10 +253,7 @@ if (YoutuberSuggestion1) {
               showPortrait
               playIcon={
                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
-                  
-          
-          
-          
+
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
               {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
     
@@ -286,23 +270,34 @@ if (YoutuberSuggestion1) {
           
                 light="../assets/transparent.png"
               />
-            }
-            else{
+</div>
+
+    )
+
+  }
+
+  function Iframer() {
+    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+
+    return (
+
+ <div>
               <ReactPlayer
               className='react-player'
-            //  url={[
-            //     iframeUrl,
-            //     YoutuberSuggestion1,
-            //     YoutuberSuggestion2,
-            //     YoutuberSuggestion3
-            //   ]}
-  url={iframeUrl}
+              url={iframeUrl}
+              
+              // url={[
+              //   iframeUrl,
+              //   YoutuberSuggestion1,
+              //   YoutuberSuggestion2,
+              //   YoutuberSuggestion3
+              // ]}
               width="100%"
               height="100%"
          
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, }
+                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd }
                 },
               }}
               autoplay={true}
@@ -314,10 +309,7 @@ if (YoutuberSuggestion1) {
               showPortrait
               playIcon={
                 <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
-                  
-          
-          
-          
+
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
               {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
     
@@ -334,16 +326,6 @@ if (YoutuberSuggestion1) {
           
                 light="../assets/transparent.png"
               />
-            }
-
-
-      
-
-
-
-
-
-
 </div>
 
     )
