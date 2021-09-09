@@ -24,6 +24,8 @@ import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
 import TimeAgo from 'react-timeago'
 import styled from "styled-components"
+import InnerImageZoom from 'react-inner-image-zoom'
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 const CustomBox = styled.div`
 
 @media (max-width: 48rem) {
@@ -212,53 +214,135 @@ Add your favorites in the comments below!
     <Iframer />
   }
 
+
+
   function Iframer() {
     const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+
+    const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
+    const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
+    const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+
+
+    
+    function go () {
+      var elements = document.getElementsByTagName("object");
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].beginElement();
+      }
+    }
+
+
+
     return (
 
  <div>
-      <ReactPlayer
-          className='react-player'
-          url={iframeUrl}
-          width="100%"
-          height="100%"
-     
- 
-          autoplay={true}
-          background={true}
-          loop
-          playing
-          playsinline
-          muted={true}
-          showPortrait
-          playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+
+if (YoutuberSuggestion1) {
+              <ReactPlayer
+              className='react-player'
+              // url={iframeUrl}
               
-      
-      
-      
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
-
-          <div style={{position:'relative', maxWidth:'50vw', margin:' 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-  <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="VidSock" style={{ maxWidth:'28vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div>
-      
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'2rem'}}>Click To Play</span>
+              url={[
+                iframeUrl,
+                YoutuberSuggestion1,
+                YoutuberSuggestion2,
+                YoutuberSuggestion3
+              ]}
+              width="100%"
+              height="100%"
+         
+              config={{
+                youtube: {
+                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd }
+                },
+              }}
+              autoplay={true}
+              background={true}
+              loop
+              playing
+              playsinline
+              muted={true}
+              showPortrait
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+                  
           
-          </div>
-          </button>}
+          
+          
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
+    
+              <div style={{position:'relative', maxWidth:'50vw', margin:' 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+      <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="VidSock" style={{ maxWidth:'28vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+    </div>
+          
+              <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'2rem'}}>Click To Play</span>
+              
+              </div>
+              </button>}
+          
+          
+          
+                light="../assets/transparent.png"
+              />
+            }
+            else{
+              <ReactPlayer
+              className='react-player'
+            //  url={[
+            //     iframeUrl,
+            //     YoutuberSuggestion1,
+            //     YoutuberSuggestion2,
+            //     YoutuberSuggestion3
+            //   ]}
+  url={iframeUrl}
+              width="100%"
+              height="100%"
+         
+              config={{
+                youtube: {
+                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, }
+                },
+              }}
+              autoplay={true}
+              background={true}
+              loop
+              playing
+              playsinline
+              muted={true}
+              showPortrait
+              playIcon={
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+                  
+          
+          
+          
+            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
+    
+              <div style={{position:'relative', maxWidth:'50vw', margin:' 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+      <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="VidSock" style={{ maxWidth:'28vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+    </div>
+          
+              <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'2rem'}}>Click To Play</span>
+              
+              </div>
+              </button>}
+          
+          
+          
+                light="../assets/transparent.png"
+              />
+            }
+
+
       
-      
-      
-            light="../assets/transparent.png"
-          />
 
 
 
 
 
-        {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100vw', height:'100%',   }} /> */}
 
 </div>
 
@@ -443,15 +527,16 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
             ""
        
           ) : (
-      <div> 
+      <div style={{display:'grid', placeContent:'center'}}> 
 
 {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
-            />
+            // <GatsbyImageImage
+            //   image={Image}
+            //   alt={frontmatter.title + " - Featured image"}
+            //   className="featured-image1 layer1"
+            //   style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
+            // />
+            <InnerImageZoom src={getSrc(Image)} style={{ width:'100%', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:'', margin:'0 auto'}} />
             
           ) : (
 
@@ -517,10 +602,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-
-
-      
-
+  
 
 
 
@@ -654,6 +736,16 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
+ <br />
+<br />
+<br />
+
+      {/* <object data="/art/boatswains-blunder" width="100%" height="1000"></object> */}
+
+
+
+      <br />
+<br />
 <br />
  {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video

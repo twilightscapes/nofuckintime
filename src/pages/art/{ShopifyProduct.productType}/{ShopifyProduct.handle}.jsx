@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
-import { Layout } from "../../../components/layout"
+// import { Layout } from "../../../components/layout"
 import isEqual from "lodash.isequal"
 import { getSrc } from "gatsby-plugin-image"
 // import { FaHandPointDown } from "react-icons/fa"
@@ -140,7 +140,7 @@ export default function Product({ data: { product, suggestions } }) {
 
   return (
 
-    <Layout>
+    // <Layout>
       <CustomBox>
       
       {firstImage ? (
@@ -175,7 +175,7 @@ export default function Product({ data: { product, suggestions } }) {
 
                       {/* <img className="spinned" src={spinner} alt="Twilightscapes" style={{height:'100%', width:'100%', position:'fixed', top:'0', left:'0',  zIndex:'-1', border:'1px solid yellow', display:'block'}} /> */}
                       <div className="mobilefixa" style={{textAlign:'center',}}>
-           <GoBack />
+           {/* <GoBack /> */}
             </div>
                       </div>
 
@@ -209,11 +209,11 @@ export default function Product({ data: { product, suggestions } }) {
 
           
 
-      <div className={container}>
+      <div className={container} style={{display:'none'}}>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
 
 <div className="flexcheek" style={{width:'70%'}}>
-<ShareSocial className="print" />
+{/* <ShareSocial className="print" /> */}
             <div className={breadcrumb}>
               <Link to={product.productTypeSlug}>{product.productType}</Link>
               
@@ -293,7 +293,7 @@ export default function Product({ data: { product, suggestions } }) {
             <div className="flexcheek sidebart" style={{border:'0px solid yellow', width:'30%'}}>
 
             <div className="mobile" style={{}}>
-<GoBack />
+{/* <GoBack /> */}
 </div>
 
             {/* <p style={{fontSize:'100%', margin:'4rem 0.8rem 0', padding:'0', lineHeight:'auto', textAlign:'center', fontWeight:'bold'}}>Turn this into a great print here:</p>
@@ -374,14 +374,14 @@ export default function Product({ data: { product, suggestions } }) {
           
     
 
-<GoBack />
+{/* <GoBack /> */}
 
 
 
-<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+{/* <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
      <CommentBox />
      
-     </div>
+     </div> */}
             
             </div>
 
@@ -398,7 +398,7 @@ export default function Product({ data: { product, suggestions } }) {
 </div> */}
 
       </CustomBox>
-    </Layout>
+    // </Layout>
   )
 }
 

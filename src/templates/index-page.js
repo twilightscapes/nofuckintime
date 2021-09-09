@@ -271,7 +271,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<section style={{ display:'',}}>
+<section style={{ display:'none',}}>
   <article>
   <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
@@ -365,7 +365,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-
+<br />
 
 
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
@@ -388,7 +388,7 @@ const YouTube = frontmatter.youtuber
             dangerouslySetInnerHTML={{ __html: html }}
           />
   
-  <br /><br />
+  
           <Link
             to={frontmatter.cta.ctaLink}
             // href="#scootch"
@@ -442,7 +442,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'100%', overflow:''}}>
+ <div className="flexcheek" style={{position:'relative', height:'', overflow:''}}>
  
  
 

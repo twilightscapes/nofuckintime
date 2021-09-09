@@ -6,7 +6,7 @@ date: 2021-08-16 10:43
 description: Life on a rock hurtling through the Cosmos.
 youtuber: "8HqvE0rgLQY"
 youtubeshoworiginal: "1"
-youtubersuggestion1: 
+youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"

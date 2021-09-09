@@ -116,7 +116,7 @@ display: none !important;
     display: grid;
     grid-template-areas: "stack";
     aspect-ratio: 16/9;
-    background-color: #200070;
+    background-color: #111;
     width:100vw;
   }
   

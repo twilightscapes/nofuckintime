@@ -7,7 +7,7 @@ description: A groovy animation floating through the cosmos
 youtuber: "1kIihY252eE"
 youtubeshoworiginal: "1"
 youtubersuggestion1: "https://youtu.be/7vz43MYaCA0"
-youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
+youtubersuggestion2: "https://youtu.be/g4XiKChyK7A"
 youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"
 youtubeend: "0"
