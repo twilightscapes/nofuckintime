@@ -409,7 +409,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-<div className='stack-layout' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', flexDirection:'column', justifyContent:'flex-start' }}>
+<div className='stack-layout' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)', }}>
 
 
 
@@ -422,10 +422,9 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-{YouTube ? (
-            ""
-       
-          ) : (
+
+
+
       <div style={{display:'grid', placeContent:'center'}}> 
 
 {Image ? (
@@ -436,6 +435,9 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
             //   style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
             // />
             <InnerImageZoom src={getSrc(Image)} style={{ width:'100%', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:'', margin:'0 auto'}} />
+
+
+            
             
           ) : (
 
@@ -448,7 +450,6 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
           </div> 
 
 
-          )}
 
 
 
@@ -478,8 +479,10 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
           )}
 
 
+
+
 {Suggestion1 ? (
-            <div style={{position:'absolute', top:'0', zIndex:'0'}}>
+            <div style={{position:'absolute', bottom:'-74px', zIndex:'0'}}>
             <YouTubed />
             </div>
        
@@ -487,17 +490,19 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
             ""
           )}
 
-
-
-
-
-
       </div>
+  
 
 
 
       
-
+{Suggestion1 ? (
+  <div style={{marginTop:'80px'}}>
+            <ShowSuggestion />
+       </div>
+          ) : (
+            ""
+          )}
 
 
 
@@ -513,12 +518,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
 
 
 
-{Suggestion1 ? (
-            <ShowSuggestion />
-       
-          ) : (
-            ""
-          )}
+
 
 
 
