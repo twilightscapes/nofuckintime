@@ -6,12 +6,8 @@ import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
-// import { FaHandPointDown } from "react-icons/fa"
-// import ScrollAnimation from 'react-animate-on-scroll'
-// import NFTDetails from "../components/nft-details"
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
-// import SVG from "../../static/assets/crude-addiction.svg"
 import Countdown from 'react-countdown'
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
@@ -35,16 +31,7 @@ const CustomBox = styled.div`
 `
 
 
-
-
-
-
 const Pagination = props => (
-
-
-
-
-  
   <div className="pagination -post">
     <ul>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
@@ -95,8 +82,6 @@ const Pagination = props => (
 
 const Post = ({ data, pageContext }) => {
 
-
-
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
@@ -125,8 +110,6 @@ const Post = ({ data, pageContext }) => {
     <AddSvg />
   }
 function AddSvg(){
-  // const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
-
   const svgUrl = frontmatter.svgImage.publicURL
 
 
@@ -150,6 +133,7 @@ const youtubeautostart = frontmatter.youtubeautostart
 const Suggestion1 = frontmatter.youtubersuggestion1
 const Suggestion2 = frontmatter.youtubersuggestion2
 const Suggestion3 = frontmatter.youtubersuggestion3
+
 
 if (Suggestion1) {
   <ShowSuggestion />
@@ -188,9 +172,6 @@ Click to Copy:<br />
   <button>{Suggestion3} </button>
 </CopyToClipboard><br />
 
-
-
-
 <br />
 Add your favorites in the comments below!
 
@@ -201,7 +182,6 @@ Add your favorites in the comments below!
 </div>
   )
 }
-
 
 const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
 const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
@@ -224,7 +204,6 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   function IframeSuggestions() {
     
     return (
-
       <div>
               <ReactPlayer
               className='react-player'
@@ -377,10 +356,6 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
 
 
-
-
-
-
     )
   }
 
@@ -388,9 +363,6 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
 
 
-  // const OverlayImage = frontmatter.overlayImage
-  //   ? frontmatter.overlayImage.childImageSharp.gatsbyImageData
-  //   : ""
 
 
 
@@ -402,20 +374,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
     next,
   }
 
-//   const Svg2 = frontmatter.overlayImage
- 
-//   if (!Svg2) {
-    
-//   }
-//   else{
-//     <AddSvg2 />
-//   }
-// function AddSvg2(){
-//   const svg2Url = "../assets/" + frontmatter.overlayImage.relativePath + ""
-//   return (
-//     <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'', height:'',  }} >You need a new browser</object>
-//   )
-// }
+
 
 
 
@@ -430,7 +389,6 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
   </div>
 
 
-  
   return (
     
     <Layout className="page">
@@ -450,31 +408,10 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
       />
 
 
-  
-{/* <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}> */}
+
+<div className='stack-layout' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', flexDirection:'column', justifyContent:'flex-start' }}>
 
 
-
-
-
-
-
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)', display:'flex', flexDirection:'column', justifyContent:'flex-start' }}>
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
- 
 
   {Svg ? (
             <AddSvg />
@@ -482,26 +419,6 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
           ) : (
             ""
           )}
-
-
-
-{/* {Svg2 ? (
-            <AddSvg2 />
-       
-          ) : (
-            ""
-          )} */}
-
-  {/* {OverlayImage ? (
-            <GatsbyImage
-              image={OverlayImage}
-              alt={frontmatter.title + " - image"}
-              className="layer2"
-              style={{height:'100vh', zIndex:'1', postion:'absolute', bottom:'0', left:'0', objectFit:'contain' }}
-            />
-          ) : (
-            ""
-          )} */}
 
 
 

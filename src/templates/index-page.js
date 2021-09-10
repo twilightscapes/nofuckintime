@@ -3,32 +3,20 @@ import * as React from "react"
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { RiArrowRightSLine } from "react-icons/ri"
 import { GoArrowDown } from "react-icons/go"
-
-// import Intro from '../components/Intro'
-// import Intro2 from '../components/Intro2'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
-import { FaHandPointDown } from "react-icons/fa"
-import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
-// import Trumpy from '../../static/assets/trump-family-board.svg'
-
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-// import PhotoMenu from "../components/animated-photos-menu"
 const CustomBox = styled.div`
 
-
 `
-
-
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -131,6 +119,13 @@ const HomePage = ({ data }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
+
+
+
+
+
+
+
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
   if (!Svg) {
@@ -159,12 +154,11 @@ const YouTube = frontmatter.youtuber
   }
 
   function Iframer() {
-    const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
+    
 
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
  <>
-       {/* <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100%',   }} /> */}
 
       <ReactPlayer
         id="mobilePlayer"
@@ -197,27 +191,7 @@ const YouTube = frontmatter.youtuber
           />
 
 
-{/* <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', left:'0', right:'0', top:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'100%',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object> */}
-
-          {/* <ReactPlayer
-        id="deskPlayer"
-          className='react-player'
-          url={Url}
-          width="100%"
-          height="100%"
-          autoplay={true}
-          background={true}
-          loop
-          playing
-          playsinline
-          muted={true}
-          showPortrait
-          /> */}
-
           </>
-
-      
-
     )
   }
 
@@ -239,49 +213,17 @@ const YouTube = frontmatter.youtuber
       
 
 
-      {/* <Intro /> */}
-
-
-      
-
-{/* <div style={{display:'block', width:'100%', height:'50vh', border:'2px solid yellow', position:'relative', zIndex:'-2'}}></div> */}
-
-
-
-      
-
-
-
-
-
-
-      
-
-        
-
-
-
-
-
-
         <div name="container2" className="container2" style={{height:'90vh',}}>
 
-        {/* onScroll={() => window.scrollTo({bottom: 0, behavior: 'smooth'})} */}
-
-
-
-
+        
 <section style={{ display:'none',}}>
   <article>
+
   <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
-  {/* onScroll={() => this.scrollTo({top: 0, behavior: 'smooth'})} */}
-
-     
 
 
 
-<div style={{display:'block', width:'100vw', height:'', overflow:'hidden', position:'absolute', top:'0',}}>
 {Image ? (
             <GatsbyImage
               image={Image}
@@ -296,7 +238,7 @@ const YouTube = frontmatter.youtuber
             <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
-</div>
+
 
 
 
@@ -314,23 +256,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-{/* {Svg2 ? (
-            <AddSvg2 />
-       
-          ) : (
-            ""
-          )} */}
 
-  {/* {OverlayImage ? (
-            <GatsbyImage
-              image={OverlayImage}
-              alt={frontmatter.title + " - image"}
-              className="layer2"
-              style={{height:'100vh', zIndex:'1', postion:'absolute', bottom:'0', left:'0', objectFit:'contain' }}
-            />
-          ) : (
-            ""
-          )} */}
 
 {UnderlayImage ? (
             <GatsbyImage
