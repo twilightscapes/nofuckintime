@@ -367,7 +367,8 @@ const YouTube = frontmatter.youtuber
 
 <br />
 
-
+<section style={{ display:'',}}>
+  <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek " style={{padding:'0 2rem',color:'#fff', textShadow:'3px 3px 0 #000'}}>
 
@@ -442,7 +443,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'', overflow:''}}>
+ <div className="flexcheek" style={{position:'relative', height:'100%', overflow:''}}>
  
  
 
@@ -545,7 +546,8 @@ Through NFT
 
       </div> 
 </div>
-
+</article>
+</section>
 
 
 
