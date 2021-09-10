@@ -150,7 +150,7 @@ const CustomBox = styled.div`
 
 
 
-<div className='player-wrapper' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
+<div className='stack-layout' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
 
 {/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={18000} duration="5" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
 right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', textAlign:'center', display:'flex', borderRadius:'12px', justifyContent:'center'}}>
