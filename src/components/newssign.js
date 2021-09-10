@@ -40,7 +40,7 @@ const NewsletterPage = () => (
 
 <CustomBox style={{}}> 
 
-           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', justifySelf:'center', width:'100%'}}>
+           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', width:''}}>
 <form
           className="news-form"
           action="/signedup/"
@@ -51,7 +51,7 @@ const NewsletterPage = () => (
 
 
 
-              <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div>
+              {/* <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div> */}
 
           <input type="hidden" name="form-name" value="news" />
 

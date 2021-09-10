@@ -117,7 +117,7 @@ display: none !important;
   .stack-layout {
     display: grid;
     grid-template-areas: "stack";
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
     background-color: #111;
     width:100vw;
 
