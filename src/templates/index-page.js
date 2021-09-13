@@ -7,6 +7,7 @@ import { RiArrowRightSLine } from "react-icons/ri"
 import { GoArrowDown } from "react-icons/go"
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
@@ -114,7 +115,10 @@ const HomePage = ({ data }) => {
     : ""
 
 
+    const { iconimage } = useSiteMetadata()
 
+
+    const { siteUrl } = useSiteMetadata()
 
 
 
@@ -173,8 +177,8 @@ const YouTube = frontmatter.youtuber
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
           {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
 
-          <div style={{position:'relative', maxWidth:'50vw', margin:' 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-  <StaticImage className="homepage-bg" src="../../static/assets/vidsock-logo.svg" alt="VidSock" style={{ maxWidth:'28vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+          <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+          <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 </div>
       
           <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
