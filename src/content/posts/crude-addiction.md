@@ -19,7 +19,7 @@ isnftforsale: "1"
 nftlink: ""
 nftdrop: 2021-09-14 23:03
 nftredeem: https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button
-featuredImage: /assets/crude-addiction-header.jpg
+featuredImage: /assets/Experiences-Header-4.jpg
 underlayImage: /assets/transparent.png
 youtubeautostart: "1"
 svgImage: /assets/crude-addiction.svg
