@@ -76,7 +76,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 >
 
 
-<StaticImage src="../../static/default-og-image.jpg" alt="Twilightscapes" className="popp" style={{position:'absolute', zIndex:'-1', borderRadius:'12px 12px 12px 12px', backgroundSize:'cover'}} />
+<StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes" className="popp" style={{position:'absolute', zIndex:'-1', borderRadius:'12px 12px 12px 12px', backgroundSize:'cover'}} />
 
 {/* <div className="backdrop" style={{left:'0', top:'-60px'}}></div> */}
 <div className="container" style={{padding:'0 0', border:'0px solid #555', borderRadius:'8px', color:'#fff', textAlign:'center', position:'relative', textShadow:'2px 4px 0 #000', overflow:'hidden', borderRadius:'12px'}}>
