@@ -214,7 +214,7 @@ const YouTube = frontmatter.youtuber
         <div name="container2" className="container2" style={{height:'90vh',}}>
 
         
-<section style={{ display:'none',}}>
+<section style={{ display:'',}}>
   <article>
 
   <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
@@ -480,7 +480,7 @@ Through NFT
 
         <section style={{height:'auto'}}>
   <Link to="/archive/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
-    View Older Experiences <RiArrowRightSLine style={{fontSize:'50px'}} />
+    View More VidSocks <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
     </section>
 
