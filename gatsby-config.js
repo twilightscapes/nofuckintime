@@ -17,16 +17,16 @@ module.exports = {
   flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: settings.meta,
   plugins: [
-    {
-      resolve: "gatsby-source-shopify",
-      options: {
-        apiKey: process.env.SHOPIFY_API_KEY,
-        password: process.env.SHOPIFY_SHOP_PASSWORD,
-        storeUrl: process.env.GATSBY_SHOPIFY_STORE_URL,
-        shopifyConnections: ["collections"],
-        salesChannel:"secure3",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-shopify",
+    //   options: {
+    //     apiKey: process.env.SHOPIFY_API_KEY,
+    //     password: process.env.SHOPIFY_SHOP_PASSWORD,
+    //     storeUrl: process.env.GATSBY_SHOPIFY_STORE_URL,
+    //     shopifyConnections: ["collections"],
+    //     salesChannel:"secure3",
+    //   },
+    // },
 
 {
     resolve: `gatsby-transformer-remark`,
@@ -179,7 +179,7 @@ module.exports = {
         publicPath: `admin`,
         htmlTitle: `VidSock CMS`,
         htmlFavicon: `src/img/vidsock-logo.svg`,
-        includeRobots: false
+        includeRobots: false,
       },
     },
 
@@ -191,13 +191,28 @@ module.exports = {
       },
     },
  
-    
+
+
+
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: settings.ga,
+        trackingIds: [
+          settings.ga, // Google Analytics / GA
+        ],
       },
     },
+
+    
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: settings.ga,
+    //   },
+    // },
+
+
+
     `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',
@@ -226,18 +241,18 @@ module.exports = {
         lang: `en`,
         theme_color: `#222`,
         display: `standalone`,
- icon: `static/vidsock-logo.svg`, // This path is relative to the root of the site.
+ icon: `static/assets/vidsock-logo.svg`, // This path is relative to the root of the site.
  icon_options: {
   purpose: `any maskable`,
 },
       icons: [
         {
-          src: `/icons/icon-192x192.png`,
+          src: `static/assets/icon-192x192.png`,
           sizes: `192x192`,
           type: `image/png`,
         },
         {
-          src: `/icons/icon-512x512.png`,
+          src: `static/assets/icon-512x512.png`,
           sizes: `512x512`,
           type: `image/png`,
         },

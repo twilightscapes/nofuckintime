@@ -168,8 +168,16 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 export function Footer() {
-  const siteURL = useSiteMetadata();
-  
+  const { siteUrl } = useSiteMetadata();
+
+  const speedIt = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=" + siteUrl + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
+
+
+
+
+
+
+  const { companyname } = useSiteMetadata()
  
   return (
 <>
@@ -179,12 +187,12 @@ export function Footer() {
 
     <Consent />
 {/* <div style={{width:'50%', border:'1px groove', margin:'1rem auto'}}></div> */}
-    <Install />
+    {/* <Install /> */}
     
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'2rem', textDecoration:'none'}}>Contact Us - We &nbsp;<FaHeart />&nbsp;   Feedback!</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'4px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Us - We &nbsp;<FaHeart />&nbsp;feedback!</Link>
 
  <div >
         {/* <Social /> */}
@@ -198,15 +206,16 @@ export function Footer() {
         
       </div>
       <nav className={links} aria-label="footer">
-      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Use</Link></div>
+      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
   
       {/* <Page /> */}
   
-      <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>
+      {/* <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>
         
-        Copyright &copy; {(new Date().getFullYear())} VidSock(s)<br />is NOT affiliated with YouTube in any way. </div>
-        <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} />
-        <br /><br />
+        Copyright &copy; {(new Date().getFullYear())} VidSock(s) - is NOT affiliated with YouTube in any way. </div>
+        <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} /> */}
+
+<div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} - site by<a href="https://vidsock.com" rel="noreferrer" target="_blank">VidSocks</a> | <a href={speedIt} target="_blank" rel="noreferrer">SpeedTest</a></div>
       </nav>
    
     </footer>

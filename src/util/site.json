@@ -1,19 +1,18 @@
 {
   "meta": {
     "iconimage": "/assets/vidsock-logo.svg",
+    "favicon32x32": "/assets/favicon-32x32.png",
+    "favicon16x16": "/assets/favicon-16x16.png",
     "companyname": "VidSock",
     "siteUrl": "https://vidsock.com/",
-    "twitterUsername": "vidsocks",
-    "siteTitleDefault": "VidSock",
-    "siteTitle": "VidSock",
+    "twitterUsername": "vidsock",
+    "titleDefault": "VidSock",
+    "icon192": "/assets/icon-192x192.png",
     "titleTemplate": "%s",
-    "twitter": "vidsocks",
-    "siteImage": "/default-og-image.jpg",
-    "siteDescription": "VidSock - no waiting, do it now",
     "title": "VidSock",
-    "hrefLang": "en",
     "image": "/assets/default-og-image.jpg",
-    "description": "VidSock - no waiting, do it now "
+    "description": "VidSock - NextGen NFT Platform",
+    "icon512": "/assets/icon-512x512.png"
   },
   "ga": "UA-204514914-1"
 }

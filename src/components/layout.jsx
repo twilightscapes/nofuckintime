@@ -9,35 +9,34 @@ import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
 import Bug from "../../static/assets/vidsock-logo.svg"
-import { StoreContext } from "../context/store-context"
-import { Toast } from "./toast"
+import "../styles/reset.css"
+import "../styles/variables.css"
+import "../styles/global.css"
+
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
-import { ImArrowRight } from "react-icons/im"
-import { CartButton } from "./cart-button"
-import SearchIcon from "../../static/assets/search"
-import Theme from "../components/theme"
+
+
+
+
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
 // import { IoMdFingerPrint } from 'react-icons/io'
 import "../assets/scss/style.scss"
 // import Consent from './Consent'
-import Install from './install-discount'
+
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
 
 export function Layout({ children }) {
   const { iconimage } = useSiteMetadata()
-  const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
-  const items = checkout ? checkout.lineItems : []
 
-  const quantity = items.reduce((total, item) => {
-    return total + item.quantity
-  }, 0)
+
+
 
   return (
     <div style={{background:''}}> 

@@ -4,26 +4,26 @@ title: Crude Addiction
 slug: /crude-addiction
 date: 2021-08-19 10:43
 description: Life is not always what it seems
-youtuber: "vXf2w47KkJY"
-youtubeshoworiginal: ""
-youtubersuggestion1: ""
-youtubersuggestion2: "https://youtu.be/vXf2w47KkJY"
-youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
+youtuber: ""
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
-youtubeautostart: "1"
-isnftforsale: "1"
-svgzindex: "0"
+youtubeshoworiginal: ""
+youtubersuggestion1: ""
+youtubersuggestion2: ""
+youtubersuggestion3: ""
 comments: "1"
 shareable: "1"
-underlayImage: /assets/transparent.png
-featuredImage: /assets/Experiences-Header-4.jpg
-svgImage: /assets/crude-addiction.svg
+isnftforsale: "1"
 nftlink: ""
-nftdrop: "2021-09-12T15:02:03"
-nftredeem: "https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button"
+nftdrop: 2021-09-14 23:03
+nftredeem: https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button
+featuredImage: /assets/crude-addiction-header.jpg
+underlayImage: /assets/transparent.png
+youtubeautostart: "1"
+svgImage: /assets/crude-addiction.svg
+svgzindex: "0"
 ---
 Watching shadows can be a fun pastime on a full-moon night such as this. As the moon reached it's peak int he sky, I noticed the shadows were making for a great foreground element other than ther car. 
 

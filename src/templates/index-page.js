@@ -15,20 +15,19 @@ import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 const CustomBox = styled.div`
-
 `
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
     site {
       siteMetadata {
-        siteTitle
-        siteTitleDefault
+        title
+        titleDefault
         siteUrl
-        hrefLang
-        siteDescription
-        siteImage
-        twitter
+        description
+        image
+        twitterUsername
+        companyname
       }
     }
     markdownRemark(id: { eq: $id }) {
@@ -70,11 +69,6 @@ export const pageQuery = graphql`
         }
       }
     }
-
-
-
-
-
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
@@ -346,7 +340,6 @@ style={{
   cursor:'pointer',
   width:'70%',
   margin:'0 auto'
-
 }} 
 to="#experiences" title="See the new EXPERIENCES™" /> */}
 
@@ -481,11 +474,11 @@ Through NFT
 <div id="scooch">
         <BlogListHome data={posts} />
 
-        {/* <section style={{height:'auto'}}>
-  <Link to="/experiences/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+        <section style={{height:'auto'}}>
+  <Link to="/archive/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
     View Older Experiences <RiArrowRightSLine style={{fontSize:'50px'}} />
     </article></Link>
-    </section> */}
+    </section>
 
    </div>
 

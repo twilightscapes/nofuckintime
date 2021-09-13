@@ -10,19 +10,16 @@ backend:
 
 # Uncomment local_backend when you need to develop in your local
 local_backend: true # run npx netlify-cms-proxy-server for local testing
-
+logo_url: https://vidsock.com/assets/vidsock-logo.svg
 media_folder: "static/assets"
 public_folder: "/assets"
-site_url: https://vidsock.com/admin/
-display_url: https://vidsock.com
-logo_url: https://vidsock.com/assets/vidsock-logo.svg
 
 collections:
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Posts" # Used in the UI
     label_singular: "Post" # Used in the UI, ie: "New Post"
     description: >
-      Create Your AWESOME VidSocks here.
+      Create awesome stuff here.
     folder: "src/content/posts"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
@@ -50,11 +47,24 @@ collections:
           format: "YYYY-MM-DD HH:mm",
         }
       - { label: "SEO Description", name: "description", widget: "text" }
-      - { label: "YouTube Url", name: "youtuber", widget: "string" }
-      - { label: "YouTube Start", name: "youtubestart", widget: "string" }
-      - { label: "YouTube End", name: "youtubeend", widget: "string" }
-      - { label: "YouTube Mute ( 1=true or 0=false)", name: "youtubemute", widget: "string" }
-      - { label: "YouTube Show Controls ( 1=true or 0=false)", name: "youtubecontrols", widget: "string" }
+      - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
+      - { label: "YouTube Start", name: "youtubestart", widget: "string", required: false }
+      - { label: "YouTube End", name: "youtubeend", widget: "string", required: false }
+      - { label: "YouTube Mute ( 1=true or 0=false)", name: "youtubemute", widget: "string", required: false }
+      - { label: "YouTube Show Controls ( 1=true or 0=false)", name: "youtubecontrols", widget: "string", required: false }
+      - { label: "YouTube - Show Original?", name: "youtubeshoworiginal", widget: "string", required: false }
+      - { label: "YouTube - Suggestion 1", name: "youtubersuggestion1", widget: "string", required: false }
+      - { label: "YouTube - Suggestion 2", name: "youtubersuggestion2", widget: "string", required: false }
+      - { label: "YouTube - Suggestion 3", name: "youtubersuggestion3", widget: "string", required: false }
+      - { label: "Make Comments Available? (1 for yes - leave blank for no)", name: "comments", widget: "string", required: false }
+      - { label: "Make Post Shareable? (1 for yes - leave blank for no)", name: "shareable", widget: "string", required: false }
+      - { label: "Is this an NFT? (1 for yes - leave blank for no)", name: "isnftforsale", widget: "string", required: false }
+      - { label: "Paste OpenSea or Foundation Url", name: "nftlink", widget: "string", required: false }
+      - { label: "For NFT DROP - enter drop time", name: "nftdrop", widget: "datetime", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm",format: "YYYY-MM-DD HH:mm", required: false }
+      - { label: "Paste OpenSea or Foundation Url", name: "nftredeem", widget: "string", required: false }
+
+
+      
       - {
           label: "Featured Image",
           name: "featuredImage",
@@ -76,7 +86,7 @@ collections:
           required: false,
           tagname: "",
         }
-      - { label: "SVG Z-Index", name: "svgzindex", widget: "string" }
+      - { label: "SVG Z-Index", name: "svgzindex", widget: "string", required: false  }
 
 
 
@@ -102,12 +112,12 @@ collections:
           - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Featured Image", name: "featuredImage", widget: "image" }
-          - { label: "Secondary Image", name: "secondaryImage", widget: "image" }
-          - { label: "Underlay Image", name: "underlayImage", widget: "image" }
-          - { label: "SVG Image", name: "svgImage", widget: "image" }
+          - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+          - { label: "Secondary Image", name: "secondaryImage", widget: "image", required: false }
+          - { label: "Underlay Image", name: "underlayImage", widget: "image", required: false }
+          - { label: "SVG Image", name: "svgImage", widget: "image", required: false}
           - { label: "SVG Z-Index", name: "svgzindex", widget: "string" }
-          - { label: "YouTube Url", name: "youtuber", widget: "string" }
+          - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
           - { label: "Body", name: "body", widget: "markdown" }
           - label: "CTA"
             name: "cta"
@@ -167,7 +177,7 @@ collections:
                 required: true
               - widget: string
                 name: titleTemplate
-                label: Title Template
+                label: Title Template (ignore)
                 default: "%s"
                 required: true
               - widget: string
@@ -181,18 +191,39 @@ collections:
                 required: false
               - widget: image
                 name: image
-                label: image
+                label: Default OG Image
+                required: true
                 default: "/assets/default-og-image.jpg"
               - widget: image
                 name: iconimage
-                label: favicon
+                label: Site Logo (should be SVG if at all possible)
+              - widget: image
+                name: favicon16x16
+                label: Site Favicon 16x16 (name image like 'favicon-16x16.png')
+                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+                default: "/assets/favicon-16x16.png"
+              - widget: image
+                name: favicon32x32
+                label: Site Favicon 32x32 (name image like 'favicon-16x16.png')
+                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+                default: "/assets/favicon-32x32.png"
+              - widget: image
+                name: icon192
+                label: Site Icon 192x192 (name image like 'icon-192x192.png')
+                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+                default: "/assets/icon-192x192.png"
+              - widget: image
+                name: icon512
+                label: Site Icon 512x512 (name image like 'icon-512x512.png')
+                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+                default: "/assets/icon-512x512.png"
               - widget: string
                 name: twitterUsername
-                label: Twitter
+                label: Twitter user (no '@' justthename)
                 required: false
               - widget: string
                 name: companyname
-                label: Company Name
+                label: Company Name or Site Name
                 required: true
 
           - label: "Google Analytics"

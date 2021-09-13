@@ -8,6 +8,7 @@ import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Countdown from 'react-countdown'
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
@@ -376,7 +377,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
 
 
-
+  const { siteUrl } = useSiteMetadata()
 
 const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:'100vw', }}>
   { NftRedeem ? (
@@ -403,7 +404,9 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={"https://vidsock.com" + getSrc(frontmatter.featuredImage) }
+        
+        image={ siteUrl + getSrc(frontmatter.featuredImage) }
+
         article={true}
       />
 
@@ -442,7 +445,7 @@ const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
           
@@ -764,13 +767,13 @@ export const pageQuery = graphql`
   query BlogPostQueryBlogPostQuery($id: String!) {
     site {
       siteMetadata {
-        siteTitle
-        siteTitleDefault
+        title
+        titleDefault
         siteUrl
-        hrefLang
-        siteDescription
-        siteImage
-        twitter
+        description
+        image
+        twitterUsername
+        companyname
       }
     }
     markdownRemark(id: { eq: $id }) {
