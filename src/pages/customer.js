@@ -26,7 +26,7 @@ export default function CustomerPage() {
 
  
     
-    <div className="container" style={{padding:'0 12%'}}>
+    <div className="container" style={{padding:'2rem 12%'}}>
        
     <h1 className="title" style={{fontSize:'40px'}}>You're in the cool club, now...</h1>
 
@@ -42,7 +42,7 @@ export default function CustomerPage() {
     <br />
      <p>If you should ever have any questions or concerns, please feel free to drop me a line anytime.</p>
 
-     <p style={{textAlign:'center'}}><Link className="button" to="/contact/" state={{modal: true}} >Contact</Link></p>
+     {/* <p style={{textAlign:'center'}}><Link className="button" to="/contact/" state={{modal: true}} >Contact</Link></p> */}
 
 
 

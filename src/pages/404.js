@@ -13,6 +13,7 @@ const NotFound = () => (
       className="wrapper"
       style={{
         textAlign: "center",
+        padding:'2rem 0'
       }}
     >
       <header>

@@ -37,6 +37,7 @@ export default function SignedUpPage() {
         flexDirection:'column',
         width:'80%',
         margin:'0 auto',
+        padding:'2rem 0'
       }}
     ><div className="spacer33"></div> 
       <AiTwotoneCamera
