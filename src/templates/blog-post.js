@@ -221,7 +221,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
          
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd }
+                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd }
                 },
               }}
               loop
@@ -272,7 +272,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
          
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, start:YouTubeStart, end:YouTubeEnd }
+                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd }
                 },
               }}
               loop
@@ -315,13 +315,14 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           width="100%"
           height="100%"
           style={{zIndex:'0'}}
-          controls={true}
-          autoplay={true}
-          background={true}
+          config={{
+            youtube: {
+              playerVars: { showinfo: 1, autostart: 1, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+            },
+          }}
           loop
           playing
           playsinline
-          muted={false}
           showPortrait
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
