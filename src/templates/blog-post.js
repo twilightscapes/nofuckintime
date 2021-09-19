@@ -405,71 +405,11 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
-     
-
-
-
-<div style={{display:'block', width:'100vw', height:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:''}}>
-{Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', position:'absolute', top:'', zIndex:'', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
-            />
-            
-          ) : (
-
-       
-            <StaticImage src="../../static/default-og-image.jpg" alt="VidSock Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
-  
-          )}
-</div>
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-{/* {Svg2 ? (
-            <AddSvg2 />
-       
-          ) : (
-            ""
-          )} */}
-
-  {/* {OverlayImage ? (
-            <GatsbyImage
-              image={OverlayImage}
-              alt={frontmatter.title + " - image"}
-              className="layer2"
-              style={{height:'100vh', zIndex:'1', postion:'absolute', bottom:'0', left:'0', objectFit:'contain' }}
-            />
-          ) : (
-            ""
-          )} */}
-
-
-
-
-
-
+{ YouTube ? (
+            <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -515,7 +455,57 @@ const { iconimage } = useSiteMetadata()
 
 
 
-      </div>
+            </div>
+       
+          ) : (
+
+            
+         <div style={{display:'grid', placeContent:'center', top:'0'}}> 
+
+{Image ? (
+            // <GatsbyImageImage
+            //   image={Image}
+            //   alt={frontmatter.title + " - Featured image"}
+            //   className="featured-image1 layer1"
+            //   style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
+            // />
+            <InnerImageZoom src={getSrc(Image)} />
+
+
+            
+            
+          ) : (
+
+       
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
+  
+          )}
+          
+
+          </div>
+
+          )}
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
