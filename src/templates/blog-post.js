@@ -408,7 +408,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-{ YouTube ? (
+{ YouTube || Svg ? (
             <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
