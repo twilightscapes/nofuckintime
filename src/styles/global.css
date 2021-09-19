@@ -2921,13 +2921,13 @@ background-position:center 70px;
               .container2 {
             /* transition: all .8s ease-in-out; */
                 /* background-color: #111; */
-                  /* background: linear-gradient(
+                  background: linear-gradient(
                     45deg,
                      rgb(69, 19, 73),
                       rgb(0, 162, 184),
                        #000,
                         rgb(99, 6, 107));
-                  background-size: 300% 100%; */
+                  background-size: 300% 100%;
                   /* animation: gradient 14s ease-in-out infinite; */
               }
 

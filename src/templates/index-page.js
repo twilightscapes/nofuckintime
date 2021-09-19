@@ -3,6 +3,7 @@ import * as React from "react"
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 import { GoArrowDown } from "react-icons/go"
 import { Helmet } from "react-helmet"
@@ -101,7 +102,7 @@ export const pageQuery = graphql`
 
 const HomePage = ({ data }) => {
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, excerpt } = markdownRemark
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
@@ -202,19 +203,26 @@ const YouTube = frontmatter.youtuber
     <Helmet>
   <body className="homepage" />
 </Helmet>
-<Seo
-          title={`VidSock - Video Multimedia NFT Platform`}
-          description={`Create, display and market your NFTs with VidSock`}
-          image={'https://vidsock.com/default-og-image.jpg'}
-        />
+
       
+
+      <Seo
+        title={frontmatter.title}
+        description={
+          frontmatter.description ? frontmatter.description : excerpt
+        }
+        
+        image={ siteUrl + getSrc(frontmatter.featuredImage) }
+
+        article={true}
+      />
       
 
 
-        <div name="container2" className="container2" style={{height:'90vh',}}>
+        <div name="container2" className="container2" style={{height:'88vh',}}>
 
         
-<section style={{ display:'',}}>
+<section style={{ display:'none', }}>
   <article>
 
   <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
@@ -289,9 +297,9 @@ const YouTube = frontmatter.youtuber
 
 
 
-<br />
 
-<section style={{ display:'',}}>
+
+<section style={{ display:'', height:'100%'}}>
   <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek " style={{padding:'0 2rem',color:'#fff', textShadow:'3px 3px 0 #000'}}>
