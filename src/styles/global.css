@@ -1,3 +1,11 @@
+
+
+
+  
+
+
+
+
 body {
   font-family: var(--font-body);
   color: var(--text-color);
@@ -94,6 +102,14 @@ display: none !important;
     
   }
 
+  .react-player {
+    position: absolute;
+    /* width:100vw;
+    height:100vh; */
+    top: 0;
+    left: 0;
+    background:#000;
+  }
 
   .react-player66 {
     position: absolute;
@@ -305,6 +321,7 @@ body.homepage .gatsby-image-wrapper [data-main-image]{
 /* .gatsby-image-wrapper {max-height: 80vh; } */
 
 /* .iiz img{ object-fit: contain !important; margin:0 auto ;}
+
 .iiz{ max-height:80vh; margin:0 auto; display:block !important; object-fit: contain !important;} */
 
 .iiz div{margin:0 auto;
@@ -528,9 +545,12 @@ outline:1px rgba(0, 0, 0, 1);
 /* .button {
   --padding: 15px;
   --margin: 20px;
+
   display: inline-flex;
   align-items: center;
   color:#fff !important;
+
+
   background: linear-gradient(180deg, rgb(34, 26, 32) 1%, #111 99%);
   align-self: center;
   padding: var(--space-sm) var(--space-xl);
@@ -546,6 +566,7 @@ outline:1px rgba(0, 0, 0, 1);
   font-size: 120%;
   text-shadow: 2px 2px 2px black;
   margin:2vh 1vw;
+
 } */
 
 @media (max-width: 48rem) {
@@ -608,6 +629,7 @@ outline:1px rgba(0, 0, 0, 1);
   position:fixed;
   top:0;
   left:0;
+
   opacity: 1 ;
   overflow: 'hidden';
   display:block;
@@ -844,7 +866,7 @@ body.homepage .post-content{
   
 }
 
-body.homepage .post-content a{color:#fff !important;}
+body.homepage .post-content a, body.blog-list .post-card a{color:#fff !important;}
 body.homepage .post-content h2{
   font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
   border:0px solid red;
@@ -908,6 +930,7 @@ border:1px solid red !important;
 
 .home-banner{padding: 0 !important;}
 /* .home-posts, .home-posts a{color:var(--primary) !important;}
+
 .home-posts a:hover{color:var(--primary-color) !important;} */
 
 
@@ -1058,6 +1081,7 @@ filter: drop-shadow(0px 0px 4px #666);
   content: ("Audio Controls") ;
   display:block  !important;
   border:0px solid red  !important;
+
 } */
 
 
@@ -1121,13 +1145,20 @@ filter: drop-shadow(0px 0px 4px #666);
     margin: 0 auto;
   }
 
+  
   .homepage-bg{
     /* position:fixed; */
 border: 0px solid red;
     z-index: -1;
       background-size:cover;
-  /* background-size: 50%; */
+  background-size: 50% !important;
   object-fit: cover !important;
+  width:100%;
+  
+  }
+
+  @media (max-width: 48rem) {
+    .homepage-bg{max-width: 200px;}
   }
 
 
@@ -1881,6 +1912,7 @@ border:1px solid #222;
   width: 14px;
   height: 18px;
 }
+
 ::-webkit-scrollbar-thumb {
   height: 6px;
   border: 4px solid rgba(0, 0, 0, 0);
@@ -1890,11 +1922,13 @@ border:1px solid #222;
   -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
     inset 1px 1px 0px rgba(0, 0, 0, 0.05);
 }
+
 ::-webkit-scrollbar-button {
   display: none;
   width: 0;
   height: 0;
 }
+
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 } */
@@ -2064,6 +2098,7 @@ border:1px solid #222;
       font-size: 16px;
       line-height: 1;
       transition: background 0.3s linear;
+
     }
     .button.-outline {
         color: var(--primary-color);
@@ -2071,6 +2106,8 @@ border:1px solid #222;
         background: #fff;
         
       }
+
+
       .button:hover {
           box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
           background: #f2f2f2;
@@ -2122,9 +2159,11 @@ border:1px solid #222;
         align-items: center;
         justify-content: center;
         align-self:center;
+
         animation: poof 1s forwards;
         animation-delay: 1.5s;
         overflow: hidden;
+
         
         font-size:5vw; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
         background-color:#111;
@@ -2209,6 +2248,8 @@ background-position:center 70px;
           opacity: 0;
           z-index: -99;
           }
+
+
             99% {
               transform: translateY(-200%) scaleY(0) scaleX(0);
               display: block;
@@ -2879,14 +2920,14 @@ background-position:center 70px;
 
               .container2 {
             /* transition: all .8s ease-in-out; */
-                background-color: #111;
-                  background: linear-gradient(
+                /* background-color: #111; */
+                  /* background: linear-gradient(
                     45deg,
                      rgb(69, 19, 73),
                       rgb(0, 162, 184),
                        #000,
                         rgb(99, 6, 107));
-                  background-size: 300% 100%;
+                  background-size: 300% 100%; */
                   /* animation: gradient 14s ease-in-out infinite; */
               }
 
@@ -2971,12 +3012,14 @@ overflow-y: scroll;
         scroll-snap-type: y proximity;
         height:70vh;
 }
+
 .blogscroller section {
   scroll-snap-align: start;
   overflow:hidden;
   height:100% !important;
   background:tranparent !important;
 }
+
 .blogscroller section article {
 height:100vh;
 }
@@ -3039,12 +3082,14 @@ height:100vh;
             color:#f8f8fc !important;
             text-shadow: 12px 7px 15px 12px black !important;
             }
+
             body.featurepage .intro:before{
               content: "AIRLOCK" !important;
               }
             body.featurepage .intro:after{
               content: "ESTABLISHED" !important;
               }
+
               body.spaceport .intro:before{
                 content: "AIRLOCK" !important;
                 }
