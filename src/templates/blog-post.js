@@ -221,7 +221,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
          
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd }
+                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute }
                 },
               }}
               loop
@@ -272,7 +272,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
          
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd }
+                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd,mute:YouTubeMute }
                 },
               }}
               loop
