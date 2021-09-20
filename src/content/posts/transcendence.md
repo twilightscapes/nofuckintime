@@ -23,7 +23,7 @@ featuredImage: /assets/Experiences-Header-6.jpg
 svgImage: /assets/transcendence.svg
 nftlink: ""
 nftdrop: "2021-09-12T14:00:00"
-nftredeem: "https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button"
+
 ---
 Shot in the Valley of the Gods in southern Utah, the original image is comprised of 72 photos shot during time-lapse and then stacked together to illustrate the movement of the earth.
 

@@ -28,7 +28,7 @@ export default function HTML(props) {
                 justifySelf:'center',
                 position: "absolute",
                 left: '0',
-                top: '40vh',
+                top: '50vh',
                 right: '0',
                 
                 zIndex: 100,

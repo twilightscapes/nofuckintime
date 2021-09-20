@@ -1683,10 +1683,20 @@ font-size:170%;
 .signbox{
   display:flex;
   justify-content: center;
-  align-items:baseline;
+  flex-direction: column;
+  align-items:center;
+  align-self: center;
   overflow:hidden;
   width:100%;
   padding:0 10px;
+}
+
+
+@media (min-width: 48em) {
+
+
+  .signbox {flex-direction: row;}
+
 }
 
 /* .signbox input{
@@ -1707,6 +1717,7 @@ font-size:170%;
   background:rgba(0, 0, 0, 0.4) !important;
   color:#fff;
 } */
+
 
 
 /* .mcboaty{
