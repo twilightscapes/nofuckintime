@@ -208,7 +208,7 @@ export function Footer() {
         <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'4px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Us - We &nbsp;<FaHeart />&nbsp;feedback!</Link>
 
  <div >
-        {/* <Social /> */}
+     
 
         { !sIcons ? (
     ""
@@ -224,7 +224,7 @@ export function Footer() {
 
         
       </div>
-      <nav className={links} aria-label="footer">
+      <nav className="footerlinks" aria-label="footer">
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
   
       {/* <Page /> */}

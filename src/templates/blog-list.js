@@ -410,10 +410,11 @@ class BlogIndex extends React.Component {
     </div> */}
 
 
-<div id="contentscroll" name="container2" className="container" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0', padding:'0 8% 0 8%'}}>
+<div id="contentscroll" name="container2" className="container" style={{display:'', justifySelf:'', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0', marginTop:'0', padding:'4%'}}>
 
 
-<h1 className="headline" style={{fontSize:'18px'}}>VidSock - The World's First Multimedia 3D Blog for creating, hosting and marketing the next generation of NFTs.</h1>
+<h1 className="headline neonText" style={{fontSize:'250%', textAlign:'center', margin:'0', padding:'0'}}>VidSocks Archive</h1>
+{/* VidSock - The World's First Multimedia 3D Blog for creating, hosting and marketing the next generation of NFTs. */}
 
 {/* onFocus={disableBodyScroll()} */}
 <Pagination {...props} />
@@ -421,13 +422,13 @@ class BlogIndex extends React.Component {
 
 
  <section style={{height:'auto'}}>
-  <Link to="/#experiences" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+  <Link to="/#posts" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
   <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newest VidSocks 
     </article></Link>
     </section>
 
  <section style={{height:'auto'}}>
-  <article style={{height:'auto'}}>
+  <article className="" style={{height:'auto'}}>
 
  {posts}
 

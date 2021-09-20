@@ -1,50 +1,39 @@
-import React from "react"
-import { graphql } from "gatsby"
-
-import { Seo } from "../components/seo"
+import * as React from "react"
 import { Layout } from "../components/layout"
-import GoBack from "../components/goBack"
-import Newsignup from "../components/newssign"
+import "../assets/scss/style.scss"
+import ReactPlayer from 'react-player/lazy'
+import { StaticImage } from "gatsby-plugin-image"
+import SignUp from "../components/newssign"
+import { Link, useRef} from "gatsby"
 import NFTDetails from "../components/nft-details"
-export const pageQuery = graphql`
-  query AboutQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 140)
-      frontmatter {
-        title
-      }
-    }
-  }
-`
-const AboutPage = ({ data }) => {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, excerpt } = markdownRemark
+// import { StaticImage } from "gatsby-plugin-image"
 
-  return (
+
+
+
+
+
+
+
+
+
+
+export default function CustomerPage() {
+
+
+   return (
+
+
+    
     <Layout className="page">
-      <Seo title={frontmatter.title} description={excerpt} />
 
 
-      {/* <div className="container" style={{padding:'2rem 8%', maxWidth:'1024px'}}> */}
+<NFTDetails />
 
 
-      {/* <div className="mobile"><GoBack /></div> */}
 
-
-      {/* <section className="article-header" style={{textAlign:'left', margin:'0 4%', height:'auto'}}>
-            <h1>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
-          </section>
-
-        <article dangerouslySetInnerHTML={{ __html: html }} /> */}
-        {/* <NFTDetails /> */}
-
-      {/* </div> */}
-
-
-      <div className="frontgrid">
+    
+{/* <div className="frontgrid">
   <div className="grid__item">
     <div className="frontcontent1">
       <div className="content-inside11" style={{padding:'1rem'}}>
@@ -61,7 +50,7 @@ const AboutPage = ({ data }) => {
   </div>
   <div className="grid__item" style={{padding:'0 1rem'}}>
 
-      <Newsignup />
+      <SignUp />
 
   </div>
   </div>
@@ -148,30 +137,19 @@ const AboutPage = ({ data }) => {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
 
-
-{/* <button onClick="playAnimation()" type="button">Start Animation</button> */}
-
-<br /><br /><br />
-{/* <button className="square" onClick={() => console.log('click')}>
-       DAMN
-     </button> */}
-
-
-<div className="spacer33"></div>
 
 
 
 
-      {/* <GoBack /> */}
-      <br />
-      <br />
+<div className="spacer33"></div>
+       
+
+
+    
     </Layout>
-
 
   )
 }
-
-export default AboutPage

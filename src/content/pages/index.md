@@ -7,7 +7,7 @@ featuredImage: /assets/transparent.png
 secondaryImage: /assets/swd-foreground.png
 cta:
   ctaText: "See the VidSocks"
-  ctaLink: /#nfts
+  ctaLink: /#posts
 youtuber: "iHxmNzMfDj4"
 youtubestart: "0"
 youtubeend: "33"
@@ -18,13 +18,13 @@ underlayImage: /assets/swd-foreground.png
 svgImage: /assets/campfire.svg
 ---
 
-What are VidSocks?
+<h2 style="font-weight:bold; font-size:125%;">What are VidSocks?</h2>
 
-VidSocks are layered multimedia (including animation, cutouts, scenes, and video) crafted together to give the viewer a unique new experience.
+VidSocks are layered multimedia (including animation, cutouts, scenes, and video) crafted together to give the viewer a whole new sensory experience.
 
 Each VidSock is uniquely created by the artist and then delivered to the world for their art to be altered and changed by its viewers thus making each VidSock truly dynamic.
 
-## With each winning bid, you not only get to take home your new VidSock, but you will also get your very own VidSock Internet Platform™ to make and market your own.
+## With each winning bid, you not only get to take home your new VidSock, but you will also get your very own copy of the <strong>VidSock NFT Marketing Platform™</strong> to make and market your own VidSocks.
 
 
 

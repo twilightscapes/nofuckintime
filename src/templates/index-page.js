@@ -463,7 +463,7 @@ Through NFT
   </div>
 {/* </ScrollAnimation> */}
 
-<div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div>
+<div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/features/">Learn More About The VidSock Platform Here</Link></div>
 </div>
 
       
@@ -482,8 +482,8 @@ Through NFT
 
 
 
-<a name="nfts" id="nfts"></a>
-<div id="scooch">
+
+<div id="scooch"><a name="posts" id="posts"></a>
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>

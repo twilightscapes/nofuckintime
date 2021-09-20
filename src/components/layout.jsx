@@ -149,12 +149,12 @@ export function Layout({ children }) {
 
  <li className="carto" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/contact/">
-Contact Us<span>- we love feedback!</span>
+Contact Us<span>we love feedback!</span>
 </Link>
 </li>
     <li className="carto">
               <Link className="navbar-item txtshadow" to="/about/">
-                About VidSocks <span>- how to get your own</span>
+                About VidSocks <span>how to get your own</span>
               </Link>
       </li>
 
