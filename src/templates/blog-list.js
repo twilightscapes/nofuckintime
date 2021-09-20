@@ -150,15 +150,10 @@ class BlogIndex extends React.Component {
           }
         />
         
-        <div
-      className="wrapper1"
-      style={{
-        textAlign: "center",
-      }}
-    >
+
 {/* <h1 style={{padding:'10px', margin:'0'}}>Articles</h1> */}
 
-    </div>
+
 
         
 
@@ -415,24 +410,19 @@ class BlogIndex extends React.Component {
     </div> */}
 
 
-    <div
-      className="wrapper1"
-      style={{
-        textAlign: "center",
-        padding:'0 4vw',
-        clear:'both'
-      }}
-    >
+<div id="contentscroll" name="container2" className="container" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0', padding:'0 8% 0 8%'}}>
+
+
 <h1 className="headline" style={{fontSize:'18px'}}>VidSock - The World's First Multimedia 3D Blog for creating, hosting and marketing the next generation of NFTs.</h1>
 
 {/* onFocus={disableBodyScroll()} */}
 <Pagination {...props} />
  {/* <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}> */}
- <div id="contentscroll" name="container2" className="container2" style={{display:'', justifySelf:'center', width:'100%', maxWidth:'100%', height:'100%', border:'0px solid #000 !important', margin:'0 auto', marginTop:'0',}}>
+
 
  <section style={{height:'auto'}}>
   <Link to="/#experiences" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
-  <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newest Experiences 
+  <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newest VidSocks 
     </article></Link>
     </section>
 
@@ -443,7 +433,7 @@ class BlogIndex extends React.Component {
 
 </article>
 </section>
-</div>
+
         <Pagination {...props} />
 
 

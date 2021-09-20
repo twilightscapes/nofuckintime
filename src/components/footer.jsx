@@ -37,10 +37,13 @@ import {
 
 
 const sIcons = Icons.socialIcons.map((icons, index) => {
-  
+
+
+
+
   return (
-
-
+<>
+<div className="socialtext" style={{fontSize:'14px',}}>We&apos;re <br />Social</div>
     <div key={"social icons" + index}>
       {icons.icon === "facebook" ? (
         <a aria-label="Link to Facebook" title="Facebook" className="social" href={icons.url} rel="noreferrer" target="_blank">
@@ -155,7 +158,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
         ""
       )}
     </div>
-
+</>
   )
 })
 
@@ -179,6 +182,16 @@ export function Footer() {
 
   const { companyname } = useSiteMetadata()
  
+
+
+
+
+
+
+
+
+
+
   return (
 <>
 
@@ -197,10 +210,16 @@ export function Footer() {
  <div >
         {/* <Social /> */}
 
-        <div className="social-icons" style={{textAlign:'center', justifyContent:'center', margin:'3rem 5px'}}>
-  <div className="socialtext" style={{fontSize:'14px'}}>We&apos;re<br />Social</div>
+        { !sIcons ? (
+    ""
+
+  ) : (
+    <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', justifyContent:'center', alignItems:'center'}}>
         {sIcons}
         </div>
+  )}
+  
+        
         </div>
 
         
@@ -215,7 +234,9 @@ export function Footer() {
         Copyright &copy; {(new Date().getFullYear())} VidSock(s) - is NOT affiliated with YouTube in any way. </div>
         <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} /> */}
 
-<div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} - site by<a href="https://vidsock.com" rel="noreferrer" target="_blank">VidSocks</a> | <a href={speedIt} target="_blank" rel="noreferrer">SpeedTest</a></div>
+<div style={{textAlign: 'center', margin: '0 0 4rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname} &nbsp; – <a href={speedIt} target="_blank" rel="noreferrer">Yeah, we're FAST</a></div>
+<Theme  style={{display:'flex', alignSelf:'center',}} />
+<br />
       </nav>
    
     </footer>

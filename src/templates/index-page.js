@@ -219,7 +219,7 @@ const YouTube = frontmatter.youtuber
       
 
 
-        <div name="container2" className="container2" style={{height:'88vh',}}>
+        <div name="container2" className="container2" style={{height:'90vh',}}>
 
         
 <section style={{ display:'none', }}>
@@ -302,7 +302,7 @@ const YouTube = frontmatter.youtuber
 <section style={{ display:'', height:'100%'}}>
   <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek " style={{padding:'0 2rem',color:'#fff', textShadow:'3px 3px 0 #000'}}>
+      <div className="flexcheek " style={{padding:'1rem 2rem',color:'#fff', textShadow:'3px 3px 0 #000'}}>
 
 
           <h1 className="title1 neonText1">{frontmatter.title}</h1>
@@ -321,7 +321,7 @@ const YouTube = frontmatter.youtuber
             dangerouslySetInnerHTML={{ __html: html }}
           />
   
-  
+  <br />
           <Link
             to={frontmatter.cta.ctaLink}
             // href="#scootch"
@@ -374,12 +374,12 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
- <div className="flexcheek" style={{position:'relative', height:'', overflow:''}}>
+ <div className="flexcheek" style={{position:'relative', height:'100%', overflow:''}}>
  
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'', overflow:'', position:'relative'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', height:'100%', overflow:'', position:'relative'}}>
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}

@@ -14,6 +14,19 @@ body {
   width:100vw;
 }
 
+body.homepage, body.bloglist1 {
+  /* transition: all .8s ease-in-out; */
+      /* background-color: #111; */
+        background: linear-gradient(
+          38deg,
+           rgb(69, 19, 73),
+            rgb(0, 162, 184),
+             #000,
+              rgb(99, 6, 107));
+        background-size: 170% 150%;
+        /* animation: gradient 14s ease-in-out infinite; */
+    }
+
 body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Roboto,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; /* font-style: italic; */}
 
 
@@ -2918,22 +2931,11 @@ background-position:center 70px;
                   }
                 }
 
-              .container2 {
-            /* transition: all .8s ease-in-out; */
-                /* background-color: #111; */
-                  background: linear-gradient(
-                    45deg,
-                     rgb(69, 19, 73),
-                      rgb(0, 162, 184),
-                       #000,
-                        rgb(99, 6, 107));
-                  background-size: 300% 100%;
-                  /* animation: gradient 14s ease-in-out infinite; */
-              }
+              
 
 
 
-          .container2{border-color:#FA02B7 !important;}
+          /* .container2{border-color:#FA02B7 !important;} */
 
 
 .logopulse {
@@ -2995,17 +2997,23 @@ opacity:.8;
     opacity:.8;
       } */
 
-      .container2 {
-        overflow-y: scroll;
-        scroll-snap-type: y proximity;
-        height:90vh;
+
+
+      @media (hover: none) {
+        .container2 {
+          overflow-y: scroll;
+          scroll-snap-type: y proximity;
+          height:90vh;
+        }
+        .container2 section {
+          scroll-snap-align: start;
+          overflow:hidden;
+          /* height:70vh; */
+          background:tranparent !important;
+        }
       }
-      .container2 section {
-        scroll-snap-align: start;
-        overflow:hidden;
-        /* height:70vh; */
-        background:tranparent !important;
-      }
+      
+      
 
 /* .blogscroller{
 overflow-y: scroll;

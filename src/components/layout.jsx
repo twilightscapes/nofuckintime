@@ -136,22 +136,27 @@ export function Layout({ children }) {
  <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
 <img src={iconimage} alt="VidSock Logo" width="100%" height="100%" />
-<span>VidSocks Don't Stink</span>
+<span>NFT Marketing Platform</span>
 </Link>
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
-<span>VidSocks Don't Stink</span>
+<span>NFT Marketing Platform</span>
 </Link>
  </li>
  
 
- {/* <li className="carto" style={{textAlign:'center'}}>
+ <li className="carto" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/contact/">
-Contact Me<span>I love feedback!</span>
+Contact Us<span>- we love feedback!</span>
 </Link>
-</li> */}
+</li>
+    <li className="carto">
+              <Link className="navbar-item txtshadow" to="/about/">
+                About VidSocks <span>- how to get your own</span>
+              </Link>
+      </li>
 
 
  {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
@@ -179,11 +184,7 @@ Contact Me<span>Ordering Questions?</span>
        </li> */}
 
 
-      {/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/about/">
-                About Me <span>My story</span>
-              </Link>
-      </li> */}
+  
 
       {/* <li className="carto">
       <Link className="navbar-item txtshadow" to="/articles/">Articles<span>My rants &amp; raves</span></Link>
