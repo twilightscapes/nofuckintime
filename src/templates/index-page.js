@@ -237,7 +237,7 @@ const YouTube = frontmatter.youtuber
 <section style={{ overflow:'hidden',}}>
   <article>
 
-  <div className='stack-layout' style={{ display:'', position:'relative', top:'', zIndex:'', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='stack-layout' style={{ display:'none', position:'relative', top:'', zIndex:'', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -426,7 +426,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 <br />
 <br />
 <a name="posts" id="posts"></a>
-<div id="scooch" style={{display:'none'}}>
+<div id="scooch" style={{display:''}}>
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>

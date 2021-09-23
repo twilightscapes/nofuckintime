@@ -9,8 +9,8 @@ cta:
   ctaText: "See the VidSocks"
   ctaLink: /#posts
 youtuber: "iHxmNzMfDj4"
-youtubestart: "0"
-youtubeend: "33"
+youtubestart: ""
+youtubeend: ""
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
