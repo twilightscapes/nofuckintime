@@ -9,11 +9,12 @@
     "titleDefault": "VidSock",
     "icon192": "/assets/icon-192x192.png",
     "titleTemplate": "%s",
+    "comments": "5732401321869312-proj",
     "title": "VidSock",
     "image": "/assets/default-og-image.jpg",
     "description": "VidSock - NextGen NFT Platform",
-    "icon512": "/assets/icon-512x512.png",
-    "comments": "5732401321869312-proj"
+    "icon512": "/assets/icon-512x512.png"
   },
-  "ga": "G-QLQ2WM4S0W"
+  "ga": "G-QLQ2WM4S0W",
+  "comments": "5732401321869312-proj"
 }
