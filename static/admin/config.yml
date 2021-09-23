@@ -234,8 +234,6 @@ collections:
                 label: "Commenting – Go to: https://commentbox.io - sign up for free account"
                 hint: "Add your CommentBox ID – should look like xxxxxxxxxxxxxxxx-proj"
                 required: false
-            widget: string
-            hint: "Add your CommentBox ID – should look like xxxxxxxxxxxxxxxx-proj"
           - label: "Google Analytics"
             name: ga
             widget: string
