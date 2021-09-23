@@ -226,6 +226,10 @@ collections:
                 label: Company Name or Site Name
                 required: true
 
+          - label: "Comments Account # – should look like xxxxxxxxxxxxxxxx-proj"
+            name: comments
+            widget: string
+            hint: "Go to: https://commentbox.io - sign up for free account "
           - label: "Google Analytics"
             name: ga
             widget: string

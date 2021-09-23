@@ -5,8 +5,8 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
-import { GoArrowDown } from "react-icons/go"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import { GoArrowDown } from "react-icons/go"
+// import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
