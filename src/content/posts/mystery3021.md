@@ -4,7 +4,7 @@ title: Mystery Science Theater 3021
 slug: /mystery-science-theater-3021
 date: 2021-08-13 10:43
 description: A bit of a tribute to the great MST3000
-youtuber: "XjuLZwlDxh8"
+youtuber: "https://youtu.be/XjuLZwlDxh8"
 youtubeshoworiginal: "1"
 youtubersuggestion1: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
@@ -22,7 +22,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-7.jpg
 svgImage: /assets/MysteryScience3000.svg
 nftlink: ""
-nftdrop: "2021-09-12T14:00:00"
+nftdrop: "2021-09-22T14:00:00"
 nftredeem: ""
 ---
 Seeing as this is my frist post !1!, woot, woot!

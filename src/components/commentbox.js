@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react';
-import commentbox from 'commentbox.io';
+import React, { useEffect } from 'react'
+import commentbox from 'commentbox.io'
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-
-
 
 
 const ComBox = ()=>{
   const { comments } = useSiteMetadata()
   useEffect(() =>{
-    commentbox({comments}, {
+    commentbox(comments, {
       backgroundColor: null,  // default transparent
       textColor: "#222",  // default black
        subtextColor: "#222",  // default grey
@@ -17,20 +15,14 @@ const ComBox = ()=>{
 
   return(
 
-  
-  
-  
-  
-  
-
-  
-  
-  
-  
 
     <div className="commentbox" />
+
   )
 
 }
   
   export default ComBox
+
+
+

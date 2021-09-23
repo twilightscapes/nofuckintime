@@ -261,27 +261,26 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
     //    const c = b.getElementById("e6flsqoxhzzs1");
     //    c.dispatchEvent(new Event("click"));
     //  }
-    //  onClick={playAnimation}
 
     return (
 
  <div>
               <ReactPlayer
               className='react-player66'
-              url={iframeUrl}
+              // url={iframeUrl}
               
-              // url={[
-              //   iframeUrl,
-              //   YoutuberSuggestion1,
-              //   YoutuberSuggestion2,
-              //   YoutuberSuggestion3
-              // ]}
+              url={[
+                iframeUrl,
+                YoutuberSuggestion1,
+                YoutuberSuggestion2,
+                YoutuberSuggestion3
+              ]}
               width="100%"
               height="100%"
          
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd,mute:YouTubeMute }
+                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute }
                 },
               }}
               loop
