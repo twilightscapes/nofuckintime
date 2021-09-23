@@ -114,6 +114,7 @@ function AddSvg(){
 
 
   return (
+    
     <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
@@ -253,6 +254,14 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
   function Iframer() {
     const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+
+    // function playAnimation() {
+    //   const a = document.getElementById("animated-svg")
+    //    const b = a.contentDocument;
+    //    const c = b.getElementById("e6flsqoxhzzs1");
+    //    c.dispatchEvent(new Event("click"));
+    //  }
+    //  onClick={playAnimation}
 
     return (
 

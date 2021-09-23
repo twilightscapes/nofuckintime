@@ -23,7 +23,8 @@ const NotFound = () => (
             fontSize: "160px",
             color: "var(--primary-color)",
             margin:'0 auto',
-        textAlign:'center'
+        textAlign:'center',
+        minHeight:"100vh",
           }}
         />
         <h1 className="neonText" style={{fontSize:'200%'}}>Well, Shit.</h1>

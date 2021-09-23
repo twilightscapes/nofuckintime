@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
 import "../assets/scss/style.scss"
-import ReactPlayer from 'react-player/lazy'
-import { StaticImage } from "gatsby-plugin-image"
-import SignUp from "../components/newssign"
-import { Link, useRef} from "gatsby"
+// import ReactPlayer from 'react-player/lazy'
+// import { StaticImage } from "gatsby-plugin-image"
+// import SignUp from "../components/newssign"
+// import { Link, useRef} from "gatsby"
 import NFTDetails from "../components/nft-details"
 // import { StaticImage } from "gatsby-plugin-image"
 

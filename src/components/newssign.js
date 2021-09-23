@@ -40,7 +40,7 @@ const NewsletterPage = () => (
 
 <CustomBox style={{}}> 
 
-           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto', width:''}}>
+           <div className="contact-form" style={{ padding:'0', textAlign:'center', color:'#fff', margin:'0 auto 0 auto', justifySelf:'center', width:'100%'}}>
 <form
           className="news-form"
           action="/signedup/"
@@ -51,19 +51,23 @@ const NewsletterPage = () => (
 
 
 
-              {/* <div className="blocker" style={{width:'100%', height:'100%', borderRadius:'12px'}}></div> */}
+              
 
           <input type="hidden" name="form-name" value="news" />
 
 <br />
 
             
-              <p className="txtshadow" style={{fontSize:'120%',}}><strong>The VidSocks NFT Platform is INVITE ONLY</strong></p><br />
+<p className="txtshadow" style={{fontSize:'120%',}}><strong>VidSocks NFT Platform <br />is INVITE ONLY</strong></p><br />
               
-              <p className="txtshadow" style={{fontSize:'85%', padding:'0 15px'}}>Current NFT owners will be the only accounts created during initial launch phase. Second Phase will open to invite only<br />Reserve Your Spot Below:</p><br /><br />
+              <p className="txtshadow" style={{fontSize:'85%', padding:'0 30px', textAlign:'left'}}>Current NFT owners will be the only accounts created during initial launch phase.</p>
+<br />
+              <p>Second Phase will open to invite only.</p>
+              
+              <p>Reserve Your Spot Below:</p>
 
-             <div className="signbox">
-
+             <div className="signbox " style={{display:'flex',}}>
+             
                <label style={{color:'#fff'}} htmlFor="email">
                  <input type="email" name="email" required={true}
                       placeholder="your@email.com"

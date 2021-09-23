@@ -1,15 +1,15 @@
 
 import * as React from "react"
 import styled from "styled-components"
-import { Link } from 'gatsby'
-import { CgInfo, CgRatio  } from "react-icons/cg"
+// import { Link } from 'gatsby'
+// import { CgInfo, CgRatio  } from "react-icons/cg"
 // import { FaLock } from 'react-icons/fa';
 // import { FaTimesCircle } from 'react-icons/fa';
 // import Newsletter from '../components/Newsletter'
 // import ScrollAnimation from 'react-animate-on-scroll'
 import Newsignup from "../components/newssign"
-import { RiSecurePaymentLine } from "react-icons/ri"
-import { HiOutlineScale } from "react-icons/hi"
+// import { RiSecurePaymentLine } from "react-icons/ri"
+// import { HiOutlineScale } from "react-icons/hi"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 const CustomBox = styled.div`
@@ -97,7 +97,7 @@ Custom Domain names available
 <br />
 <li style={{}}>Need more? The VidSock Platform also has complete E-Commerce integration with Shopify. Not only will you be able to sell your products right from your blog pages, but we utelize Shopify's Developer API which means it only costs $9 a month to run a full featured store. This saves you almost $20 off their normal base $28 monthly fee.</li>
 
-<li style={{}}>Seo? Social? It's in the bag. Our entire content management system(CMS) behind out plaltform is designed to make producing top-notch SEO-minded content that ranks incredibly well in Google page rankings. Also, every page and every post has custom graphics for default social image previews and custom page titles and descriptions on social media sites. Our sites kick butt. Don't believe us? Check out how we do with <a href="https://pagespeed.google.com" target="_blank" noreferrer nofollow>Google Page Speed</a>.</li> 
+<li style={{}}>Seo? Social? It's in the bag. Our entire content management system(CMS) behind out platform is designed to make producing top-notch SEO-minded content that ranks incredibly well in Google page rankings. Also, every page and every post has custom graphics for default social image previews and custom page titles and descriptions on social media sites. Our sites kick butt. Don't believe us? Check out how we do with <a href="https://pagespeed.google.com" target="_blank" noreferrer nofollow>Google Page Speed</a>.</li> 
 
 
 

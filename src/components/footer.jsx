@@ -43,7 +43,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
   return (
 <>
-<div className="socialtext" style={{fontSize:'14px',}}>We&apos;re <br />Social</div>
+
     <div key={"social icons" + index}>
       {icons.icon === "facebook" ? (
         <a aria-label="Link to Facebook" title="Facebook" className="social" href={icons.url} rel="noreferrer" target="_blank">
@@ -205,7 +205,7 @@ export function Footer() {
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'4px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Us - We &nbsp;<FaHeart />&nbsp;feedback!</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'4px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Us - We&nbsp;<FaHeart />&nbsp;feedback!</Link>
 
  <div >
      
@@ -215,7 +215,7 @@ export function Footer() {
 
   ) : (
     <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', justifyContent:'center', alignItems:'center'}}>
-        {sIcons}
+       <div className="socialtext" style={{fontSize:'14px',}}>We&apos;re <br />Social</div> {sIcons}
         </div>
   )}
   
