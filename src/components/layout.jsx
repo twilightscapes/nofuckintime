@@ -1,5 +1,5 @@
 import * as React from "react"
-import { SkipNavContent, SkipNavLink } from "./skip-nav"
+import { SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
 import { Footer } from "./footer"
 import { Seo } from "./seo"
@@ -8,7 +8,7 @@ import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
-import Bug from "../../static/assets/vidsock-logo.svg"
+import Bug from "../../static/assets/logo.svg"
 import "../styles/reset.css"
 import "../styles/variables.css"
 import "../styles/global.css"
@@ -49,7 +49,7 @@ export function Layout({ children }) {
       <div style={{overflow:''}}>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'0', right:'0', padding:'10px', fontSize:'40px', background:'#111 !important', filter:'none', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
+          <div style={{position:'fixed', top:'0', right:'0', padding:'10px', fontSize:'40px', background:'#111 !important', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
           <Link state={{noScroll: true }} to={closeTo}>
             <AiOutlineClose />
           </Link>
@@ -102,7 +102,7 @@ export function Layout({ children }) {
   </label>
 
 
-  <label htmlFor="openSidebarMenu" className="backdrop1" ></label>
+  <label aria-label="Background clicks close menu" id="menubgcloser" htmlFor="openSidebarMenu" className="backdrop1" ></label>
 
 
    <div id="sidebarMenu" style={{minWidth:'', width:''}}>
@@ -149,12 +149,12 @@ export function Layout({ children }) {
 
  <li className="carto" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/contact/">
-Contact Us<span>we love feedback!</span>
+Contact Us<span>- we love feedback!</span>
 </Link>
 </li>
     <li className="carto">
               <Link className="navbar-item txtshadow" to="/about/">
-                About VidSocks <span>how to get your own</span>
+                About VidSocks <span>- how to get your own</span>
               </Link>
       </li>
 

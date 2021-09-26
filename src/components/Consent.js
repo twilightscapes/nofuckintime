@@ -2,7 +2,7 @@
 import * as React from "react"
 // import { navigate } from 'gatsby-link'
 // import { FaEnvelope } from 'react-icons/fa';
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import CookieConsent from "react-cookie-consent";
 // import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -31,7 +31,7 @@ const Consent = () => (
     contentStyle={{margin:'0', padding:'0', border:'0px solid red'}}
 
     expires={364}
-    cookieName="vidsock.com-site-pref-cookie"
+    cookieName="site-pref-cookie"
 >
 
 

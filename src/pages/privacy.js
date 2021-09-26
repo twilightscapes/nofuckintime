@@ -34,7 +34,7 @@ export default function PrivacyPage() {
 
       <h1 className="title" style={{fontSize:'50px'}}>Privacy</h1>
       
-      <div class="entry-content">
+      <div className="entry-content">
 		<p>Thank you for visiting my web site. This privacy policy tells you how I use personal information collected at this site. Please read this privacy policy before using the site or submitting any personal information. By using the site, you are accepting the practices described in this privacy policy. These practices may be changed, but any changes will be posted and changes will only apply to activities and information on a going forward, not retroactive basis. You are encouraged to review the privacy policy whenever you visit the site to make sure that you understand how any personal information you provide will be used.</p>
 <p>Note: the privacy practices set forth in this privacy policy are for this web site only. If you link to other web sites, please review the privacy policies posted at those sites.</p>
 <h3>Collection of Information</h3>

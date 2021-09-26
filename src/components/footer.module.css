@@ -1,5 +1,5 @@
 .footerStyle {
-  /* padding: var(--space-2xl) var(--space-xl); */
+  padding: var(--space-2xl) var(--space-xl);
   gap: var(--space-xl);
   display: grid;
   grid-template-columns: 1fr;

@@ -1,9 +1,9 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import Social from "../components/social"
+
 import Theme from "../components/theme"
 import Consent from "../components/Consent"
-import Install from "../components/Install-footer"
+// import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
 import {
   RiFacebookBoxFill,
@@ -21,17 +21,16 @@ import {
   RiMediumFill,
   RiBehanceFill,
 } from "react-icons/ri"
-import { FaWordpress, FaVk, FaHeart } from "react-icons/fa"
+import { FaWordpress, FaVk } from "react-icons/fa"
 
 
 import { Link } from "gatsby"
 import {
   footerStyle,
-  links,
+  // links,
   blurb,
   // logos,
 } from "./footer.module.css"
-
 
 
 
@@ -42,7 +41,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
   return (
-<>
+
 
     <div key={"social icons" + index}>
       {icons.icon === "facebook" ? (
@@ -158,7 +157,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
         ""
       )}
     </div>
-</>
+
   )
 })
 
@@ -184,7 +183,7 @@ export function Footer() {
  
 
 
-
+  const { showfooter } = useSiteMetadata()
 
 
 
@@ -193,19 +192,22 @@ export function Footer() {
 
 
   return (
-<>
+
+
+    showfooter ? (
+  
+
 
 
     <footer className={footerStyle} style={{padding:'0 0', marginTop:'0', position:'relative'}}>
 
     <Consent />
-{/* <div style={{width:'50%', border:'1px groove', margin:'1rem auto'}}></div> */}
-    {/* <Install /> */}
+
     
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'4px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Us - We&nbsp;<FaHeart />&nbsp;feedback!</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Form</Link>
 
  <div >
      
@@ -214,8 +216,8 @@ export function Footer() {
     ""
 
   ) : (
-    <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', justifyContent:'center', alignItems:'center'}}>
-       <div className="socialtext" style={{fontSize:'14px',}}>We&apos;re <br />Social</div> {sIcons}
+    <div className="social-icons" style={{textAlign:'center', justifyContent:'center', display:'flex', alignItems:'center'}}>
+       <div className="socialtext" style={{fontSize:'14px',}}>Social<br />Links</div> {sIcons}
         </div>
   )}
   
@@ -227,12 +229,6 @@ export function Footer() {
       <nav className="footerlinks" aria-label="footer">
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
   
-      {/* <Page /> */}
-  
-      {/* <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>
-        
-        Copyright &copy; {(new Date().getFullYear())} VidSock(s) - is NOT affiliated with YouTube in any way. </div>
-        <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} /> */}
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
 
@@ -242,7 +238,7 @@ export function Footer() {
 <br />
 <br />
 
-<a href="https://vidsock.com" target="_blank" rel="noreferrer">Web App by VidSock</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a></div>
+<a href="https://vidsock.com" target="_blank" rel="noreferrer">Web App by VidSock</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a></div>
 
 
 
@@ -251,7 +247,14 @@ export function Footer() {
       </nav>
    
     </footer>
-    </>
+
+    ) : (
+      ""
+    )
+
+
+
+    
   )
 }
 

@@ -7,7 +7,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Countdown from 'react-countdown'
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
@@ -101,7 +101,7 @@ const Post = ({ data, pageContext }) => {
 
 
   const Svg = frontmatter.svgImage
-  const svgZindex = frontmatter.svgzindex
+  // const svgZindex = frontmatter.svgzindex
   if (!Svg) {
     
   }
@@ -114,8 +114,7 @@ function AddSvg(){
 
 
   return (
-    
-    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+    <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
 
@@ -128,7 +127,8 @@ const Comments = frontmatter.comments
 const YouTubeStart = frontmatter.youtubestart
 const YouTubeEnd = frontmatter.youtubeend
 const YouTubeMute = frontmatter.youtubemute
-const youtubeautostart = frontmatter.youtubeautostart
+const YouTubeControls = frontmatter.youtubecontrols
+const YouTubeAutostart = frontmatter.youtubeautostart
 
 const Suggestion1 = frontmatter.youtubersuggestion1
 const Suggestion2 = frontmatter.youtubersuggestion2
@@ -184,8 +184,8 @@ Add your favorites in the comments below!
 }
 
 const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
-const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
-const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+// const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
+// const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
 const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const YouTube = frontmatter.youtuber
 
@@ -209,20 +209,18 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
       <div>
               <ReactPlayer
               className='react-player66'
-              // url={iframeUrl}
-              
-              url={[
-                iframeUrl,
-                YoutuberSuggestion1,
-                YoutuberSuggestion2,
-                YoutuberSuggestion3
-              ]}
+              url={iframeUrl}
+              // url={[
+              //   iframeUrl,
+              //   YoutuberSuggestion1,
+              //   YoutuberSuggestion2,
+              //   YoutuberSuggestion3
+              // ]}
               width="100%"
               height="100%"
-         
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute }
+                  playerVars: { showinfo:0, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
                 },
               }}
               loop
@@ -255,32 +253,23 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   function Iframer() {
     const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
 
-    // function playAnimation() {
-    //   const a = document.getElementById("animated-svg")
-    //    const b = a.contentDocument;
-    //    const c = b.getElementById("e6flsqoxhzzs1");
-    //    c.dispatchEvent(new Event("click"));
-    //  }
-
     return (
 
  <div>
               <ReactPlayer
               className='react-player66'
-              // url={iframeUrl}
-              
-              url={[
-                iframeUrl,
-                YoutuberSuggestion1,
-                YoutuberSuggestion2,
-                YoutuberSuggestion3
-              ]}
+              url={iframeUrl}
+              // url={[
+              //   iframeUrl,
+              //   YoutuberSuggestion1,
+              //   YoutuberSuggestion2,
+              //   YoutuberSuggestion3
+              // ]}
               width="100%"
               height="100%"
-         
               config={{
                 youtube: {
-                  playerVars: { showinfo: 0, autostart: 1, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute }
+                  playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
                 },
               }}
               loop
@@ -323,12 +312,6 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           width="100%"
           height="100%"
           style={{zIndex:'0'}}
-          config={{
-            youtube: {
-              playerVars: { showinfo:0, controls:1, autostart:1, mute:0  }
-            },
-          }}
-          loop
           playing
           playsinline
           playIcon={
@@ -340,7 +323,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
           <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-          <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0', textAlign:'center'}}>Click To Play</span>
+          <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click To Play</span>
           
           </div>
           </button>}
@@ -413,11 +396,80 @@ const { iconimage } = useSiteMetadata()
 
 
 
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
-{ YouTube || Svg ? (
-            <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+     
+
+
+
+<div style={{display:'grid', placeContent:'center', width:'100vw', height:'100%', overflow:'', position:'absolute', top:'0', zIndex:'', }}>
+
+<div style={{margin:'0 auto', width:'100%', overflow:''}}>
+{Image ? (
+            // <GatsbyImageImage
+            //   image={Image}
+            //   alt={frontmatter.title + " - Featured image"}
+            //   className="featured-image1 layer1"
+            //   style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
+            // />
+            <InnerImageZoom src={getSrc(Image)} />
+
+
+            
+            
+          ) : (
+
+       ""
+            // <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'',border:'0px solid !important', objectFit:'contain',}} />
+  
+          )}
+          </div>
+
+       
+</div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+{/* {Svg2 ? (
+            <AddSvg2 />
+       
+          ) : (
+            ""
+          )} */}
+
+  {/* {OverlayImage ? (
+            <GatsbyImage
+              image={OverlayImage}
+              alt={frontmatter.title + " - image"}
+              className="layer2"
+              style={{height:'100vh', zIndex:'1', postion:'absolute', bottom:'0', left:'0', objectFit:'contain' }}
+            />
+          ) : (
+            ""
+          )} */}
+
+
+
+
+
+
 
 
 
@@ -446,7 +498,7 @@ const { iconimage } = useSiteMetadata()
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty"
-              style={{height:'auto', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'absolute', top:'0', zIndex:'0',
+              style={{height:'auto', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'absolute', bottom:'0', zIndex:'0',
              objectFit:'contain', border:'0px solid red !important'}}
             />
             
@@ -463,57 +515,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-            </div>
-       
-          ) : (
-
-            
-         <div style={{display:'grid', placeContent:'center', top:'0'}}> 
-
-{Image ? (
-            // <GatsbyImageImage
-            //   image={Image}
-            //   alt={frontmatter.title + " - Featured image"}
-            //   className="featured-image1 layer1"
-            //   style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
-            // />
-            <InnerImageZoom src={getSrc(Image)} />
-
-
-            
-            
-          ) : (
-
-       
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
-  
-          )}
-          
-
-          </div>
-
-          )}
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </div>
 
 
 
@@ -610,7 +612,7 @@ const { iconimage } = useSiteMetadata()
        { NftDrop ? (
 
          
-            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', textAlign:'center', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
+            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
   <Countdown daysInHours date={NftDrop} >
 <Completionist />
   </Countdown>
@@ -659,7 +661,7 @@ const { iconimage } = useSiteMetadata()
 <br />
  {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
-<div style={{maxWidth:'90vw', padding:'0', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
+<div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
                     <Iframer2 />
 

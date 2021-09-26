@@ -3,9 +3,9 @@ import { graphql } from "gatsby"
 
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-import GoBack from "../components/goBack"
+// import GoBack from "../components/goBack"
 import Newsignup from "../components/newssign"
-import NFTDetails from "../components/nft-details"
+// import NFTDetails from "../components/nft-details"
 export const pageQuery = graphql`
   query AboutQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -20,7 +20,7 @@ export const pageQuery = graphql`
 `
 const AboutPage = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, excerpt } = markdownRemark
+  const { frontmatter, excerpt } = markdownRemark
 
   return (
     <Layout className="page">
