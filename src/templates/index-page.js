@@ -389,7 +389,7 @@ const YouTube = frontmatter.youtuber
           />
   
   <br />
-          <Link
+          {/* <Link
             to={frontmatter.cta.ctaLink}
             className="button fire actionJackson"
             style={{
@@ -408,7 +408,7 @@ const YouTube = frontmatter.youtuber
             </span>
 
             
-          </Link>
+          </Link> */}
 
          
 
