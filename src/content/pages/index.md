@@ -9,7 +9,7 @@ youtuber: "iHxmNzMfDj4"
 youtubeautostart: "1"
 title: Welcome to VidSock!
 svgImage: /assets/campfire.svg
-showPosts: true
+showPosts: ""
 cta:
   ctaText: See the Posts
   ctaLink: /#posts
