@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 // import GoBack from "../components/goBack"
-import Newsignup from "../components/newssign"
+// import Newsignup from "../components/newssign"
 // import NFTDetails from "../components/nft-details"
 export const pageQuery = graphql`
   query AboutQuery($id: String!) {
@@ -44,7 +44,7 @@ const AboutPage = ({ data }) => {
       {/* </div> */}
 
 
-      <div className="frontgrid">
+      {/* <div className="frontgrid">
   <div className="grid__item">
     <div className="frontcontent1">
       <div className="content-inside11" style={{padding:'1rem'}}>
@@ -64,7 +64,7 @@ const AboutPage = ({ data }) => {
       <Newsignup />
 
   </div>
-  </div>
+  </div> */}
 
 
 

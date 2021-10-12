@@ -93,8 +93,8 @@ export function Layout({ children }) {
 </span>
     </div> */}
 
-<Bug className="bug" style={{fontSize:'20px', maxWidth:'80px', opacity:'.3' }}/>
-
+<Bug className="bug" style={{fontSize:'20px', maxWidth:'100%', opacity:'.3' }}/>
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000'}}>MENU</div>
 {/* <span>MENU</span>
     <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
@@ -102,7 +102,7 @@ export function Layout({ children }) {
   </label>
 
 
-  <label aria-label="Background clicks close menu" id="menubgcloser" htmlFor="openSidebarMenu" className="backdrop1" ></label>
+ <label aria-label="Background clicks close menu" id="menubgcloser" htmlFor="openSidebarMenu" className="backdrop1" ></label>
 
 
    <div id="sidebarMenu" style={{minWidth:'', width:''}}>
