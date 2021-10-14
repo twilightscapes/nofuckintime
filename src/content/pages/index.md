@@ -11,8 +11,8 @@ title: Welcome to VidSock!
 svgImage: /assets/campfire.svg
 showPosts: ""
 cta:
-  ctaText: See the Posts
-  ctaLink: /#posts
+  ctaText: Learn More About The Platform
+  ctaLink: /about/
 youtubeend: ""
 showFeature: true
 youtubecontrols: ""
