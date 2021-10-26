@@ -6,9 +6,9 @@ date: 2021-09-03 10:43
 description: A groovy animation floating through the cosmos
 youtuber: "1kIihY252eE"
 youtubeshoworiginal: "1"
-youtubersuggestion1: "https://youtu.be/7vz43MYaCA0"
-youtubersuggestion2: "https://youtu.be/g4XiKChyK7A"
-youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
+youtubersuggestion1: "https://youtu.be/ErvxEjDUO4s"
+youtubersuggestion2: "https://youtu.be/lun_lTE30E8"
+youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"

@@ -2,13 +2,13 @@
 template: blog-post
 title: Mystery Science Theater 3021
 slug: /mystery-science-theater-3021
-date: 2021-08-13 10:43
+date: 2021-10-13 10:43
 description: A bit of a tribute to the great MST3000
 youtuber: "https://youtu.be/XjuLZwlDxh8"
 youtubeshoworiginal: "1"
-youtubersuggestion1: "https://youtu.be/7vz43MYaCA0"
-youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
-youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
+youtubersuggestion1: "https://youtu.be/yvjE8uSb8G4"
+youtubersuggestion2: "https://youtu.be/3lyudrx1pJo"
+youtubersuggestion3: "https://youtu.be/l_XqDxL6xJM"
 youtubestart: "33"
 youtubeend: "266"
 youtubemute: "1"
@@ -22,7 +22,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-7.jpg
 svgImage: /assets/MysteryScience3000.svg
 nftlink: ""
-nftdrop: "2021-09-22T14:00:00"
+nftdrop: "2021-10-17T14:00:00"
 nftredeem: ""
 ---
 Seeing as this is my frist post !1!, woot, woot!
@@ -33,13 +33,12 @@ So, this is sort of my own tribute to the Great Mystery Science Theater 3000 tv 
 
 Enjoy the show!
 
+The website you will own after buying this NFT:
+<a href="https://mysteryscience3021.netlify.app">https://mysteryscience3021.netlify.app</a>
+
+(note, you can change the url to whatever you want and you can add your own custom domain to truly make the site your own)
+
 
 
 <h2 class="neonText" style="text-align: center;">BUY THE NFT!</h2>
-<nft-card style="border:none;border-radius:12px" contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183190628667228161"> </nft-card>
-
-
-
- 
-
-<!-- XjuLZwlDxh8 -->
+<nft-card contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183190628667228161"> </nft-card>

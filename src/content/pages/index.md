@@ -3,23 +3,23 @@ slug: /
 tagline: VidSocks are the first NFT based video art platform
 featuredImage: /assets/transparent.png
 secondaryImage: /assets/transparent.png
-underlayImage: /assets/swd-foreground.png
+underlayImage: 
 showInfo: true
-youtuber: "iHxmNzMfDj4"
+youtuber: "7vz43MYaCA0"
 youtubeautostart: "1"
 title: Welcome to VidSock!
-svgImage: /assets/campfire.svg
-showPosts: ""
+svgImage: /assets/visock-is-coming.svg
+showPosts: true
 cta:
   ctaText: Learn More About The Platform
   ctaLink: /about/
-youtubeend: ""
+youtubeend: "63"
 showFeature: true
 youtubecontrols: ""
 template: index-page
 youtubemute: "1"
 svgzindex: ""
-youtubestart: ""
+youtubestart: "33"
 ---
 <h2 style="font-weight:bold; font-size:125%;">What are VidSocks?</h2>
 
