@@ -34,7 +34,7 @@ const contactStyles = {
   },
 }
 
-export default function CustomerPage() {
+export default function NFTPage() {
    return (
 
 
@@ -91,7 +91,7 @@ export default function CustomerPage() {
           </p>
           <p>
             <label>
-              <input type="text" name="redeemcode" placeholder="Redeem Code" required />
+              <input type="text" name="redeemcode" placeholder="Redemption Code" required />
             </label>
           </p>
 

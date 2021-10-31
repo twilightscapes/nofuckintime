@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { RiArrowLeftSLine, RiCheckboxCircleLine } from "react-icons/ri"
+import { RiCheckboxCircleLine } from "react-icons/ri"
 
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
