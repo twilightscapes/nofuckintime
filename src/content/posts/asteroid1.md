@@ -2,7 +2,7 @@
 template: blog-post
 title: ASTEROID! - Riding the Belt
 slug: /asteroid-series-riding-the-belt
-date: 2021-08-16 10:43
+date: 2021-09-16 10:43
 description: Life on a rock hurtling through the Cosmos.
 youtuber: "8HqvE0rgLQY"
 youtubeshoworiginal: "1"
@@ -22,7 +22,7 @@ underlayImage: /assets/arches-fg.png
 featuredImage: /assets/Experiences-Header-2.jpg
 svgImage: /assets/null.svg
 nftlink: ""
-nftdrop: "2021-09-12T14:00:00"
+nftdrop: "2021-10-31T14:00:00"
 nftredeem:
 ---
 Have you ever wanted to ride an asteroid through space? Ever wondered what it would be like to have your personal rock to ride through the Cosmos? 
