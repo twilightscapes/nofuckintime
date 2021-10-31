@@ -1,7 +1,7 @@
 ---
 slug: /
 tagline: VidSocks are the first NFT based video art platform
-featuredImage: /assets/vidsock-default-header.jpg
+featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: 
 showInfo: true
