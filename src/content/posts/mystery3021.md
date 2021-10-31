@@ -2,7 +2,7 @@
 template: blog-post
 title: Mystery Science Theater 3021
 slug: /mystery-science-theater-3021
-date: 2021-10-13 10:43
+date: 2021-10-18 10:43
 description: A bit of a tribute to the great MST3000
 youtuber: "https://youtu.be/XjuLZwlDxh8"
 youtubeshoworiginal: "1"
@@ -22,7 +22,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-7.jpg
 svgImage: /assets/MysteryScience3000.svg
 nftlink: ""
-nftdrop: "2021-10-17T14:00:00"
+nftdrop: "2021-10-31T14:00:00"
 nftredeem: ""
 ---
 Seeing as this is my frist post !1!, woot, woot!

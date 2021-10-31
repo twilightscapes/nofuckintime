@@ -2,7 +2,7 @@
 template: blog-post
 title: Boatswain's Blunder
 slug: /boatswains-blunder
-date: 2021-09-03 10:43
+date: 2021-09-23 10:43
 description: The remnants of a young man's dream
 youtuber: ""
 youtubeshoworiginal: ""

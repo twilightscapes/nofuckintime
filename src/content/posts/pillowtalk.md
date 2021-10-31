@@ -2,7 +2,7 @@
 template: blog-post
 title: PillowTalk
 slug: /pillowtalk
-date: 2021-09-01 10:43
+date: 2021-10-25 10:43
 description: Let's Find Mike A Woman
 youtuber: "SD0EKkyuakY"
 youtubeshoworiginal: "1"
@@ -22,7 +22,7 @@ underlayImage: /assets/PillowTalkBG.png
 featuredImage: /assets/Experiences-Header-8.jpg
 svgImage: /assets/lindell.svg
 nftlink: ""
-nftdrop: "2021-09-12T14:00:00"
+nftdrop: "2021-10-31T14:00:00"
 nftredeem: "https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button"
 ---
 America's Favorite Pillow Guy has a brand new show out, called PillowTalk! You as a viewer get to help Mike find True Love™ and a great night's sleep. 

@@ -2,7 +2,7 @@
 template: blog-post
 title: They Live Among Us
 slug: /they-live
-date: 2021-08-31 10:43
+date: 2021-10-21 10:43
 description: One of my favorites from John Carpenter
 youtuber: "iOZcb9Otojk"
 youtubeshoworiginal: "1"

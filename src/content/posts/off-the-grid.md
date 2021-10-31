@@ -2,11 +2,11 @@
 template: blog-post
 title: Off The Grid
 slug: /offthegrid
-date: 2021-08-31 10:43
+date: 2021-10-12 10:43
 description: When you fall off the grid
 youtuber: "vXf2w47KkJY"
 youtubeshoworiginal: "1"
-youtubersuggestion1: "https://youtu.be/7vz43MYaCA0"
+youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"
@@ -22,7 +22,7 @@ underlayImage:
 featuredImage: /assets/Experiences-Header-5.jpg
 svgImage: /assets/OffTheGrid.svg
 nftlink: ""
-nftdrop: "2021-09-12T14:00:00"
+nftdrop: "2021-10-31T14:00:00"
 nftredeem: "https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button"
 ---
 This was one of my favorite shots from when I was in Dallas. I was lucky enough to get rooftop access to a 36-stpry building right smack dab in the middle of between uptown and downtown districts. 

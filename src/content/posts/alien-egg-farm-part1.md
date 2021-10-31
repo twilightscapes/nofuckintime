@@ -2,7 +2,7 @@
 template: blog-post
 title: Alien Egg Farm
 slug: /alien-egg-farm
-date: 2021-08-23 10:43
+date: 2021-10-26 10:43
 description: What it's like to live on a foreign rock tumbling through time.
 youtuber: ""
 youtubeshoworiginal: ""
@@ -22,7 +22,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-3.jpg
 svgImage: /assets/nebula.svg
 nftlink: ""
-nftdrop: "2021-09-12T14:00:00"
+nftdrop: "2021-10-31T14:00:00"
 nftredeem: ""
 ---
 ## Alien Egg Farm
