@@ -5,7 +5,7 @@ featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: 
 showInfo: true
-youtuber: "7vz43MYaCA0"
+youtuber: ""
 youtubeautostart: "1"
 title: Welcome to VidSock!
 svgImage: /assets/null.svg
@@ -14,7 +14,7 @@ cta:
   ctaText: Learn More About The Platform
   ctaLink: /about/
 youtubeend: "63"
-showFeature: ""
+showFeature: "1"
 youtubecontrols: ""
 template: index-page
 youtubemute: "1"
