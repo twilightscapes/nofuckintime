@@ -58,7 +58,7 @@ export default function CustomerPage() {
   
 
     <br />
-     <p>IMPORTANT NOTE: Please fill in accurate information (especially the email address) as this will be used to activate your new account on VidSock.com and will be used for your login credentials. So you will need access to the email account that you provide.</p>
+     <p>IMPORTANT NOTE: Please fill in accurate information (especially the email address) as this will be used to activate your new account on VidSock.com and will be used for your login credentials. So you will need access to the email account that you provide. <br />You can find the Redeem Code in the unlocakable content on the NFT on OpenSea.</p>
 
      {/* <p style={{textAlign:'center'}}><Link className="button" to="/contact/" state={{modal: true}} >Contact</Link></p> */}
 
