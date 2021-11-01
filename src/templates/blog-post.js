@@ -233,7 +233,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               
     
               <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="VidSock" style={{ width:'80%', maxWidth:'250px', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
     </div>
           
               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
@@ -282,7 +282,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               
     
               <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="auto" height="auto" alt="VidSock" style={{maxHeight:'', maxWidth:'20vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
     </div>
           
               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
@@ -339,9 +339,32 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
     )
   }
 
+  const YouTube2 = frontmatter.youtuber2
+  const AudioStart = frontmatter.audiostart
+  const AudioEnd = frontmatter.audioend
+
+  function Iframer3() {
+    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2 + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.audiostart + "&amp;end=" + frontmatter.audioend + "&amp;loop=1&amp;mute=0&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber2 + ""
+    return (
+
+<div>
+{/* <ReactPlayer
+          className='react-player66'
+          url={iframeUrl3}
+          width="100%"
+          height="100%"
+          style={{zIndex:'-1'}}
+          playing
+          playsinline
+
+          /> */}
+           <iframe title="VidSock" id="youtube3" className="blog-video1" width="100%" height="400" src={iframeUrl3} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'40vh', borderRadius:'12px'  }} />
+</div>
 
 
 
+    )
+  }
 
 
 
@@ -400,7 +423,12 @@ const { iconimage } = useSiteMetadata()
 
 
 
-     
+{ !YouTube2 ? (
+            ""
+       
+          ) : (
+            <Iframer3 />
+          )}
 
 
 
@@ -414,7 +442,7 @@ const { iconimage } = useSiteMetadata()
             //   className="featured-image1 layer1"
             //   style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
             // />
-            <InnerImageZoom src={getSrc(Image)} className="featured-image1 layer1" style={{ width:'100vw', position:'relative', top:'10rem', zIndex:'',  border:'0px solid red !important', paddingBottom:''}} />
+            <InnerImageZoom src={getSrc(Image)} />
 
 
             
@@ -796,12 +824,15 @@ export const pageQuery = graphql`
         title
         description
         youtuber
+        youtuber2
         youtubeshoworiginal
         youtubersuggestion1
         youtubersuggestion2
         youtubersuggestion3
         youtubestart
         youtubeend
+        audiostart
+        audioend
         youtubemute
         youtubecontrols
         youtubeautostart
