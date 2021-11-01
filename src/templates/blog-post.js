@@ -429,7 +429,7 @@ const { iconimage } = useSiteMetadata()
 <CustomBox style={{}}>
 <Helmet>
   <body className="blogpost" />
-  {/* <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script> */}
+  <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
 </Helmet>
 
       <Seo

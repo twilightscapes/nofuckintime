@@ -5,6 +5,7 @@ slug: /they-live
 date: 2021-10-21 10:43
 description: One of my favorites from John Carpenter
 youtuber: "iOZcb9Otojk"
+youtuber2: "https://youtu.be/yjw_DuNkOUw"
 youtubeshoworiginal: "1"
 youtubersuggestion1: 
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
@@ -31,11 +32,8 @@ Because I have come here to chew bubblegum and kick ass...
 
 And I'm all out of bubble gum.
 
-
-Be sure to listen to the track below while viewing, to get the maximum effects!
-
-<iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;max-width:660px;margin:0 auto;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/coming-to-l-a/331409000?i=331409143"></iframe>
-
+<br />
+<br />
 
 
 <h2 class="neonText" style="text-align: center;">BUY THE NFT!</h2>
