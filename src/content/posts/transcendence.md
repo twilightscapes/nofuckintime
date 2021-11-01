@@ -4,13 +4,13 @@ title: Transcendence
 slug: /transcendence
 date: 2021-10-23 10:43
 description: A groovy animation floating through the cosmos
-youtuber: "1kIihY252eE"
-youtuber2: "mkYKF5hQQ6M"
+youtuber: "https://youtu.be/XjuLZwlDxh8"
+youtuber2: "https://youtu.be/XjuLZwlDxh8"
 youtubeshoworiginal: "1"
 youtubersuggestion1: "https://youtu.be/ErvxEjDUO4s"
 youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
 youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
-youtubestart: ""
+youtubestart: "1"
 youtubeend: ""
 youtubemute: "1"
 audiostart: "33"
@@ -32,11 +32,7 @@ Shot in the Valley of the Gods in southern Utah, the original image is comprised
 
 May peace always be with you.
 
-I suggest this track when viewing. Hit the play buttons!
 
-
-
-<iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/gemini/641229267?i=641229326"></iframe>
 
 
 <h2 class="neonText" style="text-align: center;">BUY THE NFT!</h2>
@@ -45,4 +41,4 @@ I suggest this track when viewing. Hit the play buttons!
 
  
 
-<!-- XjuLZwlDxh8 -->
+<!-- mkYKF5hQQ6M    XjuLZwlDxh8 -->
