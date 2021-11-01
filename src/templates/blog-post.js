@@ -148,7 +148,9 @@ else{
 function ShowSuggestion() {
 
   return (
-<div>
+<div style={{display:'flex', flexDirection:'column' }}>
+  
+
   
 <div style={{width:'90%', maxWidth:'400px', margin:'2rem auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
 <IoArrowRedoSharp style={{position:'absolute', top:'0', left:'0', fontSize:'60px', transform: 'rotate(-45deg)', }} />
@@ -354,9 +356,8 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
     const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
     return (
 
-<div style={{position:'relative', zIndex:''}}>
 <ReactPlayer
-          className='react-player66'
+          className='react-player67'
           url={iframeUrl3}
           // url={[
           //   iframeUrl,
@@ -364,8 +365,8 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           //   Suggestion2,
           //   Suggestion3
           // ]}
-          width="300px"
-          height="50px"
+          width="100%"
+          height="150px"
           config={{
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0  }
@@ -375,20 +376,20 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           playing
           playsinline
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'4', top:'-40px', border:'0 solid red', width:'100vw', height:'10px', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'24', top:'100px', border:'0px  solid red', width:'100vw', height:'120px', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'space-around', width:'auto', marginBottom:''}}>
-          <AiOutlineAudioMuted style={{margin:'0 auto', width:'50%', fontSize:'40px'}} />
+        <div className="" style={{position:'absolute', top:'-150px', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+          <AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px'}} />
       
-          <div className="" style={{fontSize:'14px', fontWeight:'bold', padding:'0 0 0 0',}}>Click For Audio</div>
+          <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div>
           
           </div>
           </button>}
    
             light="../assets/transparent.png"
           />
-           {/* <iframe title="VidSock" id="youtube3" className="blog-video1" width="100%" height="400" src={iframeUrl3} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'40vh', borderRadius:'12px'  }} /> */}
-</div>
+     
+
 
 
 
@@ -428,7 +429,7 @@ const { iconimage } = useSiteMetadata()
 <CustomBox style={{}}>
 <Helmet>
   <body className="blogpost" />
-  <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+  {/* <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script> */}
 </Helmet>
 
       <Seo
@@ -519,12 +520,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-{ !YouTube2 ? (
-            ""
-       
-          ) : (
-            <Iframer3 />
-          )}
+
 
 
 
@@ -575,7 +571,12 @@ const { iconimage } = useSiteMetadata()
       </div>
 
 
-
+      { !YouTube2 ? (
+            ""
+       
+          ) : (
+            <Iframer3 />
+          )}
 
 
 <br />
