@@ -361,22 +361,23 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           width="100%"
           height="100%"
           style={{zIndex:'5'}}
+          playing
           playsinline
           config={{
             youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0,start:AudioStart, end:AudioEnd, mute:0  }
+              playerVars: { showinfo:0, autoplay:0, controls:0,start:AudioStart, end:AudioEnd, mute:0  }
             },
           }}
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'10', top:'0', border:'0 solid red', width:'100vw', height:'10px', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'4', top:'-40px', border:'0 solid red', width:'100vw', height:'10px', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
               
       
       
       
-        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          <AiOutlineAudioMuted style={{margin:'0 auto', width:'50%', fontSize:'30px'}} />
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'space-around', width:'auto', marginBottom:''}}>
+          <AiOutlineAudioMuted style={{margin:'0 auto', width:'50%', fontSize:'40px'}} />
       
-          <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click For Audio</span>
+          <div className="" style={{fontSize:'14px', fontWeight:'bold', padding:'0 0 0 0',}}>Click For Audio</div>
           
           </div>
           </button>}
@@ -517,7 +518,12 @@ const { iconimage } = useSiteMetadata()
 
 
 
-
+{ !YouTube2 ? (
+            ""
+       
+          ) : (
+            <Iframer3 />
+          )}
 
 
 
@@ -585,12 +591,7 @@ const { iconimage } = useSiteMetadata()
           )}
 
 
-{ !YouTube2 ? (
-            ""
-       
-          ) : (
-            <Iframer3 />
-          )}
+
 
 <article className="blog-post">
         <header>
