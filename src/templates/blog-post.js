@@ -271,7 +271,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               height="100%"
               config={{
                 youtube: {
-                  playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+                  playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
                 },
               }}
               loop
@@ -351,7 +351,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const AudioEnd = frontmatter.audioend
 
   function Iframer3() {
-    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2 + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + AudioStart + "&amp;end=" + AudioEnd + "&amp;loop=1&amp;mute=1&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber2 + ""
+    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
     return (
 
 <div style={{position:'relative', zIndex:''}}>
@@ -368,7 +368,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           height="100%"
           config={{
             youtube: {
-              playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:AudioStart, end:AudioEnd, mute:0  }
+              playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0  }
             },
           }}
           loop
@@ -376,10 +376,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           playsinline
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'4', top:'-40px', border:'0 solid red', width:'100vw', height:'10px', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
-              
-      
-      
-      
+          
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'space-around', width:'auto', marginBottom:''}}>
           <AiOutlineAudioMuted style={{margin:'0 auto', width:'50%', fontSize:'40px'}} />
       
@@ -387,9 +384,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           
           </div>
           </button>}
-      
-      
-      
+   
             light="../assets/transparent.png"
           />
            {/* <iframe title="VidSock" id="youtube3" className="blog-video1" width="100%" height="400" src={iframeUrl3} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'40vh', borderRadius:'12px'  }} /> */}
