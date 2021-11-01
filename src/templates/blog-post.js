@@ -364,8 +364,8 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           //   Suggestion2,
           //   Suggestion3
           // ]}
-          width="100%"
-          height="100%"
+          width="300px"
+          height="50px"
           config={{
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0  }
