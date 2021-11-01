@@ -346,7 +346,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const AudioEnd = frontmatter.audioend
 
   function Iframer3() {
-    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2 + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + AudioStart + "&amp;end=" + AudioEnd + "&amp;loop=1&amp;mute=0&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber2 + ""
+    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2 + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + AudioStart + "&amp;end=" + AudioEnd + "&amp;loop=1&amp;mute=1&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber2 + ""
     return (
 
 <div style={{position:'relative', zIndex:''}}>
@@ -356,11 +356,10 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           width="100%"
           height="100%"
           style={{zIndex:'5'}}
-          playing
           playsinline
           config={{
             youtube: {
-              playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0  }
+              playerVars: { showinfo:0, autoplay:1, controls:0,start:AudioStart, end:AudioEnd, mute:0  }
             },
           }}
           playIcon={
