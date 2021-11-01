@@ -5,7 +5,7 @@ slug: /transcendence
 date: 2021-10-23 10:43
 description: A groovy animation floating through the cosmos
 youtuber: "https://youtu.be/XjuLZwlDxh8"
-youtuber2: "https://youtu.be/XjuLZwlDxh8"
+youtuber2: "https://youtu.be/mkYKF5hQQ6M"
 youtubeshoworiginal: "1"
 youtubersuggestion1: "https://youtu.be/ErvxEjDUO4s"
 youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
