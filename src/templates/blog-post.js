@@ -258,13 +258,13 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
  <div>
               <ReactPlayer
               className='react-player66'
-              url={iframeUrl}
-              // url={[
-              //   iframeUrl,
-              //   YoutuberSuggestion1,
-              //   YoutuberSuggestion2,
-              //   YoutuberSuggestion3
-              // ]}
+              // url={iframeUrl}
+              url={[
+                iframeUrl,
+                Suggestion1,
+                Suggestion2,
+                Suggestion3
+              ]}
               width="100%"
               height="100%"
               config={{
@@ -344,21 +344,42 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const AudioEnd = frontmatter.audioend
 
   function Iframer3() {
-    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2 + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.audiostart + "&amp;end=" + frontmatter.audioend + "&amp;loop=1&amp;mute=0&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber2 + ""
+    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2 + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + AudioStart + "&amp;end=" + AudioEnd + "&amp;loop=1&amp;mute=0&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber2 + ""
     return (
 
-<div>
-{/* <ReactPlayer
+<div style={{position:'relative', zIndex:''}}>
+<ReactPlayer
           className='react-player66'
           url={iframeUrl3}
           width="100%"
           height="100%"
-          style={{zIndex:'-1'}}
+          style={{zIndex:'5'}}
           playing
           playsinline
-
-          /> */}
-           <iframe title="VidSock" id="youtube3" className="blog-video1" width="100%" height="400" src={iframeUrl3} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'40vh', borderRadius:'12px'  }} />
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0  }
+            },
+          }}
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'10', top:'0', border:'0 solid red', width:'100vw', height:'10px', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+              
+      
+      
+      
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      
+          <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click For Audio</span>
+          
+          </div>
+          </button>}
+      
+      
+      
+            light="../assets/transparent.png"
+          />
+           {/* <iframe title="VidSock" id="youtube3" className="blog-video1" width="100%" height="400" src={iframeUrl3} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'40vh', borderRadius:'12px'  }} /> */}
 </div>
 
 
@@ -692,7 +713,7 @@ const { iconimage } = useSiteMetadata()
 <div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
                     <Iframer2 />
-
+                    
        </div></div>
        
           ) : (

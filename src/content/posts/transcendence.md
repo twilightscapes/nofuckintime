@@ -14,7 +14,7 @@ youtubestart: ""
 youtubeend: ""
 youtubemute: ""
 audiostart: "33"
-audioend: "3000"
+audioend: "5000"
 youtubecontrols: "0"
 youtubeautostart: "1"
 isnftforsale: "1"
@@ -36,7 +36,7 @@ I suggest this track when viewing. Hit the play buttons!
 
 
 
-<iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;max-width:660px;margin:0 auto;overflow:hidden;background:transparent; border:none;border-radius:12px" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/in-the-waiting-line-feat-sophie-barker/1326613056?i=1326613564"></iframe>
+<iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/gemini/641229267?i=641229326"></iframe>
 
 
 <h2 class="neonText" style="text-align: center;">BUY THE NFT!</h2>
