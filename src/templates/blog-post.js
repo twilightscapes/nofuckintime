@@ -260,13 +260,13 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
  <div>
               <ReactPlayer
               className='react-player66'
-              // url={iframeUrl}
-              url={[
-                iframeUrl,
-                Suggestion1,
-                Suggestion2,
-                Suggestion3
-              ]}
+              url={iframeUrl}
+              // url={[
+              //   iframeUrl,
+              //   Suggestion1,
+              //   Suggestion2,
+              //   Suggestion3
+              // ]}
               width="100%"
               height="100%"
               config={{
