@@ -253,7 +253,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   }
 
   function Iframer() {
-    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber
 
     return (
 
@@ -304,7 +304,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
 
   function Iframer2() {
-    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=0&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber
     return (
 
 <div>
@@ -358,16 +358,22 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 <ReactPlayer
           className='react-player66'
           url={iframeUrl3}
+          // url={[
+          //   iframeUrl,
+          //   Suggestion1,
+          //   Suggestion2,
+          //   Suggestion3
+          // ]}
           width="100%"
           height="100%"
-          style={{zIndex:'5'}}
-          playing
-          playsinline
           config={{
             youtube: {
-              playerVars: { showinfo:0, autoplay:0, controls:0,start:AudioStart, end:AudioEnd, mute:0  }
+              playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:AudioStart, end:AudioEnd, mute:0  }
             },
           }}
+          loop
+          playing
+          playsinline
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'4', top:'-40px', border:'0 solid red', width:'100vw', height:'10px', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
               
