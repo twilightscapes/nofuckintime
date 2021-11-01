@@ -284,7 +284,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               
     
               <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'20vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
     </div>
           
               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
@@ -446,12 +446,12 @@ const { iconimage } = useSiteMetadata()
 
 
 
-{ !YouTube2 ? (
+{/* { !YouTube2 ? (
             ""
        
           ) : (
             <Iframer3 />
-          )}
+          )} */}
 
 
 
