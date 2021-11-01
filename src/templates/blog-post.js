@@ -11,6 +11,8 @@ import CommentBox from "../components/commentbox"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Countdown from 'react-countdown'
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
+import { AiOutlineAudioMuted } from "react-icons/ai"
+
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import YouTubed from "../pages/youtube"
@@ -368,7 +370,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
       
       
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+          <AiOutlineAudioMuted style={{margin:'0 auto', width:'50%', fontSize:'30px'}} />
       
           <span className="headline" style={{fontWeight:'bold', padding:'0 0 0 0',}}>Click For Audio</span>
           
