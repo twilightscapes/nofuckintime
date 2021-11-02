@@ -5,7 +5,7 @@ slug: /offthegrid
 date: 2021-10-12 10:43
 description: When you fall off the grid
 youtuber: "vXf2w47KkJY"
-youtuber2: "mkYKF5hQQ6M"
+youtuber2: "NOMa56y_Was"
 youtubeshoworiginal: "1"
 youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
@@ -34,12 +34,8 @@ Anyways, there is a couple scenes in that movie where the guy drives out into th
 
 Hope you enjoy.
 
-Be sure to listen to the track below while viewing, to get the maximum effects!
 
 
-
-
-<iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150" style="width:100%;max-width:660px;margin:0 auto;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/remember/693063670?i=693063927"></iframe>
 
 
 

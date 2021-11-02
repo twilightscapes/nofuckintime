@@ -5,6 +5,7 @@ slug: /alien-egg-farm
 date: 2021-10-26 10:43
 description: What it's like to live on a foreign rock tumbling through time.
 youtuber: ""
+youtuber2: "3JPPFG-Np4M"
 youtubeshoworiginal: ""
 youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/8yFVBuGcOe8-2"
@@ -12,6 +13,8 @@ youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
+audiostart: ""
+audioend: ""
 youtubecontrols: "0"
 youtubeautostart: "1"
 isnftforsale: "1"

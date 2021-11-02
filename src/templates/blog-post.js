@@ -293,7 +293,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
       {/* <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'300px', height:'150px', maxWidth:'300px', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
     </div>
           
-              <div style={{width:'', margin:'0 auto', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', background:'linear-gradient(180deg, #b30fc9 30%, #09a5e2 80%)', borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</div>
+              <div style={{width:'', margin:'0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem', background:'linear-gradient(180deg, #eee 30%, #2FBFE8 80%)', borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
       {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
               </div>
               </button>}
@@ -383,10 +383,12 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           playIcon={
             <button aria-label="Click To Play" className="clickplay" style={{position:'relative', zIndex:'0', top:'', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'absolute', top:'-110px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
-          <AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px'}} />
+        <div className="" style={{position:'absolute', top:'-130px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+          
       
-          <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div>
+          {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
+
+          <div style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.5rem', fontSize:'2rem', background:'linear-gradient(180deg, #777 30%, #333 80%)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)'}}>Click For Audio</div></div>
           
           </div>
           </button>}
