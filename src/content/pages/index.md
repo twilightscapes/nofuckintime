@@ -7,14 +7,14 @@ underlayImage:
 showInfo: true
 youtuber: ""
 youtubeautostart: "1"
-title: Welcome to VidSock!
+title: Next generation multimedia blog platform
 svgImage: /assets/null.svg
 showPosts: true
 cta:
-  ctaText: Learn More About The Platform
-  ctaLink: /about/
+  ctaText: View example VidSocks
+  ctaLink: /#posts
 youtubeend: "63"
-showFeature: "1"
+showFeature: ""
 youtubecontrols: ""
 template: index-page
 youtubemute: "1"
