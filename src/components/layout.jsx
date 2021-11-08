@@ -136,13 +136,13 @@ export function Layout({ children }) {
  <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
 <img src={iconimage} alt="VidSock Logo" width="100%" height="100%" />
-<span>NFT Marketing Platform</span>
+<span>Next-Gen Blog Platform</span>
 </Link>
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
-<span>NFT Marketing Platform</span>
+<span>Next-Gen Blog Platform</span>
 </Link>
  </li>
  
