@@ -7,6 +7,8 @@ body {
   width:100vw;
 }
 
+/* .popped{display: none !important;} */
+
 body.homepage, body.bloglist {
   /* transition: all .8s ease-in-out; */
       background-color: #111;
@@ -14,14 +16,15 @@ body.homepage, body.bloglist {
           68deg,
            rgb(69, 19, 73),
             rgb(0, 162, 184),
-             rgb(9, 165, 226),
+             #09a5e2,
               rgb(99, 6, 107));
         background-size: 300% 30%;
         background-size: cover;
         /* animation: gradient 14s ease-in-out infinite; */
     }
 
-body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Roboto,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-display: swap; /* font-style: italic; */}
+    
+body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Roboto,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-display: swap; /* font-style: italic; */ }
 
 
 
