@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: VidSocks are the next generation of blogging
+tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud based website available today.
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/CMS-Example1.png
 underlayImage: 

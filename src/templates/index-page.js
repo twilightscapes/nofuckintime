@@ -369,12 +369,10 @@ const YouTube = frontmatter.youtuber
 
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
-  <h1 className="title1" style={{padding:'1rem 12%', color:'#fff'}}>{frontmatter.title} | VidSocks</h1>
+  <h1 className="title1" style={{padding:'1rem 12%', color:'#fff', textShadow:'2px 2px 0 #222'}}>{frontmatter.title} | VidSocks</h1>
   <h2
             className="tagline1"
-            sx={{
-              color: "",
-            }}
+            style={{padding:'1rem 12% 2rem 12%', color:'#fff', textShadow:'1px 1px 0 #000'}}
           >
             {frontmatter.tagline}
           </h2>
@@ -454,6 +452,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
  
  
 
+      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
 
  <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'75vh', overflow:'', position:'relative', display:'', justifyContent:'', alignItems:'', flexDirection:'column'}}>
    
@@ -476,12 +475,13 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
-<ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+
+
 <div style={{position:'relative', top:'', margin:'0', padding:'20% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
 
   <Newsignup />
   </div>
-</ScrollAnimation>
+
 
 
 {/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} >
@@ -544,7 +544,7 @@ Through NFT
 {/* <div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div> */}
 </div>
 
-      
+</ScrollAnimation>
       
 
 
