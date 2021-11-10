@@ -8,6 +8,7 @@ import ReactPlayer from 'react-player/lazy'
 import { Fade } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import { FaHandPointDown } from "react-icons/fa"
+import Pricing from "../pages/pricing"
 // import GoBack from "../components/goBack"
 // import Newsignup from "../components/newssign"
 // import NFTDetails from "../components/nft-details"
@@ -174,13 +175,24 @@ const AboutPage = ({ data }) => {
 
 {/* <button onClick="playAnimation()" type="button">Start Animation</button> */}
 
-<br /><br /><br />
+
 {/* <button className="square" onClick={() => console.log('click')}>
        DAMN
      </button> */}
 
 
 {/* <div className="spacer33"></div> */}
+
+<div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
+<section style={{ display:'',}}>
+  
+<h2 style={{fontSize:'200%', textAlign:'center'}}>Three simple packages to choose from</h2>
+<p>Whatever your needs are, we have you covered. All packages receive the base setup while the E-commerce package adds integration with Shopify for organizing product and displaying categories or collections. </p>
+
+</section>
+  </div>
+<Pricing />
+
 
 <div className="container" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
 <section style={{ display:'',}}>
@@ -195,6 +207,9 @@ const AboutPage = ({ data }) => {
 
   </section>
 </div>
+
+
+
 
 
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>

@@ -12,6 +12,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
 // import { ImPlay } from "react-icons/im"
+
 import styled from "styled-components"
 import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
@@ -237,6 +238,7 @@ const YouTube = frontmatter.youtuber
     <Layout>
     <Helmet>
   <body className="homepage" />
+  
 </Helmet>
 {/* <Seo
           title={`VidSock - Video Multimedia NFT Platform`}
@@ -359,17 +361,18 @@ const YouTube = frontmatter.youtuber
 
 
 
+
 <br />
 
 {/* show Info */}
 {ShowInfo ? (
             
        
-
+// {frontmatter.title}
 
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
-  <h1 className="title1" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222', lineHeight:'2.5rem'}}>VidSocks Multimedia Websites<br /><span style={{fontSize:'80%',}}>{frontmatter.title}</span></h1>
+  <h1 className="title1" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222', lineHeight:'2.5rem'}}>VidSocks Multimedia Websites<br /><span style={{fontSize:'80%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and other small business</span></h1>
   <h2
             className="tagline1"
             style={{padding:'1rem 10% 2rem 10%', color:'#fff', textShadow:'1px 1px 0 #000'}}
@@ -493,6 +496,7 @@ Starts at $499<br /><span style={{color:'', fontSize:'70%'}}>with 1hr of Customi
 <Link
             to={frontmatter.cta.ctaLink}
             className="button fire actionJackson"
+            state={{modal: true}}
             style={{
               cursor:'pointer',
               width:'80%',
@@ -510,6 +514,8 @@ Starts at $499<br /><span style={{color:'', fontSize:'70%'}}>with 1hr of Customi
 
             
           </Link>
+
+          
           <br /><br /> 
           <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees or costs. 
           <br />
