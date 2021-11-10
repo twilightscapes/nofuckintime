@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud based website available today.
+tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud=based web apps available today.
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: 
@@ -23,16 +23,16 @@ youtubestart: "33"
 ---
 <h2 style="font-weight:bold; font-size:125%;">What are VidSocks?</h2>
 <br />
-VidSocks are layered multimedia (animation, cutout-photos, video, and audio) crafted together to give the viewer a whole new sensory experience.
+VidSocks are state-of-the-art web apps that feature custom layered multimedia (animation, cutout-photos, video, and audio) crafted together to give the viewer a whole new sensory experience.
 
 <h3 style="font-weight:bold; font-size:115%; margin:1rem 0; text-align:center"> Built for artists, photographers, musicians, clubs &amp; restaurants and any other small business</h3>
 
- Have a <strong>BIG</strong> presence on the web. VidSocks are designed to give every advantage possible in maximizing your artwork, load times and seachability.
+ Have a <strong>BIG</strong> presence on the web. VidSocks are designed to give every advantage possible in <em>maximizing your artwork, load times and SEO results</em>.
 
 
 
 
-<div style="text-align:center;">We guarantee that VidSocks are the fastest portfolio/blog/multimedia websites available today.</div>
+<div style="text-align:center;">We guarantee that VidSocks are the fastest portfolio/blog/multimedia progressive web app / websites available today.</div>
 
 <br />
 <div style="width:; display: flex; flex-direction:column; justify-content: center; padding:0 0 0 0; font-size:.8rem; text-align:center;"><img src="/assets/LIGHTHOUSE-100s-SCORE.png" style="max-width:; border-radius:12px;" /><br />Put our site performance to the test: <a style="text-decoration:underline;" href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://vidsock.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext" target="_blank" rel="noreferrer">check it out for yourself</a> </div>

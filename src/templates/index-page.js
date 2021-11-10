@@ -369,7 +369,7 @@ const YouTube = frontmatter.youtuber
 
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
-  <h1 className="title1" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222', lineHeight:'2.5rem'}}>VidSocks Multimedia Platform<br /><span style={{fontSize:'80%',}}>{frontmatter.title}</span></h1>
+  <h1 className="title1" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222', lineHeight:'2.5rem'}}>VidSocks Multimedia Websites<br /><span style={{fontSize:'80%',}}>{frontmatter.title}</span></h1>
   <h2
             className="tagline1"
             style={{padding:'1rem 10% 2rem 10%', color:'#fff', textShadow:'1px 1px 0 #000'}}
@@ -446,7 +446,7 @@ const YouTube = frontmatter.youtuber
  
 
       <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.30)', padding:'2rem ',
-          backdropFilter: 'blur(4px)', border:'3px solid #fff', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+          backdropFilter: 'blur(4px)', border:'10px double #fff', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 
 
    
@@ -483,7 +483,11 @@ const YouTube = frontmatter.youtuber
 <span  className="neonText" style={{fontSize:'120%', fontWeight:'bold'}}>Launch Your Site Today</span><br />
 Easy to use - No Coding<br />
 Fast Sites - No WordPress<br />
-Free Hosting - No Costs<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
+Free Hosting - No Hidden Costs<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
+<br /><br />
+Starts at $499<br /><span style={{color:'', fontSize:'70%'}}>with 1hr of Customization </span><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span>
+<br />
+<span style={{fontSize:'56%'}}>E-commerce and Custom Packages available separately</span>
 <br /><br />
 </h2>
 <Link
@@ -507,7 +511,9 @@ Free Hosting - No Costs<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
             
           </Link>
           <br /><br /> 
-          <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees or costs. Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >You can view more information here.</a></div>
+          <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees or costs. 
+          <br />
+          Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >You can view more information here.</a></div>
 
 
 
