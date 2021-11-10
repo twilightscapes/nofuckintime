@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 import { RiCheckboxCircleLine } from "react-icons/ri"
 
 import { Seo } from "../components/seo"
-// import { Layout } from "../components/layout"
+import { Layout } from "../components/layout"
 import { BiBorderRadius } from "react-icons/bi"
 
 const Thanks = () => (
-  <>
+  <Layout>
     <Seo title="Thank you" />
 
 <div className="spacer33"></div> 
@@ -28,7 +28,7 @@ const Thanks = () => (
           <br />
           <br />
           <br />
-          <a href="https://secure3.myshopify.com/cart/41327956492448:1?channel=buy_button" className="button">Standard ($499)</a>
+          <a href="https://secure3.myshopify.com/cart/41327956492448:1?channel=buy_button" target="_blank" rel="noreferrer" className="button">Standard ($499)</a>
         </li>
 
 
@@ -53,7 +53,7 @@ const Thanks = () => (
           <br />
           <br />
           <br />
-          <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" className="button">Pro ($899)</a>
+          <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" target="_blank" rel="noreferrer" className="button">Pro ($899)</a>
         </li>
 
 
@@ -77,7 +77,7 @@ const Thanks = () => (
           Complete Shopify Integration
           <br />
           <br />
-          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" className="button">E-Com ($1499)</a>
+          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button">E-Com ($1499)</a>
         </li>
 
 
@@ -85,8 +85,10 @@ const Thanks = () => (
       </div>
     </div>
   </div>
+  
 </div>
- 
+<div style={{display:'flex', justifyContent:'center'}}><Link className="button" to="/about/">Learn More About VidSocks</Link> </div>
+
 
 
 
@@ -95,7 +97,7 @@ const Thanks = () => (
 
     <div className="spacer33"></div> 
     {/* <div className="spacer66"></div>  */}
-  </>
+  </Layout>
 )
 
 export default Thanks
