@@ -484,13 +484,13 @@ const YouTube = frontmatter.youtuber
 >
 
 <span  className="neonText" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase'}}>Launch Your Site Today</span><br /><br />
-easy to use - nothing to learn<br />
-fast secure sites - no WordPress<br />
-cloud hosting - free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
+ready to use = nothing to learn<br />
+fast secure serverless = no WordPress<br />
+cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
 <br /><br />
-Starts at $499<br /><span style={{color:'', fontSize:'70%'}}>with 1hr of Customization </span><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span>
+Starts at $499<br /><span style={{color:'', fontSize:'70%'}}>with 30 minutes of Customization </span><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span>
 <br />
-<span style={{fontSize:'56%'}}>E-commerce and Custom Packages available separately</span>
+<span style={{fontSize:'56%'}}>E-commerce and Custom Packages available</span>
 <br /><br />
 </h2>
 <Link
@@ -517,7 +517,7 @@ Starts at $499<br /><span style={{color:'', fontSize:'70%'}}>with 1hr of Customi
 
           
           <br /><br /> 
-          <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees or costs. 
+          <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees. 
           <br />
           Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >You can view more information here.</a></div>
 

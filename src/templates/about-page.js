@@ -45,6 +45,7 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout className="page">
+      
       <Seo title={frontmatter.title} description={excerpt} />
 
 
