@@ -369,20 +369,24 @@ const YouTube = frontmatter.youtuber
 
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
-  <h1 className="title1" style={{padding:'1rem 12%', color:'#fff', textShadow:'2px 2px 0 #222'}}>{frontmatter.title} | VidSocks</h1>
+  <h1 className="title1" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222', lineHeight:'2.5rem'}}>VidSocks Multimedia Platform<br /><span style={{fontSize:'80%',}}>{frontmatter.title}</span></h1>
   <h2
             className="tagline1"
-            style={{padding:'1rem 12% 2rem 12%', color:'#fff', textShadow:'1px 1px 0 #000'}}
+            style={{padding:'1rem 10% 2rem 10%', color:'#fff', textShadow:'1px 1px 0 #000'}}
           >
             {frontmatter.tagline}
           </h2>
-  <div className="flexbutt" style={{display:'flex', gap:'30px', color:'#fff', textShadow:'1px 1px 0 #000'}}>
-      <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
+  <div className="flexbutt" style={{display:'flex', gap:'', color:'#fff', textShadow:'1px 1px 0 #000'}}>
+
+
+
+      {/* <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
 
 
           
           
-
+      <ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+        
           <div
           style={{ background: 'rgba(0,0,0,0.50)', padding:'1rem ',
           backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'center', }}
@@ -395,7 +399,136 @@ const YouTube = frontmatter.youtuber
           
   
   <br />
-          <Link
+          
+
+
+
+
+<br />
+<br />
+
+          
+
+          </ScrollAnimation>
+      </div> */}
+
+
+
+        
+<div className="flexcheek" style={{position:'relative', maxHeight:'', overflow:'', marginBottom:'', padding:'30px', borderRadius:'0 0 12px 12px'}}>
+ 
+ 
+
+ <ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+
+
+
+
+{/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
+      {/* {SecondaryImage ? (
+       <GatsbyImage
+         image={SecondaryImage}
+         alt={frontmatter.title + " - Featured image"}
+         className="post-card"
+         style={{border:'1px solid blue', width:'100%', height:'', maxHeight:'70vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
+       />
+     ) : (
+       ""
+     )} */}
+{/* </div> */}
+
+
+
+<div
+          style={{ background: 'rgba(0,0,0,0.50)', padding:'1rem ',
+          backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'center', }}
+            className="description"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+{/* <Link
+       to={frontmatter.cta.ctaLink}
+       className="button fire actionJackson"
+       style={{
+         cursor:'pointer',
+         width:'80%',
+         maxWidth:'600px',
+         margin:'0 auto',
+         display:'flex',
+         alignSelf:'center',
+         color:'#ccc'
+       }}
+     >
+       {frontmatter.cta.ctaText}
+       <span className="icon -right">
+         <RiArrowRightSLine />
+       </span>
+
+       
+     </Link> */}
+
+
+
+
+
+</ScrollAnimation>
+ 
+
+
+
+
+
+
+
+ </div> 
+
+
+      <div className="flexcheek" style={{position:'relative', maxHeight:'', overflow:'', padding:'30px', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
+ 
+ 
+
+      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+
+ <div style={{ background: 'rgba(0,0,0,0.50)', padding:'1rem ',
+          backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'center', }}
+          
+          >
+   
+
+{/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
+           {/* {SecondaryImage ? (
+            <GatsbyImage
+              image={SecondaryImage}
+              alt={frontmatter.title + " - Featured image"}
+              className="post-card"
+              style={{border:'1px solid blue', width:'100%', height:'', maxHeight:'70vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
+            />
+          ) : (
+            ""
+          )} */}
+{/* </div> */}
+
+
+<div style={{position:'relative', top:'0px', paddingRight:'', border:'0px solid yellow', zIndex:'0'}}>
+  <h2
+  className="title1 txtshadow-header"
+  style={{
+
+
+   position: 'relative',
+    textAlign: 'center', 
+    float: 'none',
+    margin:'1rem 0 0 0',
+    padding:'0',
+  }}
+>
+<br />
+Launch Your Site Today<br />
+Easy to use - No Coding<br />
+Fast Sites - No WordPress<br />
+Free Forever - No Costs*
+<br /><br />
+</h2>
+<Link
             to={frontmatter.cta.ctaLink}
             className="button fire actionJackson"
             style={{
@@ -415,133 +548,10 @@ const YouTube = frontmatter.youtuber
 
             
           </Link>
-
-         
-
-
-{/* <AnchorLink 
-className="actionJackson txtshadow"
-style={{
-  cursor:'pointer',
-  width:'70%',
-  margin:'0 auto'
-
-}} 
-to="#experiences" title="See the new EXPERIENCES™" /> */}
-
-
-
-<br />
-<br />
-{/* <span className="actionJackson txtshadow"> <span className="icon -right">
-              <FaHandPointDown />
-            </span> &nbsp;&nbsp;All New EXPERIENCES &nbsp;&nbsp;<span className="icon -right">
-              <FaHandPointDown />
-            </span></span> */}
-          
-
-
-      </div>
-
-
-
-        
-
-
-      <div className="flexcheek" style={{position:'relative', maxHeight:'70vh', overflow:'', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
- 
- 
-
-      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
-
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'75vh', overflow:'', position:'relative', display:'', justifyContent:'', alignItems:'', flexDirection:'column'}}>
-   
-
-
-
-
-{/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
-           {SecondaryImage ? (
-            <GatsbyImage
-              image={SecondaryImage}
-              alt={frontmatter.title + " - Featured image"}
-              className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'70vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
-            />
-          ) : (
-            ""
-          )}
-{/* </div> */}
-
-
-
-
-
-<div style={{position:'relative', top:'', margin:'0', padding:'20% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
-
-  <Newsignup />
-  </div>
-
-
-
-{/* <ScrollAnimation animateIn="bounceInDown" delay={350} offset={0}  initiallyVisible={false} animateOnce={true} animatePreScroll={true} >
-<div style={{position:'relative', top:'0px', paddingRight:'', border:'0px solid yellow', zIndex:'0'}}>
-  <h2
-  className="title1 txtshadow-header"
-  style={{
-
-
-   position: 'relative',
-    textAlign: 'center', 
-    float: 'none',
-    margin:'1rem 0 0 0',
-    padding:'0',
-  }}
->
-Only Available<br />
-Through NFT
-</h2>
+          <br /><br /> <br /><br /> <br />
 </div>
-</ScrollAnimation> */}
 
 
-{/* <ScrollAnimation animateIn="bounceInRight" delay={400} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid red', zIndex:'0'}}>
-<h2
-  className="letter narrow txtshadow mobile-txt"
-  style={{
-   fontSize:'40px',
-   color: 'white',
-   position: 'relative',
-    textAlign: 'right', 
-    margin:'0',
-    padding:'0',
-  }}
->
-  into the
-</h2>
-</ScrollAnimation> */}
-
-
-{/* <ScrollAnimation animateIn="bounceInUp" delay={450} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'relative', top:'', paddingRight:'10%', border:'0px solid blue', zIndex:'0'}}>
-<h2
-  className="letter narrow txtshadow mobile-txt"
-  style={{
-   fontSize:'80px',
-   color: 'white',
-   position: 'relative',
-   fontWeight:'bold',
-//            top: '230px',
-    textAlign: 'right',
-    textTransform: 'uppercase', 
-    margin:'0',
-    padding:'0',
-  }}
->
-  Night
-</h2>
-</ScrollAnimation> */}
-
-{/* <div style={{fontSize:'120%', textAlign:'center', margin:'1rem', textShadow:'2px 2px 0 #000'}}><Link state={{modal: true}} to="/about/">Learn More About The VidSock Platform Here</Link></div> */}
 </div>
 
 </ScrollAnimation>

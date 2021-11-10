@@ -207,7 +207,7 @@ export function Footer() {
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px 2rem 2rem 2rem', textDecoration:'none'}}>Contact Form</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px 2rem 2rem 2rem', textDecoration:'none'}}>Get Started Now!</Link>
 
  <div >
      
