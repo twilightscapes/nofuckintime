@@ -1,17 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
-import { RiCheckboxCircleLine } from "react-icons/ri"
+// import { RiCheckboxCircleLine } from "react-icons/ri"
 
 import { Seo } from "../components/seo"
 // import { Layout } from "../components/layout"
-import { BiBorderRadius } from "react-icons/bi"
-import { Helmet } from "react-helmet"
+// import { BiBorderRadius } from "react-icons/bi"
+// import { Helmet } from "react-helmet"
 const Thanks = () => (
   <>
-     <Helmet>
-  <body className="pricing" />
-  
-</Helmet>
+    
     <Seo title="Pricing Options" />
 
 {/* <div className="spacer33"></div>  */}
@@ -94,7 +91,7 @@ const Thanks = () => (
 </div>
 
 
-      <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'', display:'flex', flexDirection:'column', justifyContent:'center'}}>
+      <div className="content-inside fluff" style={{padding:'8px',textAlign:'center', color:'', display:'flex', flexDirection:'column', justifyContent:'center'}}>
         <h2 style={{fontSize:'1.8rem'}}>VidSocks - Customization</h2>
         <ul className="featurelist" style={{listStyleType:'none', maxWidth:'', display:'flex', justifyContent:'center'}}>
         
