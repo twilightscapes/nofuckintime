@@ -483,7 +483,7 @@ const YouTube = frontmatter.youtuber
 <span  className="neonText" style={{fontSize:'120%', fontWeight:'bold'}}>Launch Your Site Today</span><br />
 Easy to use - No Coding<br />
 Fast Sites - No WordPress<br />
-Free Hosting - No Hidden Costs<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
+Cloud Hosting - Free Forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
 <br /><br />
 Starts at $499<br /><span style={{color:'', fontSize:'70%'}}>with 1hr of Customization </span><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span>
 <br />
