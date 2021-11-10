@@ -369,7 +369,15 @@ const YouTube = frontmatter.youtuber
 
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
-  <h1 className="title1" style={{padding:'1rem 12%'}}>{frontmatter.title}</h1>
+  <h1 className="title1" style={{padding:'1rem 12%', color:'#fff'}}>{frontmatter.title} | VidSocks</h1>
+  <h2
+            className="tagline1"
+            sx={{
+              color: "",
+            }}
+          >
+            {frontmatter.tagline}
+          </h2>
   <div className="flexbutt" style={{display:'flex', gap:'30px', color:'#fff', textShadow:'1px 1px 0 #000'}}>
       <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
 
@@ -470,14 +478,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 <ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
 <div style={{position:'relative', top:'', margin:'0', padding:'20% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
-<p
-            className="tagline1"
-            sx={{
-              color: "",
-            }}
-          >
-            {frontmatter.tagline}
-          </p>
+
   <Newsignup />
   </div>
 </ScrollAnimation>
