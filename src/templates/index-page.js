@@ -485,10 +485,10 @@ const YouTube = frontmatter.youtuber
 
 <span  className="neonText" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase'}}>Launch Your Site Today</span><br /><br />
 ready to use = nothing to learn<br />
-fast secure serverless = no WordPress<br />
+fast serverless = no WordPress<br />
 cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
 <br /><br />
-Starts at $499<br /><span style={{color:'', fontSize:'70%'}}>with 30 minutes of Customization </span><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span>
+Complete sites start at $499<br /><span style={{color:'', fontSize:'70%'}}>with 30 minutes of Customization </span><br /><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span>
 <br />
 <span style={{fontSize:'56%'}}>E-commerce and Custom Packages available</span>
 <br /><br />
