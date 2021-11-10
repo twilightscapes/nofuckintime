@@ -445,7 +445,7 @@ const YouTube = frontmatter.youtuber
  
  
 
-      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.30)', padding:'2rem ',
+      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ',
           backdropFilter: 'blur(4px)', border:'10px double #fff', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 
 
@@ -480,10 +480,10 @@ const YouTube = frontmatter.youtuber
   }}
 >
 
-<span  className="neonText" style={{fontSize:'120%', fontWeight:'bold'}}>Launch Your Site Today</span><br />
-Easy to use - No Coding<br />
-Fast Sites - No WordPress<br />
-Cloud Hosting - Free Forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
+<span  className="neonText" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase'}}>Launch Your Site Today</span><br /><br />
+easy to use - nothing to learn<br />
+fast secure sites - no WordPress<br />
+cloud hosting - free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
 <br /><br />
 Starts at $499<br /><span style={{color:'', fontSize:'70%'}}>with 1hr of Customization </span><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span>
 <br />
