@@ -376,50 +376,17 @@ const YouTube = frontmatter.youtuber
           >
             {frontmatter.tagline}
           </h2>
-  <div className="flexbutt" style={{display:'flex', gap:'', color:'#fff', textShadow:'1px 1px 0 #000'}}>
-
-
-
-      {/* <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
-
-
-          
-          
-      <ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
-        
-          <div
-          style={{ background: 'rgba(0,0,0,0.50)', padding:'1rem ',
-          backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'center', }}
-            className="description"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-
-
-
-          
-  
-  <br />
-          
-
-
-
-
-<br />
-<br />
-
-          
-
-          </ScrollAnimation>
-      </div> */}
+  <div className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:'center', color:'#fff', textShadow:'1px 1px 0 #000', padding:'0 4%'}}>
 
 
 
         
-<div className="flexcheek" style={{position:'relative', maxHeight:'', overflow:'', marginBottom:'', padding:'30px', borderRadius:'0 0 12px 12px'}}>
+<div className="flexcheek" >
  
  
 
- <ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+ <ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.50)', padding:'2rem ',
+          backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'center', }}>
 
 
 
@@ -436,12 +403,8 @@ const YouTube = frontmatter.youtuber
        ""
      )} */}
 {/* </div> */}
-
-
-
 <div
-          style={{ background: 'rgba(0,0,0,0.50)', padding:'1rem ',
-          backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'center', }}
+     
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
           />
@@ -466,10 +429,6 @@ const YouTube = frontmatter.youtuber
        
      </Link> */}
 
-
-
-
-
 </ScrollAnimation>
  
 
@@ -482,14 +441,14 @@ const YouTube = frontmatter.youtuber
  </div> 
 
 
-      <div className="flexcheek" style={{position:'relative', maxHeight:'', overflow:'', padding:'30px', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
+      <div className="flexcheek">
  
  
 
-      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.50)', padding:'2rem ',
+          backdropFilter: 'blur(4px)', border:'3px solid #fff', borderRadius:'12px', textAlign:'', alignSelf:'center', }}>
 
- <div style={{ background: 'rgba(0,0,0,0.50)', padding:'1rem ',
-          backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'center', }}
+ <div 
           
           >
    
@@ -548,7 +507,7 @@ Free Forever - No Costs*
 
             
           </Link>
-          <br /><br /> <br /><br /> <br />
+          <br /><br /> <br /><br />
 </div>
 
 
