@@ -7,7 +7,7 @@ underlayImage:
 showInfo: true
 youtuber: ""
 youtubeautostart: "1"
-title: Multimedia Blog Platform
+title: Best website design builder for musicians photobook artists and small business
 svgImage: /assets/null.svg
 showPosts: true
 cta:
@@ -23,8 +23,10 @@ youtubestart: "33"
 ---
 <h2 style="font-weight:bold; font-size:125%;">What are VidSocks?</h2>
 
-VidSocks are layered multimedia (including animation, cutouts, scenes, and video) crafted together to give the viewer a whole new sensory experience.
+VidSocks are layered multimedia (including animation, cutouts, video, and audio) crafted together to give the viewer a whole new sensory experience.
 
-Each VidSock is uniquely created by the artist and then delivered to the world for their art to be altered and changed by its viewers thus making each VidSock truly dynamic.
+VidSocks allow artists, photographers, musicians and other small business to have a BIG presence on the web with a site designed to give every advantage possible to maximizing your artwork and the site's speed and seachability. VidSocks do both, and do it better than anyone else.
 
-## With each winning bid, you not only get to take home your new VidSock, but you will also get your very own copy of the <strong>VidSock NFT Marketing Platform™</strong> to make and market your own VidSocks.
+We guarantee that the VidSocks platform is faster than any other portfolio/blog website available today. We'll put our site scorecard to the test, check it out for yourself. Does your website come close to our score-topping results out of the box?
+
+<!-- ## With each winning bid, you not only get to take home your new VidSock, but you will also get your very own copy of the <strong>VidSock NFT Marketing Platform™</strong> to make and market your own VidSocks. -->

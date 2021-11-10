@@ -369,25 +369,24 @@ const YouTube = frontmatter.youtuber
 
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
+  <h1 className="title1" style={{padding:'0 12%'}}>{frontmatter.title}</h1>
   <div className="flexbutt" style={{display:'flex', gap:'30px', color:'#fff', textShadow:'1px 1px 0 #000'}}>
       <div className="flexcheek " style={{padding:'0 2rem', maxHeight:'90vh',}}>
 
 
-          <h1 className="title1">{frontmatter.title}</h1>
-          <p
-            className="tagline1"
-            sx={{
-              color: "",
-            }}
-          >
-            {frontmatter.tagline}
-          </p>
+          
+          
 
           <div
-          style={{}}
+          style={{ background: 'rgba(0,0,0,0.50)', padding:'1rem ',
+          backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'center', }}
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+
+
+
+          
   
   <br />
           <Link
@@ -471,6 +470,14 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 <ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
 <div style={{position:'relative', top:'', margin:'0', padding:'20% 0',  width:'', zIndex:'1', textAlign:'', borderRadius:'12px',}}>
+<p
+            className="tagline1"
+            sx={{
+              color: "",
+            }}
+          >
+            {frontmatter.tagline}
+          </p>
   <Newsignup />
   </div>
 </ScrollAnimation>
