@@ -8,7 +8,7 @@ import ReactPlayer from 'react-player/lazy'
 import { Fade } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import { FaHandPointDown } from "react-icons/fa"
-import Pricing from "../pages/pricing"
+import Pricing from "../components/pricing"
 // import GoBack from "../components/goBack"
 // import Newsignup from "../components/newssign"
 // import NFTDetails from "../components/nft-details"
