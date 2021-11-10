@@ -27,12 +27,15 @@ VidSocks are state-of-the-art web apps that feature custom layered multimedia (a
 
 <h3 style="font-weight:bold; font-size:115%; margin:1rem 0; text-align:center"> Built for artists, photographers, musicians, clubs &amp; restaurants and any other small businesses</h3>
 
- Have a <strong>BIG</strong> presence on the web. VidSocks are designed to give every advantage possible in <em>maximizing your artwork, load times and SEO results</em>.
+ Have a <strong>BIG</strong> presence on the web. VidSocks are designed to give every advantage in <em>maximize your artwork, reduce load times and increase SEO results</em>. <br />
+
+ <div style="text-align:center; text-decoration:underline"><a href="/about/">Check out the full list of VidSocks features</a></div>
+ <br />
 
 
 
 
-<div style="text-align:center;">We guarantee that VidSocks are the fastest portfolio/blog/multimedia progressive web app / websites available today.</div>
+<div style="text-align:center;">We guarantee that VidSocks are the fastest portfolio/blog/multimedia progressive web app / websites</div>
 
 <br />
 <div style="width:; display: flex; flex-direction:column; justify-content: center; padding:0 0 0 0; font-size:.8rem; text-align:center;"><img src="/assets/LIGHTHOUSE-100s-SCORE.png" style="max-width:; border-radius:12px;" /><br />Put our site performance to the test: <a style="text-decoration:underline;" href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://vidsock.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext" target="_blank" rel="noreferrer">check it out for yourself</a> </div>
