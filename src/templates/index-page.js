@@ -480,7 +480,7 @@ const YouTube = frontmatter.youtuber
   }}
 >
 
-<span style={{fontSize:'140%'}}>Launch Your Site Today</span><br />
+<span  className="neonText" style={{fontSize:'120%', fontWeight:'bold'}}>Launch Your Site Today</span><br />
 Easy to use - No Coding<br />
 Fast Sites - No WordPress<br />
 Free Hosting - No Costs<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
@@ -496,7 +496,7 @@ Free Hosting - No Costs<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
               margin:'0 auto',
               display:'flex',
               alignSelf:'center',
-              color:'#ccc'
+              color:'#ff0000'
             }}
           >
             {frontmatter.cta.ctaText}
@@ -507,7 +507,7 @@ Free Hosting - No Costs<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
             
           </Link>
           <br /><br /> 
-          <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees or costs. Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify. You can view more information here.</div>
+          <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees or costs. Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >You can view more information here.</a></div>
 
 
 
