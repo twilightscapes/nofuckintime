@@ -56,7 +56,7 @@ const NewsletterPage = () => (
         
 
 
-              <div className="txtshadow" style={{fontSize:'120%', textAlign:'center', marginTop:'10px'}}><strong>The VidSocks Blog Platform is INVITE ONLY</strong></div><br />
+              <div className="txtshadow" style={{fontSize:'120%', textAlign:'center', marginTop:'10px'}}><strong>VidSocks Blog Platform is INVITE ONLY</strong></div><br />
               
               {/* <p className="txtshadow" style={{fontSize:'85%', padding:'0 15px'}}>Current NFT owners will be the only accounts created during initial launch phase. Second Phase will open to invite only<br /><br />Reserve Your Spot Below:</p> */}
 

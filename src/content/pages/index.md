@@ -1,13 +1,13 @@
 ---
 slug: /
-tagline: VidSocks are the first NFT based video art platform
+tagline: VidSocks are the next generation of blogging
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: 
 showInfo: true
 youtuber: ""
 youtubeautostart: "1"
-title: Next generation multimedia blog platform
+title: Multimedia Blog Platform
 svgImage: /assets/null.svg
 showPosts: true
 cta:
