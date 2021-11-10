@@ -22,12 +22,12 @@ svgzindex: ""
 youtubestart: "33"
 ---
 <h2 style="font-weight:bold; font-size:125%;">What are VidSocks?</h2>
+<br />
+VidSocks are layered multimedia (animation, cutout-photos, video, and audio) crafted together to give the viewer a whole new sensory experience.
 
-VidSocks are layered multimedia (including animation, cutouts, video, and audio) crafted together to give the viewer a whole new sensory experience.
+<h3 style="font-weight:bold; font-size:115%; margin:1rem 0; text-align:center"> Built for artists, photographers, musicians, clubs &amp; restaurants and any other small business</h3>
 
-<h3 style="font-weight:bold; font-size:115%; margin:1rem 0"> Built for artists, photographers, musicians, clubs/restaurants and other small businesses</h3>
-
- Have a <strong>BIG</strong> presence on the web with a site designed to give every advantage possible to maximizing your artwork and the site's speed and seachability. VidSocks do both, and do it better than anyone else.
+ Have a <strong>BIG</strong> presence on the web. VidSocks are designed to give every advantage possible in maximizing your artwork, load times and seachability.
 
 
 

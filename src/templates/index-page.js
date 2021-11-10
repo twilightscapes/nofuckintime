@@ -386,7 +386,7 @@ const YouTube = frontmatter.youtuber
  
 
  <ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.50)', padding:'2rem ',
-          backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'center', }}>
+          backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 
 
 
@@ -441,16 +441,14 @@ const YouTube = frontmatter.youtuber
  </div> 
 
 
-      <div className="flexcheek">
+      <div className="flexcheek" style={{height:'', minHeight:'', display:'', justifyContent:'', width:'', position:'sticky', top:'0'}}>
  
  
 
-      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.50)', padding:'2rem ',
-          backdropFilter: 'blur(4px)', border:'3px solid #fff', borderRadius:'12px', textAlign:'', alignSelf:'center', }}>
+      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.30)', padding:'2rem ',
+          backdropFilter: 'blur(4px)', border:'3px solid #fff', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 
- <div 
-          
-          >
+
    
 
 {/* <div style={{position:'absolute', top:'0', zIndex:'0'}}> */}
@@ -467,7 +465,7 @@ const YouTube = frontmatter.youtuber
 {/* </div> */}
 
 
-<div style={{position:'relative', top:'0px', paddingRight:'', border:'0px solid yellow', zIndex:'0'}}>
+
   <h2
   className="title1 txtshadow-header"
   style={{
@@ -476,15 +474,16 @@ const YouTube = frontmatter.youtuber
    position: 'relative',
     textAlign: 'center', 
     float: 'none',
-    margin:'1rem 0 0 0',
+    margin:'0 0 0 0',
     padding:'0',
+    fontSize:'1.7rem'
   }}
 >
-<br />
-Launch Your Site Today<br />
+
+<span style={{fontSize:'140%'}}>Launch Your Site Today</span><br />
 Easy to use - No Coding<br />
 Fast Sites - No WordPress<br />
-Free Forever - No Costs*
+Free Hosting - No Costs<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
 <br /><br />
 </h2>
 <Link
@@ -507,11 +506,12 @@ Free Forever - No Costs*
 
             
           </Link>
-          <br /><br /> <br /><br />
-</div>
+          <br /><br /> 
+          <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees or costs. Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify. You can view more information here.</div>
 
 
-</div>
+
+
 
 </ScrollAnimation>
       
