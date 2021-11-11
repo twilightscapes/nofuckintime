@@ -38,6 +38,6 @@ VidSocks are state-of-the-art web apps that feature custom layered multimedia (a
 <div style="text-align:center;">We guarantee that VidSocks are the fastest portfolio/blog/multimedia progressive web app / websites</div>
 
 <br />
-<div style="width:; display: flex; flex-direction:column; justify-content: center; padding:0 0 0 0; font-size:.8rem; text-align:center;"><img src="/assets/LIGHTHOUSE-100s-SCORE.png" style="max-width:; border-radius:12px;" /><br />Put our site performance to the test: <a style="text-decoration:underline;" href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://vidsock.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext" target="_blank" rel="noreferrer">check it out for yourself</a> </div>
+
 
 <!-- ## With each winning bid, you not only get to take home your new VidSock, but you will also get your very own copy of the <strong>VidSock NFT Marketing Platform™</strong> to make and market your own VidSocks. -->

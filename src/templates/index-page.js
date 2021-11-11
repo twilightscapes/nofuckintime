@@ -431,6 +431,13 @@ const YouTube = frontmatter.youtuber
 
        
      </Link> */}
+     
+     <div style={{display: 'flex', flexDirection:'column', justifyContent:'center', padding:'0 0 0 0', fontSize:'.8rem', textAlign:'center'}}>
+     
+     <img src="/assets/LIGHTHOUSE-100s-SCORE.png" alt="Lighthouse Scores for VidSocks" style={{borderRadius:'12px'}} />
+     
+     <br />Put our site performance to the test: <a style={{textDecoration:'underline'}} href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://vidsock.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext" target="_blank" rel="noreferrer">check it out for yourself</a> </div>
+
 
 </ScrollAnimation>
  
