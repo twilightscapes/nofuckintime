@@ -102,7 +102,7 @@ const Thanks = () => (
 <br />
 <div className="" style={{display:'flex', justifyContent:'center', color:'#fff'}}><Link className="button fire" to="/about/">30 Minutes ($50)</Link> <Link className="button" to="/about/">60 Minutes ($90)</Link></div>
 <br />
-For more complex updates and requests,<br /> <Link to="contact">please contact me</Link>
+For more complex updates and requests,<br /> <Link to="/contact/">please contact me</Link>
           </li>
           </ul>
         
