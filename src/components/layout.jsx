@@ -154,7 +154,7 @@ Contact Us<span>- we love feedback!</span>
 </li>
     <li className="carto">
               <Link className="navbar-item txtshadow" to="/about/">
-                About VidSocks <span>- all about the platform</span>
+                START HERE!
               </Link>
       </li>
 
