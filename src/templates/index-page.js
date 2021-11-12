@@ -805,7 +805,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', margin:'0 4%', filter: 'drop-shadow(0 0 20px #000)', borderRadius:'12px' }}>
 
 
 <ReactPlayer
@@ -814,16 +814,16 @@ Get FULL Shopify functionality directly inside your site.
           width="100%"
           height="100%"
      
- 
+     style={{ background: 'rgba(0,0,0,0.30)'}}
           autoplay={false}
-          background={true}
+          // background={true}
           loop
           playing
           playsinline
           muted={true}
           showPortrait
           playIcon={
-            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+            <button aria-label="Click To Play" className="clickplay1" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh',  background: 'rgba(0,0,0,0.20)', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex',  verticalAlign:'center', justifyContent:'center', paddingTop:'20%'}}>
               
       
       
@@ -831,7 +831,7 @@ Get FULL Shopify functionality directly inside your site.
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
           <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       
-          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'30px'}}>Click To Play Video</span>
           
           </div>
           </button>}
