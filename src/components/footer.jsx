@@ -198,7 +198,7 @@ export function Footer() {
   
 
 
-<ScrollAnimation className="" animateIn="zoomInUp" delay={250} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
+<ScrollAnimation className="" animateIn="zoomInUp" delay={50} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
 
 
     <footer className={footerStyle} style={{padding:'0 0', marginTop:'0', position:'relative'}}>
@@ -209,7 +209,7 @@ export function Footer() {
       <div className={blurb}>
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px 2rem 2rem 2rem', textDecoration:'none'}}>Get Started Now!</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px 2rem 2rem 2rem', textDecoration:'none'}}>Got Questions?</Link>
 
  <div >
      

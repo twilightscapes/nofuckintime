@@ -6,12 +6,13 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 // import { GoArrowDown } from "react-icons/go"
+import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
-// import { ImPlay } from "react-icons/im"
+import { ImPlay } from "react-icons/im"
 // import Pricing from "../components/pricing"
 import styled from "styled-components"
 import Newsignup from "../components/newssign"
@@ -505,7 +506,7 @@ const YouTube = frontmatter.youtuber
 ready to use = nothing to learn<br />
 fast serverless = no WordPress<br />
 cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
-
+<br /><br />
 <span style={{color:'', fontSize:'70%'}}>Fastest, Flexible, Innovative, Best SEO &amp; Most Secure</span>
 
 {/* <span style={{color:'', fontSize:'70%'}}>Complete website solutions</span> */}
@@ -784,7 +785,71 @@ Get FULL Shopify functionality directly inside your site.
 {/* <button className="square" onClick={() => console.log('click')}>
        DAMN
      </button> */}
+<div className="spacer66"></div>
 
+<div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
+<section style={{ display:'',}}>
+  <article>
+  <h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using the VidSock CMS (content management system)</h2>
+
+<p>You don't need to take classes and read tutorials to be able to quickly edit and add content to your site. The VidSock platform makes it as easy as just answering a couple of questions and filling out some forms. </p>
+  {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
+
+
+  </article>
+
+  </section>
+</div>
+
+
+
+
+
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+
+
+<ReactPlayer
+          className='react-player'
+          url="https://www.youtube.com/embed/NPzXWpNKScY?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=NPzXWpNKScY"
+          width="100%"
+          height="100%"
+     
+ 
+          autoplay={false}
+          background={true}
+          loop
+          playing
+          playsinline
+          muted={true}
+          showPortrait
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+              
+      
+      
+      
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          
+          </div>
+          </button>}
+      
+      
+      
+            light="../assets/transparent.png"
+          />
+
+{/* <div className="video-background">
+    <div className="video-foreground">
+      <iframe title="Twilightscapes Video" className="" src="https://www.youtube.com/embed/fm-rOnGIIaE?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=fm-rOnGIIaE" frameBorder="0" allowFullScreen></iframe>
+    </div>
+</div> */}
+
+
+
+</div>
 
 <div className="spacer66"></div>
 
@@ -935,8 +1000,10 @@ Get FULL Shopify functionality directly inside your site.
 
 <br /><br /><br />
 
-
-
+{/* <h3 style={{fontSize:'170%', textAlign:'center',margin:'2rem 0 0 0'}}>Got Questions? Feel free to contact us</h3> */}
+<ScrollAnimation className="" animateIn="bounce" delay={10} initiallyVisible={true} animateOnce={false} animatePreScroll={true}>
+<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
+</ScrollAnimation>
  </div>{/* end scooch */}
 
       
