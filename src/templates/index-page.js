@@ -822,7 +822,8 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 
         <li>Includes 2 hours of Customization
           <br />
-          <span style={{color:'#37f011'}}>Recommended:</span>
+    
+          {/* <span style={{color:'#37f011'}}>Recommended:</span> */}
           <br />
           <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">Pro ($899)</a>
         </li>
@@ -852,7 +853,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 
           <br />
           <br />
-          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button">E-Com ($1499)</a>
+          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">E-Com ($1499)</a>
         </li>
         <li className="fluff">Includes 1 hour of Video Resources</li>
         <li className="fluff">Includes 1 hour of Advanced Resources</li>
