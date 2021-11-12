@@ -708,10 +708,10 @@ cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</
 
 
 
-<h2 className="letter" style={{fontSize:'200%', textAlign:'center'}}>VidSocks Run Virtually Free Of Cost</h2>
-<p style={{fontSize:'100%', textAlign:'center'}}>Most VidSock customers have no monthly costs.
+<h2 className="letter" style={{fontSize:'240%', textAlign:'center'}}>VidSocks Run Virtually Free Of Cost</h2>
+<p style={{fontSize:'130%', textAlign:'center'}}>Most VidSock customers have no monthly costs.
 <br />
-E-commerce adds $8.99mo for a Shopify account.</p> 
+E-commerce add $8.99mo for Shopify account.</p> 
 
 
 <ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
@@ -790,9 +790,9 @@ Get FULL Shopify functionality directly inside your site.
 <div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'',}}>
   <article>
-  <h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using the VidSock CMS (content management system)</h2>
+  <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using the VidSock CMS (content management system)</h2>
 
-<p>You don't need to take classes and read tutorials to be able to quickly edit and add content to your site. The VidSock platform makes it as easy as just answering a couple of questions and filling out some forms. </p>
+<p className="txtshadow" style={{fontSize:'120%'}}>You don't need to take classes and read tutorials to be able to quickly edit and add content to your site. The VidSock platform makes it as easy as just answering a couple of questions and filling out some forms. </p>
   {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
 
 
