@@ -786,7 +786,7 @@ Get FULL Shopify functionality directly inside your site.
      </button> */}
 <div className="spacer66"></div>
 
-<div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
+<div className="container" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
 <section style={{ display:'',}}>
   <article>
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using the VidSocks CMS (It's Super Easy!)</h2>
