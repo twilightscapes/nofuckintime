@@ -153,6 +153,13 @@ Contact Us
 <span>- we love feedback!</span>
 </Link>
 </li> */}
+
+    <li className="carto">
+              <Link className="navbar-item txtshadow" to="/posts/">
+                VidSocks Examples
+              </Link>
+      </li>
+
     <li className="carto">
               <Link className="navbar-item txtshadow" to="/about/">
                 - GET START HERE!
