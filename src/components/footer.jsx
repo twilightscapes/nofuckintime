@@ -203,11 +203,11 @@ export function Footer() {
 <ScrollAnimation className="" animateIn="zoomInUp" delay={50} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
 
 {/* <ScrollAnimation className="" animateIn="bounce" delay={10} initiallyVisible={true} animateOnce={false} animatePreScroll={true}> */}
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto', color:'#fff'}} />
+
 {/* </ScrollAnimation> */}
 
     <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'0', position:'relative'}}>
-
+    <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', position:'absolute', top:'-80px', margin:'1rem auto', color:'#fff'}} />
     <Consent />
 
     
