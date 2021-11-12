@@ -716,17 +716,19 @@ E-commerce adds $8.99mo for a Shopify account.</p>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Comments</h3>
-<p>We use CommentBox.io for our commenting needs. Most sites will not exceed their generous 100 comments a month, so in essense you get great comments without ads, for <strong>free</strong>! </p>
+<p>We use CommentBox.io for our commenting needs. Most sites will not exceed their generous 100 comments a month, so in essense you get great comments without ads, for <strong>FREE</strong>! </p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Analytics</h3>
-<p>VidSocks have complete integration with Google Analytics. Simply copy and paste your account tracking code into the CMS settings. You can track your website performance for <strong>free</strong>!</p>
+<p>VidSocks have complete integration with Google Analytics. Simply copy and paste your account tracking code into the CMS settings. You can track your website performance for <strong>FREE</strong>!</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">E-Commerce</h3>
-<p>VidSocks have complete integration with Shopify - a shopping cart built-in. Since we use their API, you get get FULL Shopify functionality for only <strong>$8.99mo</strong> <br />(normally $28mo)!</p>
+<p>Complete Shopify API integration with Shopify shopping cart built-in.
+Get FULL Shopify functionality directly inside your site.
+   <br />Using their API costs only <strong>$8.99mo</strong>.</p>
 </div>
 </div>
 </ScrollAnimation>
@@ -745,17 +747,17 @@ E-commerce adds $8.99mo for a Shopify account.</p>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Social Sharing</h3>
-<p>Why pay for plugins just to allow for your users to share your content? VidSocks have social sharing built-in, just switch it on or off.</p>
+<p>Why pay for plugins just to allow for your users to share your content? VidSocks have social sharing built-in, just switch it on or off for <strong>FREE</strong>.</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">AdFree YouTube</h3>
-<p>We use AdFree YouTube to remove ads. This means you have complete control of your videos without any ads - that's right, no YouTube ads.</p>
+<p>We use AdFree YouTube to remove ads. This means you have complete control of your videos without any ads - that's right, no YouTube ads for <strong>FREE</strong>.</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">NFT Features</h3>
-<p>You can easily setup timers, making it easy to have your own NFT Drop or embed your Foundation or OpenSea into your posts. Just copy the share code and paste.</p>
+<p>Setup countdown timers for your own NFT Drops!  <br /> Embed your Foundation or OpenSea into your posts. Just copy and paste the share code.</p>
 </div>
 </div>
 </ScrollAnimation>
