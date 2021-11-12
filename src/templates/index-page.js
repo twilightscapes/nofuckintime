@@ -595,7 +595,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure<br />
 
 
 
-
+<div className="spacer66"></div>
 
 <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px', color:'#fff'}}>
 
@@ -689,7 +689,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure<br />
 
 
 
-
+<div className="spacer66"></div>
 
 
 <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
@@ -777,7 +777,7 @@ Get FULL Shopify functionality directly inside your site.
      </button> */}
 
 
-{/* <div className="spacer33"></div> */}
+<div className="spacer66"></div>
 
 <div className="container txtshadow" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'', color:'#fff'}}>
