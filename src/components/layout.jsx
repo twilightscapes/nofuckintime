@@ -93,7 +93,7 @@ export function Layout({ children }) {
 </span>
     </div> */}
 
-<Bug className="bug" style={{fontSize:'20px', maxWidth:'100%', opacity:'.3' }}/>
+<Bug className="bug" style={{fontSize:'20px', width:'100%', opacity:'.4' }}/>
 <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000'}}>MENU</div>
 {/* <span>MENU</span>
     <div className="spinner diagonal part-1"></div>
@@ -137,14 +137,14 @@ export function Layout({ children }) {
   
 {/* <img src={iconimage} alt="VidSock Logo" width="100%" height="100%" /> */}
 <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', zIndex:'-1', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >VidSocks Logo</object>
-<Link to="/"><span>Return to Home</span>
-</Link>
+{/* <Link to="/"><span>Return to Home</span>
+</Link> */}
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
- 
-{/* <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" /> */}
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >VidSocks</object>
-<Link to="/"> <span>Return to Home</span>
+ <Link to="/">
+<img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
+{/* <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >VidSocks</object> */}
+ {/* <span>Return to Home</span> */}
 </Link>
  </li>
  
@@ -162,9 +162,9 @@ Contact Us
               </Link>
       </li>
 
-    <li className="carto">
+    <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/about/">
-                - GET START HERE!
+                Learn More
               </Link>
       </li>
 
