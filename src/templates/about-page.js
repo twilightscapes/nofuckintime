@@ -8,7 +8,7 @@ import ReactPlayer from 'react-player/lazy'
 import { Fade } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import { FaHandPointDown } from "react-icons/fa"
-import Pricing from "../components/pricing"
+// import Pricing from "../components/pricing"
 import ScrollAnimation from 'react-animate-on-scroll'
 // import GoBack from "../components/goBack"
 // import Newsignup from "../components/newssign"
@@ -274,15 +274,119 @@ const AboutPage = ({ data }) => {
 
 {/* <div className="spacer33"></div> */}
 
-<div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
+{/* <div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'',}}>
   
 <h2 style={{fontSize:'200%', textAlign:'center'}}>Three simple packages to choose from</h2>
 <p>Whatever your needs are, we have you covered. All packages receive the base setup while the E-commerce package adds integration with Shopify for organizing product and displaying categories or collections. </p>
 
 </section>
+  </div> */}
+{/* <Pricing /> */}
+
+
+
+<div className="container txtshadow" style={{padding:'0 8%', maxWidth:'1024px'}}>
+<section style={{ display:'', color:'#fff'}}>
+  
+<h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Fastest Websites | Most Features | One-Time Cost
+<br />
+<span style={{fontSize:'80%',}}>Pay once, free to operate, forever - No hidden costs.</span>
+</h2>
+{/* <p>Whatever your needs are, we have you covered. Both packages receive the base setup while the E-commerce package adds integration with Shopify. </p> */}
+
+</section>
   </div>
-<Pricing />
+
+  <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px'}}>
+
+
+
+  {/* <div className="flexcheek" >
+    <div className="frontcontent">
+    <ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+      <div className="content-inside" style={{padding:'8px', textAlign:'center', color:'#fff'}}>
+        <h2 className="vartext txtshadow">VidSocks - Standard </h2>
+          
+        <ul className="featurelist" style={{listStyleType:'none'}}>
+        <li>No Customization - Ready to Use!
+    
+          <br />
+          <br />
+          <a href="https://secure3.myshopify.com/cart/41327956492448:1?channel=buy_button" target="_blank" rel="noreferrer" className="button">Standard ($499)</a>
+        </li>
+        <li className="fluff">Includes 1 hour of Video Resources</li>
+        <li className="fluff">AdFree YouTube Tech - No ADs!</li>
+        <li className="fluff">Easy Content Management System (CMS)</li>
+        <li className="fluff">Basic Video Controls - no audio tracks</li>
+        <li className="fluff">Basic Updates Only</li>
+
+</ul>
+      </div></ScrollAnimation>
+    </div>
+  </div> */}
+
+  <div className="flexcheek">
+    <div className="frontcontent">
+    <ScrollAnimation className="" animateIn="bounceInUp" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+      <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
+        <h2 className="vartext txtshadow letter">VidSocks - Pro</h2>
+
+        <ul className="featurelist" style={{listStyleType:'none'}}>
+
+
+
+
+        <li>Includes 2 hours of Customization
+          <br />
+    
+          {/* <span style={{color:'#37f011'}}>Recommended:</span> */}
+          <br />
+          <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">Pro ($899)</a>
+        </li>
+        <li className="fluff">Includes 1 hour of Video Resources</li>
+        <li className="fluff">AdFree YouTube Tech - Advanced audio/video controls and No ADs.</li>
+        <li className="fluff">AdFree YouTube Portal - watch all your fav videos with No ADs! Because clicking skip, Sucks!</li>
+        <li className="fluff">Advanced Content Management System</li>
+        <li className="fluff">Advanced Video Controls - with Audio</li>
+        <li className="fluff">Full Updates - All new features included</li>
+
+
+
+</ul>
+      </div></ScrollAnimation>
+    </div>
+  </div>
+
+  <div className="flexcheek">
+    <div className="frontcontent content-lr">
+    <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+      <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
+        <h2 className="vartext txtshadow letter">VidSocks - E-Com</h2>
+        <ul className="featurelist" style={{listStyleType:'none', borderRadius:'52px'}}>
+        
+
+        <li>Includes 4 hour of Customization
+
+          <br />
+          <br />
+          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">E-Com ($1499)</a>
+        </li>
+        <li className="fluff">Includes 1 hour of Video Resources</li>
+        <li className="fluff">Includes 1 hour of Advanced Resources</li>
+        <li className="fluff">AdFree YouTube Tech - Advanced audio/video controls and No ADs.</li>
+        <li className="fluff">AdFree YouTube Portal - watch all your fav videos with No ADs! Because clicking skip, Sucks!</li>
+        <li className="fluff">Advanced Content Management System</li>
+        <li className="fluff">Advanced Video Controls - with Audio</li>
+        <li className="fluff">Complete Shopify Integration (requires separate Shopify Account)</li>
+        <li className="fluff">Full Updates - All new features included</li>
+
+</ul>
+      </div></ScrollAnimation>
+    </div>
+  </div>
+  
+</div>
 
 
 <div className="container" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
