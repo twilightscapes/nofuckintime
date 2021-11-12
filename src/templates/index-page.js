@@ -504,9 +504,9 @@ ready to use = nothing to learn<br />
 fast serverless = no WordPress<br />
 cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
 <br /><br />
-Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
+Fastest, Flexible, Innovative, Best SEO &amp; Most Secure<br />
 
-<span style={{color:'', fontSize:'70%'}}>Complete website with everything needed </span>
+<span style={{color:'', fontSize:'70%'}}>Complete website solutions</span>
 
 {/* <br /><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span> */}
 
@@ -705,7 +705,10 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 
 
 
-
+<h2 className="letter" style={{fontSize:'200%', textAlign:'center'}}>VidSocks Run Virtually Free Of Cost</h2>
+<p style={{fontSize:'100%', textAlign:'center'}}>Most VidSock customers have no monthly costs.
+<br />
+E-commerce adds $8.99mo for a Shopify account.</p> 
 
 
 <ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
@@ -775,7 +778,10 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 <div className="container txtshadow" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'', color:'#fff'}}>
   
-<h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Fastest Websites  - Most Features - Cheapest Price</h2>
+<h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Fastest Websites | Most Features | One-Time Cost
+<br />
+<span style={{fontSize:'80%',}}>Pay once, free to operate, forever - No hidden costs.</span>
+</h2>
 {/* <p>Whatever your needs are, we have you covered. Both packages receive the base setup while the E-commerce package adds integration with Shopify. </p> */}
 
 </section>
@@ -813,7 +819,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
     <div className="frontcontent">
     <ScrollAnimation className="" animateIn="bounceInUp" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
-        <h2 className="vartext txtshadow">VidSocks - Pro</h2>
+        <h2 className="vartext txtshadow letter">VidSocks - Pro</h2>
 
         <ul className="featurelist" style={{listStyleType:'none'}}>
 
@@ -845,7 +851,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
     <div className="frontcontent content-lr">
     <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
-        <h2 className="vartext txtshadow">VidSocks - E-Com</h2>
+        <h2 className="vartext txtshadow letter">VidSocks - E-Com</h2>
         <ul className="featurelist" style={{listStyleType:'none', borderRadius:'52px'}}>
         
 

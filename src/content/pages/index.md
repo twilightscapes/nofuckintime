@@ -21,11 +21,11 @@ youtubemute: "1"
 svgzindex: ""
 youtubestart: "33"
 ---
-<h2 style="font-weight:bold; font-size:125%;">What are VidSocks?</h2>
+<h2 class="letter" style="font-weight:bold; font-size:175%;">What are VidSocks?</h2>
 <br />
 VidSocks are state-of-the-art web apps that feature custom layered multimedia (animation, cutout-photos, video, and audio) crafted together to give the viewer a whole new sensory experience.
 
-<h3 style="font-weight:bold; font-size:115%; margin:1rem 0; text-align:center"> Built for artists, photographers, musicians, clubs &amp; restaurants and any other small businesses</h3>
+<h3 class="letter" style="font-weight:bold; font-size:115%; margin:1rem 0; text-align:center"> Built for artists, photographers, musicians, clubs &amp; restaurants and any other small businesses</h3>
 
  Have a <strong>BIG</strong> presence on the web. VidSocks are designed to give every advantage in <em>maximize your artwork, reduce load times and increase SEO results</em>. <br />
 
