@@ -6,7 +6,6 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 // import { GoArrowDown } from "react-icons/go"
-import { FaHandPointDown } from "react-icons/fa"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
@@ -1002,9 +1001,7 @@ Get FULL Shopify functionality directly inside your site.
 <br /><br /><br />
 
 {/* <h3 style={{fontSize:'170%', textAlign:'center',margin:'2rem 0 0 0'}}>Got Questions? Feel free to contact us</h3> */}
-<ScrollAnimation className="" animateIn="bounce" delay={10} initiallyVisible={true} animateOnce={false} animatePreScroll={true}>
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation>
+
  </div>{/* end scooch */}
 
       
