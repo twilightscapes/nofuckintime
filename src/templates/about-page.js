@@ -47,6 +47,8 @@ const AboutPage = ({ data }) => {
       <GoBack />
       <br />
       <br />
+      <br />
+      <br />
     </Layout>
   )
 }
