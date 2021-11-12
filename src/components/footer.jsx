@@ -198,7 +198,7 @@ export function Footer() {
   
 
 
-<ScrollAnimation className="" animateIn="bounceInUp" delay={50} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
+<ScrollAnimation className="" animateIn="slideUp" delay={250} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
 
 
     <footer className={footerStyle} style={{padding:'0 0', marginTop:'0', position:'relative'}}>
