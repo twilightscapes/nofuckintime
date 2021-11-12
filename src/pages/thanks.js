@@ -26,12 +26,12 @@ const Thanks = () => (
           textAlign:'center'
         }}
       />
-      <h1 className="headline1" style={{fontSize:'200%'}}>You're all set!</h1>
+      <h1 className="headline1" style={{fontSize:'200%'}}>Message Sent</h1>
       {/* <p>I should respond shortly, depending on where I am at.</p> */}
       <div className="spacer33"></div> 
-      <Link to="/about" className="button">
+      <Link to="/about" className="button" style={{color:'#fff'}}>
         {/* <RiArrowLeftSLine className="icon -left" /> */}
-        Learn more about your new VidSock?
+        Learn more about VidSocks?
       </Link>
     </div>
 

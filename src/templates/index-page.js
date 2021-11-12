@@ -14,7 +14,7 @@ import ReactPlayer from 'react-player/lazy'
 // import { ImPlay } from "react-icons/im"
 // import Pricing from "../components/pricing"
 import styled from "styled-components"
-// import Newsignup from "../components/newssign"
+import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -505,22 +505,22 @@ const YouTube = frontmatter.youtuber
 ready to use = nothing to learn<br />
 fast serverless = no WordPress<br />
 cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
-<br /><br />
-Fastest, Flexible, Innovative, Best SEO &amp; Most Secure<br />
 
-<span style={{color:'', fontSize:'70%'}}>Complete website solutions</span>
+<span style={{color:'', fontSize:'70%'}}>Fastest, Flexible, Innovative, Best SEO &amp; Most Secure</span>
+
+{/* <span style={{color:'', fontSize:'70%'}}>Complete website solutions</span> */}
 
 {/* <br /><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span> */}
 
 {/* <span style={{color:'', fontSize:'70%'}}>Act Now - get 30 minutes of Customization </span><br /><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span> */}
-<br />
+{/* <br />
 <span style={{fontSize:'56%'}}>E-commerce and Custom Packages available</span>
-<br /><br />
+<br /><br /> */}
 </h2>
-<Link
+{/* <Link
             to={frontmatter.cta.ctaLink}
             className="button fire actionJackson"
-            // state={{modal: true}}
+            state={{modal: true}}
             style={{
               cursor:'pointer',
               width:'80%',
@@ -537,8 +537,8 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure<br />
             </span>
 
             
-          </Link>
-
+          </Link> */}
+          <Newsignup />
           
           <br /><br /> 
           {/* <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees. 

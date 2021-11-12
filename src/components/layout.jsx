@@ -156,18 +156,31 @@ Contact Us
 </Link>
 </li> */}
 
-    <li className="carto">
-              <Link className="navbar-item txtshadow" to="/posts/">
-                VidSocks Examples
-              </Link>
-      </li>
 
-    <li className="carto" style={{textAlign:'center'}}>
+
+    
+
+    <li className="carto" style={{textAlign:''}}>
               <Link className="navbar-item txtshadow" to="/about/">
-                Learn More
+                More About VidSocks
               </Link>
       </li>
 
+
+      
+      <li className="carto no-app">
+              <Link title="VidSocks Support" className="navbar-item txtshadow" to="/posts/">
+                Enter Support Mode
+              </Link>
+      </li>
+
+
+
+      <li className="carto" style={{textAlign:'center'}}>
+              <Link title="VidSocks Examples" className="navbar-item txtshadow" to="/posts/">
+                - VIEW EXAMPLES -
+              </Link>
+      </li>
 
  {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
  <a className="" onClick={()=>navigate(-1)}><img id="logo" className="twlogo" src={twLogo} alt="Twilightscapes Logo" title="Return To Homepage" style={{minWidth:'100px', maxWidth:'',}} /></a>
