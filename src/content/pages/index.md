@@ -29,8 +29,8 @@ VidSocks are state-of-the-art web apps that feature custom layered multimedia (a
 
  Have a <strong>BIG</strong> presence on the web. VidSocks are designed to give every advantage in <em>maximize your artwork, reduce load times and increase SEO results</em>. <br />
 
- <div style="text-align:center; text-decoration:underline"><a href="/about/">Check out the full list of VidSocks features</a></div>
- <br />
+ <!-- <div style="text-align:center; text-decoration:underline"><a href="/about/">Check out the full list of VidSocks features</a></div>
+ <br /> -->
 
 
 

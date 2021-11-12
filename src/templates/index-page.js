@@ -719,21 +719,21 @@ E-commerce add $8.99mo for Shopify account.</p>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Cloud Hosting</h3>
-<div style={{}}>Virtually all sites operate month-to-month for <strong>FREE</strong>. 
+<div style={{}}>Virtually all sites operate month-to-month for <strong className="highlight">FREE</strong>. 
           <br />
           Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a style={{textDecoration:'underline'}} href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >View more information here.</a></div>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Analytics</h3>
-<p>VidSocks have complete integration with Google Analytics. Simply copy and paste your account tracking code into the CMS settings. You can track your website performance for <strong>FREE</strong>!</p>
+<p>VidSocks have complete integration with Google Analytics. Simply copy and paste your account tracking code into the CMS settings. You can track your website performance for <strong className="highlight">FREE</strong>!</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">E-Commerce</h3>
 <p>Complete Shopify API integration with Shopify shopping cart built-in.
 Get FULL Shopify functionality directly inside your site.
-   <br />Using their API costs only <strong>$8.99mo</strong>.</p>
+   <br />Using their API costs only <strong className="highlight">$8.99mo</strong>.</p>
 </div>
 </div>
 </ScrollAnimation>
@@ -752,12 +752,12 @@ Get FULL Shopify functionality directly inside your site.
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Social Sharing</h3>
-<p>Why pay for plugins just to allow for your users to share your content? VidSocks have social sharing built-in, just switch it on or off for <strong>FREE</strong>.</p>
+<p>Why pay for plugins just to allow for your users to share your content? VidSocks have social sharing built-in, just switch it on or off for <strong className="highlight">FREE</strong>.</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">AdFree YouTube</h3>
-<p>We use AdFree YouTube to remove ads. This means you have complete control of your videos without any ads - that's right, no YouTube ads for <strong>FREE</strong>.</p>
+<p>We use AdFree YouTube to remove ads. This means you have complete control of your videos without any ads - that's right, no YouTube ads for <strong className="highlight">FREE</strong>.</p>
 </div>
 
 {/* <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
@@ -766,7 +766,7 @@ Get FULL Shopify functionality directly inside your site.
 </div> */}
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Comments</h3>
-<p>We use CommentBox.io for our commenting needs. Most sites will not exceed their generous 100 comments a month, so in essense you get great comments without ads, for <strong>FREE</strong>! </p>
+<p>We use CommentBox.io for our commenting needs. Most sites will not exceed their generous 100 comments a month, so in essense you get great comments without ads, for <strong className="highlight" style={{color:''}}>FREE</strong>! </p>
 </div>
 
 
@@ -789,7 +789,7 @@ Get FULL Shopify functionality directly inside your site.
 <div className="container" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
 <section style={{ display:'',}}>
   <article>
-  <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using the VidSocks CMS (It's Super Easy!)</h2>
+  <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using the VidSocks CMS (<span  className="highlight">It's Super Easy!</span>)</h2>
 
 <p className="txtshadow" style={{fontSize:'120%'}}>You don't need to take classes and read tutorials to be able to quickly edit and add content to your site. The VidSock platform makes it as easy as just answering a couple of questions and filling out some forms. </p>
   {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
@@ -858,7 +858,7 @@ Get FULL Shopify functionality directly inside your site.
   
 <h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Fastest Websites | More Features | One-Time Cost
 <br />
-<span style={{fontSize:'80%',}}>Pay once, free to operate, forever - No hidden costs.</span>
+<span style={{fontSize:'80%',}}>Pay once, free to operate, forever - <span  className="highlight">No hidden costs</span>.</span>
 </h2>
 {/* <p>Whatever your needs are, we have you covered. Both packages receive the base setup while the E-commerce package adds integration with Shopify. </p> */}
 
