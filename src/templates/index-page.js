@@ -790,7 +790,7 @@ Get FULL Shopify functionality directly inside your site.
 <div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'',}}>
   <article>
-  <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using the VidSock CMS (content management system)</h2>
+  <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using the VidSocks CMS (It's Super Easy!)</h2>
 
 <p className="txtshadow" style={{fontSize:'120%'}}>You don't need to take classes and read tutorials to be able to quickly edit and add content to your site. The VidSock platform makes it as easy as just answering a couple of questions and filling out some forms. </p>
   {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
