@@ -11,7 +11,7 @@ const Completionist = () => ""
 const PostCard = ({ data }) => (
 
   
-<ScrollAnimation className="" animateIn="bounceInUp" delay={50} initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+<ScrollAnimation className="" animateIn="bounceInUp" offset="" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
 <section className="child" style={{position:'relative', height:'', overflow:'hidden'}}>
 
   <article

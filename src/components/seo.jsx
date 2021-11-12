@@ -68,7 +68,7 @@ export function Seo({
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:image" content={seo.image} />
-
+    
       <meta name="apple-mobile-web-app-capable" content="yes" />
       
       <link
