@@ -266,7 +266,7 @@ const YouTube = frontmatter.youtuber
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
 
       <div style={{display:'flex', justifyContent:'center'}}>
-      <img src={iconimage} alt="VidSock Logo" width="70%" height="auto" style={{position:'fixed', zIndex:'-1', opacity:'.2'}} />
+      <img src={iconimage} alt="VidSock Logo" width="60%" height="auto" style={{position:'fixed', zIndex:'-1', opacity:'.2'}} />
 </div>
         <div name="container21" className="container21" style={{marginTop:'',}}>
 
@@ -884,19 +884,19 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 
 
 
-<div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
+{/* <div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
 <section style={{ display:'', color:'#fff'}}>
   <article>
 <h2 style={{fontSize:'200%'}}>Using the VidSock CMS (content management system)</h2>
 
 <p>You don't need to take classes and read tutorials to be able to quickly edit and add content to your site. The VidSock platform makes it as easy as just answering a couple of questions and filling out some forms. </p>
-  {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
+
 
 
   </article>
 
   </section>
-</div>
+</div> */}
 
 
 
