@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-
+import ScrollAnimation from 'react-animate-on-scroll'
 import Theme from "../components/theme"
 import Consent from "../components/Consent"
 // import Install from "../components/Install-footer"
@@ -198,6 +198,8 @@ export function Footer() {
   
 
 
+<ScrollAnimation className="" animateIn="bounceInUp" delay={50} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
+
 
     <footer className={footerStyle} style={{padding:'0 0', marginTop:'0', position:'relative'}}>
 
@@ -247,6 +249,7 @@ export function Footer() {
       </nav>
    
     </footer>
+    </ScrollAnimation>
 
     ) : (
       ""

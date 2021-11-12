@@ -1691,7 +1691,7 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 .featurelist li{
   display: block;
   padding:1rem;
-  background: #111;
+  background: rgba(0,0,0,0.70);
   margin:4px 0;
   border-radius:12px;
   color:#fff;
@@ -2127,7 +2127,7 @@ border:1px solid #222;
 
 
 
-
+      body.homepage footer{background: rgba(0,0,0,0.50);}
 
 
 
@@ -2903,6 +2903,8 @@ background-position:center 70px;
                   background-size: 300% 300%;
                   /* animation: gradient 12s ease infinite; */
                 }
+
+                
 
                 @keyframes gradient {
                   0% {
