@@ -123,6 +123,7 @@ export const pageQuery = graphql`
 
 
 const HomePage = ({ data }) => {
+  const { iconimage } = useSiteMetadata()
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
@@ -262,6 +263,11 @@ const YouTube = frontmatter.youtuber
 
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-explain1.jpg" /> */}
 
+      {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
+
+      <div style={{display:'flex', justifyContent:'center'}}>
+      <img src={iconimage} alt="VidSock Logo" width="30%" height="auto" />
+</div>
         <div name="container21" className="container21" style={{height:'',}}>
 
 
