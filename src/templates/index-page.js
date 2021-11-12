@@ -775,14 +775,17 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 <div className="container txtshadow" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'', color:'#fff'}}>
   
-<h2 id="options" style={{fontSize:'200%', textAlign:'center'}}>Three simple packages to choose from</h2>
-<p>Whatever your needs are, we have you covered. All packages receive the base setup while the E-commerce package adds integration with Shopify for organizing product and displaying categories or collections. </p>
+<h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Fastest Websites  - Most Features - Cheapest Price</h2>
+{/* <p>Whatever your needs are, we have you covered. Both packages receive the base setup while the E-commerce package adds integration with Shopify. </p> */}
 
 </section>
   </div>
 
   <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px'}}>
-  <div className="flexcheek" >
+
+
+
+  {/* <div className="flexcheek" >
     <div className="frontcontent">
     <ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px', textAlign:'center', color:'#fff'}}>
@@ -804,7 +807,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 </ul>
       </div></ScrollAnimation>
     </div>
-  </div>
+  </div> */}
 
   <div className="flexcheek">
     <div className="frontcontent">
