@@ -780,7 +780,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 
 </section>
   </div>
-<Pricing />
+{/* <Pricing /> */}
 
 
 <div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
