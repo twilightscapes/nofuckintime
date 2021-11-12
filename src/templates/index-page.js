@@ -541,9 +541,9 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure<br />
 
           
           <br /><br /> 
-          <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees. 
+          {/* <div style={{fontSize:'70%', textAlign:'center'}}>* Virtually all sites operate month-to-month with no fees. 
           <br />
-          Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >You can view more information here.</a></div>
+          Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >You can view more information here.</a></div> */}
 
 
 
@@ -716,17 +716,17 @@ E-commerce adds $8.99mo for a Shopify account.</p>
 <ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 <div className="flexbutt featurebox" style={{display:'flex', padding:'0', gap:'20px',}}>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Comments</h3>
 <p>We use CommentBox.io for our commenting needs. Most sites will not exceed their generous 100 comments a month, so in essense you get great comments without ads, for <strong>FREE</strong>! </p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Analytics</h3>
 <p>VidSocks have complete integration with Google Analytics. Simply copy and paste your account tracking code into the CMS settings. You can track your website performance for <strong>FREE</strong>!</p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">E-Commerce</h3>
 <p>Complete Shopify API integration with Shopify shopping cart built-in.
 Get FULL Shopify functionality directly inside your site.
@@ -747,20 +747,28 @@ Get FULL Shopify functionality directly inside your site.
 <div className="flexbutt featurebox" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px'}}>
 
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">Social Sharing</h3>
 <p>Why pay for plugins just to allow for your users to share your content? VidSocks have social sharing built-in, just switch it on or off for <strong>FREE</strong>.</p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">AdFree YouTube</h3>
 <p>We use AdFree YouTube to remove ads. This means you have complete control of your videos without any ads - that's right, no YouTube ads for <strong>FREE</strong>.</p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+{/* <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext">NFT Features</h3>
 <p>Setup countdown timers for your own NFT Drops!  <br /> Embed your Foundation or OpenSea into your posts. Just copy and paste the share code.</p>
+</div> */}
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">Cloud Hosting</h3>
+<div style={{}}>Virtually all sites operate month-to-month for <strong>FREE</strong>. 
+          <br />
+          Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a style={{textDecoration:'underline'}} href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >View more information here.</a></div>
 </div>
+
 </div>
 </ScrollAnimation>
 
