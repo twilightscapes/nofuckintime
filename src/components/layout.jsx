@@ -135,15 +135,13 @@ export function Layout({ children }) {
 
  <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
-{/* <img src={iconimage} alt="VidSock Logo" width="100%" height="100%" /> */}
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', zIndex:'-1', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'60%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+<img src={iconimage} alt="VidSock Logo" width="100%" height="100%" />
 <span>Multimedia Web Apps</span>
 </Link>
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/"> 
-{/* <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" /> */}
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+<img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
 <span>Multimedia Web Apps</span>
 </Link>
  </li>
