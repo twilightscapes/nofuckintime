@@ -44,7 +44,7 @@ const AboutPage = ({ data }) => {
   const { frontmatter, excerpt } = markdownRemark
 
   return (
-    <Layout className="page">
+    <Layout className="aboutpage">
       
       <Seo title={frontmatter.title} description={excerpt} />
 
@@ -88,7 +88,7 @@ const AboutPage = ({ data }) => {
   </div>
   </div> */}
 
-
+<div className="aboutpage">
 
 
 
@@ -318,7 +318,7 @@ const AboutPage = ({ data }) => {
         </Fade>
       </div>
 
-
+</div>
 
 
       {/* <GoBack /> */}

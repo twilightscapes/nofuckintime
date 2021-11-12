@@ -1026,6 +1026,12 @@ color:#fff !important;
   } */
 
 .rounded{border-radius: 12px; overflow: hidden;}
+
+.aboutpage .learnmore{display: none;}
+
+
+
+
 .ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .back{
 display: none !important;
 

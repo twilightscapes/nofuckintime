@@ -147,14 +147,15 @@ export function Layout({ children }) {
  </li>
  
 
- <li className="carto" style={{textAlign:''}}>
+ {/* <li className="carto" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/contact/">
-Contact Us<span>- we love feedback!</span>
+Contact Us
+<span>- we love feedback!</span>
 </Link>
-</li>
+</li> */}
     <li className="carto">
               <Link className="navbar-item txtshadow" to="/about/">
-                START HERE!
+                - GET START HERE!
               </Link>
       </li>
 

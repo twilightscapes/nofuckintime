@@ -91,7 +91,10 @@ const Thanks = () => (
 </div>
 
 
-      <div className="content-inside fluff" style={{padding:'8px',textAlign:'center', color:'', display:'flex', flexDirection:'column', justifyContent:'center'}}>
+<div className="learnmore" style={{display:'flex', justifyContent:'center', color:'#fff'}}><Link className="button" to="/about/">Learn more about VidSocks</Link></div>
+
+
+      {/* <div className="content-inside fluff" style={{padding:'8px',textAlign:'center', color:'', display:'flex', flexDirection:'column', justifyContent:'center'}}>
         <h2 style={{fontSize:'1.8rem'}}>VidSocks - Customization</h2>
         <ul className="featurelist" style={{listStyleType:'none', maxWidth:'', display:'flex', justifyContent:'center'}}>
         
@@ -102,12 +105,12 @@ const Thanks = () => (
 <br />
 <div className="" style={{display:'flex', justifyContent:'center', color:'#fff'}}><Link className="button fire" to="/about/">30 Minutes ($50)</Link> <Link className="button" to="/about/">60 Minutes ($90)</Link></div>
 <br />
-For more complex updates and requests,<br /> <Link to="/contact/">please contact me</Link>
+For more complex updates and requests,<br /> <Link to="/contact">please contact me</Link>
           </li>
           </ul>
         
 
-          </div>
+          </div> */}
    
 
 
