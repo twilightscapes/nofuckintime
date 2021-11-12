@@ -897,14 +897,14 @@ Get FULL Shopify functionality directly inside your site.
     <div className="frontcontent">
     <ScrollAnimation className="" animateIn="bounceInUp" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
-        <h2 className="vartext txtshadow letter">VidSocks - Pro</h2>
+        <h2 className="vartext txtshadow letter" style={{fontSize:'200%'}}>VidSocks - Pro</h2>
 
         <ul className="featurelist" style={{listStyleType:'none'}}>
 
 
 
 
-        <li>Includes 2 hours of Customization
+        <li>Includes 2 hrs of Unique Customizations
           <br />
     
           {/* <span style={{color:'#37f011'}}>Recommended:</span> */}
@@ -929,11 +929,11 @@ Get FULL Shopify functionality directly inside your site.
     <div className="frontcontent content-lr">
     <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
-        <h2 className="vartext txtshadow letter">VidSocks - E-Com</h2>
+        <h2 className="vartext txtshadow letter" style={{fontSize:'200%'}}>VidSocks - E-Com</h2>
         <ul className="featurelist" style={{listStyleType:'none', borderRadius:'52px'}}>
         
 
-        <li>Includes 4 hour of Customization
+        <li>Includes 4 hrs of Unique Customizations
 
           <br />
           <br />
