@@ -266,9 +266,9 @@ const YouTube = frontmatter.youtuber
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
 
       <div style={{display:'flex', justifyContent:'center'}}>
-      <img src={iconimage} alt="VidSock Logo" width="30%" height="auto" />
+      <img src={iconimage} alt="VidSock Logo" width="50%" height="auto" style={{position:'fixed', zIndex:'-1', opacity:'.2'}} />
 </div>
-        <div name="container21" className="container21" style={{height:'',}}>
+        <div name="container21" className="container21" style={{marginTop:'',}}>
 
 
 
@@ -801,51 +801,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
-
-<ReactPlayer
-          className='react-player'
-          url="https://www.youtube.com/embed/NPzXWpNKScY?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=NPzXWpNKScY"
-          width="100%"
-          height="100%"
-     
- 
-          autoplay={true}
-          background={true}
-          loop
-          playing
-          playsinline
-          muted={true}
-          showPortrait
-        //   playIcon={
-        //     <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
-              
-      
-      
-      
-        // <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-        //   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-      
-        //   <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
-          
-        //   </div>
-        //   </button>}
-      
-      
-      
-        //     light="../assets/transparent.png"
-          />
-
-{/* <div className="video-background">
-    <div className="video-foreground">
-      <iframe title="Twilightscapes Video" className="" src="https://www.youtube.com/embed/fm-rOnGIIaE?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=fm-rOnGIIaE" frameBorder="0" allowFullScreen></iframe>
-    </div>
-</div> */}
-
-
-
-</div>
 
 
 
