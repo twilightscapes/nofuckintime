@@ -19,8 +19,8 @@ const Thanks = () => (
 <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px'}}>
   <div className="flexcheek" >
     <div className="frontcontent">
-      <div className="content-inside" style={{padding:'8px', textAlign:'center', color:''}}>
-        <h2 className="vartext">VidSocks - Standard </h2>
+      <div className="content-inside" style={{padding:'8px', textAlign:'center', color:'#fff'}}>
+        <h2 className="vartext txtshadow">VidSocks - Standard </h2>
           
         <ul className="featurelist" style={{listStyleType:'none'}}>
         <li>No Customization - Ready to Use!
@@ -41,8 +41,8 @@ const Thanks = () => (
   </div>
   <div className="flexcheek">
     <div className="frontcontent">
-      <div className="content-inside" style={{padding:'8px',textAlign:'center', color:''}}>
-        <h2 className="vartext">VidSocks - Pro</h2>
+      <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
+        <h2 className="vartext txtshadow">VidSocks - Pro</h2>
 
         <ul className="featurelist" style={{listStyleType:'none'}}>
 
@@ -71,8 +71,8 @@ const Thanks = () => (
 
   <div className="flexcheek">
     <div className="frontcontent content-lr">
-      <div className="content-inside" style={{padding:'8px',textAlign:'center', color:''}}>
-        <h2 className="vartext">VidSocks - E-Com</h2>
+      <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
+        <h2 className="vartext txtshadow">VidSocks - E-Com</h2>
         <ul className="featurelist" style={{listStyleType:'none', borderRadius:'52px'}}>
         
 

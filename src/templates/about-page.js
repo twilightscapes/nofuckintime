@@ -9,6 +9,7 @@ import { Fade } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import { FaHandPointDown } from "react-icons/fa"
 import Pricing from "../components/pricing"
+import ScrollAnimation from 'react-animate-on-scroll'
 // import GoBack from "../components/goBack"
 // import Newsignup from "../components/newssign"
 // import NFTDetails from "../components/nft-details"
@@ -97,8 +98,11 @@ const AboutPage = ({ data }) => {
 <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-explain1.jpg" />
 
 <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px'}}>
+
+
+
   <div className="flexcheek" >
-    <div className="frontcontent">
+    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInLeft" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px', textAlign:'left'}}>
         <h2>All VidSocks include:</h2>
           
@@ -113,11 +117,16 @@ const AboutPage = ({ data }) => {
 <li>Dark / Light Mode (also full support for all web accessibility guidelines)</li>
 
 </ul>
-      </div>
+      </div></ScrollAnimation>
     </div>
   </div>
+
+
+
+
+
   <div className="flexcheek">
-    <div className="frontcontent">
+    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px'}}>
         <h2>VidSock Features:</h2>
 
@@ -142,12 +151,17 @@ const AboutPage = ({ data }) => {
 <li>Auction Timers - Make posts disappear when your auction expires</li>
 
 </ul>
-      </div>
+      </div></ScrollAnimation>
     </div>
   </div>
 
+  
+
+
+
   <div className="flexcheek">
     <div className="frontcontent content-lr">
+    <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside">
         <h2>More Features:</h2>
         <ul className="featurelist" style={{listStyleType:'none'}}>
@@ -167,9 +181,10 @@ const AboutPage = ({ data }) => {
 
 <li>E-Newsletter Form - Build your email newsletter by allowing peole to easily sign up</li>
 </ul>
-      </div>
+      </div></ScrollAnimation>
     </div>
   </div>
+  
 </div>
 
 
@@ -177,6 +192,7 @@ const AboutPage = ({ data }) => {
 
 
 
+<ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 
 <section className="outer section section--gradient fluff" >
       <div className="container" style={{padding: '2rem 10%'}}>
@@ -194,7 +210,7 @@ const AboutPage = ({ data }) => {
 
 
 
-
+<ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 <div className="flexbutt featurebox" style={{display:'flex', padding:'0', gap:'20px',}}>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
@@ -212,6 +228,7 @@ const AboutPage = ({ data }) => {
 <p>VidSocks have complete integration with Shopify - a shopping cart built-in. Since we use their API, you get get FULL Shopify functionality for only <strong>$8.99mo</strong> <br />(normally $28mo)!</p>
 </div>
 </div>
+</ScrollAnimation>
 
 
 
@@ -221,8 +238,7 @@ const AboutPage = ({ data }) => {
 
 
 
-
-
+<ScrollAnimation className="" animateIn="bounceInRight" delay={110} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 <div className="flexbutt featurebox" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px'}}>
 
 
@@ -241,12 +257,12 @@ const AboutPage = ({ data }) => {
 <p>You can easily setup timers, making it easy to have your own NFT Drop or embed your Foundation or OpenSea into your posts. Just copy the share code and paste.</p>
 </div>
 </div>
-
+</ScrollAnimation>
 
 
       </div>
 </section>
-
+</ScrollAnimation>
 
 {/* <button onClick="playAnimation()" type="button">Start Animation</button> */}
 

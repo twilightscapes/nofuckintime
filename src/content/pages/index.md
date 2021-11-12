@@ -12,7 +12,7 @@ svgImage: /assets/null.svg
 showPosts: true
 cta:
   ctaText: Get Started Now
-  ctaLink: /pricing/
+  ctaLink: /#options
 youtubeend: "63"
 showFeature: ""
 youtubecontrols: ""

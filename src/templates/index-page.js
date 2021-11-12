@@ -12,7 +12,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
 // import { ImPlay } from "react-icons/im"
-
+import Pricing from "../components/pricing"
 import styled from "styled-components"
 import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
@@ -260,9 +260,10 @@ const YouTube = frontmatter.youtuber
       
 
 
-
+      {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-explain1.jpg" /> */}
 
         <div name="container21" className="container21" style={{height:'',}}>
+
 
 
 {/* show feature */}
@@ -561,10 +562,15 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 {/* end show Info */}
 
 
-{/* end show Posts */}
+{/* start show Posts */}
 {ShowPosts ? (
 
-<div id="posts" name="posts">
+
+""
+  
+
+   ) : (
+  <div id="posts" name="posts">
         <BlogListHome data={posts} />
 
         <section style={{height:'auto'}}>
@@ -574,13 +580,271 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
     </section>
 
    </div>
+  )}
+{/* end show Posts */}
+
+
+
+
+
+
+
+<div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px', color:'#fff'}}>
+
+
+
+  <div className="flexcheek" >
+    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInLeft" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+      <div className="content-inside" style={{padding:'8px', textAlign:'left'}}>
+        <h2 className="vartext">All VidSocks include:</h2>
+          
+        <ul className="featurelist" style={{listStyleType:'none'}}>
+        <li>User-installable PWA (Progressive Web Apps) which means your site can be installed on any device without the need for expensive and complex App Stores.</li>
+        <li>Hosted on Global Edge Network (the cloud)</li>
+        <li>FREE - 100GB/Mo Bandwidth</li>
+<li>FREE - 100 Site Form Submits per Mo</li>
+<li>FREE Secured Socket Layer (SSL) Cert (https://)</li>
+<li>Customizable with your own domain name</li>
+<li>Responsive Design, built with React and Gatsby</li>
+<li>Dark / Light Mode (also full support for all web accessibility guidelines)</li>
+
+</ul>
+      </div></ScrollAnimation>
+    </div>
+  </div>
+
+
+
+
+
+  <div className="flexcheek">
+    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+      <div className="content-inside" style={{padding:'8px'}}>
+        <h2 className="vartext txtshadow">VidSock Features:</h2>
+
+        <ul className="featurelist" style={{listStyleType:'none'}}>
+
+
+
+
+<li>Edit website settings, Add Google Analytics change colors, settings, logos, etc all from within the CMS.</li>
+
+<li>Customize all content of included Homepage, About and Contact page. Add / Modify / Delete blog posts.</li>
+
+
+<li>Hide/Show Comments, Social Sharing, or User-interactivity (youtube video changer) on a post-by-post basis</li>
+
+<li>Control YouTube videos with starting/stopping times, loop, mute, etc..</li>
+
+<li>PWA Exclusive Content (make some of your content only available to your site's user base - great to boost engagement!)</li>
+
+<li>Drop Timers - Easily create your own Drops. Make posts appear when your NFT drops. Just add the drop date and time</li>
+
+<li>Auction Timers - Make posts disappear when your auction expires</li>
+
+</ul>
+      </div></ScrollAnimation>
+    </div>
+  </div>
 
   
 
-   ) : (
-    ""
-  )}
-{/* end show Posts */}
+
+
+  <div className="flexcheek">
+    <div className="frontcontent content-lr">
+    <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+      <div className="content-inside">
+        <h2 className="vartext txtshadow">More Features:</h2>
+        <ul className="featurelist" style={{listStyleType:'none'}}>
+        
+
+<li>100% SEO Optimized - Google LOVES VidSocks. </li>
+
+<li>Social Media Icons - link to all your sites and allow users to easily share your content</li>
+
+<li>OpenGraph structured data - all of site is structured to be shared with high quality image links on social sites</li>
+
+<li>Twitter Cards meta - Your pages will look great when shared on Twitter</li>
+
+<li>XML Sitemaps - Your entire site is automatically indexed and links provided to search engines.</li>
+
+<li>Contact Form - an integrated contact form on all pages of the your site, that sends everything right to your email inbox.</li>
+
+<li>E-Newsletter Form - Build your email newsletter by allowing peole to easily sign up</li>
+</ul>
+      </div></ScrollAnimation>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+<ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+
+<section className="outer section section--gradient fluff txtshadow" >
+      <div className="container" style={{padding: '2rem 10%', color:'#fff'}}>
+
+{/* <h2>Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!</h2>
+
+<br />
+<p>VidSocks use the industry best cloud-based tools for things like user commenting, analytics, and e-commerce.</p> */}
+
+
+
+
+
+
+
+
+
+<ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+<div className="flexbutt featurebox" style={{display:'flex', padding:'0', gap:'20px',}}>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">Comments</h3>
+<p>We use CommentBox.io for our commenting needs. Most sites will not exceed their generous 100 comments a month, so in essense you get great comments without ads, for <strong>free</strong>! </p>
+</div>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">Analytics</h3>
+<p>VidSocks have complete integration with Google Analytics. Simply copy and paste your account tracking code into the CMS settings. You can track your website performance for <strong>free</strong>!</p>
+</div>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">E-Commerce</h3>
+<p>VidSocks have complete integration with Shopify - a shopping cart built-in. Since we use their API, you get get FULL Shopify functionality for only <strong>$8.99mo</strong> <br />(normally $28mo)!</p>
+</div>
+</div>
+</ScrollAnimation>
+
+
+
+
+
+
+
+
+
+<ScrollAnimation className="" animateIn="bounceInRight" delay={110} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+<div className="flexbutt featurebox" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px'}}>
+
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">Social Sharing</h3>
+<p>Why pay for plugins just to allow for your users to share your content? VidSocks have social sharing built-in, just switch it on or off.</p>
+</div>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">AdFree YouTube</h3>
+<p>We use AdFree YouTube to remove ads. This means you have complete control of your videos without any ads - that's right, no YouTube ads.</p>
+</div>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">NFT Features</h3>
+<p>You can easily setup timers, making it easy to have your own NFT Drop or embed your Foundation or OpenSea into your posts. Just copy the share code and paste.</p>
+</div>
+</div>
+</ScrollAnimation>
+
+
+      </div>
+</section>
+</ScrollAnimation>
+
+{/* <button onClick="playAnimation()" type="button">Start Animation</button> */}
+
+
+{/* <button className="square" onClick={() => console.log('click')}>
+       DAMN
+     </button> */}
+
+
+{/* <div className="spacer33"></div> */}
+
+<div className="container txtshadow" style={{padding:'0 8%', maxWidth:'1024px'}}>
+<section style={{ display:'', color:'#fff'}}>
+  
+<h2 id="options" style={{fontSize:'200%', textAlign:'center'}}>Three simple packages to choose from</h2>
+<p>Whatever your needs are, we have you covered. All packages receive the base setup while the E-commerce package adds integration with Shopify for organizing product and displaying categories or collections. </p>
+
+</section>
+  </div>
+<Pricing />
+
+
+<div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
+<section style={{ display:'', color:'#fff'}}>
+  <article>
+<h2 style={{fontSize:'200%'}}>Using the VidSock CMS (content management system)</h2>
+
+<p>You don't need to take classes and read tutorials to be able to quickly edit and add content to your site. The VidSock platform makes it as easy as just answering a couple of questions and filling out some forms. </p>
+  {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
+
+
+  </article>
+
+  </section>
+</div>
+
+
+
+
+
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+
+
+<ReactPlayer
+          className='react-player'
+          url="https://www.youtube.com/embed/NPzXWpNKScY?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=NPzXWpNKScY"
+          width="100%"
+          height="100%"
+     
+ 
+          autoplay={true}
+          background={true}
+          loop
+          playing
+          playsinline
+          muted={true}
+          showPortrait
+        //   playIcon={
+        //     <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+              
+      
+      
+      
+        // <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+        //   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      
+        //   <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          
+        //   </div>
+        //   </button>}
+      
+      
+      
+        //     light="../assets/transparent.png"
+          />
+
+{/* <div className="video-background">
+    <div className="video-foreground">
+      <iframe title="Twilightscapes Video" className="" src="https://www.youtube.com/embed/fm-rOnGIIaE?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=fm-rOnGIIaE" frameBorder="0" allowFullScreen></iframe>
+    </div>
+</div> */}
+
+
+
+</div>
+
+
+
+<br /><br /><br />
+
 
 
  </div>{/* end scooch */}
