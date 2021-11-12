@@ -266,7 +266,7 @@ const YouTube = frontmatter.youtuber
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
 
       <div style={{display:'flex', justifyContent:'center'}}>
-      <img src={iconimage} alt="VidSock Logo" width="50%" height="auto" style={{position:'fixed', zIndex:'-1', opacity:'.2'}} />
+      <img src={iconimage} alt="VidSock Logo" width="70%" height="auto" style={{position:'fixed', zIndex:'-1', opacity:'.2'}} />
 </div>
         <div name="container21" className="container21" style={{marginTop:'',}}>
 
@@ -780,7 +780,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 
 </section>
   </div>
-{/* <Pricing /> */}
+<Pricing />
 
 
 <div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
