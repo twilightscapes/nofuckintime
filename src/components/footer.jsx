@@ -3,7 +3,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ScrollAnimation from 'react-animate-on-scroll'
 import Theme from "../components/theme"
 import Consent from "../components/Consent"
-// import Install from "../components/Install-footer"
+import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
 import { FaHandPointDown } from "react-icons/fa"
 import {
@@ -216,6 +216,10 @@ export function Footer() {
 
         <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px 2rem 2rem 2rem', textDecoration:'none'}}>Got Questions?</Link>
 
+
+
+        <Install />
+
  <div >
      
 
@@ -245,7 +249,7 @@ export function Footer() {
 <br />
 <br />
 
-<a href="https://vidsock.com" target="_blank" rel="noreferrer">Web App by VidSock</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a></div>
+<a href="https://vidsock.com" target="_blank" rel="noreferrer">Web App by VidSock</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a></div>
 
 
 
