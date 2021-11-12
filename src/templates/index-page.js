@@ -602,7 +602,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
   <div className="flexcheek" >
     <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInLeft" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px', textAlign:'left'}}>
-        <h2 className="vartext">All VidSocks include:</h2>
+        <h2 className="vartext txtshadow">All VidSocks include:</h2>
           
         <ul className="featurelist" style={{listStyleType:'none'}}>
         <li>User-installable PWA (Progressive Web Apps) which means your site can be installed on any device without the need for expensive and complex App Stores.</li>
