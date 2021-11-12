@@ -15,18 +15,12 @@ const Thanks = () => (
 </Helmet>
     <Seo title="Pricing Options" />
 
-{/* <div className="spacer33"></div>  */}
+<div className="spacer33"></div> 
 
 
 
 
 <Pricing />
-
-
-
-
-
-
 
 
     <div className="spacer33"></div> 

@@ -1029,7 +1029,11 @@ color:#fff !important;
 
 .aboutpage .learnmore{display: none;}
 
-
+.vartext{
+font-size: 1.2rem;
+font-size:clamp(1.2rem, 2vw, 2.2rem);
+  
+}
 
 
 .ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .back{
@@ -1680,7 +1684,7 @@ input[type="checkbox"]:checked ~ .backdrop1 {
   }
 
 .featurelisting h2{
-font-size:170%;
+/* font-size:170%; */
 
 }
 

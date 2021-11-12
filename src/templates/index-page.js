@@ -497,7 +497,11 @@ ready to use = nothing to learn<br />
 fast serverless = no WordPress<br />
 cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
 <br /><br />
-Complete Website Solution<br />
+Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
+
+<span style={{color:'', fontSize:'70%'}}>Complete website with everything needed </span>
+
+{/* <br /><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span> */}
 
 {/* <span style={{color:'', fontSize:'70%'}}>Act Now - get 30 minutes of Customization </span><br /><span style={{color:'#37f011', fontSize:'70%'}}>($50 value)</span> */}
 <br />

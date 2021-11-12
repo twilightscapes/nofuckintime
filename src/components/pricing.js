@@ -20,10 +20,10 @@ const Thanks = () => (
   <div className="flexcheek" >
     <div className="frontcontent">
       <div className="content-inside" style={{padding:'8px', textAlign:'center', color:''}}>
-        <h2>VidSocks - Standard </h2>
+        <h2 className="vartext">VidSocks - Standard </h2>
           
         <ul className="featurelist" style={{listStyleType:'none'}}>
-        <li>Includes 30 minutes of Customization
+        <li>No Customization - Ready to Use!
     
           <br />
           <br />
@@ -31,6 +31,9 @@ const Thanks = () => (
         </li>
         <li className="fluff">Includes 1 hour of Video Resources</li>
         <li className="fluff">AdFree YouTube Tech - No ADs!</li>
+        <li className="fluff">Easy Content Management System (CMS)</li>
+        <li className="fluff">Basic Video Controls - no audio tracks</li>
+        <li className="fluff">Basic Updates Only</li>
 
 </ul>
       </div>
@@ -39,7 +42,7 @@ const Thanks = () => (
   <div className="flexcheek">
     <div className="frontcontent">
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:''}}>
-        <h2>VidSocks - Pro</h2>
+        <h2 className="vartext">VidSocks - Pro</h2>
 
         <ul className="featurelist" style={{listStyleType:'none'}}>
 
@@ -55,6 +58,9 @@ const Thanks = () => (
         <li className="fluff">Includes 1 hour of Video Resources</li>
         <li className="fluff">AdFree YouTube Tech - Advanced audio/video controls and No ADs.</li>
         <li className="fluff">AdFree YouTube Portal - watch all your fav videos with No ADs! Because clicking skip, Sucks!</li>
+        <li className="fluff">Advanced Content Management System</li>
+        <li className="fluff">Advanced Video Controls - with Audio</li>
+        <li className="fluff">Full Updates - All new features included</li>
 
 
 
@@ -66,7 +72,7 @@ const Thanks = () => (
   <div className="flexcheek">
     <div className="frontcontent content-lr">
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:''}}>
-        <h2>VidSocks - E-Com</h2>
+        <h2 className="vartext">VidSocks - E-Com</h2>
         <ul className="featurelist" style={{listStyleType:'none', borderRadius:'52px'}}>
         
 
@@ -80,8 +86,10 @@ const Thanks = () => (
         <li className="fluff">Includes 1 hour of Advanced Resources</li>
         <li className="fluff">AdFree YouTube Tech - Advanced audio/video controls and No ADs.</li>
         <li className="fluff">AdFree YouTube Portal - watch all your fav videos with No ADs! Because clicking skip, Sucks!</li>
+        <li className="fluff">Advanced Content Management System</li>
+        <li className="fluff">Advanced Video Controls - with Audio</li>
         <li className="fluff">Complete Shopify Integration (requires separate Shopify Account)</li>
-
+        <li className="fluff">Full Updates - All new features included</li>
 
 </ul>
       </div>

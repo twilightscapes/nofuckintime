@@ -174,6 +174,80 @@ const AboutPage = ({ data }) => {
 
 
 
+
+
+
+
+<section className="outer section section--gradient fluff" >
+      <div className="container" style={{padding: '2rem 10%'}}>
+
+<h2>Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!</h2>
+
+<br />
+<p>VidSocks use the industry best cloud-based tools for things like user commenting, analytics, and e-commerce.</p>
+
+
+
+
+
+
+
+
+
+
+<div className="flexbutt featurebox" style={{display:'flex', padding:'0', gap:'20px',}}>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">Comments</h3>
+<p>We use CommentBox.io for our commenting needs. Most sites will not exceed their generous 100 comments a month, so in essense you get great comments without ads, for <strong>free</strong>! </p>
+</div>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">Analytics</h3>
+<p>VidSocks have complete integration with Google Analytics. Simply copy and paste your account tracking code into the CMS settings. You can track your website performance for <strong>free</strong>!</p>
+</div>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">E-Commerce</h3>
+<p>VidSocks have complete integration with Shopify - a shopping cart built-in. Since we use their API, you get get FULL Shopify functionality for only <strong>$8.99mo</strong> <br />(normally $28mo)!</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div className="flexbutt featurebox" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px'}}>
+
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">Social Sharing</h3>
+<p>Why pay for plugins just to allow for your users to share your content? VidSocks have social sharing built-in, just switch it on or off.</p>
+</div>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">AdFree YouTube</h3>
+<p>We use AdFree YouTube to remove ads. This means you have complete control of your videos without any ads - that's right, no YouTube ads.</p>
+</div>
+
+<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<h3 className="vartext">NFT Features</h3>
+<p>You can easily setup timers, making it easy to have your own NFT Drop or embed your Foundation or OpenSea into your posts. Just copy the share code and paste.</p>
+</div>
+</div>
+
+
+
+      </div>
+</section>
+
+
 {/* <button onClick="playAnimation()" type="button">Start Animation</button> */}
 
 
