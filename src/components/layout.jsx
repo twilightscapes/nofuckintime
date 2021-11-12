@@ -149,22 +149,22 @@ export function Layout({ children }) {
  </li>
  
 
- {/* <li className="carto" style={{textAlign:''}}>
+ <li className="carto" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/contact/">
 Contact Us
-<span>- we love feedback!</span>
+<span>we love feedback!</span>
 </Link>
-</li> */}
+</li>
 
 
 
     
 
-    <li className="carto" style={{textAlign:''}}>
+    {/* <li className="carto" style={{textAlign:''}}>
               <Link className="navbar-item txtshadow" to="/about/">
                 More About VidSocks
               </Link>
-      </li>
+      </li> */}
 
 
       
