@@ -518,7 +518,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 <Link
             to={frontmatter.cta.ctaLink}
             className="button fire actionJackson"
-            state={{modal: true}}
+            // state={{modal: true}}
             style={{
               cursor:'pointer',
               width:'80%',
