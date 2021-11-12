@@ -716,9 +716,12 @@ E-commerce adds $8.99mo for a Shopify account.</p>
 <ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 <div className="flexbutt featurebox" style={{display:'flex', padding:'0', gap:'20px',}}>
 
+
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext">Comments</h3>
-<p>We use CommentBox.io for our commenting needs. Most sites will not exceed their generous 100 comments a month, so in essense you get great comments without ads, for <strong>FREE</strong>! </p>
+<h3 className="vartext">Cloud Hosting</h3>
+<div style={{}}>Virtually all sites operate month-to-month for <strong>FREE</strong>. 
+          <br />
+          Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a style={{textDecoration:'underline'}} href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >View more information here.</a></div>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
@@ -761,13 +764,11 @@ Get FULL Shopify functionality directly inside your site.
 <h3 className="vartext">NFT Features</h3>
 <p>Setup countdown timers for your own NFT Drops!  <br /> Embed your Foundation or OpenSea into your posts. Just copy and paste the share code.</p>
 </div> */}
-
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #999', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext">Cloud Hosting</h3>
-<div style={{}}>Virtually all sites operate month-to-month for <strong>FREE</strong>. 
-          <br />
-          Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> <a style={{textDecoration:'underline'}} href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >View more information here.</a></div>
+<h3 className="vartext">Comments</h3>
+<p>We use CommentBox.io for our commenting needs. Most sites will not exceed their generous 100 comments a month, so in essense you get great comments without ads, for <strong>FREE</strong>! </p>
 </div>
+
 
 </div>
 </ScrollAnimation>
@@ -790,7 +791,7 @@ Get FULL Shopify functionality directly inside your site.
 <div className="container txtshadow" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'', color:'#fff'}}>
   
-<h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Fastest Websites | Most Features | One-Time Cost
+<h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Fastest Websites | More Features | One-Time Cost
 <br />
 <span style={{fontSize:'80%',}}>Pay once, free to operate, forever - No hidden costs.</span>
 </h2>
