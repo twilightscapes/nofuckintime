@@ -266,7 +266,9 @@ const YouTube = frontmatter.youtuber
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
 
       <div style={{display:'flex', justifyContent:'center'}}>
-      <img src={iconimage} alt="VidSock Logo" width="60%" height="auto" style={{position:'fixed', zIndex:'-1', opacity:'.2'}} />
+      {/* <img src={iconimage} alt="VidSock Logo" width="60%" height="auto" style={{position:'fixed', zIndex:'-1', opacity:'.2'}} /> */}
+
+      <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', zIndex:'-1', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'60%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
 </div>
         <div name="container21" className="container21" style={{marginTop:'',}}>
 
