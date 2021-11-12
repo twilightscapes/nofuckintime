@@ -784,6 +784,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
   <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px'}}>
   <div className="flexcheek" >
     <div className="frontcontent">
+    <ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px', textAlign:'center', color:'#fff'}}>
         <h2 className="vartext txtshadow">VidSocks - Standard </h2>
           
@@ -801,11 +802,13 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
         <li className="fluff">Basic Updates Only</li>
 
 </ul>
-      </div>
+      </div></ScrollAnimation>
     </div>
   </div>
+
   <div className="flexcheek">
     <div className="frontcontent">
+    <ScrollAnimation className="" animateIn="bounceInUp" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
         <h2 className="vartext txtshadow">VidSocks - Pro</h2>
 
@@ -830,12 +833,13 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
 
 
 </ul>
-      </div>
+      </div></ScrollAnimation>
     </div>
   </div>
 
   <div className="flexcheek">
     <div className="frontcontent content-lr">
+    <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
         <h2 className="vartext txtshadow">VidSocks - E-Com</h2>
         <ul className="featurelist" style={{listStyleType:'none', borderRadius:'52px'}}>
@@ -857,7 +861,7 @@ Fastest, Flexible, Innovative, Best SEO &amp; Most Secure Websites<br />
         <li className="fluff">Full Updates - All new features included</li>
 
 </ul>
-      </div>
+      </div></ScrollAnimation>
     </div>
   </div>
   
