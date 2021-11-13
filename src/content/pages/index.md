@@ -25,9 +25,13 @@ youtubestart: "33"
 <br />
 VidSocks are state-of-the-art web apps that feature custom layered multimedia (animation, cutout-photos, video, and audio) crafted together to give the viewer a whole new sensory experience.
 
-<h3 class="letter" style="font-weight:bold; font-size:115%; margin:1rem 0; text-align:center"> Built for artists, photographers, musicians, clubs &amp; restaurants and any other small businesses</h3>
+<h3 class="letter" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border:1px dotted #fff; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses<br /><br /> Have a <strong>BIG</strong> presence on the web.
+<br /><br /> Become a <strong>SEO PowerHouse</strong> on search engines.</h3>
 
- Have a <strong>BIG</strong> presence on the web. VidSocks are designed to give every advantage in <em>maximize your artwork, reduce load times and increase SEO results</em>. <br />
+VidSocks are designed to <em>maximize your artwork, reduce load times and increase SEO results</em>. All while using the latest web tech and features. 
+<br />
+<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >GOOGLE LOVES VIDSOCKS!</h3>
+
 
  <!-- <div style="text-align:center; text-decoration:underline"><a href="/about/">Check out the full list of VidSocks features</a></div>
  <br /> -->
@@ -35,7 +39,7 @@ VidSocks are state-of-the-art web apps that feature custom layered multimedia (a
 
 
 
-<div style="text-align:center;">We guarantee that VidSocks are the fastest portfolio/blog/multimedia progressive web app / websites</div>
+<div style="text-align:;">We guarantee that VidSocks are the fastest, best-designed, well built and search engine sticky web platforms available today.</div>
 
 <br />
 

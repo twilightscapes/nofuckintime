@@ -14,6 +14,8 @@ import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
 // import Pricing from "../components/pricing"
 import styled from "styled-components"
+import LHScores from "../../static/assets/LH-Scores.svg"
+import SparkyIntro from "../../static/assets/sparky-intro.svg"
 import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
@@ -269,6 +271,8 @@ const YouTube = frontmatter.youtuber
       {/* <img src={iconimage} alt="VidSock Logo" width="60%" height="auto" style={{position:'fixed', zIndex:'-1', opacity:'.2'}} /> */}
 
       <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', zIndex:'-1', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'60%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+
+      
 </div>
         <div name="container21" className="container21" style={{marginTop:'',}}>
 
@@ -445,8 +449,11 @@ const YouTube = frontmatter.youtuber
      
 
 
-<StaticImage src="../../static/assets/LIGHTHOUSE-100s-SCORE.png" alt="Lighthouse Scores for VidSocks" width="750" height="176" className="rounded" />
+{/* <StaticImage src="../../static/assets/LIGHTHOUSE-100s-SCORE.png" alt="Lighthouse Scores for VidSocks" width="750" height="176" className="rounded" /> */}
      
+<LHScores />
+
+
      <br />Put our site performance to the test: <a className="button fire" style={{textDecoration:'underline'}} href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://vidsock.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext" target="_blank" rel="noreferrer">check it out for yourself</a> </div>
 
 
@@ -501,12 +508,13 @@ const YouTube = frontmatter.youtuber
   }}
 >
 
-<span  className="neonText" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase'}}>Launch Your Site Today</span><br /><br />
+<span  className="neonText" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase'}}>Launch Your Own Web App</span><br /><br />
 ready to use = nothing to learn<br />
 fast serverless = no WordPress<br />
-cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</sup>
+cloud hosting = free forever<br />
+single price = no monthly fees<br />
 <br /><br />
-<span style={{color:'', fontSize:'70%'}}>Fastest, Flexible, Innovative, Best SEO &amp; Most Secure</span>
+<span style={{color:'', fontSize:'70%'}}>Fast | Flexible | Innovative | Secure</span>
 
 {/* <span style={{color:'', fontSize:'70%'}}>Complete website solutions</span> */}
 
@@ -595,7 +603,9 @@ cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</
 
 
 
-<div className="spacer66"></div>
+{/* <SparkyIntro /> */}
+
+{/* <div className="spacer66"></div> */}
 
 <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px', color:'#fff'}}>
 
@@ -628,7 +638,7 @@ cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</
   <div className="flexcheek">
     <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px'}}>
-        <h2 className="vartext txtshadow">VidSock Features:</h2>
+        <h2 className="vartext txtshadow">VidSocks Features:</h2>
 
         <ul className="featurelist" style={{listStyleType:'none'}}>
 
@@ -680,6 +690,8 @@ cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</
 <li>Contact Form - an integrated contact form on all pages of the your site, that sends everything right to your email inbox.</li>
 
 <li>E-Newsletter Form - Build your email newsletter by allowing peole to easily sign up</li>
+
+<li>Full Privacy Compliance Support (GDPR and CCPA). </li>
 </ul>
       </div></ScrollAnimation>
     </div>
@@ -688,8 +700,8 @@ cloud hosting = free forever!<sup style={{fontSize:'60%', lineHeight:'70%'}}>*</
 </div>
 
 
-
-<div className="spacer66"></div>
+{/* <SparkyIntro /> */}
+{/* <div className="spacer66"></div> */}
 
 
 <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
@@ -784,7 +796,8 @@ Get FULL Shopify functionality directly inside your site.
 {/* <button className="square" onClick={() => console.log('click')}>
        DAMN
      </button> */}
-<div className="spacer66"></div>
+{/* <div className="spacer66"></div> */}
+{/* <SparkyIntro /> */}
 
 <div className="container" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
 <section style={{ display:'',}}>
@@ -851,7 +864,8 @@ Get FULL Shopify functionality directly inside your site.
 </div>
 </ScrollAnimation>
 
-<div className="spacer66"></div>
+{/* <div className="spacer66"></div> */}
+{/* <SparkyIntro /> */}
 
 <div className="container txtshadow" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'', color:'#fff'}}>
@@ -909,7 +923,7 @@ Get FULL Shopify functionality directly inside your site.
     
           {/* <span style={{color:'#37f011'}}>Recommended:</span> */}
           <br />
-          <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">Pro ($899)</a>
+          <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">Pro ($499)</a>
         </li>
         <li className="fluff">Includes 1 hour of Video Resources</li>
         <li className="fluff">AdFree YouTube Tech - Advanced audio/video controls and No ADs.</li>
@@ -937,7 +951,7 @@ Get FULL Shopify functionality directly inside your site.
 
           <br />
           <br />
-          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">E-Com ($1499)</a>
+          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">E-Com ($899)</a>
         </li>
         <li className="fluff">Includes 1 hour of Video Resources</li>
         <li className="fluff">Includes 1 hour of Advanced Resources</li>
