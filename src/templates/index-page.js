@@ -267,13 +267,18 @@ const YouTube = frontmatter.youtuber
 
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
 
-      <div style={{display:'flex', justifyContent:'center'}}>
-      {/* <img src={iconimage} alt="VidSock Logo" width="60%" height="auto" style={{position:'fixed', zIndex:'-1', opacity:'.2'}} /> */}
+      <ScrollAnimation className="" animateIn="" delay={4050} initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'fixed', zIndex:'-1', opacity:'.2', width:'100%'}}>
 
-      <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', zIndex:'-1', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'60%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
 
-      
+      <div style={{display:'flex', justifyContent:'center', width:'100vw'}}>
+      <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'100vh', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
 </div>
+</ScrollAnimation>
+
+
+
+
+
         <div name="container21" className="container21" style={{marginTop:'',}}>
 
 
@@ -454,7 +459,10 @@ const YouTube = frontmatter.youtuber
 <LHScores />
 
 
-     <br />Put our site performance to the test: <a className="button fire" style={{textDecoration:'underline'}} href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://vidsock.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext" target="_blank" rel="noreferrer">check it out for yourself</a> </div>
+     <a target="_blank" rel="noreferrer" className="button fire" style={{textDecoration:''}} href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://vidsock.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext">Verify Our Google Scores</a>
+     <br />Full Google Speed Report (slow to load) 
+     
+     </div>
 
 
 </ScrollAnimation>
