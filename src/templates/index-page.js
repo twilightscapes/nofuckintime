@@ -397,12 +397,15 @@ const YouTube = frontmatter.youtuber
           >
             {frontmatter.tagline}
           </h2>
-  <div className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:'center', color:'#fff', textShadow:'1px 1px 0 #000', padding:'0 4%'}}>
+
+
+
+  <div className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'', alignItems:'baseline', color:'#fff', textShadow:'1px 1px 0 #000', padding:'0 4%'}}>
 
 
 
         
-<div className="flexcheek" >
+<div className="flexcheek" style={{ position:'', top:''}} >
  
  
 
@@ -450,7 +453,7 @@ const YouTube = frontmatter.youtuber
        
      </Link> */}
      
-     <div style={{display: 'flex', flexDirection:'column', justifyContent:'center', padding:'0 0 0 0', fontSize:'.8rem', textAlign:'center'}}>
+     <div style={{display: '', flexDirection:'', justifyContent:'', padding:'0 0 0 0', fontSize:'.8rem', textAlign:'center'}}>
      
 
 
@@ -459,8 +462,8 @@ const YouTube = frontmatter.youtuber
 <LHScores />
 
 
-     <a target="_blank" rel="noreferrer" className="button fire" style={{textDecoration:''}} href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://vidsock.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext">Verify Our Google Scores</a>
-     <br />Full Google Speed Report (slow to load) 
+     <a target="_blank" rel="noreferrer" className="button" style={{textDecoration:''}} href="https://googlechrome.github.io/lighthouse/viewer/?psiurl=https://vidsock.com%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext">Verify Our Google Scores</a>
+     <br />Opens Full Google Speed Report (slow to load) 
      
      </div>
 
@@ -468,16 +471,14 @@ const YouTube = frontmatter.youtuber
 </ScrollAnimation>
  
 
-
-
-
-
-
-
  </div> 
 
 
-      <div className="flexcheek" style={{height:'', minHeight:'', display:'', justifyContent:'', width:'', position:'sticky', top:'0'}}>
+
+
+
+
+      <div className="flexcheek" style={{ position:'sticky', top:'0'}}>
  
  
 

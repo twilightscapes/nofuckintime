@@ -80,7 +80,7 @@ const NewsletterPage = () => (
               className="button"
               
               type="submit"
-              style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.3vw, 1.5rem)', whiteSpace:'nowrap'}}
+              style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.3vw, 1.5rem)', whiteSpace:'nowrap', border:'1px solid hotpink'}}
             >
               Tell Me More!{" "}
               <span className="icon -right">
