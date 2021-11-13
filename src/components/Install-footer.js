@@ -32,7 +32,7 @@ export default class Installer extends React.Component {
        return(
            <div className="no-app">
            <div style={{textAlign:'center', marginTop:'1rem',}}>
-           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>Install the Web App to Access Advanced Tips &amp; Support</button>
+           <button onClick={this.handleShow} style={{border:'1px solid', padding:'1rem', borderRadius:'12px'}}>TURN ON SUPPORT MODE</button>
              
              
              </div>

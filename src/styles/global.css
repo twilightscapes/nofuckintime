@@ -764,12 +764,12 @@ height:0;
 
 .flexbutt {display:flex; }
 
-.flexcheek {width:50%}
+.flexcheek {width:50%; position:sticky; top:0;}
 
 .mobile{display: none; border:0px solid red !important;}
 @media (max-width: 48rem) {
   .flexbutt{flex-direction: column !important;}
-.flexcheek{width:100% !important;}
+.flexcheek{width:100% !important; position:inherit; top:inherit;}
 .mobile{display: block;}
 .dd ul{min-height:inherit !important;}
 /* .flexcheek h1, .mobilefix{ margin-top:2rem !important;} */

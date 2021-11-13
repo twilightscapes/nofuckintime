@@ -478,7 +478,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-      <div className="flexcheek" style={{ position:'sticky', top:'0'}}>
+      <div className="flexcheek">
  
  
 
@@ -616,7 +616,7 @@ single price = no monthly fees<br />
 
 {/* <div className="spacer66"></div> */}
 
-<div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px', color:'#fff'}}>
+<div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px', color:'#fff'}}>
 
 
 
@@ -888,7 +888,7 @@ Get FULL Shopify functionality directly inside your site.
 </section>
   </div>
 
-  <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', gap:'30px'}}>
+  <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px'}}>
 
 
 
