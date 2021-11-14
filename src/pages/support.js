@@ -54,19 +54,19 @@ export default function SupportPage() {
 
     <div className="container" style={{padding:'2rem 12% 0 12%'}}>
        
-    <h1 className="title" style={{fontSize:'40px'}}>You're in the cool club, now...</h1>
+    <h1 className="title" style={{fontSize:'40px', textAlign:'center'}}>VidSocks Support Form</h1>
 
     
     <div className="content">
     
-    <p>Thank you so much for your purchase. You are helping to support an individual artist and encouraging me to keep shooting. People like you make that possible – Thank You!</p>
+    {/* <p>Thank you so much for your purchase. You are helping to support an individual artist and encouraging me to keep shooting. People like you make that possible – Thank You!</p> */}
 
     
     
   
 
-    <br />
-     <p>IMPORTANT NOTE: Please fill in accurate information (especially the email address) as this will be used to activate your new account on VidSock.com and will be used for your login credentials. So you will need access to the email account that you provide. <br />You can find the Redeem Code in the unlocakable content on the NFT on OpenSea.</p>
+  
+     {/* <p>IMPORTANT NOTE: Please fill in accurate information (especially the email address) as this will be used to activate your new account on VidSock.com and will be used for your login credentials. So you will need access to the email account that you provide. <br />You can find the Redeem Code in the unlocakable content on the NFT on OpenSea.</p> */}
 
      {/* <p style={{textAlign:'center'}}><Link className="button" to="/contact/" state={{modal: true}} >Contact</Link></p> */}
 
@@ -77,16 +77,16 @@ export default function SupportPage() {
        </div>
 
 
-       <div className="wrapper">
+       <div className="wrapper" style={{padding:'0 8%'}}>
         <form
           className="contact-form"
           action="/thanks"
-          name="redeemnft"
+          name="support"
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="redeemnft" />
+          <input type="hidden" name="form-name" value="support" />
           <p>
             <label>
               <input type="text" name="name" placeholder="Name" required />
@@ -99,12 +99,15 @@ export default function SupportPage() {
           </p>
           <p>
             <label>
-              <input type="text" name="redeemcode" placeholder="Redemption Code" required />
+              <input type="text" name="supportcode" placeholder="Support Code (if you have one)" required />
             </label>
           </p>
 
           <p>
-          <label htmlFor="attachment" style={{padding: '0', margin: '0', color:'inherit'}}>Upload Logo - (vector .svg or transparent .png is best)</label>
+          {/* <label htmlFor="attachment" style={{padding: '0', margin: '0', color:'inherit'}}>Upload Logo - (vector .svg or transparent .png is best)</label> */}
+
+          <label htmlFor="attachment" style={{padding: '0', margin: '0', color:'inherit'}}></label>
+
                     {/* <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}> */}
                     {/* <label htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
                     ZIP files preferred */}
@@ -120,7 +123,7 @@ export default function SupportPage() {
                       </p>
           <p>
             <label>
-              <textarea name="message" placeholder="Any comments or concerns?" required></textarea>
+              <textarea name="message" placeholder="Your comments" required></textarea>
             </label>
           </p>
           <p className="text-align-right" style={{marginRight:'60px', color:'#fff'}}>
@@ -129,7 +132,7 @@ export default function SupportPage() {
               
               type="submit"
             >
-              Activate VidSock Account{" "}
+              Send Message{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>
