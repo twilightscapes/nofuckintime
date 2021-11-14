@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud=based web apps available today.
+tagline: We guarantee that VidSocks are the fastest, best-designed, well built and search engine sticky web platforms available
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: 
@@ -25,14 +25,17 @@ youtubestart: "33"
 
 
 
-<h2 class="" style="font-weight:bold; font-size:200%; background:rgba(0,0,0,0.30); padding:0; border-radius:12px; text-align:center;
+<h2 class="title1 txtshadow-header" style="font-weight:bold; font-size:200%; background:rgba(0,0,0,0.30); padding:0; margin:0; border-radius:12px; text-align:center;
 filter: drop-shadow(0px 0px 10px #ad04a5); text-shadow:2px 2px 10px #222; margin-top:-50px; position:absolute; width:90%; display:flex; justify-content:center; border:1px solid #000;">
-
-
-
 What are VidSocks?</h2>
+
+
+
 <br />
-VidSocks are state-of-the-art web apps that feature custom layered multimedia (animation, cutout-photos, video, and audio) crafted together to give the viewer a whole new sensory experience.
+
+<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;">
+Web Apps that feature layered multimedia (animation, photos, video, and audio) crafted to give a whole new experience.
+</h3>
 
 <h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses<br /><br /> Your content has a <strong style="font-size:200%">BIG</strong> presence on the web.
 </h3>
@@ -50,7 +53,7 @@ VidSocks are state-of-the-art web apps that feature custom layered multimedia (a
 
 
 
-<div style="text-align:;">We guarantee that VidSocks are the fastest, best-designed, well built and search engine sticky web platforms available today.</div>
+<!-- <div style="text-align:;">We guarantee that VidSocks are the fastest, best-designed, well built and search engine sticky web platforms available today.</div> -->
 
 <br />
 

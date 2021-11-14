@@ -11,7 +11,7 @@ body {
 
 body.homepage, body.bloglist {
   /* transition: all .8s ease-in-out; */
-      background-color: #111;
+      background-color: #111 !important;
         background: linear-gradient(
           68deg,
            rgb(69, 19, 73),

@@ -15,7 +15,8 @@ import { ImPlay } from "react-icons/im"
 // import Pricing from "../components/pricing"
 import styled from "styled-components"
 import LHScores from "../../static/assets/LH-Scores.svg"
-import SparkyIntro from "../../static/assets/sparky-intro.svg"
+import NFTDetails from "../components/nft-details"
+
 import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
@@ -391,9 +392,11 @@ const YouTube = frontmatter.youtuber
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
   <h1 className="title1" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222', lineHeight:'2.5rem'}}>VidSocks Multimedia Websites<br /><span style={{fontSize:'80%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and other small business</span></h1>
+
+  
   <h2
             className="tagline1"
-            style={{padding:'1rem 10% 2rem 10%', color:'#fff', textShadow:'1px 1px 0 #000'}}
+            style={{fontSize:'130%', padding:'1rem 10% 2rem 10%', color:'#fff', textShadow:'1px 1px 0 #000', }}
           >
             {frontmatter.tagline}
           </h2>
@@ -948,10 +951,9 @@ Get FULL Shopify functionality directly inside your site.
           <br />
         </li>
         <li className="fluff">Includes 1 hour of Video Resources</li>
-        <li className="fluff">AdFree YouTube Tech - Advanced audio/video controls and No ADs.</li>
-        <li className="fluff">AdFree YouTube Portal - watch all your fav videos with No ADs! Because clicking skip, Sucks!</li>
+        <li className="fluff">Advanced audio/video control start.stop times.</li>
+        <li className="fluff">AdFree YouTube Portal - watch videos with No ADs!</li>
         <li className="fluff">Advanced Content Management System</li>
-        <li className="fluff">Advanced Video Controls - with Audio</li>
         <li className="fluff">Full Updates - All new features included</li>
 
 
@@ -978,12 +980,11 @@ Get FULL Shopify functionality directly inside your site.
           <br />
           <br />
         </li>
-        <li className="fluff">Includes 1 hour of Video Resources</li>
+        <li className="fluff">Includes 1 hour of Video </li>
         <li className="fluff">Includes 1 hour of Advanced Resources</li>
-        <li className="fluff">AdFree YouTube Tech - Advanced audio/video controls and No ADs.</li>
-        <li className="fluff">AdFree YouTube Portal - watch all your fav videos with No ADs! Because clicking skip, Sucks!</li>
+        <li className="fluff">Advanced audio/video control start.stop times.</li>
+        <li className="fluff">AdFree YouTube Portal - watch videos with No ADs!</li>
         <li className="fluff">Advanced Content Management System</li>
-        <li className="fluff">Advanced Video Controls - with Audio</li>
         <li className="fluff">Complete Shopify Integration (requires separate Shopify Account)</li>
         <li className="fluff">Full Updates - All new features included</li>
 
@@ -1009,10 +1010,11 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
+{/* <div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px', background: 'rgba(0,0,0,0.75)', padding:'1rem 2rem ',
+          backdropFilter: 'blur(4px)', border:'0px double #fff', borderRadius:'12px', textAlign:'', alignSelf:'', color:'#fff' }}>
 
-
-
-
+<NFTDetails />
+</div> */}
 
 
 {/* <div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
