@@ -264,7 +264,7 @@ const YouTube = frontmatter.youtuber
       
       
 
-<div className="no-app">
+<div className="">
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-explain1.jpg" /> */}
 
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
@@ -390,13 +390,13 @@ const YouTube = frontmatter.youtuber
        
 // {frontmatter.title}
 
-<section style={{ display:'', height:'', overflow:''}}>
+<section className="no-app" style={{ display:'', height:'', overflow:''}}>
   <article>
-  <h1 className="title1" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222', lineHeight:'2.5rem'}}>VidSocks Multimedia Websites<br /><span style={{fontSize:'80%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and other small business</span></h1>
+  <h1 className="title1 no-app" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222', lineHeight:'2.5rem'}}>VidSocks Multimedia Websites<br /><span style={{fontSize:'80%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and other small business</span></h1>
 
   
   <h2
-            className="tagline1"
+            className="tagline1 no-app"
             style={{fontSize:'130%', padding:'1rem 10% 2rem 10%', color:'#fff', textShadow:'1px 1px 0 #000', }}
           >
             {frontmatter.tagline}
@@ -625,8 +625,8 @@ cloud hosting = free forever<br />
 {/* <SparkyIntro /> */}
 
 {/* <div className="spacer66"></div> */}
-
-<div id="features" className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px', color:'#fff'}}>
+<div id="features" className="no-app">
+<div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px', color:'#fff'}}>
 
 
 
@@ -717,7 +717,7 @@ cloud hosting = free forever<br />
   </div>
   
 </div>
-
+</div>
 
 {/* <SparkyIntro /> */}
 {/* <div className="spacer66"></div> */}
