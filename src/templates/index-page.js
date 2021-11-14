@@ -815,11 +815,16 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
+<div className="container txtshadow has-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
+
+<SupportBox />
+</div>
+
 
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
 
-<div id="cms" className="container" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
+<div id="cms" className="container no-app" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
 <section style={{ display:'',}}>
   <article>
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks <br />(<span  className="highlight" style={{fontSize:'80%'}}>It's Super Easy!</span>)</h2>
@@ -903,6 +908,8 @@ Get FULL Shopify functionality directly inside your site.
 </section>
   </div>
 
+  <div className="no-app">
+
   <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px'}}>
 
 
@@ -930,6 +937,8 @@ Get FULL Shopify functionality directly inside your site.
       </div></ScrollAnimation>
     </div>
   </div> */}
+
+
 
   <div className="flexcheek">
     <div className="frontcontent">
@@ -994,7 +1003,7 @@ Get FULL Shopify functionality directly inside your site.
       </div></ScrollAnimation>
     </div>
   </div>
-  
+  </div>
 </div>
 
 
@@ -1005,10 +1014,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<div className="container txtshadow has-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
 
-<SupportBox />
-</div>
 
 
 
