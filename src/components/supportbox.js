@@ -14,7 +14,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 const CustomBox = styled.div`
 
-.infomenu11{
+.infomenu{
 
    border-radius:12px;
    filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
@@ -23,15 +23,14 @@ const CustomBox = styled.div`
 
 `
 
-const NFTDetails = () => (
+const SupportBox = () => (
 
 <CustomBox style={{}}>
 
 
-
 <Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'', overflow:'hidden', marginTop:'0',}}>
 
-<h2 style={{fontSize:'240%', textAlign:'center', margin:'0',  background: 'rgba(0,0,0,0.75)', padding:'.5rem', borderRadius:'12px 12px 0 0'}}>VidSocks Details</h2>
+<h2 style={{fontSize:'240%', textAlign:'center', margin:'0',  background: 'rgba(0,0,0,0.75)', padding:'.5rem', borderRadius:'12px 12px 0 0'}}>Support Mode: [ON]</h2>
 
     <TabList style={{width:'100%', background: 'rgba(0,0,0,0.75)', padding:'10px 0 0 0', borderRadius:'0 0 12px 12px', display:'flex', justifyContent:'space-around'}}>
 
@@ -193,4 +192,4 @@ Custom Domain names available
   
 )
 
-export default NFTDetails
+export default SupportBox

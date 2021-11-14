@@ -16,6 +16,7 @@ import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import LHScores from "../../static/assets/LH-Scores.svg"
 import NFTDetails from "../components/nft-details"
+import SupportBox from "../components/supportbox.js"
 
 import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
@@ -902,7 +903,7 @@ Get FULL Shopify functionality directly inside your site.
 </section>
   </div>
 
-  <div className="flexbutt featurelisting no-app" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px'}}>
+  <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px'}}>
 
 
 
@@ -1004,18 +1005,20 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
+<div className="container txtshadow no-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
+
+<SupportBox />
+</div>
 
 
 
 
 
 
-
-{/* <div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px', background: 'rgba(0,0,0,0.75)', padding:'1rem 2rem ',
-          backdropFilter: 'blur(4px)', border:'0px double #fff', borderRadius:'12px', textAlign:'', alignSelf:'', color:'#fff' }}>
+<div className="container txtshadow no-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
 
 <NFTDetails />
-</div> */}
+</div>
 
 
 {/* <div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
