@@ -197,11 +197,11 @@ Contact
 
 
       
-      <li className="carto has-app">
+      {/* <li className="carto has-app">
               <Link title="VidSocks Support" className="navbar-item txtshadow" to="/posts/">
                 Enter Support Mode
               </Link>
-      </li>
+      </li> */}
 
 
 

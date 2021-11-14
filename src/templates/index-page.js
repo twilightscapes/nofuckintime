@@ -263,7 +263,7 @@ const YouTube = frontmatter.youtuber
       
       
 
-
+<div className="no-app">
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-explain1.jpg" /> */}
 
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
@@ -808,16 +808,17 @@ Get FULL Shopify functionality directly inside your site.
 </section>
 </ScrollAnimation>
 
-{/* <button onClick="playAnimation()" type="button">Start Animation</button> */}
+
+</div>
 
 
-{/* <button className="square" onClick={() => console.log('click')}>
-       DAMN
-     </button> */}
+
+
+
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
 
-<div id="cms" className="container no-app" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
+<div id="cms" className="container" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
 <section style={{ display:'',}}>
   <article>
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks <br />(<span  className="highlight" style={{fontSize:'80%'}}>It's Super Easy!</span>)</h2>
@@ -901,7 +902,7 @@ Get FULL Shopify functionality directly inside your site.
 </section>
   </div>
 
-  <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px'}}>
+  <div className="flexbutt featurelisting no-app" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px'}}>
 
 
 
