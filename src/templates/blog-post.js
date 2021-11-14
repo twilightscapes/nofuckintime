@@ -12,7 +12,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Countdown from 'react-countdown'
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
-
+import { Footer } from "../components/footer"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import YouTubed from "../pages/youtube"
@@ -829,6 +829,7 @@ const { iconimage } = useSiteMetadata()
    <br />
    <br />
    </CustomBox>
+   <Footer />
     </Layout>
 
 

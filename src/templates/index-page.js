@@ -5,6 +5,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
+import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
@@ -1067,7 +1068,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-
+<Footer />
     </Layout>
     </CustomBox>
   )

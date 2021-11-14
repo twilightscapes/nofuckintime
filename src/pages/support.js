@@ -5,6 +5,7 @@ import { jsx } from "theme-ui"
 import { Layout } from "../components/layout"
 import { RiSendPlane2Line } from "react-icons/ri"
 import SupportBox from "../components/supportbox.js"
+// import { Footer } from "../components/footer"
 // import { Link } from "gatsby"
 
 // import { StaticImage } from "gatsby-plugin-image"
@@ -142,7 +143,7 @@ export default function SupportPage() {
       </div>
       <br />
       <br /><br />
-    
+      {/* <Footer /> */}
     </Layout>
 
   )
