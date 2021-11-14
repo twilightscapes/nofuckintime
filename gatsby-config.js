@@ -233,8 +233,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `VidSock`,
-        short_name: `NFT`,
+        name: `VidSocks`,
+        short_name: `VidSocks`,
         start_url: `/?user_mode=app`,
         description: `VidSocks`,
         background_color: `#222`,

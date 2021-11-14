@@ -638,12 +638,14 @@ cloud hosting = free forever<br />
         <ul className="featurelist" style={{listStyleType:'none'}}>
         <li>User-installable PWA (Progressive Web Apps) which means your site can be installed on any device without the need for expensive and complex App Stores.</li>
         <li>Hosted on Global Edge Network (the cloud)</li>
+        <li>Automated backups with intant rollbacks to any version.</li>
         <li>FREE - 100GB/Mo Bandwidth</li>
 <li>FREE - 100 Site Form Submits per Mo</li>
 <li>FREE Secured Socket Layer (SSL) Cert (https://)</li>
 <li>Customizable with your own domain name</li>
 <li>Responsive Design, built with React and Gatsby</li>
 <li>Dark / Light Mode (also full support for all web accessibility guidelines)</li>
+
 
 </ul>
       </div></ScrollAnimation>
@@ -677,7 +679,8 @@ cloud hosting = free forever<br />
 
 <li>Drop Timers - Easily create your own Drops. Make posts appear when your NFT drops. Just add the drop date and time</li>
 
-<li>Auction Timers - Make posts disappear when your auction expires</li>
+<li>Your Stuff is SAFE - All stored in native image formats and markdown files that are downloadable at any time</li>
+{/* <li>Auction Timers - Make posts disappear when your auction expires</li> */}
 
 </ul>
       </div></ScrollAnimation>

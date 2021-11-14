@@ -34,7 +34,7 @@ const Contact = ({ data }) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <div className="wrapper fluff">
+      <div className="wrapper fluff" style={{padding:'1rem 4%'}}>
         <br /><br />
         <h1 style={{fontSize:'130%'}}>{frontmatter.title}</h1>
         <div
@@ -43,7 +43,7 @@ const Contact = ({ data }) => {
         />
         </div>
 
-        <div className="wrapper">
+        <div className="wrapper" style={{padding:'1rem 4%'}}>
         <form
           className="contact-form"
           action="/thanks"

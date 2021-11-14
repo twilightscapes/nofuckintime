@@ -47,30 +47,30 @@ const NFTDetails = () => (
    <TabPanel style={{width:'100%', background: 'rgba(0,0,0,0.75)', padding:'2rem', borderRadius:'12px'}}>
             <strong style={{fontSize:'1.5rem'}}>FAQ</strong><br /><br />
 
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>So, what do I get?</p>
+            <p style={{fontWeight:'bold', marginBottom:'0', fontSize:'130%'}}>So, what do I get?</p>
             <p style={{}}>Upon completion of your purchase, you will receive access to your new website. It will be hosted with Netlify.com and thus will have an address like mynewsite.netlify.app <br />You can point any domain names if you wish or purchase a new one to assign it.</p>
 
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What CAN I do with these websites?</p>
+            <p style={{fontWeight:'bold', marginBottom:'0', fontSize:'130%'}}>What CAN I do with these websites?</p>
             <p style={{}}>Almost anything that you want. Use it for your main website to show off your art or your business, you name it! You can also use it only for the blog features by assigning it to a sub domain like blog.existingwebsite.com</p>
 
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What CAN’T I do with these websites?</p>
+            <p style={{fontWeight:'bold', marginBottom:'0', fontSize:'130%'}}>What CAN’T I do with these websites?</p>
             <p style={{}}>Basically, don’t be a Dick or a Karen.
             <br />
             Oh, and don't use it for things like hate speech or starting a terrorist group. Things like that. You can read more about the terms of use on our hosting partners website Netlify.com/terms
             </p>
 
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Do I get the website right away?</p>
+            <p style={{fontWeight:'bold', marginBottom:'0', fontSize:'130%'}}>Do I get the website right away?</p>
             <p style={{}}>Yes, upon completion of transaction and once your account has been created you will receive an email with the details of logging into your new website.</p>
 
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What if I lose the email, or I forget my details?</p>
+            <p style={{fontWeight:'bold', marginBottom:'0', fontSize:'130%'}}>What if I lose the email, or I forget my details?</p>
             <p style={{}}>Once your account is setup with Netlify, your account information no longer passes through us. You can retrieve any of your account details by contacting Netlify.com</p>
 
             
 
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Do I own this website and site copyright or can I claim it as mine?</p>
+            <p style={{fontWeight:'bold', marginBottom:'0', fontSize:'130%'}}>Do I own this website and site copyright or can I claim it as mine?</p>
             <p style={{}}>Yes, you own all of the content that you display on your website and you own the accounts used for the site if there are any (for instance: Netlify account, CodeBox account, Google Analytics account, Shopify account, etc. )
             <br /><br />
-             The intellectual rights and copyrights associated with the website coding and platform itself, are NOT transferred in any way and will remain the property of Todd Lambert.</p>
+             The intellectual rights and copyrights associated with the website coding and platform itself, are NOT transferred in any way and will remain the sole property of VidSocks.</p>
 
             
 
@@ -129,7 +129,7 @@ Custom Domain names available
 <blockquote className="frontquote" style={{width:'70%', margin:'2rem auto'}}>
 <p>Beyond just the best industry-leading performance and visibility, each VidSock Platform has tons of great built-in features such as image zooming, tab panels, custom color options for both light and dark themes. The sites are also user installable PWA (Progressive Web Apps) which means your site can be installed on any device without any need for expensive and complex App Stores.  </p>
 
-<div style={{textAlign:'right', marginRight:'20%', marginTop:'20px'}}> – Todd
+<div style={{textAlign:'right', marginRight:'20%', marginTop:'20px'}}> – 
 </div></blockquote>
 
 
@@ -167,13 +167,14 @@ Custom Domain names available
            Because metered use of a small portion of a specific transaction is very small, they incure very little or no costs in actual usage.<br /> <br />
            Of course, if your site becomes very active or gets swamped with traffic, the metered costs will kick in and you will be billed according to the providers use accounting.<br /> <br />
 
-           VidSocks takes advantage of free-tier user packages available from a variety of Providers:
-           <br />
-           Netlify.com for web hosting<br />
-           Shopify.com for e-commerce and digital products<br />
-           CodeBox.io for web comments<br />
-           YouTu.be for web video and audio
-
+           VidSocks takes advantage of free-tier user packages available from a variety of Providers and you will need to open/have your own accounts here: 
+           <br /><br />
+           <span style={{fontSize:'1.4rem'}}>
+            - <a target="_blank" rel="noreferrer" style={{textDecoration:'underline'}} href="https://netlify.com/">Netlify.com</a> for web hosting <br />(we set this up for you and transfer ownership to you)<br />
+            - <a target="_blank" rel="noreferrer" style={{textDecoration:'underline'}} href="https://shopify.com/">Shopify.com</a> for e-commerce and digital products <br />(only needed for E-commerce package users)<br />
+            - <a target="_blank" rel="noreferrer" style={{textDecoration:'underline'}} href="https://codebox.io/">CodeBox.io</a> for web comments <br />(Only needed if you wish to have visitor comments on your posts)<br />
+            - <a target="_blank" rel="noreferrer" style={{textDecoration:'underline'}} href="https://google.com/">Google.com</a> for Analytics <br />(Only needed if you want to use Google Analytics)
+</span>
            </p>
            
     </TabPanel>
