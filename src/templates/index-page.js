@@ -1005,17 +1005,17 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<div className="container txtshadow no-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
+<div className="container txtshadow has-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
 
 <SupportBox />
 </div>
 
 
 
+<br />
 
 
-
-<div className="container txtshadow no-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
+<div className="container txtshadow" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
 
 <NFTDetails />
 </div>
