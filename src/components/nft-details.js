@@ -35,36 +35,65 @@ const NFTDetails = () => (
 
     <TabList style={{width:'100%', background: 'rgba(0,0,0,0.75)', padding:'10px 0 0 0', borderRadius:'0 0 12px 12px', display:'flex', justifyContent:'space-around'}}>
 
-    <Tab><div className="iconmenu"><CgRatio /><span>Specs</span></div></Tab>
+    <Tab><div className="iconmenu"><CgRatio /><span>FAQ</span></div></Tab>
     <Tab><div className="iconmenu"><RiSecurePaymentLine/><span>Secure</span></div></Tab>
     <Tab><div className="iconmenu"><HiOutlineScale/><span>Standards</span></div></Tab>
       {/* <Tab><div className="iconmenu"><FiCamera /><span>Tech</span></div></Tab> */}
-      <Tab><div className="iconmenu"><CgInfo /><span>FAQ</span></div></Tab>
+      <Tab><div className="iconmenu"><CgInfo /><span>Free Services</span></div></Tab>
       
     </TabList>
  
 
    <TabPanel style={{width:'100%', background: 'rgba(0,0,0,0.75)', padding:'2rem', borderRadius:'12px'}}>
-           <strong style={{fontSize:'1.5rem'}}>VidSocks are the World's <strong>FIRST and ONLY</strong>, 100% dynamically user generated Art!</strong><br /><br />
-           <p>
-           Each VidSock is uniquely created by the artist and then delivered to the world for the art to be altered and changed by its viewers thus making each VidSock truly dynamic.<br /> <br />
-           Depending on the Artist's vision, they can choose to modify your NFT long after it has been minted and delivered to you. The artist has the flexibility to alter, make adjustments, add new items, or even completely change your individual art. Only your VidSock will have these totally unique modifications. Plus, each VidSock can be changed on a weekly basis or on special dates or occasions or even years later! It's up to the Artist and their vision for their VidSock.<br /> <br />
-           Of course, you as the owner of the VidSock, always have the option to view both the new and the original versions at any time.<br /> <br />
+            <strong style={{fontSize:'1.5rem'}}>FAQ</strong><br /><br />
 
-           </p>
-           
+            <p style={{fontWeight:'bold', marginBottom:'0'}}>So, what do I get?</p>
+            <p style={{}}>Upon completion of your purchase, you will receive access to your new website. It will be hosted with Netlify.com and thus will have an address like mynewsite.netlify.app <br />You can point any domain names if you wish or purchase a new one to assign it.</p>
+
+            <p style={{fontWeight:'bold', marginBottom:'0'}}>What CAN I do with these websites?</p>
+            <p style={{}}>Almost anything that you want. Use it for your main website to show off your art or your business, you name it! You can also use it only for the blog features by assigning it to a sub domain like blog.existingwebsite.com</p>
+
+            <p style={{fontWeight:'bold', marginBottom:'0'}}>What CAN’T I do with these websites?</p>
+            <p style={{}}>Basically, don’t be a Dick or a Karen.
+            <br />
+            Oh, and don't use it for things like hate speech or starting a terrorist group. Things like that. You can read more about the terms of use on our hosting partners website Netlify.com/terms
+            </p>
+
+            <p style={{fontWeight:'bold', marginBottom:'0'}}>Do I get the website right away?</p>
+            <p style={{}}>Yes, upon completion of transaction and once your account has been created you will receive an email with the details of logging into your new website.</p>
+
+            <p style={{fontWeight:'bold', marginBottom:'0'}}>What if I lose the email, or I forget my details?</p>
+            <p style={{}}>Once your account is setup with Netlify, your account information no longer passes through us. You can retrieve any of your account details by contacting Netlify.com</p>
+
+            
+
+            <p style={{fontWeight:'bold', marginBottom:'0'}}>Do I own this website and site copyright or can I claim it as mine?</p>
+            <p style={{}}>Yes, you own all of the content that you display on your website and you own the accounts used for the site if there are any (for instance: Netlify account, CodeBox account, Google Analytics account, Shopify account, etc. )
+            <br /><br />
+             The intellectual rights and copyrights associated with the website coding and platform itself, are NOT transferred in any way and will remain the property of Todd Lambert.</p>
+
+            
+
+            
+
+            {/* <p style={{fontWeight:'bold'}}></p>
+            <p style={{}}></p> */}
+
+
+
+
     </TabPanel>
 
 
 
     <TabPanel style={{width:'100%', background: 'rgba(0,0,0,0.75)', padding:'2rem', borderRadius:'12px'}}>
-            <strong style={{fontSize:'1.5rem'}}>Individual VidSocks are just the beginning of the fun.</strong><br /><br />
-            <p>With each winning bid, you not only get to take home your new VidSock, but you will also get a full 90 days of complete access to our new VidSock Video Blog Platform™ (a $120 value - and currently invite only). The very same platform you're visiting right now, You will have your own VidSock Platform allowing you to easily create dynamic VidSocks of your own and share or sell them to the world.
+            <strong style={{fontSize:'1.5rem'}}>The VidSocks platform is virtually hack-proof</strong><br /><br />
+            <p>Because VidSocks are built using a new method of distributed cloud-based hosting of static text and graphic files there is no server to be hacked. VidSocks are pre-rendered web applications that build the site contents ahead of time and then served as basic media files and assembled in the site visitors browser.
             <br />
             <br />
-             If you can blog, you can make stunning video and animated artwork based blogs. Then start selling them and prepare to take over the world! <br />
+             So there are no normal vulnerabilities in running a web server to worry about. There isn't anything for hackers to hack. <br />
             <br />
-            So, do you want to know more about the new VidSock Platform? Well, click the next tab and find out why the VidSock platform is right for you.<br /> <br />
+            
             </p>
 
     </TabPanel>
@@ -131,57 +160,24 @@ Custom Domain names available
     </TabPanel> */}
 
 
-
 <TabPanel style={{width:'100%', background: 'rgba(0,0,0,0.75)', padding:'2rem', borderRadius:'12px'}}>
-            <strong style={{fontSize:'1.5rem'}}>FAQ</strong><br /><br />
+           <strong style={{fontSize:'1.5rem'}}>VidSocks use metered web services wherever possible</strong><br /><br />
+           <p>
+           VidSocks are built using distributed web services and utelize these metered services for delivery<br /> <br />
+           Because metered use of a small portion of a specific transaction is very small, they incure very little or no costs in actual usage.<br /> <br />
+           Of course, if your site becomes very active or gets swamped with traffic, the metered costs will kick in and you will be billed according to the providers use accounting.<br /> <br />
 
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>So, what do I get?</p>
-            <p style={{}}>Upon completion of your purchase, you will receive a ZIP file that contains the original high-resolution image in TIFF format. </p>
+           VidSocks takes advantage of free-tier user packages available from a variety of Providers:
+           <br />
+           Netlify.com for web hosting<br />
+           Shopify.com for e-commerce and digital products<br />
+           CodeBox.io for web comments<br />
+           YouTu.be for web video and audio
 
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What CAN I do with these images?</p>
-            <p style={{}}>Almost anything that you want. Print it for your house or office. Use it as a background or desktop for your phone, computer or TV. Make your holiday cards with it. Print it on your favorite coffee mug. You name it!</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What CAN’T I do with these images?</p>
-            <p style={{}}>Basically, don’t be a Dick or a Karen. I am providing high-quality images that cost considerable amounts of both time and money to acquire. I offer these for a low price to encourage people to enjoy my art. <strong>Please don't share the images on the Internet.</strong></p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Do I get the file right away?</p>
-            <p style={{}}>Yes, upon completion of transaction</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What if I lose the file, can I get another copy?</p>
-            <p style={{}}>Yes, you can retrieve the original file at any time. You will be sent an email with a link to retrieve.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What about prints?</p>
-            <p style={{}}>I do offer exclusive hand-crafted prints for special circumstances - contact me with your needs if you’re interested. Otherwise, I provide two links to the best printer options available on the upper right-side of the photo pages. The links are affiliate links which provide me a portion of any sales, so I encourage you to print with these services.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>NFTs and image exclusivity</p>
-            <p style={{}}>If you wish to buy all rights to an image (exclusivity), all of my images are available for purchase in a non-fungible token version with the transfer of all ownership and the original RAW file included. The image will also be removed from further sales and retired.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Is there a watermark?</p>
-            <p style={{}}>No, it is removed on delivery</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Can I print this for my office?</p>
-            <p style={{}}>Yes.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Can I print multiple copies?</p>
-            <p style={{}}>Yes, if they are for your private use and enjoyment. No, if you want to print them for sale, or for something that relates to being sold or given away.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Can I post it on Facebook or any where online?</p>
-            <p style={{}}>Simply answered, No. These images are for your private use and enjoyment only. I make my living on selling these images, so if you provide that to others, it then hurts my ability to further sell those images.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Do I own this photo, copyright or can I claim it as mine?</p>
-            <p style={{}}>No, the intellectual rights and copyrights are not transferred in any way and will remain the property of Todd Lambert.</p>
-
-            
-
-            
-
-            {/* <p style={{fontWeight:'bold'}}></p>
-            <p style={{}}></p> */}
-
-
-
-
+           </p>
+           
     </TabPanel>
+
 
 
    

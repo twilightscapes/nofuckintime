@@ -819,7 +819,7 @@ Get FULL Shopify functionality directly inside your site.
 
 <SupportBox />
 </div>
-
+<br />
 
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
@@ -841,7 +841,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<ScrollAnimation className="" animateIn="zoomInUp" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation className="no-app" animateIn="zoomInUp" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', margin:'0 4%', filter: 'drop-shadow(0 0 20px #000)', borderRadius:'12px' }}>
 
 
@@ -891,6 +891,13 @@ Get FULL Shopify functionality directly inside your site.
 
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
+
+
+<br /><br />
+<div className="container txtshadow no-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
+
+<NFTDetails />
+</div>
 
 
 
@@ -1021,10 +1028,7 @@ Get FULL Shopify functionality directly inside your site.
 <br />
 
 
-<div className="container txtshadow" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
 
-<NFTDetails />
-</div>
 
 
 {/* <div className="container txtshadow" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
