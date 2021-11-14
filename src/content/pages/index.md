@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: We guarantee that VidSocks are the fastest, best-designed, well built and search engine sticky web platforms available
+tagline: We guarantee that VidSocks are the fastest, best designed, well-built and SEO effective web app platforms available today.
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: 
@@ -34,18 +34,35 @@ What are VidSocks?</h2>
 <br />
 
 <h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;">
-Web Apps that feature layered multimedia (animation, photos, video, and audio) crafted to give a whole new experience.
+Web Apps featuring layered multimedia (animation, photos, video, and audio) crafted to give a whole new experience.
 </h3>
 
-<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses<br /><br /> Your content has a <strong style="font-size:200%">BIG</strong> presence on the web.
+<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses.<br /><br />
+A complete website/app platform with multimedia blog and customizable home page, about and contact pages with integrated contact forms. 
+
 </h3>
+<br />
+
+<!-- <br />
+<br />
 
 
+ VidSocks have a <strong style="font-size:200%">BIG</strong> presence on the web. -->
 
 <!-- <div class="headline" style="text-align:center; font-size:130%;">Maximize Content - Reduce Times - Increase SEO</div> -->
-<br />
-<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >Maximize Content - Reduce Times - Increase SEO<br />GOOGLE LOVES VIDSOCKS!</h3>
-<br />
+
+<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >GOOGLE LOVES VIDSOCKS!</h3>
+
+
+
+<blockquote className="frontquote" style="width:100%; margin:2rem auto;">
+<p>VidSocks produce top-notch SEO-minded content that ranks incredibly well in Google page rankings. The content has custom image previews, custom page titles and descriptions on social media sites which makes sharing things so easy, just click share!  </p>
+
+<div style="text-align:right; margin-right:20%; margin-top:20px;"> – Satisfied VidSock User<br />(Totally non-paid actor)
+</div></blockquote>
+
+
+<h4 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >Max Content - Reduced Times - Increased SEO</h4>
 
  <!-- <div style="text-align:center; text-decoration:underline"><a href="/about/">Check out the full list of VidSocks features</a></div>
  <br /> -->
@@ -53,7 +70,7 @@ Web Apps that feature layered multimedia (animation, photos, video, and audio) c
 
 
 
-<!-- <div style="text-align:;">We guarantee that VidSocks are the fastest, best-designed, well built and search engine sticky web platforms available today.</div> -->
+
 
 <br />
 
