@@ -149,10 +149,39 @@ export function Layout({ children }) {
  </li>
  
 
- <li className="carto" style={{textAlign:''}}>
+ <li className="carto" style={{textAlign:'center'}}>
  <Link className="navbar-item txtshadow" to="/contact/">
-Contact Us
-<span>we love feedback!</span>
+Contact
+{/* <span>we love feedback!</span> */}
+</Link>
+</li>
+
+
+
+<li className="carto" style={{textAlign:''}}>
+ <Link className="navbar-item txtshadow" to="/#features">
+- Amazing Features
+</Link>
+</li>
+
+
+
+<li className="carto" style={{textAlign:''}}>
+ <Link className="navbar-item txtshadow" to="/#costs">
+- Virtually No-Cost
+</Link>
+</li>
+
+<li className="carto" style={{textAlign:''}}>
+ <Link className="navbar-item txtshadow" to="/#cms">
+-Complete Control
+</Link>
+</li>
+
+
+<li className="carto" style={{textAlign:''}}>
+ <Link className="navbar-item txtshadow" to="/#buy">
+- Convinced? BUY IT!
 </Link>
 </li>
 
@@ -177,8 +206,8 @@ Contact Us
 
 
       <li className="carto" style={{textAlign:'center'}}>
-              <Link title="VidSocks Examples" className="navbar-item txtshadow" to="/posts/">
-                - VIEW EXAMPLES -
+              <Link title="VidSocks Examples" className="navbar-item txtshadow neonText" to="/posts/">
+                VIEW EXAMPLES
               </Link>
       </li>
 

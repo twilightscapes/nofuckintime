@@ -477,7 +477,7 @@ p{margin-bottom:2rem;}
 
 
 
-.highlight{color:#FA02B7; font-weight: bold;}
+.highlight{color:#fff; font-weight: bold;}
 
 
 .actionJackson{
@@ -766,7 +766,7 @@ height:0;
 
 .flexcheek {width:50%; position:sticky; top:0;}
 
-.mobile{display: none; border:0px solid red !important;}
+.mobile{display: none; border:0px solid #ad04a5 !important;}
 @media (max-width: 48rem) {
   .flexbutt{flex-direction: column !important;}
 .flexcheek{width:100% !important; position:inherit; top:inherit;}

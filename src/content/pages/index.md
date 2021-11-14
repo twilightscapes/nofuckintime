@@ -21,17 +21,28 @@ youtubemute: "1"
 svgzindex: ""
 youtubestart: "33"
 ---
-<h2 class="letter" style="font-weight:bold; font-size:175%;">What are VidSocks?</h2>
+
+
+
+
+<h2 class="" style="font-weight:bold; font-size:200%; background:rgba(0,0,0,0.30); padding:0; border-radius:12px; text-align:center;
+filter: drop-shadow(0px 0px 10px #ad04a5); text-shadow:2px 2px 10px #222; margin-top:-50px; position:absolute; width:90%; display:flex; justify-content:center; border:1px solid #000;">
+
+
+
+What are VidSocks?</h2>
 <br />
 VidSocks are state-of-the-art web apps that feature custom layered multimedia (animation, cutout-photos, video, and audio) crafted together to give the viewer a whole new sensory experience.
 
-<h3 class="letter" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border:1px dotted #fff; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses<br /><br /> Have a <strong>BIG</strong> presence on the web.
-<br /><br /> Become a <strong>SEO PowerHouse</strong> on search engines.</h3>
+<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses<br /><br /> Your content has a <strong style="font-size:200%">BIG</strong> presence on the web.
+</h3>
 
-VidSocks are designed to <em>maximize your artwork, reduce load times and increase SEO results</em>. All while using the latest web tech and features. 
+
+
+<!-- <div class="headline" style="text-align:center; font-size:130%;">Maximize Content - Reduce Times - Increase SEO</div> -->
 <br />
-<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >GOOGLE LOVES VIDSOCKS!</h3>
-
+<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >Maximize Content - Reduce Times - Increase SEO<br />GOOGLE LOVES VIDSOCKS!</h3>
+<br />
 
  <!-- <div style="text-align:center; text-decoration:underline"><a href="/about/">Check out the full list of VidSocks features</a></div>
  <br /> -->

@@ -271,7 +271,7 @@ const YouTube = frontmatter.youtuber
 
 
       <div style={{display:'flex', justifyContent:'center', width:'100vw'}}>
-      <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'100vh', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+      <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'70%', maxWidth:'', height:'70%', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
 </div>
 </ScrollAnimation>
 
@@ -517,13 +517,19 @@ const YouTube = frontmatter.youtuber
   }}
 >
 
-<span  className="neonText" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase'}}>Launch Your Own Web App</span><br /><br />
+<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>Launch Your Own Web App</span>
+
+<br />
+
 ready to use = nothing to learn<br />
 fast serverless = no WordPress<br />
 cloud hosting = free forever<br />
-single price = no monthly fees<br />
+<span  className="neonText">single price = no monthly fees<br />
+</span>
+<br />
+<span style={{color:'', fontSize:'90%'}}>Fast | Flexible | Innovative | Secure</span>
 <br /><br />
-<span style={{color:'', fontSize:'70%'}}>Fast | Flexible | Innovative | Secure</span>
+<span style={{color:'', fontSize:'70%'}}>Get the details sent to your email:</span>
 
 {/* <span style={{color:'', fontSize:'70%'}}>Complete website solutions</span> */}
 
@@ -616,7 +622,7 @@ single price = no monthly fees<br />
 
 {/* <div className="spacer66"></div> */}
 
-<div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px', color:'#fff'}}>
+<div id="features" className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px', color:'#fff'}}>
 
 
 
@@ -728,10 +734,10 @@ single price = no monthly fees<br />
 
 
 
-<h2 className="letter" style={{fontSize:'240%', textAlign:'center'}}>VidSocks Run Virtually Free Of Cost</h2>
-<p style={{fontSize:'130%', textAlign:'center'}}>Most VidSock customers have no monthly costs.
-<br />
-E-commerce add $8.99mo for Shopify account.</p> 
+<h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>VidSocks Run Virtually Free Of Cost</h2>
+<p style={{fontSize:'150%', textAlign:'center'}}>VidSocks users have <u>NO</u> monthly costs.
+
+</p> 
 
 
 <ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
@@ -808,12 +814,12 @@ Get FULL Shopify functionality directly inside your site.
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
 
-<div className="container" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
+<div id="cms" className="container" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
 <section style={{ display:'',}}>
   <article>
-  <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using the VidSocks CMS (<span  className="highlight">It's Super Easy!</span>)</h2>
+  <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks <br />(<span  className="highlight" style={{fontSize:'80%'}}>It's Super Easy!</span>)</h2>
 
-<p className="txtshadow" style={{fontSize:'120%'}}>You don't need to take classes and read tutorials to be able to quickly edit and add content to your site. The VidSock platform makes it as easy as just answering a couple of questions and filling out some forms. </p>
+<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}>Quickly add content to your site as easy as<br />just answering a couple of questions on a web form. </p>
   {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
 
 
@@ -876,12 +882,16 @@ Get FULL Shopify functionality directly inside your site.
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
 
+
+
+<br /><br />
+
 <div className="container txtshadow" style={{padding:'0 8%', maxWidth:'1024px'}}>
-<section style={{ display:'', color:'#fff'}}>
+<section id="buy" style={{ display:'', color:'#fff'}}>
   
-<h2 className="letter" id="options" style={{fontSize:'200%', textAlign:'center'}}>Fastest Websites | More Features | One-Time Cost
+<h2 className="headline" id="options" style={{fontSize:'200%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites | More Features | One-Time Cost
 <br />
-<span style={{fontSize:'80%',}}>Pay once, free to operate, forever - <span  className="highlight">No hidden costs</span>.</span>
+<span style={{fontSize:'80%',}}>Pay ONCE, FREE to operate forever<br /> <span  className="highlight">No hidden costs</span>.</span>
 </h2>
 {/* <p>Whatever your needs are, we have you covered. Both packages receive the base setup while the E-commerce package adds integration with Shopify. </p> */}
 
@@ -920,7 +930,7 @@ Get FULL Shopify functionality directly inside your site.
     <div className="frontcontent">
     <ScrollAnimation className="" animateIn="bounceInUp" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
-        <h2 className="vartext txtshadow letter" style={{fontSize:'200%'}}>VidSocks - Pro</h2>
+        <h2 className="vartext txtshadow letter" style={{fontSize:'200%', border:'3px solid #fff', borderRadius:'12px', background: 'rgba(0,0,0,10)',}}>VidSocks - Pro</h2>
 
         <ul className="featurelist" style={{listStyleType:'none'}}>
 
@@ -932,7 +942,10 @@ Get FULL Shopify functionality directly inside your site.
     
           {/* <span style={{color:'#37f011'}}>Recommended:</span> */}
           <br />
-          <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">Pro ($499)</a>
+          <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire" style={{border:'1px solid hotpink'}}>Pro ($499)</a>
+
+          <br />
+          <br />
         </li>
         <li className="fluff">Includes 1 hour of Video Resources</li>
         <li className="fluff">AdFree YouTube Tech - Advanced audio/video controls and No ADs.</li>
@@ -952,7 +965,7 @@ Get FULL Shopify functionality directly inside your site.
     <div className="frontcontent content-lr">
     <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
-        <h2 className="vartext txtshadow letter" style={{fontSize:'200%'}}>VidSocks - E-Com</h2>
+      <h2 className="vartext txtshadow letter" style={{fontSize:'200%', border:'3px solid #fff', borderRadius:'12px', background: 'rgba(0,0,0,10)',}}>VidSocks - E-Com</h2>
         <ul className="featurelist" style={{listStyleType:'none', borderRadius:'52px'}}>
         
 
@@ -960,7 +973,10 @@ Get FULL Shopify functionality directly inside your site.
 
           <br />
           <br />
-          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire">E-Com ($899)</a>
+          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire" style={{border:'1px solid hotpink'}}>E-Com ($899)</a>
+
+          <br />
+          <br />
         </li>
         <li className="fluff">Includes 1 hour of Video Resources</li>
         <li className="fluff">Includes 1 hour of Advanced Resources</li>
