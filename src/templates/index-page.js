@@ -722,7 +722,7 @@ cloud hosting = free forever<br />
 {/* <div className="spacer66"></div> */}
 
 
-<ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+<ScrollAnimation className="no-app" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 
 <section className="outer section section--gradient fluff txtshadow" >
       <div className="container" style={{padding: '2rem 10%', color:'#fff'}}>
@@ -817,7 +817,7 @@ Get FULL Shopify functionality directly inside your site.
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
 
-<div id="cms" className="container" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
+<div id="cms" className="container no-app" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
 <section style={{ display:'',}}>
   <article>
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks <br />(<span  className="highlight" style={{fontSize:'80%'}}>It's Super Easy!</span>)</h2>
@@ -889,7 +889,7 @@ Get FULL Shopify functionality directly inside your site.
 
 <br /><br />
 
-<div className="container txtshadow" style={{padding:'0 8%', maxWidth:'1024px'}}>
+<div className="container txtshadow no-app" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section id="buy" style={{ display:'', color:'#fff'}}>
   
 <h2 className="headline" id="options" style={{fontSize:'200%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites | More Features | One-Time Cost

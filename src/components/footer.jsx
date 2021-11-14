@@ -23,9 +23,8 @@ import {
   RiBehanceFill,
 } from "react-icons/ri"
 import { FaWordpress, FaVk } from "react-icons/fa"
-
-
 import { Link } from "gatsby"
+
 import {
   footerStyle,
   // links,
@@ -206,8 +205,9 @@ export function Footer() {
 
 {/* </ScrollAnimation> */}
 
-    <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'0', position:'relative'}}>
-    <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', position:'absolute', top:'-80px', margin:'1rem auto', color:'#fff'}} />
+    <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'2rem', position:'relative'}}>
+
+    <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', position:'absolute', top:'-80px', margin:'1rem auto', color:'#fff',}} />
     <Consent />
 
     

@@ -149,7 +149,7 @@ export function Layout({ children }) {
  </li>
  
 
- <li className="carto" style={{textAlign:'center'}}>
+ <li className="carto no-app" style={{textAlign:'center'}}>
  <Link className="navbar-item txtshadow" to="/contact/">
 Contact
 {/* <span>we love feedback!</span> */}
@@ -158,7 +158,7 @@ Contact
 
 
 
-<li className="carto" style={{textAlign:''}}>
+<li className="carto no-app" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/#features">
 - Amazing Features
 </Link>
@@ -166,20 +166,20 @@ Contact
 
 
 
-<li className="carto" style={{textAlign:''}}>
+<li className="carto no-app" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/#costs">
 - Virtually No-Cost
 </Link>
 </li>
 
-<li className="carto" style={{textAlign:''}}>
+<li className="carto no-app" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/#cms">
 -Complete Control
 </Link>
 </li>
 
 
-<li className="carto" style={{textAlign:''}}>
+<li className="carto no-app" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/#buy">
 - Convinced? BUY IT!
 </Link>
