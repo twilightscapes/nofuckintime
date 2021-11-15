@@ -1,9 +1,9 @@
 ---
 slug: /
-tagline: We guarantee that VidSocks are the fastest, best designed, well-built and SEO effective web app platforms available today.
+tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud=based web apps available today.
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
-underlayImage: 
+underlayImage: ""
 showInfo: true
 youtuber: ""
 youtubeautostart: "1"
@@ -43,13 +43,7 @@ A complete website/app platform with multimedia blog and customizable home page,
 </h3>
 <br />
 
-<!-- <br />
-<br />
 
-
- VidSocks have a <strong style="font-size:200%">BIG</strong> presence on the web. -->
-
-<!-- <div class="headline" style="text-align:center; font-size:130%;">Maximize Content - Reduce Times - Increase SEO</div> -->
 
 <h3 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >GOOGLE LOVES VIDSOCKS!</h3>
 
@@ -64,8 +58,7 @@ A complete website/app platform with multimedia blog and customizable home page,
 
 <h4 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >Max Content - Reduced Times - Increased SEO</h4>
 
- <!-- <div style="text-align:center; text-decoration:underline"><a href="/about/">Check out the full list of VidSocks features</a></div>
- <br /> -->
+
 
 
 
@@ -75,4 +68,3 @@ A complete website/app platform with multimedia blog and customizable home page,
 <br />
 
 
-<!-- ## With each winning bid, you not only get to take home your new VidSock, but you will also get your very own copy of the <strong>VidSock NFT Marketing Platform™</strong> to make and market your own VidSocks. -->

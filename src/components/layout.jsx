@@ -1,7 +1,7 @@
 import * as React from "react"
 import { SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
-// import { Footer } from "./footer"
+import { Footer } from "./footer"
 import { Seo } from "./seo"
 import '@fontsource/roboto'
 import { Link } from 'gatsby-plugin-modal-routing-3'
@@ -365,7 +365,7 @@ Contact Me<span>Ordering Questions?</span>
       
 
 
-      {/* <Footer /> */}
+      <Footer />
       
       </>
     </div>

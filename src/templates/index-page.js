@@ -5,7 +5,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
-import { Footer } from "../components/footer"
+// import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
@@ -246,12 +246,12 @@ const YouTube = frontmatter.youtuber
   <body className="homepage" />
   
 </Helmet>
-{/* <Seo
-          title={`VidSock - Video Multimedia NFT Platform`}
-          description={`Create, display and market your NFTs with VidSock`}
+<Seo
+          title={`VidSocks - Video Multimedia Platform`}
+          description={`Create, display and market your content with VidSocks`}
           image={'https://vidsock.com/default-og-image.jpg'}
-        /> */}
-       <Seo
+        />
+       {/* <Seo
         title={frontmatter.title}
         description={
           frontmatter.description ? frontmatter.description : excerpt
@@ -261,7 +261,7 @@ const YouTube = frontmatter.youtuber
 
    image={ siteUrl + getSrc(frontmatter.featuredImage) }
 
-      />
+      /> */}
       
       
 
@@ -1068,7 +1068,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<Footer />
+
     </Layout>
     </CustomBox>
   )
