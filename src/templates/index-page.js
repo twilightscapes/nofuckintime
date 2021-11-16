@@ -522,17 +522,17 @@ const YouTube = frontmatter.youtuber
   }}
 >
 
-<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>Launch Your Own Web App</span>
+<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>Launch Your Web App</span>
 
 <br />
 
 ready to use = nothing to learn<br />
-fast serverless = no WordPress<br />
+serverless = no WordPress<br />
 cloud hosting = free forever<br />
 <span  className="neonText">single price = no monthly fees<br />
 </span>
 <br />
-<span style={{color:'', fontSize:'90%'}}>Fast | Flexible | Innovative | Secure</span>
+<span style={{color:'', fontSize:'90%'}}>Fast | Flexible | Features | Secure</span>
 <br /><br />
 <span style={{color:'', fontSize:'70%'}}>Get the details sent to your email:</span>
 
@@ -667,9 +667,11 @@ cloud hosting = free forever<br />
 
 
 
-<li>Edit website settings, Add Google Analytics change colors, settings, logos, etc all from within the CMS.</li>
+
 
 <li>Customize all content of included Homepage, About and Contact page. Add / Modify / Delete blog posts.</li>
+
+<li>Edit website settings, Add Google Analytics change colors, settings, logos, etc all from within the CMS.</li>
 
 
 <li>Hide/Show Comments, Social Sharing, or User-interactivity (youtube video changer) on a post-by-post basis</li>
@@ -702,6 +704,12 @@ cloud hosting = free forever<br />
 
 <li>100% SEO Optimized - Google LOVES VidSocks. </li>
 
+<li>Full Privacy Compliance Support (GDPR and CCPA). </li>
+
+<li>Contact Form - an integrated contact form on all pages of the your site, that sends everything right to your email inbox.</li>
+
+<li>E-Newsletter Form - Build your email newsletter by allowing peole to easily sign up</li>
+
 <li>Social Media Icons - link to all your sites and allow users to easily share your content</li>
 
 <li>OpenGraph structured data - all of site is structured to be shared with high quality image links on social sites</li>
@@ -710,11 +718,11 @@ cloud hosting = free forever<br />
 
 <li>XML Sitemaps - Your entire site is automatically indexed and links provided to search engines.</li>
 
-<li>Contact Form - an integrated contact form on all pages of the your site, that sends everything right to your email inbox.</li>
 
-<li>E-Newsletter Form - Build your email newsletter by allowing peole to easily sign up</li>
 
-<li>Full Privacy Compliance Support (GDPR and CCPA). </li>
+
+
+
 </ul>
       </div></ScrollAnimation>
     </div>
@@ -727,9 +735,9 @@ cloud hosting = free forever<br />
 {/* <div className="spacer66"></div> */}
 
 
-<ScrollAnimation className="no-app" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+<ScrollAnimation animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 
-<section className="outer section section--gradient fluff txtshadow" >
+<section className="outer section section--gradient fluff txtshadow no-app" >
       <div className="container" style={{padding: '2rem 10%', color:'#fff'}}>
 
 {/* <h2>Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!</h2>
@@ -742,7 +750,7 @@ cloud hosting = free forever<br />
 
 
 
-<h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>VidSocks Run Virtually Free Of Cost</h2>
+<h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>VidSocks Run Free Of Cost</h2>
 <p style={{fontSize:'150%', textAlign:'center'}}>VidSocks users have <u>NO</u> monthly costs.
 
 </p> 
@@ -821,7 +829,7 @@ Get FULL Shopify functionality directly inside your site.
 
 <div className="container txtshadow has-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
 
-{/* <SupportBox /> */}
+<SupportBox />
 </div>
 <br />
 
@@ -833,7 +841,7 @@ Get FULL Shopify functionality directly inside your site.
   <article>
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks <br />(<span  className="highlight" style={{fontSize:'80%'}}>It's Super Easy!</span>)</h2>
 
-<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}>Quickly add content to your site as easy as<br />just answering a couple of questions on a web form. </p>
+<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}>Quickly add content to your site by<br />just answering a couple of questions on a web form. </p>
   {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
 
 
@@ -897,12 +905,6 @@ Get FULL Shopify functionality directly inside your site.
 {/* <SparkyIntro /> */}
 
 
-<br /><br />
-<div className="container txtshadow no-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
-
-{/* <NFTDetails /> */}
-</div>
-
 
 
 <br /><br />
@@ -910,9 +912,32 @@ Get FULL Shopify functionality directly inside your site.
 <div className="container txtshadow no-app" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section id="buy" style={{ display:'', color:'#fff'}}>
   
-<h2 className="headline" id="options" style={{fontSize:'200%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites | More Features | One-Time Cost
+<h2 className="headline" id="options" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Got Questions?
 <br />
-<span style={{fontSize:'80%',}}>Pay ONCE, FREE to operate forever<br /> <span  className="highlight">No hidden costs</span>.</span>
+{/* <span style={{fontSize:'80%',}}>Pay ONCE + FREE to operate</span><br />  */}
+<span  className="highlight">We've Got Answers</span>.
+</h2>
+
+
+
+<br /><br />
+<div className="container txtshadow no-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
+
+<NFTDetails />
+</div>
+
+
+</section>
+</div>
+
+<br /><br />
+
+<div className="container txtshadow no-app" style={{padding:'0 8%', maxWidth:'1024px'}}>
+<section id="buy" style={{ display:'', color:'#fff'}}>
+  
+<h2 className="headline" id="options" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites  More Features  One-Time Cost
+<br /><br />
+<span style={{fontSize:'80%',}}>Pay ONCE + FREE to operate<br /> <span  className="highlight">No hidden costs</span>.</span>
 </h2>
 {/* <p>Whatever your needs are, we have you covered. Both packages receive the base setup while the E-commerce package adds integration with Shopify. </p> */}
 

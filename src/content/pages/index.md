@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud=based web apps available today.
+tagline: VidSocks are the next generation of multimedia blogging built into the fastest cloud-based web apps.
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: ""
@@ -50,13 +50,13 @@ A complete website/app platform with multimedia blog and customizable home page,
 
 
 <blockquote className="frontquote" style="width:100%; margin:2rem auto;">
-<p>VidSocks produce top-notch SEO-minded content that ranks incredibly well in Google page rankings. The content has custom image previews, custom page titles and descriptions on social media sites which makes sharing things so easy, just click share!  </p>
+<p>VidSocks produce top-notch SEO-minded content that ranks incredibly well in Google page rankings. Everything has custom image previews, page titles and descriptions on social media sites which makes sharing things so easy, just click to share!  </p>
 
 <div style="text-align:right; margin-right:20%; margin-top:20px;"> – Satisfied VidSock User<br />(Totally non-paid actor)
 </div></blockquote>
 
 
-<h4 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >Max Content - Reduced Times - Increased SEO</h4>
+<h4 class="" style="color:#fff; font-weight:bold; font-size:112%; text-align:center;" >Max Content - Reduce Times - Increase SEO</h4>
 
 
 
