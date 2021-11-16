@@ -918,7 +918,8 @@ Get FULL Shopify functionality directly inside your site.
 <span style={{fontSize:'80%', textAlign:'center', textShadow:'0 2px 2px #000'}}>We've Got Answers</span>
 </h2>
 
-
+</section>
+</div>
 
 <br /><br />
 <div className="container txtshadow no-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
@@ -927,8 +928,7 @@ Get FULL Shopify functionality directly inside your site.
 </div>
 
 
-</section>
-</div>
+
 
 <br /><br />
 
