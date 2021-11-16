@@ -2279,6 +2279,21 @@ background-position:center 70px;
 
 
 
+
+@media (max-width: 58rem) {
+
+  #greeting{
+    order:2;
+  }
+  #intro{
+    order:1;
+  }
+
+}
+
+
+
+
 #logointro{
   padding-top:80vh;
 }

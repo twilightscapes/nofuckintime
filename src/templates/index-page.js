@@ -393,7 +393,7 @@ const YouTube = frontmatter.youtuber
 
 <section className="no-app" id="logointro" style={{ display:'', height:'', overflow:'', paddingTop:''}}>
   <article>
-  <h1 className="title1 no-app" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>VidSocks Multimedia Websites<br /><span style={{fontSize:'80%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and other small business</span></h1>
+  <h1 className="title1 no-app" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>VidSocks Web Apps<br /><span style={{fontSize:'68%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and  small business</span></h1>
 
 
   <h2
@@ -405,12 +405,12 @@ const YouTube = frontmatter.youtuber
 
 <br />
 
-  <div className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'', alignItems:'baseline', color:'#fff', textShadow:'1px 1px 0 #000', padding:'0 4%'}}>
+  <div id="" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'', alignItems:'baseline', color:'#fff', textShadow:'1px 1px 0 #000', padding:'0 4%'}}>
 
 
 
         
-<div className="flexcheek" style={{ position:'', top:''}} >
+<div id="greeting" className="flexcheek" style={{ position:'', top:'', order:''}} >
  
  
 
@@ -483,7 +483,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-      <div className="flexcheek">
+      <div id="intro" className="flexcheek" style={{order:''}}>
  
  
 
@@ -910,12 +910,12 @@ Get FULL Shopify functionality directly inside your site.
 <br /><br />
 
 <div className="container txtshadow no-app" style={{padding:'0 8%', maxWidth:'1024px'}}>
-<section id="buy" style={{ display:'', color:'#fff'}}>
+<section style={{ display:'', color:'#fff'}}>
   
-<h2 className="headline" id="options" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Got Questions?
+<h2 className="headline" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Got Questions?
 <br />
 {/* <span style={{fontSize:'80%',}}>Pay ONCE + FREE to operate</span><br />  */}
-<span  className="highlight">We've Got Answers</span>.
+<span style={{fontSize:'80%', textAlign:'center', textShadow:'0 2px 2px #000'}}>We've Got Answers</span>
 </h2>
 
 
@@ -935,9 +935,9 @@ Get FULL Shopify functionality directly inside your site.
 <div className="container txtshadow no-app" style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section id="buy" style={{ display:'', color:'#fff'}}>
   
-<h2 className="headline" id="options" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites  More Features  One-Time Cost
+<h2 className="headline" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites<br />More Features<br />One-Time Cost
 <br /><br />
-<span style={{fontSize:'80%',}}>Pay ONCE + FREE to operate<br /> <span  className="highlight">No hidden costs</span>.</span>
+<span style={{fontSize:'70%',}}>Pay ONCE + FREE to operate<br /> <span  className="highlight">No hidden costs</span>.</span>
 </h2>
 {/* <p>Whatever your needs are, we have you covered. Both packages receive the base setup while the E-commerce package adds integration with Shopify. </p> */}
 
