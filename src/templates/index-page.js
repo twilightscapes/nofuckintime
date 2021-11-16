@@ -3,9 +3,9 @@
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { getSrc } from "gatsby-plugin-image"
+// import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
-// import { Footer } from "../components/footer"
+import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
@@ -240,6 +240,7 @@ const YouTube = frontmatter.youtuber
 
   
   return (
+    
     <CustomBox style={{}}>
     <Layout>
     <Helmet>
@@ -247,8 +248,8 @@ const YouTube = frontmatter.youtuber
   
 </Helmet>
 <Seo
-          title={`VidSocks - Video Multimedia Platform`}
-          description={`Create, display and market your content with VidSocks`}
+          title={`Best website design builder for artists, photographers, musicians, clubs/restaurants and other small businesses`}
+          description={`Next-gen multimedia video blogs inside the fastest cloud-based web platform`}
           image={'https://vidsock.com/default-og-image.jpg'}
         />
        {/* <Seo
@@ -391,13 +392,13 @@ const YouTube = frontmatter.youtuber
        
 // {frontmatter.title}
 
-<section className="no-app" id="logointro" style={{ display:'', height:'', overflow:'', paddingTop:''}}>
+<section className="" id="logointro" style={{ display:'', height:'', overflow:'', paddingTop:''}}>
   <article>
-  <h1 className="title1 no-app" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>VidSocks Web Apps<br /><span style={{fontSize:'68%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and  small business</span></h1>
+  <h1 className="title1 " style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>VidSocks Web Apps<br /><span style={{fontSize:'68%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and  small business</span></h1>
 
 
   <h2
-            className="title1 no-app"
+            className="title1 "
             style={{fontSize:'', padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222' }}
           >
             {frontmatter.tagline}
@@ -626,7 +627,7 @@ cloud hosting = free forever<br />
 {/* <SparkyIntro /> */}
 
 {/* <div className="spacer66"></div> */}
-<div id="features" className="no-app">
+<div id="features" className="">
 <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px', color:'#fff'}}>
 
 
@@ -737,7 +738,7 @@ cloud hosting = free forever<br />
 
 <ScrollAnimation animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 
-<section className="outer section section--gradient fluff txtshadow no-app" >
+<section className="outer section section--gradient fluff txtshadow" >
       <div className="container" style={{padding: '2rem 10%', color:'#fff'}}>
 
 {/* <h2>Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!</h2>
@@ -836,7 +837,7 @@ Get FULL Shopify functionality directly inside your site.
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
 
-<div id="cms" className="container no-app" style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
+<div id="cms" className="container " style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
 <section style={{ display:'',}}>
   <article>
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks <br />(<span  className="highlight" style={{fontSize:'80%'}}>It's Super Easy!</span>)</h2>
@@ -853,7 +854,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<ScrollAnimation className="no-app" animateIn="zoomInUp" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation className="" animateIn="zoomInUp" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', margin:'0 4%', filter: 'drop-shadow(0 0 20px #000)', borderRadius:'12px' }}>
 
 
@@ -909,7 +910,7 @@ Get FULL Shopify functionality directly inside your site.
 
 <br /><br />
 
-<div className="container txtshadow no-app" style={{padding:'0 8%', maxWidth:'1024px'}}>
+<div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'', color:'#fff'}}>
   
 <h2 className="headline" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Got Questions?
@@ -922,7 +923,7 @@ Get FULL Shopify functionality directly inside your site.
 </div>
 
 <br /><br />
-<div className="container txtshadow no-app" style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
+<div className="container txtshadow " style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
 
 <NFTDetails />
 </div>
@@ -932,7 +933,7 @@ Get FULL Shopify functionality directly inside your site.
 
 <br /><br />
 
-<div className="container txtshadow no-app" style={{padding:'0 8%', maxWidth:'1024px'}}>
+<div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section id="buy" style={{ display:'', color:'#fff'}}>
   
 <h2 className="headline" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites<br />More Features<br />One-Time Cost
@@ -944,7 +945,7 @@ Get FULL Shopify functionality directly inside your site.
 </section>
   </div>
 
-  <div className="no-app">
+  <div className="">
 
   <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px'}}>
 
@@ -1093,9 +1094,11 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-
+<Footer />
     </Layout>
     </CustomBox>
+    
+    
   )
 }
 
