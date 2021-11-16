@@ -274,7 +274,7 @@ const YouTube = frontmatter.youtuber
 
 
       <div style={{display:'flex', justifyContent:'center', width:'100vw'}}>
-      <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'70%', maxWidth:'', height:'70%', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+      <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'55%', maxWidth:'', height:'55%', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
 </div>
 </ScrollAnimation>
 
@@ -294,7 +294,7 @@ const YouTube = frontmatter.youtuber
 
 
         
-<section style={{ display:'',}}>
+<section style={{ }}>
   <article>
 
   <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
@@ -391,19 +391,19 @@ const YouTube = frontmatter.youtuber
        
 // {frontmatter.title}
 
-<section className="no-app" style={{ display:'', height:'', overflow:''}}>
+<section className="no-app" id="logointro" style={{ display:'', height:'', overflow:'', paddingTop:''}}>
   <article>
-  <h1 className="title1 no-app" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222', lineHeight:'2.5rem'}}>VidSocks Multimedia Websites<br /><span style={{fontSize:'80%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and other small business</span></h1>
+  <h1 className="title1 no-app" style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>VidSocks Multimedia Websites<br /><span style={{fontSize:'80%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and other small business</span></h1>
 
-  
+
   <h2
-            className="tagline1 no-app"
-            style={{fontSize:'130%', padding:'1rem 10% 2rem 10%', color:'#fff', textShadow:'1px 1px 0 #000', }}
+            className="title1 no-app"
+            style={{fontSize:'', padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222' }}
           >
             {frontmatter.tagline}
           </h2>
 
-
+<br />
 
   <div className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'', alignItems:'baseline', color:'#fff', textShadow:'1px 1px 0 #000', padding:'0 4%'}}>
 

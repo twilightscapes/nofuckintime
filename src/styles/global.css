@@ -2279,6 +2279,19 @@ background-position:center 70px;
 
 
 
+#logointro{
+  padding-top:80vh;
+}
+
+@media (max-width: 58rem) {
+
+  #logointro{
+    padding-top:300px;
+  }
+
+}
+
+
       /* .intro:before, .poof{
         position:absolute;
         top:0;
