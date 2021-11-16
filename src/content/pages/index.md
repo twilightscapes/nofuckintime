@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: Next-gen multimedia video blogs inside the fastest cloud-based web platform
+tagline: Next-gen multimedia websites & fast web apps
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: ""

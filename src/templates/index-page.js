@@ -394,7 +394,7 @@ const YouTube = frontmatter.youtuber
 
 <section className="" id="logointro" style={{ display:'', height:'', overflow:'', paddingTop:''}}>
   <article>
-  <h1 className="title1 " style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>VidSocks Web Apps<br /><span style={{fontSize:'68%',}}>Best website design builder for artists, photographers, musicians, clubs / restaurants and  small business</span></h1>
+  <h1 className="title1 " style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>Multimedia Web Apps<br /><span style={{fontSize:'68%',}}>Best website design builder for dynamic small businesses</span></h1>
 
 
   <h2
@@ -625,7 +625,7 @@ cloud hosting = free forever<br />
 <ScrollAnimation animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 
 <section className="outer section section--gradient fluff txtshadow" >
-      <div className="container" style={{padding: '2rem 10%', color:'#fff'}}>
+      <div className="container" style={{padding: '0 10%', color:'#fff'}}>
 
 {/* <h2>Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!</h2>
 
@@ -640,7 +640,7 @@ cloud hosting = free forever<br />
 
 
 
-<div id="costs" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'2rem 0 2rem 0', width:'100%'}}>
+<div id="costs" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'0 0 2rem 0', width:'100%'}}>
               
               
 
@@ -1001,7 +1001,7 @@ Get FULL Shopify functionality directly inside your site.
 </section>
 </div>
 
-<br /><br />
+
 <div className="container txtshadow " style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
 
 <NFTDetails />
@@ -1010,12 +1010,12 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<br /><br />
+
 
 <div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section id="buy" style={{ display:'', color:'#fff'}}>
 
-<div id="buy" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'2rem 0 2rem 0', width:'100%'}}>
+<div id="buy" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'0 0 0 0', width:'100%'}}>
               
               
 
