@@ -640,13 +640,13 @@ cloud hosting = free forever<br />
 
 
 
-<div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'2rem 0 2rem 0', width:'100%'}}>
+<div id="costs" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'2rem 0 2rem 0', width:'100%'}}>
               
               
 
               <p style={{fontSize:'150%', textAlign:'center', margin:'2rem 0 0 0'}}>VidSocks users have <u>NO</u> monthly costs</p>
               
-              <div style={{display:'flex', border:'1px solid #666', padding:'1rem', margin:'0 3% 0 3%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'800px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+              <div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
               
                 <span style={{fontSize:'3rem', color:'white', transform:'rotate()', lineHeight:'100%'}}>Our Web Apps </span>
               
@@ -914,12 +914,15 @@ Get FULL Shopify functionality directly inside your site.
 <div id="cms" className="container " style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
 <section style={{ display:'',}}>
   <article>
-  <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks <br />(<span  className="highlight" style={{fontSize:'80%'}}>It's Super Easy!</span>)</h2>
 
-<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}>Quickly add content to your site<br />just answer a few questions on a web form. </p>
+  <div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+
+  <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks </h2>
+
+<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}><br />(<span  className="highlight" style={{fontSize:'80%'}}>It's Super Easy!</span>)<br />Quickly add content to your site<br />just answer a few questions on a web form. </p>
   {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
 
-
+</div>
   </article>
 
   </section>
@@ -987,12 +990,14 @@ Get FULL Shopify functionality directly inside your site.
 <div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section style={{ display:'', color:'#fff'}}>
   
+<div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+
 <h2 className="headline" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Got Questions?
 <br />
 {/* <span style={{fontSize:'80%',}}>Pay ONCE + FREE to operate</span><br />  */}
 <span style={{fontSize:'80%', textAlign:'center', textShadow:'0 2px 2px #000'}}>We've Got Answers</span>
 </h2>
-
+</div>
 </section>
 </div>
 
@@ -1009,11 +1014,25 @@ Get FULL Shopify functionality directly inside your site.
 
 <div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px'}}>
 <section id="buy" style={{ display:'', color:'#fff'}}>
-  
-<h2 className="headline" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites<br />More Features<br />One-Time Cost
+
+<div id="buy" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'2rem 0 2rem 0', width:'100%'}}>
+              
+              
+
+              <p style={{fontSize:'150%', textAlign:'center', margin:'2rem 0 0 0'}}>VidSocks users have <u>NO</u> monthly costs</p>
+              
+              <div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+              <h2 className="headline" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites<br />More Features<br />One-Time Cost
 <br /><br />
 <span style={{fontSize:'70%',}}>Pay ONCE + FREE to operate<br /> <span  className="highlight">No hidden costs</span>.</span>
 </h2>
+
+                </div>
+
+
+</div>
+  
+
 {/* <p>Whatever your needs are, we have you covered. Both packages receive the base setup while the E-commerce package adds integration with Shopify. </p> */}
 
 </section>
