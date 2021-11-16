@@ -622,120 +622,6 @@ cloud hosting = free forever<br />
 
 
 
-
-
-{/* <SparkyIntro /> */}
-
-{/* <div className="spacer66"></div> */}
-<div id="features" className="">
-<div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px', color:'#fff'}}>
-
-
-
-  <div className="flexcheek" >
-    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInLeft" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-      <div className="content-inside" style={{padding:'8px', textAlign:'left'}}>
-        <h2 className="vartext txtshadow">All VidSocks include:</h2>
-          
-        <ul className="featurelist" style={{listStyleType:'none'}}>
-        <li>User-installable PWA (Progressive Web Apps) which means your site can be installed on any device without the need for expensive and complex App Stores.</li>
-        <li>Hosted on Global Edge Network (the cloud)</li>
-        <li>Automated backups with intant rollbacks to any version.</li>
-        <li>FREE - 100GB/Mo Bandwidth</li>
-<li>FREE - 100 Site Form Submits per Mo</li>
-<li>FREE Secured Socket Layer (SSL) Cert (https://)</li>
-<li>Customizable with your own domain name</li>
-<li>Responsive Design, built with React and Gatsby</li>
-<li>Dark / Light Mode (also full support for all web accessibility guidelines)</li>
-
-
-</ul>
-      </div></ScrollAnimation>
-    </div>
-  </div>
-
-
-
-
-
-  <div className="flexcheek">
-    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-      <div className="content-inside" style={{padding:'8px'}}>
-        <h2 className="vartext txtshadow">VidSocks Features:</h2>
-
-        <ul className="featurelist" style={{listStyleType:'none'}}>
-
-
-
-
-
-
-<li>Customize all content of included Homepage, About and Contact page. Add / Modify / Delete blog posts.</li>
-
-<li>Edit website settings, Add Google Analytics change colors, settings, logos, etc all from within the CMS.</li>
-
-
-<li>Hide/Show Comments, Social Sharing, or User-interactivity (youtube video changer) on a post-by-post basis</li>
-
-<li>Control YouTube videos with starting/stopping times, loop, mute, etc..</li>
-
-<li>PWA Exclusive Content (make some of your content only available to your site's user base - great to boost engagement!)</li>
-
-<li>Drop Timers - Easily create your own Drops. Make posts appear when your NFT drops. Just add the drop date and time</li>
-
-<li>Your Stuff is SAFE - All stored in native image formats and markdown files that are downloadable at any time</li>
-{/* <li>Auction Timers - Make posts disappear when your auction expires</li> */}
-
-</ul>
-      </div></ScrollAnimation>
-    </div>
-  </div>
-
-  
-
-
-
-  <div className="flexcheek">
-    <div className="frontcontent content-lr">
-    <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
-      <div className="content-inside">
-        <h2 className="vartext txtshadow">More Features:</h2>
-        <ul className="featurelist" style={{listStyleType:'none'}}>
-        
-
-<li>100% SEO Optimized - Google LOVES VidSocks. </li>
-
-<li>Full Privacy Compliance Support (GDPR and CCPA). </li>
-
-<li>Contact Form - an integrated contact form on all pages of the your site, that sends everything right to your email inbox.</li>
-
-<li>E-Newsletter Form - Build your email newsletter by allowing peole to easily sign up</li>
-
-<li>Social Media Icons - link to all your sites and allow users to easily share your content</li>
-
-<li>OpenGraph structured data - all of site is structured to be shared with high quality image links on social sites</li>
-
-<li>Twitter Cards meta - Your pages will look great when shared on Twitter</li>
-
-<li>XML Sitemaps - Your entire site is automatically indexed and links provided to search engines.</li>
-
-
-
-
-
-
-</ul>
-      </div></ScrollAnimation>
-    </div>
-  </div>
-  
-</div>
-</div>
-
-{/* <SparkyIntro /> */}
-{/* <div className="spacer66"></div> */}
-
-
 <ScrollAnimation animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
 
 <section className="outer section section--gradient fluff txtshadow" >
@@ -751,10 +637,33 @@ cloud hosting = free forever<br />
 
 
 
-<h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>VidSocks Run Free Of Cost</h2>
+
+
+
+<div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'2rem 0 2rem 0', width:'100%'}}>
+              
+              
+
+              <p style={{fontSize:'150%', textAlign:'center', margin:'2rem 0 0 0'}}>VidSocks users have <u>NO</u> monthly costs</p>
+              
+              <div style={{display:'flex', border:'1px solid #666', padding:'1rem', margin:'0 3% 0 3%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'800px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+              
+                <span style={{fontSize:'3rem', color:'white', transform:'rotate()', lineHeight:'100%'}}>Our Web Apps </span>
+              
+                <span style={{width:'70%', fontSize:'40px', color:'var(--primary-color)', lineHeight:'100%'}}>
+                OPERATE<br /> FOR FREE
+                </span>
+              </div>
+
+              <p style={{fontSize:'150%', textAlign:'center', margin:'0 0 0 0'}}>built to use free cloud-based services</p>
+
+              </div>
+
+
+{/* <h2 id="costs" className="letter" style={{fontSize:'240%', textAlign:'center'}}>VidSocks Run Free Of Cost</h2>
 <p style={{fontSize:'150%', textAlign:'center'}}>VidSocks users have <u>NO</u> monthly costs.
 
-</p> 
+</p>  */}
 
 
 <ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
@@ -823,6 +732,171 @@ Get FULL Shopify functionality directly inside your site.
 </ScrollAnimation>
 
 
+
+
+{/* <SparkyIntro /> */}
+
+{/* <div className="spacer66"></div> */}
+<div id="features" className="">
+<div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px', color:'#fff'}}>
+
+
+
+  <div className="flexcheek" >
+    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInLeft" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+      <div className="content-inside" style={{padding:'8px', textAlign:'left'}}>
+        
+      <h2
+  className="title1 txtshadow-header"
+  style={{
+
+
+   position: 'relative',
+    textAlign: 'center', 
+    float: 'none',
+    margin:'0 0 10px 0',
+    padding:'0',
+    fontSize:'1.7rem'
+  }}
+>
+
+<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>VidSocks include:</span></h2>
+          
+        <ul className="featurelist" style={{listStyleType:'none'}}>
+        <li>User-installable PWA (Progressive Web Apps) which means your site can be installed on any device without the need for expensive and complex App Stores.</li>
+        <li>Hosted on Global Edge Network (the cloud)</li>
+        <li>Automated backups with intant rollbacks to any version.</li>
+        <li>FREE - 100GB/Mo Bandwidth</li>
+<li>FREE - 100 Site Form Submits per Mo</li>
+<li>FREE Secured Socket Layer (SSL) Cert (https://)</li>
+<li>Customizable with your own domain name</li>
+<li>Responsive Design, built with React and Gatsby</li>
+<li>Dark / Light Mode (also full support for all web accessibility guidelines)</li>
+
+
+</ul>
+      </div></ScrollAnimation>
+    </div>
+  </div>
+
+
+
+
+
+  <div className="flexcheek">
+    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+      <div className="content-inside" style={{padding:'8px'}}>
+        {/* <h2 className="vartext txtshadow">VidSocks Features:</h2> */}
+        <h2
+  className="title1 txtshadow-header"
+  style={{
+
+
+   position: 'relative',
+    textAlign: 'center', 
+    float: 'none',
+    margin:'0 0 10px 0',
+    padding:'0',
+    fontSize:'1.7rem'
+  }}
+>
+
+<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>VidSocks Features:</span></h2>
+
+        <ul className="featurelist" style={{listStyleType:'none'}}>
+
+
+
+
+
+
+<li>Customize all content of included Homepage, About and Contact page. Add / Modify / Delete blog posts.</li>
+
+<li>Edit website settings, Add Google Analytics change colors, settings, logos, etc all from within the CMS.</li>
+
+
+<li>Hide/Show Comments, Social Sharing, or User-interactivity (youtube video changer) on a post-by-post basis</li>
+
+<li>Control YouTube videos with starting/stopping times, loop, mute, etc..</li>
+
+<li>PWA Exclusive Content (make some of your content only available to your site's user base - great to boost engagement!)</li>
+
+<li>Drop Timers - Easily create your own Drops. Make posts appear when your NFT drops. Just add the drop date and time</li>
+
+<li>Your Stuff is SAFE - All stored in native image formats and markdown files that are downloadable at any time</li>
+{/* <li>Auction Timers - Make posts disappear when your auction expires</li> */}
+
+</ul>
+      </div></ScrollAnimation>
+    </div>
+  </div>
+
+  
+
+
+
+  <div className="flexcheek">
+    <div className="frontcontent content-lr">
+    <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+      <div className="content-inside" style={{padding:'8px'}}>
+        
+
+        <h2
+  className="title1 txtshadow-header"
+  style={{
+
+
+   position: 'relative',
+    textAlign: 'center', 
+    float: 'none',
+    margin:'0 0 10px 0',
+    padding:'0',
+    fontSize:'1.7rem'
+  }}
+>
+
+<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>More Features:</span></h2>
+
+
+        <ul className="featurelist" style={{listStyleType:'none'}}>
+        
+
+<li>100% SEO Optimized - Google LOVES VidSocks. </li>
+
+<li>Full Privacy Compliance Support (GDPR and CCPA). </li>
+
+<li>Contact Form - an integrated contact form on all pages of the your site, that sends everything right to your email inbox.</li>
+
+<li>E-Newsletter Form - Build your email newsletter by allowing peole to easily sign up</li>
+
+<li>Social Media Icons - link to all your sites and allow users to easily share your content</li>
+
+<li>OpenGraph structured data - all of site is structured to be shared with high quality image links on social sites</li>
+
+<li>Twitter Cards meta - Your pages will look great when shared on Twitter</li>
+
+<li>XML Sitemaps - Your entire site is automatically indexed and links provided to search engines.</li>
+
+
+
+
+
+
+</ul>
+      </div></ScrollAnimation>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+{/* <SparkyIntro /> */}
+{/* <div className="spacer66"></div> */}
+
+
+
+
+
 </div>
 
 
@@ -842,7 +916,7 @@ Get FULL Shopify functionality directly inside your site.
   <article>
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks <br />(<span  className="highlight" style={{fontSize:'80%'}}>It's Super Easy!</span>)</h2>
 
-<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}>Quickly add content to your site by<br />just answering a couple of questions on a web form. </p>
+<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}>Quickly add content to your site<br />just answer a few questions on a web form. </p>
   {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
 
 
