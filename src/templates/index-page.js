@@ -523,7 +523,7 @@ const YouTube = frontmatter.youtuber
   }}
 >
 
-<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>Launch Your Web App</span>
+<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>Launch Your Web App</span>
 
 <br />
 
@@ -760,7 +760,7 @@ Get FULL Shopify functionality directly inside your site.
   }}
 >
 
-<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>VidSocks include:</span></h2>
+<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>VidSocks include:</span></h2>
           
         <ul className="featurelist" style={{listStyleType:'none'}}>
         <li>User-installable PWA (Progressive Web Apps) which means your site can be installed on any device without the need for expensive and complex App Stores.</li>
@@ -801,7 +801,7 @@ Get FULL Shopify functionality directly inside your site.
   }}
 >
 
-<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>VidSocks Features:</span></h2>
+<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>VidSocks Features:</span></h2>
 
         <ul className="featurelist" style={{listStyleType:'none'}}>
 
@@ -855,7 +855,7 @@ Get FULL Shopify functionality directly inside your site.
   }}
 >
 
-<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>More Features:</span></h2>
+<span  className="" style={{fontSize:'100%', fontWeight:'bold', textTransform:'uppercase', background:'rgba(0,0,0,0.30)', borderRadius:'12px', marginTop:'-40px', position:'absolute', width:'100%', display:'flex', justifyContent:'center', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000' }}>More Features:</span></h2>
 
 
         <ul className="featurelist" style={{listStyleType:'none'}}>
