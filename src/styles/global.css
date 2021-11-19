@@ -39,7 +39,7 @@ a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after {
   font-weight:bold;
 }
 
-footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, a.noext:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after{
+footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after{
 content: none;
 }
 /* END External Links */

@@ -533,9 +533,9 @@ cloud hosting = free forever<br />
 <span  className="neonText">single price = no monthly fees<br />
 </span>
 <br />
-<span style={{color:'', fontSize:'90%'}}>Fast | Flexible | Secure | Features</span>
+<span style={{color:'', fontSize:'90%'}}>Fast | Flexible | Features | Secure</span>
 <br /><br />
-<span style={{color:'', fontSize:'70%'}}>Get all the details sent to your email:</span>
+<span style={{color:'', fontSize:'70%'}}>Get the details sent to your email:</span>
 
 {/* <span style={{color:'', fontSize:'70%'}}>Complete website solutions</span> */}
 
@@ -1098,7 +1098,7 @@ Get FULL Shopify functionality directly inside your site.
     
           {/* <span style={{color:'#37f011'}}>Recommended:</span> */}
           <br />
-          <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire noext" style={{border:'1px solid hotpink'}}>Pro ($499)</a>
+          <a href="https://secure3.myshopify.com/cart/41327989391520:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire" style={{border:'1px solid hotpink'}}>Pro ($499)</a>
 
           <br />
           <br />
@@ -1128,7 +1128,7 @@ Get FULL Shopify functionality directly inside your site.
 
           <br />
           <br />
-          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire noext" style={{border:'1px solid hotpink'}}>E-Com ($899)</a>
+          <a href="https://secure3.myshopify.com/cart/41328406036640:1?channel=buy_button" target="_blank" rel="noreferrer" className="button fire" style={{border:'1px solid hotpink'}}>E-Com ($899)</a>
 
           <br />
           <br />
