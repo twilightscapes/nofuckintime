@@ -671,7 +671,7 @@ cloud hosting = free forever<br />
 
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext" style={{color:'#22afd3'}}>Cloud Hosting</h3>
+<h3 className="vartext letter" style={{color:'#22afd3', fontWeight:'700'}}>Cloud Hosting</h3>
 
 <div style={{}}>Virtually all sites operate month-to-month for <strong className="highlight">FREE</strong>. 
   <br />
@@ -683,14 +683,14 @@ cloud hosting = free forever<br />
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext"  style={{color:'#22afd3'}}>Analytics</h3>
+<h3 className="vartext letter" style={{color:'#22afd3', fontWeight:'700'}}>Analytics</h3>
 <p>Complete integration with Google Analytics. Simply copy and paste your account tracking code into the CMS settings. 
   <br />
   <br />Track your website performance for <strong className="highlight">FREE</strong>!</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext" style={{color:'#22afd3'}}>E-Commerce</h3>
+<h3 className="vartext letter" style={{color:'#22afd3', fontWeight:'700'}}>E-Commerce</h3>
 <p>Complete Shopify API integration with Shopify shopping cart built-in.
 Get FULL Shopify functionality directly inside your site.
 <br />
@@ -712,12 +712,12 @@ Get FULL Shopify functionality directly inside your site.
 
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext" style={{color:'#22afd3'}}>Social Sharing</h3>
+<h3 className="vartext letter" style={{color:'#22afd3', fontWeight:'700'}}>Social Sharing</h3>
 <p>Why pay for plugins just to allow for your users to share your content? Social sharing is built-in, along with other great features. <br /><br />All INCLUDED for <strong className="highlight">FREE</strong>.</p>
 </div>
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext" style={{color:'#22afd3'}}>AdFree YouTube</h3>
+<h3 className="vartext letter" style={{color:'#22afd3', fontWeight:'700'}}>AdFree YouTube</h3>
 <p>We use AdFree YouTube to remove ads. This means you have complete control of your videos without any ads.
   
   <br /><br />AdFree YouTube <strong className="highlight">FREE!</strong></p>
@@ -728,7 +728,7 @@ Get FULL Shopify functionality directly inside your site.
 <p>Setup countdown timers for your own NFT Drops!  <br /> Embed your Foundation or OpenSea into your posts. Just copy and paste the share code.</p>
 </div> */}
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
-<h3 className="vartext" style={{color:'#22afd3'}}>Comments</h3>
+<h3 className="vartext letter" style={{color:'#22afd3', fontWeight:'700'}}>Comments</h3>
 <p>We use CommentBox.io and with their generous 100 comments a month.
   
   <br /><br /><strong className="highlight" style={{color:''}}>FREE!</strong> Comments without ads</p>
