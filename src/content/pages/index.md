@@ -1,9 +1,9 @@
 ---
 slug: /
-tagline: Next-gen multimedia websites & web apps
+tagline: Next-Gen Multimedia Websites & Web Apps
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
-underlayImage: ""
+underlayImage: "/assets/transparent.png"
 showInfo: true
 youtuber: ""
 youtubeautostart: "1"
@@ -27,7 +27,7 @@ youtubestart: "33"
 
 <h2 class="title1 txtshadow-header" style="font-weight:bold; font-size:200%; background:rgba(0,0,0,0.30); padding:0; margin:0; border-radius:12px; text-align:center;
 filter: drop-shadow(0px 0px 10px #ad04a5); text-shadow:2px 2px 10px #222; margin-top:-50px; position:absolute; width:90%; display:flex; justify-content:center; border:1px solid #000;">
-What are VidSocks?</h2>
+What Are VidSocks?</h2>
 
 <br />
 <h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;">
