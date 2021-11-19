@@ -3,7 +3,7 @@ slug: /
 tagline: Next-gen multimedia websites & fast web apps
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
-underlayImage: ""
+underlayImage: "/assets/transparent.png"
 showInfo: true
 youtuber: ""
 youtubeautostart: "1"
