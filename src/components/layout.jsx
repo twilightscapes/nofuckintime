@@ -181,7 +181,7 @@ Contact
 
 <li className="carto no-app" style={{textAlign:''}}>
  <Link className="navbar-item txtshadow" to="/#buy">
-- Convinced? BUY IT!
+- Buy One Now!
 </Link>
 </li>
 
