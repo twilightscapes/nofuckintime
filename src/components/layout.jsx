@@ -205,7 +205,7 @@ Contact
 
 
 
-      <li className="carto" style={{textAlign:'center'}}>
+      <li className="carto" style={{textAlign:'center', paddingTop:'1rem'}}>
               <Link title="VidSocks Examples" className="navbar-item txtshadow neonText" to="/posts/">
                 VIEW EXAMPLES
               </Link>

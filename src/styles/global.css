@@ -27,6 +27,24 @@ body.homepage, body.bloglist {
 body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Roboto,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-display: swap; /* font-style: italic; */ }
 
 
+a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after {
+  content: " \2348";
+  text-decoration: none !important;
+  font-size: 115%;
+  margin-left:6px;
+  border:none !important;
+  text-shadow: 2px 1px 0px #000;
+  filter: none !important;
+  color:#fff;
+  font-weight:bold;
+}
+
+footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after{
+content: none;
+
+}
+
+
 
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -47,10 +65,10 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 .bug{
 max-width:80px !important;
 height: auto !important;
-opacity:.2;
+opacity:.8;
 }
 .bug:hover{
-  opacity:.6 !important;
+  opacity:.9 !important;
   }
 
 
@@ -1031,8 +1049,7 @@ color:#fff !important;
 
 .vartext{
 font-size: 1.2rem;
-font-size:clamp(1.2rem, 2vw, 2.2rem);
-  
+font-size:#9c34c5
 }
 
 
