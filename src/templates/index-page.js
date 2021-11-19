@@ -654,7 +654,7 @@ cloud hosting = free forever<br />
                 </span>
               </div>
 
-              <p style={{fontSize:'150%', textAlign:'center', margin:'0 0 0 0'}}>Uses FREE Cloud Based Services</p>
+              <p style={{fontSize:'150%', textAlign:'center', margin:'0 0 0 0'}}>FREE Cloud Based Services</p>
 
               </div>
 
