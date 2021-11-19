@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Off The Grid
+title: (Photo Animation Example) Off The Grid - A mesmorizing animation blending an eerie soundtrack over unique animated photography 
 slug: /offthegrid
 date: 2021-10-12 10:43
 description: When you fall off the grid

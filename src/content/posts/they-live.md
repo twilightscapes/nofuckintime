@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: They Live Among Us
+title: (Multimedia Example) They Live Among Us - a fun interactive art piece that makes you feel like you are part of the movie
 slug: /they-live
 date: 2021-10-21 10:43
 description: One of my favorites from John Carpenter

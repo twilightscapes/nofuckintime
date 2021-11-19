@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Transcendence - A groovy animation floating through the cosmos. One of the best illustrations of what can be done with the VidSocks multimedia blog capabilities
+title: (Multimedia Example) Transcendence - A groovy animation floating through the cosmos. One of the best illustrations of what can be done with the VidSocks multimedia blog capabilities
 slug: /transcendence
 date: 2021-10-23 10:43
 description: A groovy animation floating through the cosmos

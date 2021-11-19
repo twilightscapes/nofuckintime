@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Hytron uses the lastest VidSocks platform upgrades to further its reach with its customers
+title: Hytronmfg.com uses the lastest VidSocks platform upgrades to further its reach with its customers
 slug: /hytron-uses-vidsocks
 date: 2021-11-16 10:43
 description: Hytron uses the lastest VidSocks platform upgrades to further its reach with its customers

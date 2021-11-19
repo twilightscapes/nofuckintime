@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Twilightscapes shows how VidSocks can help create a WOW portfolio that sells! 
+title: Twilightscapes.com shows how VidSocks can help create a WOW portfolio that sells! 
 slug: /twilightscapes
 date: 2021-11-19 10:43
 description: Twilightscapes uses Shopify Integration and custom VidSocks setup

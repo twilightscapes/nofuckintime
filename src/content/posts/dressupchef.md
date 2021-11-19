@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Dress Up Chef uses VidSocks E-commerce integration with Shopify to launch their new product line
+title: DressUpChef.com uses VidSocks E-commerce integration with Shopify to launch their new product line
 slug: /dress-up-chef
 date: 2021-11-18 10:43
 description: Dress Up Chef uses VidSocks E-commerce

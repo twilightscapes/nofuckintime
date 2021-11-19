@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Alien Egg Farm - a foreign rock tumbling through time. An incredible animation made exclusively with VidSocks
+title: (Animation Example) Alien Egg Farm - a foreign rock tumbling through time. An incredible animation made exclusively with VidSocks
 slug: /alien-egg-farm
 date: 2021-10-26 10:43
 description: What it's like to live on a foreign rock tumbling through time.
