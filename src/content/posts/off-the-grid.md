@@ -19,7 +19,7 @@ isnftforsale: "1"
 svgzindex: "0"
 comments: "1"
 shareable: "1"
-underlayImage: 
+underlayImage: ""
 featuredImage: /assets/Experiences-Header-5.jpg
 svgImage: /assets/OffTheGrid.svg
 nftlink: ""
