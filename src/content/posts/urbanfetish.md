@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Urban Fetish establishes it's dominant image with the help of VidSocks innovative features meant for photography portfolios
+title: Urban Fetish establishes it's BOLD image with the help of VidSocks innovative portfolio features for photographers
 slug: /twilightscapes
 date: 2021-11-13 10:43
 description: Urban Fetish creates its brand with VidSocks setup

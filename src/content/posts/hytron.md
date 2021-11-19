@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: Hytron Manufacturing uses the lastest VidSocks platform upgrades
+title: Hytron uses the lastest VidSocks platform upgrades to further its reach with its customers
 slug: /hytron-uses-vidsocks
 date: 2021-11-16 10:43
-description: Hytron uses the lastest VidSocks platform upgrades
+description: Hytron uses the lastest VidSocks platform upgrades to further its reach with its customers
 youtuber: ""
 youtuber2: ""
 youtubeshoworiginal: ""
@@ -28,9 +28,7 @@ nftlink: ""
 nftdrop: "2021-10-31T14:00:00"
 nftredeem:
 ---
-Across the country, hours were blocked out each night for prime time programming. 
+A long-term customer, Hytron Manufacturing has always been a fun project to work on. 
 
-The nightly programming was received through broadcast signals that were picked up by your over-the-air television antenna. 
-
-Deep inside this signal it has been rumored there was a program that was reprogramming the viewers minds. Tuning viewers into the broadcasting meant they could be accessed remotely and triggered to turn on and execute secret agendas unknown to the viewer. 
+Always having a fascination with high tech machinery and robots - getting to build one of the industry greats, the pleasure was all ours!
 

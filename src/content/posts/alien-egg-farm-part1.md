@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Alien Egg Farm
+title: Alien Egg Farm - a foreign rock tumbling through time. An incredible animation made exclusively with VidSocks
 slug: /alien-egg-farm
 date: 2021-10-26 10:43
 description: What it's like to live on a foreign rock tumbling through time.
@@ -35,5 +35,5 @@ nftredeem: ""
 
 <p className="">It seems like around every corner there is another scene that appears to be from a distant planet. These "alien eggs" are actually weathered limestone.</p>
 
-<p className="letter">Single Shot - No PS - long exposure</p>
+
 
