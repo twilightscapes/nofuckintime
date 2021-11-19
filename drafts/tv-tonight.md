@@ -28,9 +28,12 @@ nftlink: ""
 nftdrop: "2021-10-31T14:00:00"
 nftredeem:
 ---
-Across the country, hours were blocked out each night for prime time programming. 
 
-The nightly programming was received through broadcast signals that were picked up by your over-the-air television antenna. 
 
-Deep inside this signal it has been rumored there was a program that was reprogramming the viewers minds. Tuning viewers into the broadcasting meant they could be accessed remotely and triggered to turn on and execute secret agendas unknown to the viewer. 
+
+The premier aerospace manufacturer Hytron has been a customer for many years. 
+
+They are now part of the VidSocks platform and love it.
+
+
 
