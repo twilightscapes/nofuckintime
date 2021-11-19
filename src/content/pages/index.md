@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: Next-gen multimedia websites & web apps
+tagline: Next-gen multimedia websites & fast web apps
 featuredImage: /assets/vidsock-home-header.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: ""
@@ -30,34 +30,33 @@ filter: drop-shadow(0px 0px 10px #ad04a5); text-shadow:2px 2px 10px #222; margin
 What are VidSocks?</h2>
 
 
+
+<br />
+
 <h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;">
-A complete website/app platform with multimedia blog and customizable home page, about and contact pages with integrated contact forms. </h3>
-
-
-
-<!-- <h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;">
 Web Apps featuring layered multimedia (animation, photos, video, and audio) crafted to give a whole new experience.
-</h3> -->
-
-<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses.
-
 </h3>
 
+<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;"> Built for artists, photographers, musicians, clubs &amp; restaurants and other small businesses.<br /><br />
+A complete website/app platform with multimedia blog and customizable home page, about and contact pages with integrated contact forms. 
+
+</h3>
+<br />
 
 
 
-<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >Google Loves VidSocks!</h3>
+<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; text-align:center;" >GOOGLE LOVES VIDSOCKS!</h3>
 
 
 
 <blockquote className="frontquote" style="width:100%; margin:2rem auto;">
 <p>VidSocks produce top-notch SEO-minded content that ranks incredibly well in Google page rankings. Everything has custom image previews, page titles and descriptions on social media sites which makes sharing things so easy, just click to share!  </p>
 
-<div style="text-align:right; margin-right:20%; margin-top:20px;"> – Satisfied VidSock User
+<div style="text-align:right; margin-right:20%; margin-top:20px;"> – Satisfied VidSock User<br />(Totally non-paid actor)
 </div></blockquote>
 
 
-<!-- <h4 class="" style="color:#fff; font-weight:bold; font-size:112%; text-align:center;" >Max Content - Reduce Times - Increase SEO</h4> -->
+<h4 class="" style="color:#fff; font-weight:bold; font-size:112%; text-align:center;" >Max Content - Reduce Times - Increase SEO</h4>
 
 
 
