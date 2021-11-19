@@ -29,6 +29,10 @@ youtubestart: "33"
 filter: drop-shadow(0px 0px 10px #ad04a5); text-shadow:2px 2px 10px #222; margin-top:-50px; position:absolute; width:90%; display:flex; justify-content:center; border:1px solid #000;">
 What are VidSocks?</h2>
 
+<br />
+<h3 class="" style="color:#fff; font-weight:bold; font-size:115%; margin:1rem 0; text-align:center; padding:5px; border-radius:12px;">
+A complete website/app platform with multimedia blog and customizable home page, about and contact pages with integrated contact forms. </h3>
+
 
 
 <br />
@@ -50,7 +54,7 @@ A complete website/app platform with multimedia blog and customizable home page,
 
 
 <blockquote className="frontquote" style="width:100%; margin:2rem auto;">
-<p>VidSocks produce top-notch SEO-minded content that ranks incredibly well in Google page rankings. Everything has custom image previews, page titles and descriptions on social media sites which makes sharing things so easy, just click to share!  </p>
+<p>VidSocks produce top-notch SEO-minded content that ranks incredibly well in Google page rankings. It has everything! Social Media sites auto import Website previews with descriptions. It makes things SO easy, just click to share!  </p>
 
 <div style="text-align:right; margin-right:20%; margin-top:20px;"> – Satisfied VidSock User<br />(Totally non-paid actor)
 </div></blockquote>
