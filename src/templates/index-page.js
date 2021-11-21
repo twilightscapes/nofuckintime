@@ -250,7 +250,7 @@ const YouTube = frontmatter.youtuber
 <Seo
           title={`Best website design for artists, photographers, musicians, clubs/restaurants and other small businesses`}
           description={`Next-gen multimedia video blogs inside the fastest cloud-based web platform`}
-          image={'https://vidsock.com/vidsock-promo.jpg'}
+          image={'https://vidsock.com/assets/vidsock-promo.jpg'}
         />
        {/* <Seo
         title={frontmatter.title}
