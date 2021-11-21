@@ -248,9 +248,9 @@ const YouTube = frontmatter.youtuber
   
 </Helmet>
 <Seo
-          title={`Best website design builder for artists, photographers, musicians, clubs/restaurants and other small businesses`}
+          title={`Best website design for artists, photographers, musicians, clubs/restaurants and other small businesses`}
           description={`Next-gen multimedia video blogs inside the fastest cloud-based web platform`}
-          image={'https://vidsock.com/default-og-image.jpg'}
+          image={'https://vidsock.com/vidsock-promo.jpg'}
         />
        {/* <Seo
         title={frontmatter.title}
