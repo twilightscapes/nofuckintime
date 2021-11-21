@@ -526,10 +526,10 @@ const YouTube = frontmatter.youtuber
 
 <br />
 
-Ready To Use = Nothing To Learn<br />
+Ready To Use = Easy to Learn<br />
 Serverless = NO WordPress<br />
 Cloud Hosting = Free Forever<br />
-<span  className="neonText">Single Price = NO Monthly Fees<br />
+<span  className="neonText">Single Price = NO Fees<br />
 </span>
 <br />
 <span style={{color:'', fontSize:'90%'}}>Fast | Flexible | Secure | Features</span>
