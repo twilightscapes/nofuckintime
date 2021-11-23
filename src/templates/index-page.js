@@ -414,7 +414,7 @@ const YouTube = frontmatter.youtuber
  
  
 
- <ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.50)', padding:'2rem ',
+ <div className="" style={{ background: 'rgba(0,0,0,0.50)', padding:'2rem ',
           backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 
 
@@ -473,7 +473,7 @@ const YouTube = frontmatter.youtuber
      </div>
 
 
-</ScrollAnimation>
+</div>
  
 
  </div> 
@@ -487,7 +487,7 @@ const YouTube = frontmatter.youtuber
  
  
 
-      <ScrollAnimation className="" animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{ background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ',
+      <div className="" style={{ background: 'rgba(0,0,0,0.30)', padding:'1rem 2rem ',
           backdropFilter: 'blur(4px)', border:'10px double #fff', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 
 
@@ -577,7 +577,7 @@ Cloud Hosting = Free Forever<br />
 
 
 
-</ScrollAnimation>
+</div>
       
 
 
@@ -621,7 +621,7 @@ Cloud Hosting = Free Forever<br />
 
 
 
-<ScrollAnimation animateIn="bounceInUp" delay={250} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+
 
 <section className="outer section section--gradient fluff txtshadow" >
       <div className="container" style={{padding: '0 10%', color:'#fff'}}>
@@ -665,7 +665,7 @@ Cloud Hosting = Free Forever<br />
 </p>  */}
 
 
-<ScrollAnimation className="" animateIn="bounceInLeft" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+
 <div className="flexbutt featurebox" style={{display:'flex', padding:'0', gap:'20px',}}>
 
 
@@ -696,7 +696,6 @@ Get FULL Shopify functionality directly inside your site.
    <br />Shopify API costs <strong className="highlight">$8.99mo</strong>.</p>
 </div>
 </div>
-</ScrollAnimation>
 
 
 
@@ -706,7 +705,8 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<ScrollAnimation className="" animateIn="bounceInRight" delay={110} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+
+
 <div className="flexbutt featurebox" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px'}}>
 
 
@@ -735,12 +735,12 @@ Get FULL Shopify functionality directly inside your site.
 
 
 </div>
-</ScrollAnimation>
+
 
 
       </div>
 </section>
-</ScrollAnimation>
+
 
 
 
@@ -754,7 +754,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
   <div className="flexcheek" >
-    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInLeft" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+    <div className="frontcontent">
       <div className="content-inside" style={{padding:'8px', textAlign:'left'}}>
         
       <h2
@@ -786,7 +786,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 </ul>
-      </div></ScrollAnimation>
+      </div>
     </div>
   </div>
 
@@ -795,7 +795,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
   <div className="flexcheek">
-    <div className="frontcontent"><ScrollAnimation className="" animateIn="bounceInUp" delay={80} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+    <div className="frontcontent">
       <div className="content-inside" style={{padding:'8px'}}>
         {/* <h2 className="vartext txtshadow">VidSocks Features:</h2> */}
         <h2
@@ -838,7 +838,7 @@ Get FULL Shopify functionality directly inside your site.
 {/* <li>Auction Timers - Make posts disappear when your auction expires</li> */}
 
 </ul>
-      </div></ScrollAnimation>
+      </div>
     </div>
   </div>
 
@@ -848,7 +848,7 @@ Get FULL Shopify functionality directly inside your site.
 
   <div className="flexcheek">
     <div className="frontcontent content-lr">
-    <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+    
       <div className="content-inside" style={{padding:'8px'}}>
         
 
@@ -894,7 +894,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 </ul>
-      </div></ScrollAnimation>
+      </div>
     </div>
   </div>
   
@@ -942,7 +942,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<ScrollAnimation className="" animateIn="zoomInUp" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', margin:'0 4%', filter: 'drop-shadow(0 0 20px #000)', borderRadius:'12px' }}>
 
 
@@ -988,7 +988,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 </div>
-</ScrollAnimation>
+
 
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
@@ -1083,7 +1083,7 @@ Get FULL Shopify functionality directly inside your site.
 
   <div className="flexcheek">
     <div className="frontcontent">
-    <ScrollAnimation className="" animateIn="bounceInUp" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+    
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
         <h2 className="vartext txtshadow letter" style={{fontSize:'200%', border:'3px solid #fff', borderRadius:'12px', background: 'rgba(0,0,0,10)',}}>VidSocks - Pro</h2>
 
@@ -1111,13 +1111,13 @@ Get FULL Shopify functionality directly inside your site.
 
 
 </ul>
-      </div></ScrollAnimation>
+      </div>
     </div>
   </div>
 
   <div className="flexcheek">
     <div className="frontcontent content-lr">
-    <ScrollAnimation className="" animateIn="bounceInRight" delay={100} initiallyVisible={false} animateOnce={true} animatePreScroll={true}>
+    
       <div className="content-inside" style={{padding:'8px',textAlign:'center', color:'#fff'}}>
       <h2 className="vartext txtshadow letter" style={{fontSize:'200%', border:'3px solid #fff', borderRadius:'12px', background: 'rgba(0,0,0,10)',}}>VidSocks - E-Com</h2>
         <ul className="featurelist" style={{listStyleType:'none', borderRadius:'52px'}}>
@@ -1141,7 +1141,7 @@ Get FULL Shopify functionality directly inside your site.
         <li className="fluff">Full Updates - All new features included</li>
 
 </ul>
-      </div></ScrollAnimation>
+      </div>
     </div>
   </div>
   </div>
