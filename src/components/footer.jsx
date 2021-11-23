@@ -200,7 +200,7 @@ export function Footer() {
 <>
 
 
-<ScrollAnimation className="" animateIn="fadeIn" delay={50} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
+{/* <ScrollAnimation className="" animateIn="fadeIn" delay={50} initiallyVisible={false} animateOnce={false} animatePreScroll={false}> */}
 
 {/* <ScrollAnimation className="" animateIn="bounce" delay={10} initiallyVisible={true} animateOnce={false} animatePreScroll={true}> */}
 
@@ -280,7 +280,7 @@ export function Footer() {
       </nav>
    
     </footer>
-    </ScrollAnimation>
+    {/* </ScrollAnimation> */}
 </>
     ) : (
       ""
