@@ -6,6 +6,7 @@ import Consent from "../components/Consent"
 import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
 import { FaHandPointDown } from "react-icons/fa"
+import { IoHandLeft } from "react-icons/io5"
 import {
   RiFacebookBoxFill,
   RiTwitterFill,
@@ -199,7 +200,7 @@ export function Footer() {
 <>
 
 
-<ScrollAnimation className="" animateIn="zoomInUp" delay={50} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
+<ScrollAnimation className="" animateIn="fadeIn" delay={50} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
 
 {/* <ScrollAnimation className="" animateIn="bounce" delay={10} initiallyVisible={true} animateOnce={false} animatePreScroll={true}> */}
 
@@ -244,17 +245,34 @@ export function Footer() {
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem', position:'relative', right:'', top:'10px'}}>
+
+
+<br />
+<br />
+
+</div>
+
+<div style={{position:'absolute', bottom:'0', display:'flex', justifyContent:'center', alignSelf:'', alignContent:'', margin:'0 auto', width:'50vw', left:'0', right:'0'}}>
+
+
+<div style={{ display:'flex', flexDirection:'', background:'#000', borderRadius:'12px 12px 0 0', width:'', opacity:'.7'}}>
+{/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
+
+  <div style={{ display:'flex', gap:'20px', justifyContent:'space-around', padding:'2px 12px'}}>
+    
+  <button type="button" className="" style={{wordWrap:'normal'}}>
+  <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
+</button>
+
 <Theme  style={{display:'flex', alignSelf:'center',}} />
+    
+    {/* <a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a> */}
+    
+    </div>
 
-<br />
-<br />
+  </div>
+</div>
 
-<a href="https://vidsock.com" target="_blank" rel="noreferrer">Web App by VidSock</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a></div>
-
-
-
-<br />
-<br />
       </nav>
    
     </footer>

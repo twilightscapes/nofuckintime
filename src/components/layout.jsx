@@ -1,5 +1,5 @@
-import * as React from "react"
-import { SkipNavLink } from "./skip-nav"
+import React, { useState } from "react"
+// import { SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
 // import { Footer } from "./footer"
 import { Seo } from "./seo"
@@ -7,6 +7,7 @@ import '@fontsource/roboto'
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
 import Bug from "../../static/assets/logo.svg"
 import "../styles/reset.css"
@@ -31,18 +32,21 @@ import "../assets/scss/style.scss"
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
 
+
+
 export function Layout({ children }) {
   const { iconimage } = useSiteMetadata()
 
-
-
-
+  const [isVisible, setIsVisible] = useState(false);
+  const toggleVisible = () => {
+    setIsVisible(!isVisible);
+  };
 
   return (
-    <div style={{background:''}}> 
+
 <>
       <Seo />
-      <SkipNavLink />
+
 
       <ModalRoutingContext.Consumer>
     {({ modal, closeTo }) => (
@@ -56,7 +60,7 @@ export function Layout({ children }) {
           </div>
           </>
         ) : (
-<></>
+""
         )}
 
       </div>
@@ -64,87 +68,38 @@ export function Layout({ children }) {
   </ModalRoutingContext.Consumer>
 
 
-      {/* <Header /> */}
 
-      
-      
-      {/* <audio controls="controls" autoplay="false" src={Audio}>
-    Your browser does not support the HTML5 Audio element.
-</audio> */}
-
-{/* <Fullscreen /> */}
-
-<header name="pagetop" >
-
-{/* <Link to="/"><img id="logo" className="twlogo1" src={twLogo} alt="Twilightscapes Logo" style={{margin:'16px 0 40px 4vw', minWidth:'100px', maxWidth:'100px', height:'auto', padding:'0', border:'0px solid red', position:'fixed', zIndex:'2'}} /></Link> */}
-
-
-
-
-
-
+  
+<header name="pagetop" className={isVisible ? 'left' : ''} >
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
+
+
+
   <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle popped">
 
-  {/* <div className="cornertext" style={{textShadow:'2px', color:'#fff',}}>
-  <IoMdFingerPrint style={{fontSize:'50px', }}/>
- <span><br />TAP CORNER<br /> FOR MENU<br />
-</span>
-    </div> */}
 
 <Bug className="bug" style={{fontSize:'20px', width:'100%', opacity:'.4' }}/>
 <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000'}}>MENU</div>
-{/* <span>MENU</span>
-    <div className="spinner diagonal part-1"></div>
-    <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div> */}
+
   </label>
 
 
  <label aria-label="Background clicks close menu" id="menubgcloser" htmlFor="openSidebarMenu" className="backdrop1" ></label>
 
 
-   <div id="sidebarMenu" style={{minWidth:'', width:''}}>
+   <div id="sidebarMenu" className="" style={{minWidth:'', width:''}}>
   
-{/* <div className="no-app promocode">
-30% OFF CODE: <span style={{color:'var(--primary-color)', fontWeight:'bold'}}>LoveTheNight</span>
-</div> */}
 
-
-
-
-
-
-
-
-
-
-  {/* <Install /> */}
-
-
-
-	
-
-    
-
-
-
-
-    <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'0', display:'', justifyContent:''}}>
+    <ul className="sidebarMenuInner post-card left" style={{maxWidth:'250px', position:'absolute', right:'', display:'', justifyContent:''}}>
 
  <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
-  
-{/* <img src={iconimage} alt="VidSock Logo" width="100%" height="100%" /> */}
+
 <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', zIndex:'-1', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >VidSocks Logo</object>
-{/* <Link to="/"><span>Return to Home</span>
-</Link> */}
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/">
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
-{/* <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >VidSocks</object> */}
- {/* <span>Return to Home</span> */}
 </Link>
  </li>
  
@@ -152,57 +107,39 @@ export function Layout({ children }) {
  <li className="carto no-app" style={{textAlign:'center'}}>
  <Link className="navbar-item txtshadow" to="/contact/">
 Contact
-{/* <span>we love feedback!</span> */}
 </Link>
 </li>
 
-
-
-<li className="carto no-app" style={{textAlign:''}}>
- <Link className="navbar-item txtshadow" to="/#features">
+ {/* <li className="carto no-app" style={{textAlign:''}}>
+ <AnchorLink
+    to="/#features"
+    title="Check out our team!"
+    className="stripped"
+    stripHash
+  >
 - Amazing Features
-</Link>
+</AnchorLink>
 </li>
 
 
-
 <li className="carto no-app" style={{textAlign:''}}>
- <Link className="navbar-item txtshadow" to="/#costs">
+ <AnchorLink className="navbar-item txtshadow" to="/#costs">
 - Virtually No-Cost
-</Link>
+</AnchorLink>
 </li>
 
 <li className="carto no-app" style={{textAlign:''}}>
- <Link className="navbar-item txtshadow" to="/#cms">
+ <AnchorLink className="navbar-item txtshadow" to="/#cms">
 -Complete Control
-</Link>
+</AnchorLink>
 </li>
 
 
 <li className="carto no-app" style={{textAlign:''}}>
- <Link className="navbar-item txtshadow" to="/#buy">
+ <AnchorLink className="navbar-item txtshadow" to="/#buy">
 - Convinced? BUY IT!
-</Link>
-</li>
-
-
-
-    
-
-    {/* <li className="carto" style={{textAlign:''}}>
-              <Link className="navbar-item txtshadow" to="/about/">
-                More About VidSocks
-              </Link>
-      </li> */}
-
-
-      
-      {/* <li className="carto has-app">
-              <Link title="VidSocks Support" className="navbar-item txtshadow" to="/posts/">
-                Enter Support Mode
-              </Link>
-      </li> */}
-
+</AnchorLink>
+</li> */}
 
 
       <li className="carto" style={{textAlign:'center', paddingTop:'1rem'}}>
@@ -211,164 +148,33 @@ Contact
               </Link>
       </li>
 
- {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
- <a className="" onClick={()=>navigate(-1)}><img id="logo" className="twlogo" src={twLogo} alt="Twilightscapes Logo" title="Return To Homepage" style={{minWidth:'100px', maxWidth:'',}} /></a>
- </li> */}
-
-
-
-
-
-
-
-{/* </li>
-<li className="carta">
- <Link className="navbar-item txtshadow" to="/contact/">
-Contact Me<span>Ordering Questions?</span>
-</Link> </li>*/}
-
-
-
-
-
-      {/* <li className="carto">
-      <Link className="navbar-item txtshadow" to="/photo-tools/">Twilight Tools<span>Lighting and Gear</span></Link>
-       </li> */}
-
-
-  
-
-      {/* <li className="carto">
-      <Link className="navbar-item txtshadow" to="/articles/">Articles<span>My rants &amp; raves</span></Link>
-       </li> */}
-
-{/* 
-      <li className="carto">
-              <Link className="navbar-item txtshadow" to="/nft/">
-                NFT Collectibles <span>Limited Editions</span>
-              </Link>
-      </li> */}
-
-
-      {/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/vault/favorites/">
-              The Vault <span>Full Photo archives</span>
-              </Link>
-      </li> */}
-
-
-{/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/experiences/">
-                Experiences
-                <span>Photo Multimedia</span>
-              </Link>
-      </li> */}
-
-
-
-      {/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/photos/">
-      
-              View My Photos <span style={{color:'var(--primary-color)',}}>Buy  one to say thanks!</span>
-              </Link>
-      </li>  */}
-
-{/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/archive/">
-                The Archive
-                <span>World's First 3D Blog</span>
-              </Link>
-      </li> */}
-      
-
-    
+ 
       <li className="carta">
       <div style={{display:'flex', justifyContent:'center'}}>
 <button className="back" onClick={()=>navigate(-1)} style={{padding:'4px 8px', borderRadius:'12px'}}>
-        {/* <span className="icon -left" style={{paddingRight:'1rem'}}>
-                <BiLeftArrow />
-        </span>  */}
         {" "} Continue Choosing 
 </button>
 </div>
       </li>
 
-      
-
-      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-between', verticalAlign:'center', padding:'0 20px',  }}>
   
-      {/* <Theme  style={{padding:'0'}} /> */}
-   {/* <Link className="sherlock" to="/search" style={{marginRight:'0', marginTop:'5px'}}>
-    <span className="carto"><SearchIcon /></span>
-   </Link> */}
-   
-  {/* <div className="carto"><CartButton quantity={quantity} /></div> */}
-
-
-        </li>
-
-    
-
     </ul>
-
-
-
-
-
 
   </div>
 
-
-
-
-
-
-
-
-
-
-      {/* <Toast show={loading || didJustAddToCart} >
-        {!didJustAddToCart ? (
-          "Updating…"
-        ) : (
-          <>
-            Added to cart{" "}
-            <div style={{fontSize:'30px', marginLeft:'10px'}}><ImArrowRight /></div>
-          </>
-        )}
-      </Toast> */}
- 
-
-
-
-      {/* <Link to="/search" style={{display:'flex', verticalAlign:'center', marginTop:'12px', marginRight:'20px'}}>
-    <span><SearchIcon /></span>
-   </Link>
-  <div style={{marginTop:'5px'}}><CartButton quantity={quantity} /></div> */}
-     
-
-
-     
-
+    
 </header>
 
 
 
-{/* <div className="toppad" style={{display:'block', height:'20px', border:'0px solid yellow'}}></div> */}
-
-
-
-      {/* <SkipNavContent className="intro"> */}
+{/* <button type="button" className="button" onClick={toggleVisible}>
+  Left-handed?
+</button> */}
         {children}
-      {/* </SkipNavContent> */}
-      
-      
 
-
-      {/* <Footer /> */}
       
-      </>
-    </div>
+        
+  </>
     
   )
 }

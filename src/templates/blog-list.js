@@ -5,7 +5,7 @@ import React from 'react'
 // import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { StaticImage } from "gatsby-plugin-image"
-
+import { Footer } from "../components/footer"
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
@@ -449,6 +449,7 @@ class BlogIndex extends React.Component {
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation> */}
  <br /><br />
+ <Footer />
       </Layout>
     )
   }
