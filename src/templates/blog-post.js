@@ -23,8 +23,8 @@ import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
 import TimeAgo from 'react-timeago'
 import styled from "styled-components"
-import InnerImageZoom from 'react-inner-image-zoom'
-import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
+// import InnerImageZoom from 'react-inner-image-zoom'
+// import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css'
 const CustomBox = styled.div`
 @media (max-width: 48rem) {
   .home-posts{flex-direction:column !important; width:90% !important; margin:0 auto !important;}
@@ -468,13 +468,13 @@ const { iconimage } = useSiteMetadata()
 
 <div style={{margin:'0 auto', width:'100%', overflow:''}}>
 {Image ? (
-            // <GatsbyImageImage
-            //   image={Image}
-            //   alt={frontmatter.title + " - Featured image"}
-            //   className="featured-image1 layer1"
-            //   style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
-            // />
-            <InnerImageZoom src={getSrc(Image)} />
+            <GatsbyImage
+              image={Image}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image1 layer1"
+              style={{ width:'100vw', position:'relative', top:'0', zIndex:'',  border:'0px solid red !important', paddingBottom:''}}
+            />
+            // <InnerImageZoom src={getSrc(Image)} />
 
 
             
