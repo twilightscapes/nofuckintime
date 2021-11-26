@@ -31,11 +31,11 @@ export default class Installer extends React.Component {
    render(){
        return(
            <div className="no-app">
-
-           <button onClick={this.handleShow} style={{border:'px solid', padding:'.4rem 0', borderRadius:'12px'}}>Support Mode</button>
+           <div style={{textAlign:'center', marginTop:'1rem',}}>
+           <button onClick={this.handleShow} style={{border:'1px solid', padding:'1rem', borderRadius:'12px'}}>TURN ON SUPPORT MODE</button>
              
              
-   
+             </div>
 
 {this.state.isActive ? 
 <>

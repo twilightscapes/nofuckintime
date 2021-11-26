@@ -25,8 +25,8 @@ youtubestart: "33"
 
 
 
-<h2 class="title1 txtshadow-header" style="font-weight:bold; font-size:200%; background:rgba(0,0,0,0.30); padding:0; margin:0; border-radius:12px; text-align:center;
-filter: drop-shadow(0px 0px 10px #ad04a5); text-shadow:2px 2px 10px #222; margin-top:-50px; position:absolute; width:90%; display:flex; justify-content:center; border:1px solid #000;">
+<h2 class="title1 txtshadow-header" style="font-weight:bold; font-size:200%; background:rgba(0,0,0,0.30); padding:0; margin:0 auto; border-radius:12px; text-align:center;
+filter: drop-shadow(0px 0px 10px #ad04a5); text-shadow:2px 2px 10px #222; margin-top:-50px; display:block; justify-content:center; align-self:center; border:1px solid #000;">
 What Are VidSocks?</h2>
 
 <br />
