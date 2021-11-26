@@ -1,12 +1,12 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ScrollAnimation from 'react-animate-on-scroll'
-import Theme from "../components/theme"
+
 import Consent from "../components/Consent"
 import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
 import { FaHandPointDown } from "react-icons/fa"
-import { IoHandLeft } from "react-icons/io5"
+
 import {
   RiFacebookBoxFill,
   RiTwitterFill,
@@ -220,7 +220,7 @@ export function Footer() {
 
 
         
-
+        <Install />
  <div >
      
 
@@ -252,29 +252,10 @@ export function Footer() {
 
 </div>
 
-<div style={{position:'absolute', bottom:'0', display:'none', justifyContent:'center', alignSelf:'', alignContent:'', margin:'0 auto', width:'100%', left:'0', right:'0'}}>
+<div style={{position:'absolute', bottom:'0', display:'', justifyContent:'center', alignSelf:'', alignContent:'', margin:'0 auto', width:'100%', left:'0', right:'0'}}>
 
 
-<div style={{ display:'flex', flexDirection:'', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0', width:'',}}>
-{/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
 
-  <div style={{ display:'flex', gap:'20px', justifyContent:'space-around', padding:'2px 12px'}}>
-    
-  <button type="button" className="" style={{wordWrap:'normal'}}>
-  <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
-</button>
-
-<Theme  style={{display:'flex', alignSelf:'center',}} />
-
-
-  <Install />
-
-    
-    {/* <a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a> */}
-    
-    </div>
-
-  </div>
 </div>
 
       </nav>
