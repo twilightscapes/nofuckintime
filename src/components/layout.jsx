@@ -3,6 +3,9 @@ import React, { useState } from "react"
 // import { Header } from "./header"
 // import { Footer } from "./footer"
 import { IoHandLeft } from "react-icons/io5"
+import { FaRegPlusSquare } from 'react-icons/fa';
+import { IoShareOutline } from 'react-icons/io5';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import Theme from "../components/theme"
 import { Seo } from "./seo"
 import '@fontsource/roboto'
@@ -73,6 +76,7 @@ export function Layout({ children }) {
 
   
 <header name="pagetop" className={isVisible ? 'left' : ''} >
+{/* <header name="pagetop" className=""> */}
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 
@@ -147,3 +151,5 @@ export function Layout({ children }) {
     
   )
 }
+
+
