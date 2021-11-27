@@ -101,11 +101,11 @@ export function Layout({ children }) {
 
      <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
 
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', zIndex:'-1', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="VidSocks Logo Animated" title="animated content" >VidSocks Logo</object>
+<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', zIndex:'-1', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="Logo Animated" title="animated content" >Logo</object>
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/">
-<img src={iconimage} alt="VidSocks Logo" width="100%" height="100%" />
+<img src={iconimage} alt="Logo" width="100%" height="100%" />
 </Link>
  </li>
 
@@ -124,7 +124,7 @@ export function Layout({ children }) {
 </li>
 
       <li className="carto" style={{textAlign:'center', paddingTop:'1rem'}}>
-              <Link title="VidSocks Examples" className="navbar-item txtshadow neonText" to="/posts/">
+              <Link title="Examples" className="navbar-item txtshadow neonText" to="/posts/">
               {menu3}
               </Link>
       </li>
@@ -168,9 +168,7 @@ export function Layout({ children }) {
 
 
 
-{/* <button type="button" className="button" onClick={toggleVisible}>
-  Left-handed?
-</button> */}
+
         {children}
 
       
