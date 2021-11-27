@@ -27,7 +27,7 @@ const Apple = () => (
 
     <div className='' style={{position:'relative', display:'flex', flexDirection:'column', top:'0', zIndex:'0', height:'', overflow:'hidden', padding:'0 7%', borderRadius:'12px', justifyContent:'center', alignItems:'center' }}>
 
-    <h1 className="title1 primary-color" style={{padding:'1rem 10%', color:'', textShadow:'2px 2px 0 #222', fontSize:'80px'}}>Even better together.</h1>
+    <h1 className="title1 primary" style={{padding:'1rem 10%', color:'', textShadow:'2px 2px 0 #222', fontSize:'80px'}}>Even better together.</h1>
 
 <p style={{fontSize:'140%', maxWidth:'900px', textShadow:'1px 1px 0',}}>VidSocks are SO affordable that many take advantage of this, and purchase several to create their own private site networks. This allows for priming new markets and establishing a search engine presence in several markets. This means increased SEO potential. </p>
 

@@ -507,7 +507,7 @@ p{margin-bottom:2rem;}
 
 
 
-.highlight{color:#fff; font-weight: bold;}
+.highlight{ font-weight: bold;}
 
 
 .actionJackson{
@@ -988,8 +988,8 @@ border:1px solid red !important;
 
 
  a.donotsell{color:inherit !important;}
-
- a:hover{color:var(--primary-color) !important;}
+/* 
+ a:hover{color:var(--primary-color) !important;} */
 
 .post-card{color:#ccc !important;}
 .post-card a{text-decoration: none;}
@@ -1024,6 +1024,7 @@ color:#fff !important;
       0 0 31px #37f8f8;
       /* outline:1px solid rgba(0, 0, 0, 1) */
       filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
+      color:#fff !important;
 }
 
 /* .neonText {
@@ -1061,7 +1062,6 @@ color:#fff !important;
 
 .vartext{
 font-size: 1.2rem;
-font-size:#9c34c5
 }
 
 
