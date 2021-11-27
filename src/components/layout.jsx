@@ -22,7 +22,7 @@ import "../styles/global.css"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
-import Menu from "../components/menu"
+// import Menu from "../components/menu1"
 
 
 
@@ -41,6 +41,9 @@ import { navigate } from "gatsby";
 
 export function Layout({ children }) {
   const { iconimage } = useSiteMetadata()
+  const { menu1 } = useSiteMetadata()
+  const { menu2 } = useSiteMetadata()
+  const { menu3 } = useSiteMetadata()
 
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisible = () => {
@@ -108,7 +111,32 @@ export function Layout({ children }) {
 
 
 
-   <Menu />
+  <li className="carto no-app" style={{textAlign:'center'}}>
+ <Link className="navbar-item txtshadow" to="/contact/">
+ {menu1}
+</Link>
+</li>
+
+<li className="carto no-app" style={{textAlign:'center'}}>
+ <Link className="navbar-item txtshadow" to="/about/">
+ {menu2}
+</Link>
+</li>
+
+      <li className="carto" style={{textAlign:'center', paddingTop:'1rem'}}>
+              <Link title="VidSocks Examples" className="navbar-item txtshadow neonText" to="/posts/">
+              {menu3}
+              </Link>
+      </li>
+
+ 
+      <li className="carta">
+      <div style={{display:'flex', justifyContent:'center'}}>
+<button className="back" onClick={()=>navigate(-1)} style={{padding:'4px 8px', borderRadius:'12px'}}>
+        {" "} Continue Choosing 
+</button>
+</div>
+      </li>
    
 </ul>
     </div>
