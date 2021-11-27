@@ -1,7 +1,7 @@
 ---
 template: about-page
 slug: /about
-title: About the VidSock Platform
+title: About the VidSocks Platform
 ---
 
 <h2 style="font-size:150%">All VidSocks are:</h2>
@@ -20,7 +20,7 @@ title: About the VidSock Platform
 <br />
 <br />
 
-<h2 style="font-size:150%">VidSock Features:</h2>
+<h2 style="font-size:150%">VidSocks Features:</h2>
 
 <ul className="featurelist" style="list-style-type:none">
 <li>Edit all website settings, add Google Analytics, change colors, settings, logos, all graphics, etc.</li>
