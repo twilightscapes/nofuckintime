@@ -1074,7 +1074,7 @@ Get FULL Shopify functionality directly inside your site.
 </div>
 
 
-<div className="container txtshadow " style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff', margin:'0 auto', }}>
+<div className="container txtshadow " style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff', padding:'0 4%', margin:'0 auto', }}>
 
 <NFTDetails />
 </div>
