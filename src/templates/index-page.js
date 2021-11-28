@@ -585,15 +585,15 @@ Cloud Hosting = Free Forever<br />
 <br />
 <span style={{color:'', fontSize:'90%'}}>Fast | Flexible | Secure | Features</span>
 <br /><br />
-<div id="container">
-  
-  {/* <div id="flip">
+
+{/* <div id="container">
+  <div id="flip">
     <div><div>Fastest Websites</div></div>
     <div><div>Server-Less - Save More!</div></div>
     <div><div>Built for SEO</div></div>
-  </div> */}
+  </div>
+</div> */}
 
-</div>
 <span style={{color:'', fontSize:'70%'}}>Get all the details sent to your email:</span>
 
 {/* <span style={{color:'', fontSize:'70%'}}>Complete website solutions</span> */}
