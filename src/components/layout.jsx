@@ -25,7 +25,7 @@ import "../styles/global.css"
 // import Menu from "../components/menu1"
 
 
-import '@fontsource/roboto'
+// import '@fontsource/roboto'
 
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
@@ -36,17 +36,30 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
+import styled from "styled-components"
+
+
+
 
 
 
 
 
 export function Layout({ children }) {
+
+  const CustomBox = styled.div`
+// body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{
+//   font-family: {font},lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
+//    font-display: swap;
+// }
+
+`
+
   const { iconimage } = useSiteMetadata()
   const { menu1 } = useSiteMetadata()
   const { menu2 } = useSiteMetadata()
   const { menu3 } = useSiteMetadata()
-
+  const { font } = useSiteMetadata()
 
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisible = () => {
@@ -56,6 +69,8 @@ export function Layout({ children }) {
   return (
 
 <>
+
+
       <Seo />
 
 

@@ -8,6 +8,10 @@ body {
   width:100vw;
 }
 
+body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{
+   font-display: swap;
+}
+
 /* .popped{display: none !important;} */
 
 body.homepage, body.bloglist {
@@ -25,7 +29,7 @@ body.homepage, body.bloglist {
     }
 
     
-body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Roboto,lucida grande,lucida sans unicode,Tahoma,Sans-Serif; font-display: swap; /* font-style: italic; */ }
+
 
 /* External Links */
 a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after {

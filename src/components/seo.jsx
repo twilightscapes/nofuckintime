@@ -2,7 +2,7 @@ import * as React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import { useLocation } from "@reach/router"
-
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 export function Seo({
   title = "",
   description = "",
@@ -28,6 +28,11 @@ export function Seo({
       }
     }
   `)
+
+  const { font } = useSiteMetadata();
+
+  const fontUrl = "https://fonts.googleapis.com/css?family=" + font + ""
+
 
   const {
     // siteTitle,
@@ -70,7 +75,19 @@ export function Seo({
       <meta name="twitter:image" content={seo.image} />
     
       <meta name="apple-mobile-web-app-capable" content="yes" />
+
+      {/* { !font ? (
+    <link id="yyy" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine" />
+
+  ) : (
+    <link id="xxx" rel="stylesheet"
+          href={fontUrl} />
+  )} */}
+
+
       
+
       <link
         rel="icon"
         type="image/png"
