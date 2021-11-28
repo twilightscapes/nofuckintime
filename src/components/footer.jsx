@@ -206,7 +206,7 @@ export function Footer() {
 
 {/* </ScrollAnimation> */}
 
-    <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'2rem', position:'relative'}}>
+    <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'2rem', position:'relative', zIndex:'1'}}>
 
     
     <Consent />

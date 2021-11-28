@@ -143,7 +143,7 @@ export function Layout({ children }) {
 </header>
 
 
-<div style={{ display:'flex', alignSelf:'center', flexDirection:'',  width:'', position:'absolute', bottom:'0', zIndex:'5', width:'100%', justifyContent:'center'}}>
+<div className="usability" style={{ display:'flex', alignSelf:'center', flexDirection:'',  width:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', justifyContent:'center'}}>
 {/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
 
   <div style={{ display:'flex', gap:'20px', justifyContent:'space-around', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0',}}>
