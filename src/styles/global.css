@@ -1906,10 +1906,20 @@ border:1px solid #222;
 
         
         font-size:5vw; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-        background-color:#111;
+        /* background-color:#111;
         border:0px solid yellow;
         background-size: 50%;
-        background-position:center 50px;
+        background-position:center 50px; */
+
+        background: linear-gradient(
+          68deg,
+           rgb(69, 19, 73),
+            rgb(0, 162, 184),
+             #09a5e2,
+              rgb(99, 6, 107));
+        background-size: 300% 30%;
+        background-size: cover;
+        height: 100%;
     
         }
 
