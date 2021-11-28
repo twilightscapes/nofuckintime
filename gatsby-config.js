@@ -152,7 +152,6 @@ module.exports = {
       },
     },
     `gatsby-remark-responsive-iframe`,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
     {

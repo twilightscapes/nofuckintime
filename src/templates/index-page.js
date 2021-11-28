@@ -743,7 +743,7 @@ Cloud Hosting = Free Forever<br />
 
 <div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Analytics</h3>
-<p>Complete integration with Google Analytics. Simply copy and paste your account tracking code into the CMS settings. 
+<p>Complete integration with Google Analytics. Simply paste your account tracking code into the CMS settings. 
   <br />
   <br />Track your website performance for <strong className="highlight">FREE</strong>!</p>
 </div>
@@ -820,8 +820,6 @@ Get FULL Shopify functionality directly inside your site.
       <h2
   className="title1 txtshadow-header"
   style={{
-
-
    position: 'relative',
     textAlign: 'center', 
     float: 'none',
@@ -982,7 +980,7 @@ Get FULL Shopify functionality directly inside your site.
 {/* <div className="spacer66"></div> */}
 {/* <SparkyIntro /> */}
 
-<div id="cms" className="container " style={{padding:'0 8%', maxWidth:'1024px', color:'#fff'}}>
+<div id="cms" className="container " style={{padding:'0 8%', maxWidth:'1024px', margin:'0 auto', color:'#fff'}}>
 <section style={{ display:'',}}>
   <article>
 
@@ -1061,7 +1059,7 @@ Get FULL Shopify functionality directly inside your site.
 
 <br /><br />
 
-<div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px'}}>
+<div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px', margin:'0 auto',}}>
 <section style={{ display:'', color:'#fff'}}>
   
 <div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
@@ -1076,7 +1074,7 @@ Get FULL Shopify functionality directly inside your site.
 </div>
 
 
-<div className="container txtshadow " style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff' }}>
+<div className="container txtshadow " style={{ maxWidth:'1024px', textAlign:'', alignSelf:'', color:'#fff', margin:'0 auto', }}>
 
 <NFTDetails />
 </div>
