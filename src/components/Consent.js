@@ -41,7 +41,7 @@ const Consent = () => (
     expires={364}
     cookieName="site-pref-cookie"
 >
-<ScrollAnimation animateIn="bounce" animateOnce="false" delay={0} style={{ display:'flex', alignItems:'center', zIndex:'1', width:'100%',}}>
+<ScrollAnimation animateIn="swing" animateOnce="false" delay={2000} style={{ display:'flex', alignItems:'center', zIndex:'1', width:'100%',}}>
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', position:'absolute', top:'-80px', left:'32vw', margin:'0 auto', color:'#fff', }} />
 </ScrollAnimation>
 

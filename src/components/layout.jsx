@@ -3,39 +3,41 @@ import React, { useState } from "react"
 // import { Header } from "./header"
 // import { Footer } from "./footer"
 import { IoHandLeft } from "react-icons/io5"
-import { FaRegPlusSquare } from 'react-icons/fa';
-import { IoShareOutline } from 'react-icons/io5';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+// import { FaRegPlusSquare } from 'react-icons/fa';
+// import { IoShareOutline } from 'react-icons/io5';
+// import { AiOutlineCloseCircle } from 'react-icons/ai';
 import Theme from "../components/theme"
 import { Seo } from "./seo"
-import '@fontsource/roboto'
+
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+// import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
 import Bug from "../../static/assets/logo.svg"
 import "../styles/reset.css"
-import "../styles/variables.css"
+// import "../styles/variables.css"
 import "../styles/global.css"
-
+// import "../assets/scss/style.scss"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
 // import Menu from "../components/menu1"
 
 
+import '@fontsource/roboto'
 
-import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
 // import { IoMdFingerPrint } from 'react-icons/io'
-import "../assets/scss/style.scss"
-// import Consent from './Consent'
 
+// import Consent from './Consent'
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
+
+
 
 
 
@@ -44,6 +46,7 @@ export function Layout({ children }) {
   const { menu1 } = useSiteMetadata()
   const { menu2 } = useSiteMetadata()
   const { menu3 } = useSiteMetadata()
+
 
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisible = () => {
