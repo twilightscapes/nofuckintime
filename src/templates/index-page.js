@@ -317,7 +317,7 @@ const YouTube = frontmatter.youtuber
       
       
 
-<div className="">
+<div className="intro">
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-explain1.jpg" /> */}
 
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
