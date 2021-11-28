@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import Consent from "../components/Consent"
 import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
-import { FaHandPointDown } from "react-icons/fa"
+// import { FaHandPointDown } from "react-icons/fa"
 
 import {
   RiFacebookBoxFill,
@@ -208,7 +208,7 @@ export function Footer() {
 
     <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'2rem', position:'relative'}}>
 
-    <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', position:'absolute', top:'-80px', margin:'1rem auto', color:'#fff',}} />
+    
     <Consent />
 
     

@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: Next-Gen Multimedia Websites & Web Apps
+tagline: Next-Gen Multimedia Websites
 featuredImage: /assets/vidsock-promo.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: "/assets/transparent.png"

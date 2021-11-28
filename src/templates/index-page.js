@@ -174,7 +174,7 @@ const HomePage = ({ data }) => {
 function AddSvg(){
   const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
   return (
-    <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
+    <object title="Animation: VidSocks Logo" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation: VidSocks Logo" >You need a new browser</object>
   )
 }
 
@@ -393,7 +393,7 @@ const YouTube = frontmatter.youtuber
 
 <section className="" id="logointro" style={{ display:'', height:'', overflow:'', paddingTop:''}}>
   <article>
-  <h1 className="title1 " style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>Multimedia Web Apps<br /><span style={{fontSize:'68%',}}>Best Website Design Builder - Web App Platform</span></h1>
+  <h1 className="title1 " style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>Multimedia Web Apps<br /><span style={{fontSize:'68%',}}>Best Website Design Platform</span></h1>
 
 
   <h2
@@ -926,11 +926,11 @@ Get FULL Shopify functionality directly inside your site.
 <section style={{ display:'',}}>
   <article>
 
-  <div style={{display:'flex', padding:'1rem 3%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+  <div style={{display:'flex', flexDirection:'column', padding:'1rem 3%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
 
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks </h2>
 
-<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}><br />Add Content<br /> Easy As <br />Filling A Form. </p>
+<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}><br />Add Content<br /> Easy As <br />Filling A Form </p>
   {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
 
 </div>
