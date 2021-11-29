@@ -206,6 +206,7 @@ module.exports = {
         name: `VidSocks`,
         short_name: `VidSocks`,
         start_url: `/support?user_mode=app`,
+        id: "/support?user_mode=app",
         description: `VidSocks`,
         background_color: `#222`,
         lang: `en`,
