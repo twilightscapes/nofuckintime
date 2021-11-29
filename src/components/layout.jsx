@@ -139,15 +139,22 @@ export function Layout({ children }) {
 <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
  </li> */}
  <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
- <Link to="/">
+
+ {/* <Link to="/">
 <img src={iconimage} alt="Logo" width="100%" height="100%" />
-</Link>
+</Link> */}
+
+<Link to="/" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
+
+{/* <img src={iconimage} alt="Logo" width="100%" height="100%" /> */}
+
+
 {/* <Link to="/">
 <StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" width="100%" height="100%" />
 </Link> */}
-{/* <Link to="/">
+
 <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
-</Link> */}
+
  </li>
 
 
