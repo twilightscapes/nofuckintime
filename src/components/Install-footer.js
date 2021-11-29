@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby-link'
+// import { Link } from 'gatsby-link'
 // import { FiShare } from 'react-icons/fi';
 import { FaRegPlusSquare } from 'react-icons/fa';
 import { IoShareOutline } from 'react-icons/io5';

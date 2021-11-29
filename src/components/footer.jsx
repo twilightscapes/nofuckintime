@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 import Consent from "../components/Consent"
 import Install from "../components/Install-footer"
@@ -171,9 +171,9 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 export function Footer() {
-  const { siteUrl } = useSiteMetadata();
-  const { menu1 } = useSiteMetadata();
-  const speedIt = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=" + siteUrl + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
+  // const { siteUrl } = useSiteMetadata();
+  // const { menu1 } = useSiteMetadata();
+  // const speedIt = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=" + siteUrl + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
 
 
 

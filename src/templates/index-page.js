@@ -182,14 +182,14 @@ const HomePage = ({ data }) => {
   const { iconimage } = useSiteMetadata()
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, excerpt } = markdownRemark
+  const { frontmatter, html } = markdownRemark
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
 
-    const SecondaryImage = frontmatter.secondaryImage
-    ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
-    : ""
+    // const SecondaryImage = frontmatter.secondaryImage
+    // ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
+    // : ""
   
     const UnderlayImage = frontmatter.underlayImage
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
@@ -198,7 +198,7 @@ const HomePage = ({ data }) => {
     // const { iconimage } = useSiteMetadata()
 
 
-    const { siteUrl } = useSiteMetadata()
+    // const { siteUrl } = useSiteMetadata()
 
     const YouTubeStart = frontmatter.youtubestart
     const YouTubeEnd = frontmatter.youtubeend
@@ -705,7 +705,7 @@ Cloud Hosting = Free Forever<br />
 
               <p style={{fontSize:'150%', textAlign:'center', margin:'2rem 0 0 0'}}><u>NO</u> Monthly Costs</p>
               
-              <div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+              <div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
               
                 <span style={{fontSize:'3rem', color:'white', transform:'rotate()', lineHeight:'100%'}}>Web Apps </span>
               
@@ -729,7 +729,7 @@ Cloud Hosting = Free Forever<br />
 <div className="flexbutt featurebox" style={{display:'flex', padding:'0', gap:'20px',}}>
 
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Cloud Hosting</h3>
 
 <div style={{}}>Virtually all sites operate month-to-month for <strong className="highlight">FREE</strong>. 
@@ -741,14 +741,14 @@ Cloud Hosting = Free Forever<br />
 
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Analytics</h3>
 <p>Complete integration with Google Analytics. Simply paste your account tracking code into the CMS settings. 
   <br />
   <br />Track your website performance for <strong className="highlight">FREE</strong>!</p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>E-Commerce</h3>
 <p>Complete Shopify API integration with Shopify shopping cart built-in.
 Get FULL Shopify functionality directly inside your site.
@@ -770,12 +770,12 @@ Get FULL Shopify functionality directly inside your site.
 <div className="flexbutt featurebox" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px'}}>
 
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Social Sharing</h3>
 <p>Why pay for plugins just to allow for your users to share your content? Social sharing is built-in, along with other great features. <br /><br />All INCLUDED for <strong className="highlight">FREE</strong>.</p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>AdFree YouTube</h3>
 <p>We use AdFree YouTube to remove ads. This means you have complete control of your videos without any ads.
   
@@ -786,7 +786,7 @@ Get FULL Shopify functionality directly inside your site.
 <h3 className="vartext">NFT Features</h3>
 <p>Setup countdown timers for your own NFT Drops!  <br /> Embed your Foundation or OpenSea into your posts. Just copy and paste the share code.</p>
 </div> */}
-<div className="flexcheek" style={{width:'33%', padding:'2rem', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
+<div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Comments</h3>
 <p>We use CommentBox.io and with their generous 100 comments a month.
   
@@ -984,7 +984,7 @@ Get FULL Shopify functionality directly inside your site.
 <section style={{ display:'',}}>
   <article>
 
-  <div style={{display:'flex', flexDirection:'column', padding:'1rem 3%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+  <div style={{display:'flex', flexDirection:'column', padding:'1rem 3%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
 
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks </h2>
 
@@ -1009,18 +1009,17 @@ Get FULL Shopify functionality directly inside your site.
 
 <ReactPlayer
           className='react-player'
-          url="https://www.youtube.com/embed/NPzXWpNKScY?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=NPzXWpNKScY"
+          url="https://www.youtube.com/embed/NPzXWpNKScY?controls=0&amp;showinfo=0&amp;rel=0&amp;autoPlay=1&amp;loop=1&amp;mute=1&amp;playlist=NPzXWpNKScY"
           width="100%"
           height="100%"
      
      style={{ background: 'rgba(0,0,0,0.30)'}}
-          autoplay={false}
+          autoPlay={false}
           // background={true}
           loop
           playing
           playsinline
           muted={true}
-          showPortrait
           playIcon={
             <button aria-label="Click To Play" className="clickplay1" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh',  background: 'rgba(0,0,0,0.20)', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex',  verticalAlign:'center', justifyContent:'center', paddingTop:'20%'}}>
               
@@ -1062,7 +1061,7 @@ Get FULL Shopify functionality directly inside your site.
 <div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px', margin:'0 auto',}}>
 <section style={{ display:'', color:'#fff'}}>
   
-<div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+<div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
 
 <h2 className="headline" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Got Questions?
 <br />
@@ -1093,7 +1092,7 @@ Get FULL Shopify functionality directly inside your site.
 
               <p style={{fontSize:'150%', textAlign:'center', margin:'2rem 0 0 0'}}>VidSocks users have <u>NO</u> monthly costs</p>
               
-              <div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', borderRadius:'12px', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+              <div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
               <h2 className="headline" style={{fontSize:'220%', textAlign:'center', textShadow:'0 2px 2px #000'}}>Fastest Websites<br />More Features<br />One-Time Cost
 <br /><br />
 <span style={{fontSize:'70%',}}>Pay ONCE + FREE to Operate<br /> <span  className="highlight">No Hidden Costs</span>.</span>

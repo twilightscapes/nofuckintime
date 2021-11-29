@@ -139,7 +139,7 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 
      <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
 
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', zIndex:'-1', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="Logo Animated" title="animated content" >Logo</object>
+<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="Logo Animated" title="animated content" >Logo</object>
  </li>
  <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
  <Link to="/">
@@ -181,7 +181,7 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 </header>
 
 
-<div className="usability" style={{ display:'flex', alignSelf:'center', flexDirection:'',  width:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', justifyContent:'center'}}>
+<div className="usability" style={{ display:'flex', alignSelf:'center', flexDirection:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', justifyContent:'center'}}>
 {/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
 
   <div style={{ display:'flex', gap:'20px', justifyContent:'space-around', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0',}}>

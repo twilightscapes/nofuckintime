@@ -107,7 +107,7 @@ export default function SupportPage() {
           <p>
           {/* <label htmlFor="attachment" style={{padding: '0', margin: '0', color:'inherit'}}>Upload Logo - (vector .svg or transparent .png is best)</label> */}
 
-          <label htmlFor="attachment" style={{padding: '0', margin: '0', color:'inherit'}}></label>
+          <label htmlFor="attachment" style={{padding: '0', margin: '0', color:'inherit'}}>
 
                     {/* <div className="upload" style={{ border: '0px solid', padding: '12px', borderRadius: '5px', boxShadow: '0px 0px 1px 1px #999', color: '#999',}}> */}
                     {/* <label htmlFor="attachment" style={{padding: '0', margin: '0 2.5% 0 0', float: 'left', width: '58%', color: '#333',}}>
@@ -118,7 +118,7 @@ export default function SupportPage() {
                         id="attachment"
                         name="attachment"
           
-                      />
+                      /></label>
                       {/* </label> */}
                       {/* </div> */}
                       </p>

@@ -1,15 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
-import { RiCheckboxCircleLine } from "react-icons/ri"
-import Pricing from "../components/pricing"
+// import { Link } from "gatsby"
+// import { RiCheckboxCircleLine } from "react-icons/ri"
+// import Pricing from "../components/pricing"
 import { Footer } from "../components/footer"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-import { BiBorderRadius } from "react-icons/bi"
+// import { BiBorderRadius } from "react-icons/bi"
 import { Helmet } from "react-helmet"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { StaticImage } from "gatsby-plugin-image"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+// import { useSiteMetadata } from "../hooks/use-site-metadata"
 import styled from "styled-components"
 const CustomBox = styled.div`
 
@@ -95,7 +95,7 @@ const Apple = () => (
   <div className="flexbutt featurebox" style={{display:'flex', marginTop:'0', padding:'0 10%', gap:'20px'}}>
 
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem',
+<div className="flexcheek" style={{width:'33%',
  background: 'rgba(0,0,0,0.60)',
 // background:'#333',
 color:'#fff',
@@ -111,7 +111,7 @@ color:'#fff',
 
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem',
+<div className="flexcheek" style={{width:'33%',
  background: 'rgba(0,0,0,0.60)',
 // background:'#333',
 color:'#fff',
@@ -122,7 +122,7 @@ color:'#fff',
   <br />Track your website performance for <strong className="highlight">FREE</strong>!</p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem',
+<div className="flexcheek" style={{width:'33%',
  background: 'rgba(0,0,0,0.60)',
 // background:'#333',
 color:'#fff',
@@ -148,7 +148,7 @@ Get FULL Shopify functionality directly inside your site.
 <div className="flexbutt featurebox" style={{display:'flex', marginTop:'20px', padding:'0 10%', gap:'20px'}}>
 
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem',
+<div className="flexcheek" style={{width:'33%',
  background: 'rgba(0,0,0,0.60)',
 // background:'#333',
 color:'#fff',
@@ -157,7 +157,7 @@ color:'#fff',
 <p>Why pay for plugins just to allow for your users to share your content? Social sharing is built-in, along with other great features. <br /><br />All INCLUDED for <strong className="highlight">FREE</strong>.</p>
 </div>
 
-<div className="flexcheek" style={{width:'33%', padding:'2rem',
+<div className="flexcheek" style={{width:'33%',
  background: 'rgba(0,0,0,0.60)',
 // background:'#333',
 color:'#fff',
@@ -172,7 +172,7 @@ color:'#fff',
 <h3 className="vartext">NFT Features</h3>
 <p>Setup countdown timers for your own NFT Drops!  <br /> Embed your Foundation or OpenSea into your posts. Just copy and paste the share code.</p>
 </div> */}
-<div className="flexcheek" style={{width:'33%', padding:'2rem',
+<div className="flexcheek" style={{width:'33%',
  background: 'rgba(0,0,0,0.60)',
 // background:'#333',
 color:'#fff',

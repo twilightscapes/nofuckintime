@@ -14,12 +14,12 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 const CustomBox = styled.div`
 
-.infomenu11{
+// .infomenu11{
 
-   border-radius:12px;
-   filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
-   background:rgba(0,0,0,0.08) !important;
-}
+//    border-radius:12px;
+//    filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
+//    background:rgba(0,0,0,0.08) !important;
+// }
 
 `
 
@@ -29,7 +29,7 @@ const NFTDetails = () => (
 
 
 
-<Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'', overflow:'hidden', marginTop:'0',}}>
+<Tabs className="infomenu" style={{minHeight:'20vh', width:'100%', maxWidth:'', overflow:'hidden', marginTop:'0',}}>
 
 <h2 style={{fontSize:'240%', textAlign:'center', margin:'0',  background: 'rgba(0,0,0,0.75)', padding:'.5rem', borderRadius:'12px 12px 0 0'}}>VidSocks Details</h2>
 
