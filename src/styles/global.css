@@ -888,7 +888,7 @@ display: none !important;
 .ReactModal__Overlay{background-color:transparent !important;   background: rgba(0,0,0,0.90);
   backdrop-filter: blur(22px);}
 
-.ReactModal__Content{padding:0 !important; background:transparent !important; margin:0 auto ; overflow: hidden !important; border:none !important; box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5); box-shadow: none !important;}
+.ReactModal__Content{padding:0 !important; background:transparent !important; margin:0 auto ; overflow: auto !important; border:none !important; box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5); box-shadow: none !important;}
 
 
 .ReactModal__Body--open {
@@ -1882,7 +1882,7 @@ border:1px solid #222;
       
 
 
-      .intro:before, .poof{
+      /* .intro:before, .poof{
         position:fixed;
         top:0;
         left:0;
@@ -1891,7 +1891,7 @@ border:1px solid #222;
         height: 100vh;
         background-repeat: no-repeat;
         background-position: left top;
-        /* background-image: linear-gradient(#111212 40%, #232325  100%); */
+        background-image: linear-gradient(#111212 40%, #232325  100%);
           
             animation: poof 1s forwards;
             animation-delay: 3s;
@@ -1908,29 +1908,15 @@ border:1px solid #222;
         align-items: center;
         justify-content: center;
         align-self:center;
-
         animation: poof .5s forwards;
         animation-delay: 1.5s;
         overflow: hidden;
-
-        
         font-size:5vw; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
         background-color:#111;
         border:0px solid yellow;
         background-size: 50%;
         background-position:center 50px;
-
-        /* background: linear-gradient(
-          68deg,
-           rgb(69, 19, 73),
-            rgb(0, 162, 184),
-             #09a5e2,
-              rgb(99, 6, 107));
-        background-size: 300% 30%;
-        background-size: cover;
-        height: 100%; */
-    
-        }
+        } */
 
 .intro{border:0px solid orange !important;}
 

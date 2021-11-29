@@ -85,7 +85,7 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
         {modal ? (
           <>
           <div style={{position:'fixed', top:'0', right:'0', padding:'10px', fontSize:'40px', background:'#111 !important', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
-          <Link state={{noScroll: true }} to={closeTo}>
+          <Link state={{noScroll: true }} to={closeTo} style={{color:'#fff'}}>
             <AiOutlineClose />
           </Link>
           </div>
