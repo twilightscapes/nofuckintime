@@ -47,14 +47,7 @@ import { Helmet } from "react-helmet"
 
 export function Layout({ children }) {
 
-  { !font ? (
-    <link id="yyy" rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto" />
-
-  ) : (
-    <link id="xxx" rel="stylesheet"
-          href={fontUrl} />
-  )} 
+  
 
   const CustomBox = styled.div`
 
@@ -86,10 +79,17 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
   return (
 <CustomBox style={{}}>
 <>
-{/* <Helmet>
-  <body className="" style=" + "  FontLoad />
-  
-</Helmet> */}
+<Helmet>
+{ !font ? (
+    <link id="yyy" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto" />
+
+  ) : (
+    <link id="xxx" rel="stylesheet"
+          href={fontUrl} />
+  )} 
+
+</Helmet>
 
       <Seo />
 
