@@ -4,14 +4,15 @@ import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import TimeAgo from 'react-timeago'
 import Countdown from 'react-countdown'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 const Completionist = () => ""
 
 const PostCard = ({ data }) => (
 
   
-<ScrollAnimation className="" animateIn="bounceInUp" delay={50} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'', margin:'', padding:'',  width:'', zIndex:'', textAlign:'',}}>
+
+  
 <section className="child" style={{position:'relative', height:'', overflow:'hidden'}}>
 
   <article
@@ -118,7 +119,7 @@ date={Date.now() + 20000} className="countdown"> */}
 
   </article>
   </section>
-  </ScrollAnimation>
+  
 )
 
 export default PostCard

@@ -8,7 +8,7 @@ import React, { } from "react"
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
 import Theme from "../components/theme"
 import { Seo } from "./seo"
-
+import LogoText from "../../static/assets/logotext.svg"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
@@ -121,7 +121,7 @@ export function Layout({ children }) {
 
 
   
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000', maxWidth:'80px',}}>
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000', maxWidth:'80px', color:'#fff'}}>
 <StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} />
   MENU</div>
 
@@ -154,7 +154,9 @@ export function Layout({ children }) {
 </Link> */}
 
 <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
-
+{/* <Link to="/">
+<LogoText style={{width:'100%', height:''}} />
+</Link> */}
  </li>
 
 

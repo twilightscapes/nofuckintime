@@ -2259,7 +2259,7 @@ background: rgba(0,0,0,0.6);
 
               #posts {
                 transform: scale(.92);
-                transition: all .8s ease-in-out;
+                /* transition: all .8s ease-in-out; */
               }
 
 
@@ -2267,7 +2267,7 @@ background: rgba(0,0,0,0.6);
 
                 #posts{
                   /* transform: scale(1); */
-                  transition: all .8s ease-in-out;
+                  /* transition: all .8s ease-in-out; */
                 }
 
 

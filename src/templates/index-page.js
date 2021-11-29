@@ -79,18 +79,17 @@ const CustomBox = styled.div`
 
 
 
-/* The Masonry Container */
+.zoombox .gatsby-image-wrapper{cursor:zoom-in;}
+
 .masonry {
-  margin: 1.5em auto;
+  margin: 0 auto;
   max-width: 90%;
   column-gap: 1.5em;
 }
 
-/* The Masonry Brick */
-.item {
-  // background: #fff;
-  // padding: 1em;
+.masonry * {
   margin: 0 0 1.5em;
+  border-radius:12px;
 }
 
 /* Masonry on large screens */
@@ -116,31 +115,6 @@ const CustomBox = styled.div`
 
 
 
-// .waterfall {
-//   display: flex;
-//   flex-flow: column wrap;
-//   align-content: space-between;
-//   height: 600px; 
-//   padding: 0 4%;
-// }
-
-// .item {
-//   width: 32%;
-//   margin-bottom: 2%;
-// }
-// .item img{border-radius:12px;}
-
-// .item:nth-child(3n+1) { order: 1; }
-// .item:nth-child(3n+2) { order: 2; }
-// .item:nth-child(3n)   { order: 3; }
-
-// .waterfall::before,
-// .waterfall::after {
-//   content: "";
-//   flex-basis: 100%;
-//   width: 0;
-//   order: 2;
-// }
 
 
 
@@ -824,39 +798,58 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
 
 
 
-   
-      {/* <SRLWrapper options={options}>
-<div className="masonry">
-  <div class="item">
+   {/* <div className="zoombox">
+      <SRLWrapper options={options} className="">
+
    <StaticImage
           src="../../static/assets/Experiences-Header-1.jpg"
           alt="Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!"
+          className="item"
+          style={{borderRadius:'12', margin:'2rem 4%'}}
         />
-  </div>
-  <div class="item">
+
+<div className="masonry" style={{}}>
+
+
 <StaticImage
           src="../../static/assets/Experiences-Header-2.jpg"
           alt="Image 2"
           srl_gallery_image="true"
+          className="item"
         />
-</div>
-<div class="item">
-<StaticImage
-          src="../../static/assets/Experiences-Header-3.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-        />
-</div>
-<div class="item">
+
 <StaticImage
           src="../../static/assets/Experiences-Header-4.jpg"
           alt="Image 4"
           srl_gallery_image="true"
+          className="item"
         />
-</div> 
+
+
+<StaticImage
+          src="../../static/assets/Experiences-Header-3.jpg"
+          alt="Image 3"
+          srl_gallery_image="true"
+          className="item"
+        />
+
+
+<StaticImage
+          src="../../static/assets/Experiences-Header-4.jpg"
+          alt="Image 4"
+          srl_gallery_image="true"
+          className="item"
+        />
+
+<StaticImage
+          src="../../static/assets/Experiences-Header-3.jpg"
+          alt="Image 3"
+          srl_gallery_image="true"
+          className="item"
+        />
 </div>
-</SRLWrapper> */}
-    
+</SRLWrapper>
+  </div> */}
 
 
 
@@ -1148,10 +1141,21 @@ Get FULL Shopify functionality directly inside your site.
 {/* <div className="spacer66"></div> */}
 
 
-
-
-
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
