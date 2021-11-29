@@ -79,7 +79,8 @@ export const blogListQuery = graphql`
   }
 `
 const Pagination = props => (
-  <div className="pagination" sx={styles.pagination}>
+  <div className="pagination" sx={styles.pagination} style={{width
+  :'auto', margin:'0 auto', border:'0px solid'}}>
     <ul>
       {!props.isFirst && (
         <li>
@@ -422,7 +423,7 @@ class BlogIndex extends React.Component {
 
 
  {/* <section style={{height:'auto'}}>
-  <Link to="/#posts" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+  <Link to="/#posts" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
   <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newest 
     </article></Link>
     </section> */}

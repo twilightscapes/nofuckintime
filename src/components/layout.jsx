@@ -38,6 +38,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { navigate } from "gatsby";
 import styled from "styled-components"
 import { Helmet } from "react-helmet"
+import { StaticImage } from "gatsby-plugin-image"
 
 
 
@@ -65,7 +66,7 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 
   const { iconimage } = useSiteMetadata()
   const { menu1 } = useSiteMetadata()
-  const { menu2 } = useSiteMetadata()
+  // const { menu2 } = useSiteMetadata()
   const { menu3 } = useSiteMetadata()
   const { font } = useSiteMetadata();
 
@@ -121,7 +122,7 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 
-  <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle popped">
+  <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 
 
 <Bug className="bug" style={{fontSize:'20px', width:'100%', opacity:'.4' }}/>
@@ -135,16 +136,21 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
  <div id="sidebarMenu" className="" style={{minWidth:'', width:''}}>
   
 
-  <ul className="sidebarMenuInner post-card left" style={{maxWidth:'250px', position:'absolute', right:'', display:'', justifyContent:''}}>
+  <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'', display:'', justifyContent:''}}>
 
-     <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
-
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ position:'fixed', opacity:'.2', overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'auto', background:'transparent'  }} alt="Logo Animated" title="animated content" >Logo</object>
- </li>
- <li className="carto" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
- <Link to="/">
+     {/* <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
+<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
+ </li> */}
+ <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
+ {/* <Link to="/">
 <img src={iconimage} alt="Logo" width="100%" height="100%" />
+</Link> */}
+<Link to="/">
+<StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" width="100%" height="100%" />
 </Link>
+{/* <Link to="/">
+<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
+</Link> */}
  </li>
 
 
@@ -155,11 +161,11 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 </Link>
 </li>
 
-<li className="carto no-app" style={{textAlign:'center'}}>
+{/* <li className="carto no-app" style={{textAlign:'center'}}>
  <Link className="navbar-item txtshadow" to="/about/">
  {menu2}
 </Link>
-</li>
+</li> */}
 
       <li className="carto" style={{textAlign:'center', paddingTop:'1rem'}}>
               <Link title="Examples" className="navbar-item txtshadow neonText" to="/posts/">

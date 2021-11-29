@@ -7,7 +7,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -18,6 +18,8 @@ import styled from "styled-components"
 import LHScores from "../../static/assets/LH-Scores.svg"
 import NFTDetails from "../components/nft-details"
 // import SupportBox from "../components/supportbox.js"
+
+import { SRLWrapper } from "simple-react-lightbox"
 
 import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
@@ -74,6 +76,41 @@ const CustomBox = styled.div`
   99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
 }
+
+
+
+
+
+.waterfall {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  /* Your waterfall needs a fixed height, and it 
+   * needs to be taller than your tallest column. */
+  height: 600px; 
+  padding: 0 4%;
+}
+
+.item {
+  width: 32%;
+  margin-bottom: 2%; /* Optional */
+}
+.item img{border-radius:12px;}
+
+/* Re-order items into 3 rows */
+.item:nth-child(3n+1) { order: 1; }
+.item:nth-child(3n+2) { order: 2; }
+.item:nth-child(3n)   { order: 3; }
+
+/* Force new columns */
+.waterfall::before,
+.waterfall::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
 
 
 `
@@ -149,7 +186,7 @@ export const pageQuery = graphql`
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 6
+      limit: 1
     ) {
       edges {
         node {
@@ -287,6 +324,65 @@ const YouTube = frontmatter.youtuber
   }
 
   
+  const options = {
+    settings: {
+      autoplaySpeed: 3000,
+      boxShadow: '0px 0px 20px #fff',
+      disableKeyboardControls: false,
+      disablePanzoom: false,
+      disableWheelControls: false,
+      hideControlsAfter: false,
+      lightboxTransitionSpeed: 0.3,
+      lightboxTransitionTimingFunction: 'linear',
+      overlayColor: 'rgba(185, 7, 230, 0.5)',
+      slideAnimationType: 'fade',
+      slideSpringValues: [300, 50],
+      slideTransitionSpeed: 0.6,
+      slideTransitionTimingFunction: 'linear',
+      usingPreact: false
+    },
+    buttons: {
+      backgroundColor: 'rgba(30,30,36,0.8)',
+      iconColor: 'rgba(255, 255, 255, 0.8)',
+      iconPadding: '10px',
+      showAutoplayButton: true,
+      showCloseButton: true,
+      showDownloadButton: true,
+      showFullscreenButton: true,
+      showNextButton: true,
+      showPrevButton: true,
+      showThumbnailsButton: true,
+      size: '40px'
+    },
+    caption: {
+  captionAlignment: 'start',
+  captionColor: '#FFFFFF',
+  captionContainerPadding: '20px 12% 30px 12%',
+  captionFontFamily: 'inherit',
+  captionFontSize: 'inherit',
+  captionFontStyle: 'inherit',
+  captionFontWeight: 'inherit',
+  captionTextTransform: 'inherit',
+  showCaption: true
+    },
+    thumbnails: {
+      showThumbnails: true,
+      thumbnailsAlignment: 'center',
+      thumbnailsContainerBackgroundColor: 'transparent',
+      thumbnailsContainerPadding: '0',
+      thumbnailsGap: '0 1px',
+      thumbnailsIconColor: '#ffffff',
+      thumbnailsOpacity: 0.4,
+      thumbnailsPosition: 'bottom',
+      thumbnailsSize: ['100px', '80px']
+    },
+    progressBar: {
+      backgroundColor: '#f2f2f2',
+      fillColor: '#000000',
+      height: '3px',
+      showProgressBar: true
+    },
+  };
 
 
   
@@ -322,13 +418,13 @@ const YouTube = frontmatter.youtuber
 
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
 
-      <ScrollAnimation className="" animateIn="" delay={4050} initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'fixed', zIndex:'-1', opacity:'.2', width:'100%'}}>
+      {/* <ScrollAnimation className="" animateIn="" delay={4050} initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'fixed', zIndex:'-1', opacity:'.2', width:'100%'}}> */}
 
 
-      <div style={{display:'flex', justifyContent:'center', width:'100vw'}}>
+      <div style={{display:'flex', justifyContent:'center', position:'fixed', zIndex:'-1', opacity:'.2', width:'100%'}}>
       <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'55%', maxWidth:'', height:'55%', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
 </div>
-</ScrollAnimation>
+{/* </ScrollAnimation> */}
 
 
 
@@ -662,22 +758,77 @@ Cloud Hosting = Free Forever<br />
 {ShowPosts ? (
 
 
-""
+
+<div id="posts" name="posts">
+    
+<div style={{display:'flex', padding:'1rem 10%', margin:'2rem auto', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignSelf:'center', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
+              
+     <span style={{fontSize:'3rem', color:'white', transform:'rotate()', lineHeight:'100%'}}>Case Study </span>
+              
+    <span style={{width:'70%', fontSize:'40px', color:'#fff', lineHeight:'100%'}}>
+                VidSocks<br /> in ACTION!
+     </span>
+ </div>
+
+    <BlogListHome data={posts} />
+
+    <section style={{height:'auto'}}>
+<Link to="/posts/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
+View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
+</article></Link>
+</section>
+
+</div>
   
 
    ) : (
-  <div id="posts" name="posts">
-        <BlogListHome data={posts} />
-
-        <section style={{height:'auto'}}>
-  <Link to="/posts/2/" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
-    View More <RiArrowRightSLine style={{fontSize:'50px'}} />
-    </article></Link>
-    </section>
-
-   </div>
+  ""
   )}
 {/* end show Posts */}
+
+
+
+
+
+
+
+
+   
+      <SRLWrapper options={options}>
+<div className="waterfall">
+  <div class="item">
+   <StaticImage
+          src="../../static/assets/Experiences-Header-1.jpg"
+          alt="Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!"
+        />
+  </div>
+  <div class="item">
+<StaticImage
+          src="../../static/assets/Experiences-Header-2.jpg"
+          alt="Image 2"
+        />
+</div>
+<div class="item">
+<StaticImage
+          src="../../static/assets/Experiences-Header-3.jpg"
+          alt="Image 3"
+        />
+</div>
+<div class="item">
+<StaticImage
+          src="../../static/assets/Experiences-Header-4.jpg"
+          alt="Image 4"
+        />
+</div> 
+</div>
+</SRLWrapper>
+    
+
+
+
+
+
+
 
 
 

@@ -136,6 +136,25 @@ collections:
               - name: "ctaLink"
                 label: "CTA Link"
                 widget: "string"
+      - label: Links
+        name: linkPics
+        file: "src/util/links.json"
+        fields:
+          - label: Links
+            name: linkPics
+            widget: list
+            collapsed: true
+            hint: "Here you can add images, Click on 'Add'"
+            fields:
+              - label: "Images"
+                name: "imageLink"
+                widget: "image"
+                hint: "Add Images"
+              - widget: string
+                name: linkPicurl
+                label: url
+                required: true
+                hint: "Paste the 'URL'"
       - label: "About"
         name: "about"
         file: "src/content/pages/about.md"
@@ -322,7 +341,6 @@ collections:
                 label: url
                 required: true
                 hint: "Paste the 'URL' of your Social media"
-
   - label: "Appearance"
     name: "appearance"
     identifier_field: "name"
@@ -338,6 +356,15 @@ collections:
             allowInput: true
       - label: "Dark Theme"
         name: "darkthemescolors"
+        file: "src/util/dark-theme-colors.json"
+        fields:
+          - label: "Primary Color"
+            name: "siteColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+      - label: "Primary Color"
+        name: "primarythemescolors"
         file: "src/util/dark-theme-colors.json"
         fields:
           - label: "Primary Color"
