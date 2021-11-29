@@ -37,7 +37,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
 import styled from "styled-components"
-
+import { Helmet } from "react-helmet"
 
 
 
@@ -48,10 +48,12 @@ import styled from "styled-components"
 export function Layout({ children }) {
 
   const CustomBox = styled.div`
-// body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{
-//   font-family: {font},lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
-//    font-display: swap;
-// }
+body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{
+  // color:red;
+
+   font-display: swap;
+   font-family:;
+}
 
 `
 
@@ -60,16 +62,19 @@ export function Layout({ children }) {
   const { menu2 } = useSiteMetadata()
   const { menu3 } = useSiteMetadata()
   const { font } = useSiteMetadata()
-
+  const FontLoad = font
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisible = () => {
     setIsVisible(!isVisible);
   };
 
   return (
-
+<CustomBox style={{}}>
 <>
-
+{/* <Helmet>
+  <body className="" style=" + "  FontLoad />
+  
+</Helmet> */}
 
       <Seo />
 
@@ -192,7 +197,7 @@ export function Layout({ children }) {
       
         
   </>
-    
+  </CustomBox>
   )
 }
 
