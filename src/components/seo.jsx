@@ -76,14 +76,14 @@ export function Seo({
     
       <meta name="apple-mobile-web-app-capable" content="yes" />
 
-      {/* { !font ? (
+      { !font ? (
     <link id="yyy" rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Tangerine" />
+    href="https://fonts.googleapis.com/css?family=Roboto" />
 
   ) : (
     <link id="xxx" rel="stylesheet"
           href={fontUrl} />
-  )} */}
+  )}
 
 
       
