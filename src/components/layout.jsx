@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import React, { } from "react"
 // import { SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
 // import { Footer } from "./footer"
-import { IoHandLeft } from "react-icons/io5"
+// import { IoHandLeft } from "react-icons/io5"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import { IoShareOutline } from 'react-icons/io5';
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
@@ -14,7 +14,7 @@ import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 // import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
-import Bug from "../../static/assets/logo.svg"
+// import Bug from "../../static/assets/icon-512x512.png"
 import "../styles/reset.css"
 // import "../styles/variables.css"
 import "../styles/global.css"
@@ -55,12 +55,7 @@ export function Layout({ children }) {
  
 
 
-body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{
-  // color:red;
 
-   font-display: swap;
-   font-family:;
-}
 
 `
 
@@ -72,10 +67,10 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 
   const fontUrl = "https://fonts.googleapis.com/css?family=" + font + ""
 
-  const [isVisible, setIsVisible] = useState(false);
-  const toggleVisible = () => {
-    setIsVisible(!isVisible);
-  };
+  // const [isVisible, setIsVisible] = useState(false);
+  // const toggleVisible = () => {
+  //   setIsVisible(!isVisible);
+  // };
 
   return (
 <CustomBox style={{}}>
@@ -117,16 +112,18 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 
 
   
-<header name="pagetop" className={isVisible ? 'left' : ''} >
-{/* <header name="pagetop" className=""> */}
+{/* <header name="pagetop" className={isVisible ? 'left' : ''} > */}
+<header name="pagetop" className="">
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 
   <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 
 
-<Bug className="bug" style={{fontSize:'20px', width:'100%', opacity:'.4' }}/>
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000'}}>MENU</div>
+  
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000', maxWidth:'80px',}}>
+<StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} />
+  MENU</div>
 
   </label>
 
@@ -142,12 +139,12 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
  </li> */}
  <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
- {/* <Link to="/">
+ <Link to="/">
 <img src={iconimage} alt="Logo" width="100%" height="100%" />
-</Link> */}
-<Link to="/">
-<StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" width="100%" height="100%" />
 </Link>
+{/* <Link to="/">
+<StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" width="100%" height="100%" />
+</Link> */}
 {/* <Link to="/">
 <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
 </Link> */}
@@ -192,9 +189,9 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 
   <div style={{ display:'flex', gap:'20px', justifyContent:'space-around', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0',}}>
     
-  <button type="button" className="" onClick={toggleVisible} style={{wordWrap:'normal', color:'#fff'}}>
+  {/* <button type="button" className="" onClick={toggleVisible} style={{wordWrap:'normal', color:'#fff'}}>
   <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
-</button>
+</button> */}
 
 
 

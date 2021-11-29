@@ -79,37 +79,68 @@ const CustomBox = styled.div`
 
 
 
-
-
-.waterfall {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: space-between;
-  /* Your waterfall needs a fixed height, and it 
-   * needs to be taller than your tallest column. */
-  height: 600px; 
-  padding: 0 4%;
+/* The Masonry Container */
+.masonry {
+  margin: 1.5em auto;
+  max-width: 90%;
+  column-gap: 1.5em;
 }
 
+/* The Masonry Brick */
 .item {
-  width: 32%;
-  margin-bottom: 2%; /* Optional */
+  // background: #fff;
+  // padding: 1em;
+  margin: 0 0 1.5em;
 }
-.item img{border-radius:12px;}
 
-/* Re-order items into 3 rows */
-.item:nth-child(3n+1) { order: 1; }
-.item:nth-child(3n+2) { order: 2; }
-.item:nth-child(3n)   { order: 3; }
-
-/* Force new columns */
-.waterfall::before,
-.waterfall::after {
-  content: "";
-  flex-basis: 100%;
-  width: 0;
-  order: 2;
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
 }
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+
+
+// .waterfall {
+//   display: flex;
+//   flex-flow: column wrap;
+//   align-content: space-between;
+//   height: 600px; 
+//   padding: 0 4%;
+// }
+
+// .item {
+//   width: 32%;
+//   margin-bottom: 2%;
+// }
+// .item img{border-radius:12px;}
+
+// .item:nth-child(3n+1) { order: 1; }
+// .item:nth-child(3n+2) { order: 2; }
+// .item:nth-child(3n)   { order: 3; }
+
+// .waterfall::before,
+// .waterfall::after {
+//   content: "";
+//   flex-basis: 100%;
+//   width: 0;
+//   order: 2;
+// }
 
 
 
@@ -413,7 +444,7 @@ const YouTube = frontmatter.youtuber
       
       
 
-<div className="intro">
+<div className="">
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-explain1.jpg" /> */}
 
       {/* <StaticImage alt="Todd Lambert Web development for photographers" src="../../static/assets/vidsock-" /> */}
@@ -538,7 +569,7 @@ const YouTube = frontmatter.youtuber
        
 // {frontmatter.title}
 
-<section className="" id="logointro" style={{ display:'', height:'', overflow:'', paddingTop:''}}>
+<section className="" id="" style={{ display:'', height:'', overflow:'', paddingTop:''}}>
   <article>
   <h1 className="title1 " style={{padding:'1rem 10%', color:'#fff', textShadow:'2px 2px 0 #222'}}>Multimedia Web Apps<br /><span style={{fontSize:'68%',}}>Best Website Design Platform</span></h1>
 
@@ -557,7 +588,7 @@ const YouTube = frontmatter.youtuber
 
 
         
-<div id="greeting" className="flexcheek" style={{ position:'', top:'', order:''}} >
+<div id="" className="flexcheek" style={{ position:'', top:'', order:''}} >
  
  
 
@@ -630,7 +661,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-      <div id="intro" className="flexcheek" style={{order:''}}>
+      <div id="" className="flexcheek" style={{order:''}}>
  
  
 
@@ -794,8 +825,8 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
 
 
    
-      <SRLWrapper options={options}>
-<div className="waterfall">
+      {/* <SRLWrapper options={options}>
+<div className="masonry">
   <div class="item">
    <StaticImage
           src="../../static/assets/Experiences-Header-1.jpg"
@@ -806,22 +837,25 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
 <StaticImage
           src="../../static/assets/Experiences-Header-2.jpg"
           alt="Image 2"
+          srl_gallery_image="true"
         />
 </div>
 <div class="item">
 <StaticImage
           src="../../static/assets/Experiences-Header-3.jpg"
           alt="Image 3"
+          srl_gallery_image="true"
         />
 </div>
 <div class="item">
 <StaticImage
           src="../../static/assets/Experiences-Header-4.jpg"
           alt="Image 4"
+          srl_gallery_image="true"
         />
 </div> 
 </div>
-</SRLWrapper>
+</SRLWrapper> */}
     
 
 
