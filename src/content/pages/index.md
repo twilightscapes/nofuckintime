@@ -50,4 +50,16 @@ Web Apps featuring layered multimedia (animation, photos, video, and audio) craf
 
 <br />
 
-![](/assets/ macbook.png)
+```jsx
+<SRLWrapper options={options}>
+
+<div style={{padding:'2rem 4%'}}>
+  ![](/assets/ macbook.png)
+  </div>
+</SRLWrapper>
+```
+
+
+
+![]()
+
