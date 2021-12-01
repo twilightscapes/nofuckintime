@@ -353,6 +353,8 @@ body.homepage .gatsby-image-wrapper [data-main-image]{
 }
 
 
+#menuicon img{border-radius: 12px;}
+
 .gatsby-image-wrapper img{max-height: 100%; }
 
 /* .gatsby-image-wrapper {max-height: 80vh; } */

@@ -121,7 +121,7 @@ export function Layout({ children }) {
 
 
   
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000', maxWidth:'80px', color:'#fff'}}>
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
 <StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} />
   MENU</div>
 
