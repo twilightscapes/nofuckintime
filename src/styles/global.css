@@ -646,7 +646,39 @@ height:0;
 
 
 
+.zoombox .gatsby-image-wrapper{cursor:zoom-in;}
 
+.masonry {
+  margin: 0 auto;
+  max-width: 90%;
+  column-gap: 1.5em;
+}
+
+.masonry * {
+  margin: 0 0 1.5em;
+  border-radius:12px;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+}
 
 
 .mobilefix{ margin:-120px 0 30px 0; z-index:1; position:relative;}

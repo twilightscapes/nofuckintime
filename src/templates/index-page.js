@@ -79,39 +79,7 @@ const CustomBox = styled.div`
 
 
 
-.zoombox .gatsby-image-wrapper{cursor:zoom-in;}
 
-.masonry {
-  margin: 0 auto;
-  max-width: 90%;
-  column-gap: 1.5em;
-}
-
-.masonry * {
-  margin: 0 0 1.5em;
-  border-radius:12px;
-}
-
-/* Masonry on large screens */
-@media only screen and (min-width: 1024px) {
-  .masonry {
-    column-count: 3;
-  }
-}
-
-/* Masonry on medium-sized screens */
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .masonry {
-    column-count: 3;
-  }
-}
-
-/* Masonry on small screens */
-@media only screen and (max-width: 767px) and (min-width: 540px) {
-  .masonry {
-    column-count: 2;
-  }
-}
 
 
 
@@ -434,7 +402,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-        <div className="introspace" style={{paddingTop:'',}}>
+        <div name="container21" className="container21" style={{marginTop:'',}}>
 
 
 
@@ -810,7 +778,6 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
 
 <div className="masonry" style={{}}>
 
-
 <StaticImage
           src="../../static/assets/Experiences-Header-2.jpg"
           alt="Image 2"
@@ -1151,7 +1118,56 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
+<SRLWrapper options={options}>
 
+<div style={{padding:'2rem 4%'}}>
+   <StaticImage
+          src="../../static/assets/Experiences-Header-7.jpg"
+          alt="Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!"
+          className="item"
+          style={{borderRadius:'12px'}}
+        />
+</div>
+<div className="masonry">
+
+<StaticImage
+          src="../../static/assets/Experiences-Header-2.jpg"
+          alt="Image 2"
+          srl_gallery_image="true"
+          className="item"
+        />
+
+<StaticImage
+          src="../../static/assets/Experiences-Header-4.jpg"
+          alt="Image 4"
+          srl_gallery_image="true"
+          className="item"
+        />
+
+
+<StaticImage
+          src="../../static/assets/Experiences-Header-3.jpg"
+          alt="Image 3"
+          srl_gallery_image="true"
+          className="item"
+        />
+
+
+<StaticImage
+          src="../../static/assets/Experiences-Header-4.jpg"
+          alt="Image 4"
+          srl_gallery_image="true"
+          className="item"
+        />
+
+<StaticImage
+          src="../../static/assets/Experiences-Header-3.jpg"
+          alt="Image 3"
+          srl_gallery_image="true"
+          className="item"
+        />
+</div>
+</SRLWrapper>
 
 
 
