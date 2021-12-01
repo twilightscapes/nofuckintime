@@ -3,7 +3,6 @@ template: about-page
 slug: /about
 title: About the VidSocks Platform
 ---
-
 <h2 style="font-size:150%">All VidSocks are:</h2>
           
 <ul className="featurelist" style="list-style-type:none">
@@ -26,7 +25,6 @@ title: About the VidSocks Platform
 <li>Edit all website settings, add Google Analytics, change colors, settings, logos, all graphics, etc.</li>
 
 <li>Customize all content of included Homepage, About and Contact page. Add / Modify / Delete blog posts.</li>
-
 
 <li>Hide/Show Comments, Social Sharing, or User-interactivity (youtube video changer) on a post-by-post basis</li>
 
@@ -62,3 +60,7 @@ title: About the VidSocks Platform
 </ul>
 
 <br /><br />
+
+
+
+![my new macbook](/assets/ macbook.png "my new macbook")
