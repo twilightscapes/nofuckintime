@@ -32,7 +32,29 @@ nftredeem:
 
 Twilightscapes has been a testing bed for the VidSocks prototypes. 
 
- This is the way that portfolio sites should be - check it out:
+ This is the way that portfolio sites should be - check it out!
 
-<a class="button fire " href="https://twilightscapes.com">View Twilightscapes</a>
+<br />
+<div style="display:flex; justify-content:center; margin:0 auto;"><a class="button fire center" href="https://twilightscapes.com" >View Twilightscapes</a>
+</div>
 
+<br /><br />
+
+
+
+
+<div class="masonry" style="">
+
+![](/assets/ macbook.png)
+
+![](/assets/ macbook.png)
+
+![](/assets/ macbook.png)
+
+![](/assets/ macbook.png)
+
+![](/assets/ macbook.png)
+
+![](/assets/ macbook.png)
+
+</div>

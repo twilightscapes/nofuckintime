@@ -8,7 +8,7 @@ import React, { } from "react"
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
 import Theme from "../components/theme"
 import { Seo } from "./seo"
-import LogoText from "../../static/assets/logotext.svg"
+// import LogoText from "../../static/assets/logotext.svg"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
