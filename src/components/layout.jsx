@@ -144,7 +144,7 @@ export function Layout({ children }) {
 <img src={iconimage} alt="Logo" width="100%" height="100%" />
 </Link> */}
 
-<Link to="/" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
+<Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
 
 {/* <img src={iconimage} alt="Logo" width="100%" height="100%" /> */}
 

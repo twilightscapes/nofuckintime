@@ -738,11 +738,11 @@ Cloud Hosting = Free Forever<br />
     
 <div style={{display:'flex', padding:'1rem 10%', margin:'2rem auto', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignSelf:'center', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
               
-     <span style={{fontSize:'3rem', color:'white', transform:'rotate()', lineHeight:'100%'}}>Case Study </span>
+     <span style={{fontSize:'3rem', color:'white', transform:'rotate()', lineHeight:'100%'}}>Case Studies </span>
               
-    <span style={{width:'70%', fontSize:'40px', color:'#fff', lineHeight:'100%'}}>
+    {/* <span style={{width:'70%', fontSize:'40px', color:'#fff', lineHeight:'100%'}}>
                 VidSocks<br /> in ACTION!
-     </span>
+     </span> */}
  </div>
 
     <BlogListHome data={posts} />
@@ -873,7 +873,7 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
 
 
 
-<div className="flexbutt featurebox" style={{display:'flex', padding:'0', gap:'20px',}}>
+<div className="flexbutt hover" style={{display:'flex', padding:'0', gap:'20px',}}>
 
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
@@ -914,7 +914,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<div className="flexbutt featurebox" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px'}}>
+<div className="flexbutt hover" style={{display:'flex', marginTop:'20px', padding:'', gap:'20px'}}>
 
 
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #612069', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
@@ -999,7 +999,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-  <div className="flexcheek">
+  <div className="flexcheek hover">
     <div className="frontcontent">
       <div className="content-inside" style={{padding:'8px'}}>
         {/* <h2 className="vartext txtshadow">VidSocks Features:</h2> */}
@@ -1146,7 +1146,7 @@ Get FULL Shopify functionality directly inside your site.
 
   <h2 className="letter txtshadow" id="options" style={{fontSize:'200%', textAlign:'center'}}>Using VidSocks </h2>
 
-<p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}><br />Add Content<br /> Easy As <br />Filling A Form </p>
+{/* <p className="txtshadow" style={{fontSize:'150%', textAlign:'center'}}><br />Add Content<br /> Easy As <br />Filling A Form </p> */}
   {/* <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}> */}
 
 </div>

@@ -700,11 +700,11 @@ height:0;
 .mobile{display: block;}
 .dd ul{min-height:inherit !important;}
 /* .flexcheek h1, .mobilefix{ margin-top:2rem !important;} */
-.introspace{padding-top:0;}
+.introspace{padding-top:40vh;}
 	}
 
-
-
+.hover .flexcheek:hover{ background: rgba(0,0,0,0.90) !important}
+.featurelist li:hover { background: rgba(0,0,0,0.90) !important}
 
 p{margin-bottom: 1rem;}
 
