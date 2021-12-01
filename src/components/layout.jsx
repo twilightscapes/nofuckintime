@@ -119,6 +119,8 @@ export function Layout({ children }) {
 
   <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 
+
+
 <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
 <StaticImage className="" src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} />
   MENU</div>
@@ -142,7 +144,7 @@ export function Layout({ children }) {
 <img src={iconimage} alt="Logo" width="100%" height="100%" />
 </Link> */}
 
-{/* <Link to="/" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link> */}
+<Link to="/" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
 
 {/* <img src={iconimage} alt="Logo" width="100%" height="100%" /> */}
 
@@ -192,6 +194,7 @@ export function Layout({ children }) {
 
 
 <div className="usability" style={{ display:'flex', alignSelf:'center', flexDirection:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', justifyContent:'center'}}>
+{/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
 
   <div style={{ display:'flex', gap:'20px', justifyContent:'space-around', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0',}}>
     
@@ -199,8 +202,14 @@ export function Layout({ children }) {
   <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
 </button> */}
 
+
+
 <Theme  style={{display:'flex', alignSelf:'center', color:'#fff'}} />
 
+
+  
+
+    
     {/* <a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a> */}
     
     </div>

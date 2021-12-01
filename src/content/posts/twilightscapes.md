@@ -22,7 +22,7 @@ svgzindex: "0"
 comments: ""
 shareable: ""
 underlayImage: /assets/transparent.png
-featuredImage: /assets/tw-promo.jpg
+featuredImage: /assets/tw-promo.png
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: "2021-10-31T14:00:00"

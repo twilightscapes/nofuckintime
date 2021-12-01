@@ -22,7 +22,7 @@ svgzindex: "0"
 comments: ""
 shareable: ""
 underlayImage: /assets/transparent.png
-featuredImage: /assets/dressupchef-promo.jpg
+featuredImage: /assets/dressupchef-promo.png
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: "2021-10-31T14:00:00"

@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: UrbanFetish.com establishes it's BOLD image with the help of VidSocks innovative portfolio features for photographers
-slug: /twilightscapes
+slug: /urbanfetish
 date: 2021-11-13 10:43
 description: Urban Fetish creates its brand with VidSocks setup
 youtuber: ""
@@ -22,13 +22,12 @@ svgzindex: "0"
 comments: ""
 shareable: ""
 underlayImage: /assets/transparent.png
-featuredImage: /assets/urbanfetish-promo.jpg
+featuredImage: /assets/urbanfetish-promo.png
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: "2021-10-31T14:00:00"
 nftredeem:
 ---
-
 
 Urban Fetish has worked hard to establish a strong brand. They wanted to go BIG. 
 
