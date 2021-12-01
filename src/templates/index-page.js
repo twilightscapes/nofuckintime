@@ -798,7 +798,7 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
 
 
 
-   {/* <div className="zoombox">
+   <div className="zoombox">
       <SRLWrapper options={options} className="">
 
    <StaticImage
@@ -849,7 +849,7 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
         />
 </div>
 </SRLWrapper>
-  </div> */}
+  </div>
 
 
 
