@@ -402,7 +402,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-        <div name="container21" className="container21" style={{marginTop:'',}}>
+        <div name="container21" className="introspace" style={{marginTop:'',}}>
 
 
 
@@ -766,7 +766,7 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
 
 
 
-   <div className="zoombox">
+   {/* <div className="zoombox">
       <SRLWrapper options={options} className="">
 
    <StaticImage
@@ -816,7 +816,7 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
         />
 </div>
 </SRLWrapper>
-  </div>
+  </div> */}
 
 
 
@@ -1118,56 +1118,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<SRLWrapper options={options}>
 
-<div style={{padding:'2rem 4%'}}>
-   <StaticImage
-          src="../../static/assets/Experiences-Header-7.jpg"
-          alt="Start with the best built website and then make sure it's as fast as can be. Then make some of the most innovative features that nobody else has. Finally, make sure it's virtually hack-proof, easy to use and ready to go!"
-          className="item"
-          style={{borderRadius:'12px'}}
-        />
-</div>
-<div className="masonry">
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-2.jpg"
-          alt="Image 2"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-4.jpg"
-          alt="Image 4"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-3.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-4.jpg"
-          alt="Image 4"
-          srl_gallery_image="true"
-          className="item"
-        />
-
-<StaticImage
-          src="../../static/assets/Experiences-Header-3.jpg"
-          alt="Image 3"
-          srl_gallery_image="true"
-          className="item"
-        />
-</div>
-</SRLWrapper>
 
 
 

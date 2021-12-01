@@ -119,10 +119,8 @@ export function Layout({ children }) {
 
   <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 
-
-  
 <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
-<StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} />
+<StaticImage className="" src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} />
   MENU</div>
 
   </label>
@@ -206,10 +204,6 @@ export function Layout({ children }) {
 
 <Theme  style={{display:'flex', alignSelf:'center', color:'#fff'}} />
 
-
-  
-
-    
     {/* <a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a> */}
     
     </div>
