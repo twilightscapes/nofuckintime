@@ -394,15 +394,15 @@ const YouTube = frontmatter.youtuber
       {/* <ScrollAnimation className="" animateIn="" delay={4050} initiallyVisible={true} animateOnce={true} animatePreScroll={true} style={{position:'fixed', zIndex:'-1', opacity:'.2', width:'100%'}}> */}
 
 
-      {/* <div style={{display:'flex', justifyContent:'center', position:'fixed', zIndex:'-1', opacity:'.2', width:'100%'}}>
+      <div style={{display:'flex', justifyContent:'center', position:'fixed', zIndex:'-1', opacity:'.2', width:'100vw', height:'100vh'}}>
       <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'55%', maxWidth:'', height:'55%', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
-</div> */}
+</div>
 {/* </ScrollAnimation> */}
 
 
 
 
-        <div name="container21" className="introspace1" style={{marginTop:'',}}>
+        <div name="container21" className="introspace" style={{marginTop:'',}}>
 
 
 

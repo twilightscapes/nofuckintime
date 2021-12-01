@@ -691,7 +691,7 @@ height:0;
 
 .flexcheek {width:50%; position:sticky; top:0;}
 
-.introspace{padding-top:80vh;}
+.introspace{padding-top:60vh;}
 
 .mobile{display: none; border:0px solid #ad04a5 !important;}
 @media (max-width: 48rem) {
@@ -700,7 +700,7 @@ height:0;
 .mobile{display: block;}
 .dd ul{min-height:inherit !important;}
 /* .flexcheek h1, .mobilefix{ margin-top:2rem !important;} */
-.introspace{padding-top:20vh;}
+.introspace{padding-top:0;}
 	}
 
 
