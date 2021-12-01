@@ -15,7 +15,7 @@ cta:
   ctaText: Get Started Now
   ctaLink: /#options
 youtubeend: "63"
-showFeature: true
+showFeature: false
 youtubecontrols: ""
 template: index-page
 youtubemute: "1"
