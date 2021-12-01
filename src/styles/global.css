@@ -703,8 +703,8 @@ height:0;
 .introspace{padding-top:40vh;}
 	}
 
-.hover .flexcheek:hover{ background: rgba(0,0,0,0.90) !important}
-.featurelist li:hover { background: rgba(0,0,0,0.90) !important}
+.hover .flexcheek:hover{ background: rgba(0,0,0,0.70) !important}
+.featurelist li:hover { background: rgba(0,0,0,0.80) !important}
 
 p{margin-bottom: 1rem;}
 
