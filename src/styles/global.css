@@ -648,6 +648,8 @@ height:0;
 
 .zoombox .gatsby-image-wrapper{cursor:zoom-in;}
 
+.description .gatsby-image-wrapper{cursor:pointer;}
+
 .masonry {
   margin: 0 auto;
   max-width: 90%;
@@ -679,6 +681,8 @@ height:0;
     column-count: 2;
   }
 }
+
+
 
 
 .mobilefix{ margin:-120px 0 30px 0; z-index:1; position:relative;}
