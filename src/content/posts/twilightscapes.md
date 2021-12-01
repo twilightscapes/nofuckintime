@@ -43,7 +43,7 @@ Twilightscapes has been a testing bed for the VidSocks prototypes.
 
 
 
-<div class="masonry" style="">
+<!-- <div class="masonry zoombox" style="">
 
 ![](/assets/ macbook.png)
 
@@ -57,4 +57,4 @@ Twilightscapes has been a testing bed for the VidSocks prototypes.
 
 ![](/assets/ macbook.png)
 
-</div>
+</div> -->
