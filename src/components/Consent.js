@@ -22,7 +22,7 @@ const Consent = () => (
 <CookieConsent
 	debug={false}
 	location="none"
-	style={{ opacity:'1', padding:'3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'0', display:'flex', alignSelf:'center', width:'70vw', justifyContent:'center', color:'', background: 'rgba(0,0,0,0.50)', borderRadius:'12px'
+	style={{ opacity:'1', padding:'3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'0', display:'flex', alignSelf:'center', width:'70%', justifyContent:'center', color:'', background: 'rgba(0,0,0,0.50)', borderRadius:'12px'
    }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"
@@ -42,7 +42,7 @@ const Consent = () => (
     cookieName="site-pref-cookie"
 >
 {/* <ScrollAnimation animateIn="swing" delay={600} initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{ display:'flex', alignItems:'center', zIndex:'1', width:'100%',}}> */}
-<FaHandPointDown className="" style={{fontSize:'80px', textAlign:'center', width:'100%', position:'absolute', top:'-80px', left:'32vw', margin:'0 auto', color:'#ccc', }} />
+{/* <FaHandPointDown className="" style={{fontSize:'80px', textAlign:'center', width:'100%', position:'absolute', top:'-80px', left:'32vw', margin:'0 auto', color:'#ccc', }} /> */}
 {/* </ScrollAnimation> */}
 
     <div style={{color:'inherit', padding:'1rem', fontSize:'100%', textAlign:'center',}}>

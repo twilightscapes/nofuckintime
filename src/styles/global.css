@@ -675,6 +675,8 @@ height:0;
 .masonry * {
   margin: 0 0 1.5em;
   border-radius:12px;
+  display: inline-block;
+  width: 100%;
 }
 
 /* Masonry on large screens */
