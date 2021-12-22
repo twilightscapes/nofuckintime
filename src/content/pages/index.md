@@ -7,7 +7,7 @@ description: "VidSocks - Next-Gen Blog Platform"
 featuredImage: /assets/vidsock-promo.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: /assets/transparent.png
-svgImage: ""
+svgImage: /assets/null.svg
 showInfo: true
 showPosts: true
 youtuber: ""
