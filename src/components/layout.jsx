@@ -8,6 +8,10 @@ import React, { } from "react"
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
 import Theme from "../components/theme"
 import { Seo } from "./seo"
+import "../styles/reset.css"
+// import "../styles/variables.css"
+import "../styles/global.css"
+// import "../assets/scss/style.scss"
 // import LogoText from "../../static/assets/logotext.svg"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
@@ -15,10 +19,7 @@ import { AiOutlineClose } from "react-icons/ai"
 // import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
 // import Bug from "../../static/assets/icon-512x512.png"
-import "../styles/reset.css"
-// import "../styles/variables.css"
-import "../styles/global.css"
-// import "../assets/scss/style.scss"
+
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
@@ -63,9 +64,9 @@ export function Layout({ children }) {
   const { menu1 } = useSiteMetadata()
   // const { menu2 } = useSiteMetadata()
   const { menu3 } = useSiteMetadata()
-  const { font } = useSiteMetadata();
+  const { font1 } = useSiteMetadata()
 
-  const fontUrl = "https://fonts.googleapis.com/css?family=" + font + ""
+  const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=swap"
 
   // const [isVisible, setIsVisible] = useState(false);
   // const toggleVisible = () => {
@@ -76,16 +77,23 @@ export function Layout({ children }) {
 <CustomBox style={{}}>
 <>
 <Helmet>
-{ !font ? (
-    <link id="yyy" rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Roboto" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" /> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+
+{ !font1 ? (
+  
+  ""
 
   ) : (
-    <link id="xxx" rel="stylesheet"
+
+    
+    <link id="yyy" rel="stylesheet"
           href={fontUrl} />
   )} 
-
 </Helmet>
+
+
 
       <Seo />
 
@@ -118,14 +126,16 @@ export function Layout({ children }) {
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 
   <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-
-
-
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
-<StaticImage className="" src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} />
-  MENU</div>
-
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
+<StaticImage className="" src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} /></div>
   </label>
+
+  {/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle popped">
+<div className="spinner diagonal part-1"></div>
+    <div className="spinner horizontal"></div>
+    <div className="spinner diagonal part-2"></div>
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000'}}>MENU</div>
+  </label> */}
 
 
  <label aria-label="Background clicks close menu" id="menubgcloser" htmlFor="openSidebarMenu" className="backdrop1" ></label>
@@ -193,34 +203,23 @@ export function Layout({ children }) {
 </header>
 
 
-<div className="usability" style={{ display:'flex', alignSelf:'center', flexDirection:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', justifyContent:'center'}}>
-{/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
 
-  <div style={{ display:'flex', gap:'20px', justifyContent:'space-around', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0',}}>
-    
-  {/* <button type="button" className="" onClick={toggleVisible} style={{wordWrap:'normal', color:'#fff'}}>
-  <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
-</button> */}
-
-
-
-<Theme  style={{display:'flex', alignSelf:'center', color:'#fff'}} />
-
-
-  
-
-    
-    {/* <a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Our Site Report Card</a> */}
-    
-    </div>
-
-  </div>
 
 
 
 
         {children}
+        <div className="usability" style={{ display:'flex', flexDirection:'', position:'absolute', bottom:'0', zIndex:'2', width:'100%', margin:'0 auto', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
+{/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
 
+  <div style={{ display:'', gap:'', justifyContent:'', padding:'2px 12px', background:'rgba(0,0,0,0.30)', borderRadius:'12px 12px 0 0', width:'200px', margin:'0 auto'}}>
+  {/* <button type="button" className="" onClick={toggleVisible} style={{wordWrap:'normal', color:'#fff'}}>
+  <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
+</button> */}
+<Theme  style={{}} />
+    </div>
+
+  </div>
       
         
   </>

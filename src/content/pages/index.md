@@ -3,6 +3,7 @@ slug: /
 title: Best website design builder for artists, photographers, musicians,
   clubs/restaurants and other small businesses
 tagline: Next-Gen Multimedia Websites
+description: "VidSocks - Next-Gen Blog Platform"
 featuredImage: /assets/vidsock-promo.jpg
 secondaryImage: /assets/secondary-image.jpg
 underlayImage: /assets/transparent.png

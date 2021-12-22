@@ -43,6 +43,9 @@ body.homepage, body.bloglist {
 
     #SRLLightbox button{border-radius:12px !important;}
 
+    #menuicon:after{
+      content: " MENU ";
+    }
 
 /* External Links */
 a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after {

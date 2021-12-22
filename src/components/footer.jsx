@@ -26,12 +26,7 @@ import {
 import { FaWordpress, FaVk } from "react-icons/fa"
 import { Link } from "gatsby"
 
-import {
-  footerStyle,
-  // links,
-  blurb,
-  // logos,
-} from "./footer.module.css"
+
 
 
 
@@ -206,16 +201,16 @@ export function Footer() {
 
 {/* </ScrollAnimation> */}
 
-    <footer className={footerStyle} style={{padding:'1rem 0', marginTop:'2rem', position:'relative', zIndex:'1'}}>
+    <footer className="footerstyle" style={{padding:'1rem 0', marginTop:'2rem', position:'relative', zIndex:'1', display:'flex', flexDirection:'column'}}>
 
     
     <Consent />
 
     
-      <div className={blurb}>
+      <div className="">
 
 
-        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'10px auto 2rem auto', textDecoration:'none', maxWidth:'200px'}}>Got Questions?</Link>
+        <Link state={{modal: true}} to="/contact/" className="navbar-item  button fire" style={{margin:'20px auto 2rem auto', textDecoration:'none', maxWidth:'250px', fontSize:'120%', textAlign:'center' }}>Got Questions?</Link>
 
 
 
@@ -244,19 +239,15 @@ export function Footer() {
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
 
-<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem', position:'relative', right:'', top:'10px'}}>
+
 
 
 <br />
 <br />
 
-</div>
-
-<div style={{position:'absolute', bottom:'0', display:'', justifyContent:'center', alignSelf:'', alignContent:'', margin:'0 auto', width:'100%', left:'0', right:'0'}}>
 
 
 
-</div>
 
       </nav>
    
