@@ -650,7 +650,9 @@ const YouTube = frontmatter.youtuber
 
 Ready To Use = Easy to Learn<br />
 Serverless = NO WordPress<br />
-Cloud Hosting = Free Forever<br />
+{/* Cloud Hosting = Free Forever<br /> */}
+Web Apps = NO Apple or Google
+<br />
 <span  className="neonText">Single Price = NO Fees<br />
 </span>
 <br />
@@ -850,18 +852,18 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
               
               
 
-              <p style={{fontSize:'150%', textAlign:'center', margin:'2rem 0 0 0'}}><u>NO</u> Monthly Costs</p>
+              <p style={{fontSize:'150%', textAlign:'center', margin:'2rem 0 0 0'}}><u>LOW</u> Monthly Costs</p>
               
               <div style={{display:'flex', padding:'1rem 10%', margin:'0 2% 0 2%', borderRadius:'12px', height:'', textAlign:'center', justifyContent:'space-around', alignContent:'center', alignItems:'center', maxWidth:'1000px', gap:'20px', background:'rgba(0,0,0,0.30)', textShadow:'2px 2px 10px #222', filter:'drop-shadow(0px 0px 10px #ad04a5)', border:'1px solid #000'}}>
               
                 <span style={{fontSize:'3rem', color:'white', transform:'rotate()', lineHeight:'100%'}}>Web Apps </span>
               
                 <span style={{width:'70%', fontSize:'40px', color:'var(--primary-color)', lineHeight:'100%'}}>
-                OPERATE<br /> FOR FREE
+                WITH NO<br /> HIDDEN COSTS
                 </span>
               </div>
 
-              <p style={{fontSize:'150%', textAlign:'center', margin:'0 0 0 0'}}>FREE Cloud Based Services</p>
+              <p style={{fontSize:'150%', textAlign:'center', margin:'0 0 0 0'}}>uses metered Cloud Based Services</p>
 
               </div>
 
@@ -879,11 +881,11 @@ View More Examples <RiArrowRightSLine style={{fontSize:'50px'}} />
 <div className="flexcheek" style={{width:'33%', background: 'rgba(0,0,0,0.60)', padding:'1rem 2rem ', backdropFilter: 'blur(4px)', border:'10px double #291c74', borderRadius:'12px', textAlign:'', alignSelf:'', }}>
 <h3 className="vartext letter" style={{color:'#fff', fontWeight:'700'}}>Cloud Hosting</h3>
 
-<div style={{}}>Virtually all sites operate month-to-month for <strong className="highlight">FREE</strong>. 
+<div style={{}}>Virtually all sites operate month-to-month for <strong className="highlight">FREE or low cost</strong>. 
   <br />
- Some sites, under heavy usage can incur fees, as outlined by our hosting partner Netlify.<br /> 
+Pay only when your site uses a LOT of data.<br /> 
  <br />
- <div style={{textDecoration:'underline', textAlign:'center'}}><a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >View  <strong className="highlight">FREE</strong> Hosting Plan</a></div>
+ <div style={{textDecoration:'underline', textAlign:'center'}}><a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer" >View  <strong className="highlight"></strong> Hosting Plan</a></div>
  </div>
 
 </div>
@@ -1241,7 +1243,7 @@ Get FULL Shopify functionality directly inside your site.
 
 
 
-<div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px'}}>
+<div className="container txtshadow " style={{padding:'0 8%', maxWidth:'1024px', display:'none'}}>
 <section id="buy" style={{ display:'', color:'#fff'}}>
 
 <div id="buy" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'0 0 0 0', width:'100%'}}>
@@ -1269,7 +1271,7 @@ Get FULL Shopify functionality directly inside your site.
 
   <div className="">
 
-  <div className="flexbutt featurelisting" style={{display:'flex', padding:'2rem', alignItems:'baseline', gap:'30px'}}>
+  <div className="flexbutt featurelisting" style={{display:'none', padding:'2rem', alignItems:'baseline', gap:'30px'}}>
 
 
 

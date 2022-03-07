@@ -23,7 +23,7 @@ comments: ""
 shareable: ""
 underlayImage: /assets/transparent.png
 featuredImage: /assets/tw-promo.png
-svgImage: /assets/null.svg
+svgImage: /assets/campfire.svg
 nftlink: ""
 nftdrop: "2021-10-31T14:00:00"
 nftredeem:
